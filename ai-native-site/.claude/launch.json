@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "ai-native-dev",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["serve", "/Users/jarrod/Desktop/AINative/ai-native-site", "-l", "3456", "--single"],
+      "port": 3456
+    }
+  ]
+}

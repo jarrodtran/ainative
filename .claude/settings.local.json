@@ -1,0 +1,41 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(open /Users/jarrod/Desktop/AINative/AI_Native_Learning_Program.html)",
+      "WebFetch(domain:lwm-electricgrid.vercel.app)",
+      "Bash(curl -s \"https://lwm-electricgrid.vercel.app/\")",
+      "Bash(curl -s \"https://lwm-electricgrid.vercel.app/style.css\")",
+      "Bash(curl -s \"https://lwm-electricgrid.vercel.app/script.js\")",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(npx vercel --version)",
+      "Bash(npx vercel --yes)",
+      "Bash(npx vercel login)",
+      "Bash(npx vercel --yes --prod)",
+      "WebFetch(domain:ai-native-site.vercel.app)",
+      "Bash(node -e \":*)",
+      "Bash(node -e \"try { eval\\(require\\(''fs''\\).readFileSync\\(''courses-part1.js'',''utf8''\\).replace\\(/^var COURSES\\\\s*=\\\\s*\\\\{/,''{''\\).replace\\(/\\\\};?\\\\s*$/,''}''\\)\\); console.log\\(''Part 1: valid JS''\\); } catch\\(e\\) { console.log\\(''Part 1 error:'', e.message\\); }\")",
+      "Bash({)",
+      "Bash(})",
+      "Bash(grep -r \"TODO\\\\|FIXME\\\\|placeholder\\\\|undefined\\\\|null\" /Users/jarrod/Desktop/AINative/ai-native-site/*.html)",
+      "Bash(node --version)",
+      "Bash(npx --version)",
+      "Bash(npx playwright --version)",
+      "Bash(playwright screenshot --help)",
+      "Bash(playwright screenshot --viewport-size=\"1200,630\" \"http://localhost:3456/og-card.html\" \"/Users/jarrod/Desktop/AINative/ai-native-site/og.png\")",
+      "Bash(python3 -c \"from PIL import Image; print\\(''PIL available''\\)\")",
+      "Bash(python3 -c \"import PIL; print\\(''PIL available''\\)\")",
+      "Bash(python3:*)",
+      "mcp__Control_Chrome__list_tabs",
+      "mcp__Control_Chrome__switch_to_tab",
+      "mcp__Control_Chrome__get_page_content",
+      "Bash(ssh root@46.202.179.23 \"cat /docker/openclaw-yn8v/data/.openclaw/openclaw.json\")",
+      "Bash(ssh root@srv1488213.hstgr.cloud \"docker logs openclaw-yn8v-openclaw-1 --tail=30 2>&1\")",
+      "Bash(ssh -o StrictHostKeyChecking=no root@srv1488213.hstgr.cloud \"docker logs openclaw-yn8v-openclaw-1 --tail=30 2>&1\")",
+      "mcp__Control_Chrome__execute_javascript",
+      "Bash(gh repo:*)",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
+    ]
+  }
+}
