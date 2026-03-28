@@ -7,12 +7,54 @@
 (function () {
   var moduleNum = null;
   var course = null;
+  var lessonCount = 5;
+
+  function escapeHTML(value) {
+    return String(value)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
+
+  function renderList(items) {
+    return '<ul>' + items.map(function (item) {
+      return '<li>' + escapeHTML(item) + '</li>';
+    }).join('') + '</ul>';
+  }
+
+  function renderConcepts(items) {
+    return items.map(function (item) {
+      return '<div class="concept-card">' +
+        '<div class="concept-card-label">' + escapeHTML(item.title) + '</div>' +
+        '<div class="concept-card-text">' + escapeHTML(item.text) + '</div>' +
+        '</div>';
+    }).join('');
+  }
+
+  function renderRoleVariants(variants) {
+    var roles = [
+      { key: 'manager', label: 'Manager' },
+      { key: 'writer', label: 'Writer' },
+      { key: 'analyst', label: 'Analyst' },
+      { key: 'operator', label: 'Operator' }
+    ];
+
+    return roles.map(function (role) {
+      return '<div class="role-card">' +
+        '<div class="role-card-label">' + role.label + '</div>' +
+        '<p>' + escapeHTML(variants[role.key]) + '</p>' +
+        '</div>';
+    }).join('');
+  }
 
   function init() {
     moduleNum = parseInt(document.body.getAttribute('data-module'), 10);
     if (!moduleNum || !COURSES[moduleNum]) return;
 
     course = COURSES[moduleNum];
+    lessonCount = course.lessons.length;
     renderNav();
     renderHero();
     renderLessons();
@@ -28,7 +70,7 @@
     if (title) title.textContent = course.title;
     if (progress) {
       var done = Progress.countDone(moduleNum);
-      progress.textContent = done + '/5 lessons';
+      progress.textContent = done + '/' + lessonCount + ' lessons';
     }
   }
 
@@ -41,12 +83,12 @@
 
     if (numEl) numEl.textContent = 'Module ' + moduleNum;
     if (titleEl) titleEl.textContent = course.title;
-    if (descEl) descEl.textContent = course.lessons[0].subtitle || '';
+    if (descEl) descEl.textContent = course.summary || '';
 
     var done = Progress.countDone(moduleNum);
-    var pct = Math.round((done / 5) * 100);
+    var pct = Math.round((done / lessonCount) * 100);
     if (fill) fill.style.width = pct + '%';
-    if (label) label.textContent = done + ' of 5 complete';
+    if (label) label.textContent = done + ' of ' + lessonCount + ' complete';
   }
 
   function renderLessons() {
@@ -86,9 +128,32 @@
 
       textCol.innerHTML =
         '<div class="lesson-num">Lesson ' + (i + 1) + ' of ' + total + '</div>' +
-        '<h2 class="lesson-title">' + l.title + '</h2>' +
-        (l.subtitle ? '<p class="lesson-subtitle">' + l.subtitle + '</p>' : '') +
-        '<div class="lesson-content">' + l.content + '</div>' +
+        '<h2 class="lesson-title">' + escapeHTML(l.title) + '</h2>' +
+        (l.subtitle ? '<p class="lesson-subtitle">' + escapeHTML(l.subtitle) + '</p>' : '') +
+        '<div class="lesson-content">' +
+        '<div class="lesson-objective">Outcome: ' + escapeHTML(l.objective) + '</div>' +
+        '<div class="lesson-block">' +
+        '<h3>Why This Matters</h3>' +
+        '<p>' + escapeHTML(l.whyItMatters) + '</p>' +
+        '</div>' +
+        '<div class="lesson-block">' +
+        '<h3>Core Concepts</h3>' +
+        renderConcepts(l.coreConcepts) +
+        '</div>' +
+        '<div class="lesson-block">' +
+        '<h3>Worked Example</h3>' +
+        '<div class="worked-example">' +
+        '<p><strong>Scenario:</strong> ' + escapeHTML(l.workedExample.scenario) + '</p>' +
+        '<p><strong>Approach:</strong> ' + escapeHTML(l.workedExample.approach) + '</p>' +
+        '<p><strong>Result:</strong> ' + escapeHTML(l.workedExample.result) + '</p>' +
+        '<p><strong>Verification:</strong> ' + escapeHTML(l.workedExample.verification) + '</p>' +
+        '</div>' +
+        '</div>' +
+        '<div class="lesson-block">' +
+        '<h3>What To Watch For</h3>' +
+        renderList(l.commonMistakes) +
+        '</div>' +
+        '</div>' +
         '<button class="lesson-complete-btn' + (isDone ? ' done' : '') + '" ' +
         'data-lesson="' + i + '" onclick="CourseActions.markComplete(this, ' + i + ')">' +
         (isDone ? 'Completed' : 'Mark Complete') + '</button>' +
@@ -101,11 +166,29 @@
       visCol.setAttribute('data-delay', '200');
 
       var visHTML = '';
-      if (l.tryIt) {
+      if (l.artifact) {
         visHTML += '<div class="try-it-box">' +
-          '<div class="try-it-label">Try It Now</div>' +
-          '<div class="try-it-text">' + l.tryIt + '</div></div>';
+          '<div class="try-it-label">' + escapeHTML(l.artifact.label) + '</div>' +
+          '<div class="try-it-text"><strong>' + escapeHTML(l.artifact.title) + '</strong></div>' +
+          renderList(l.artifact.items) +
+          '</div>';
       }
+      if (l.doThisNow) {
+        visHTML += '<div class="try-it-box">' +
+          '<div class="try-it-label">Do This Now · ' + escapeHTML(l.doThisNow.timebox) + '</div>' +
+          '<div class="try-it-text"><strong>' + escapeHTML(l.doThisNow.task) + '</strong></div>' +
+          renderList(l.doThisNow.steps) +
+          '</div>';
+      }
+      visHTML += '<div class="lesson-meta-card">' +
+        '<div class="try-it-label">Role Variants</div>' +
+        '<div class="role-grid">' + renderRoleVariants(l.roleVariants) + '</div>' +
+        '</div>';
+      visHTML += '<div class="lesson-meta-card">' +
+        '<div class="try-it-label">Review Notes</div>' +
+        '<div class="lesson-meta-line"><strong>Last reviewed:</strong> ' + escapeHTML(l.lastReviewed) + '</div>' +
+        renderList(l.sourceNotes) +
+        '</div>';
       visCol.innerHTML = visHTML;
 
       inner.appendChild(textCol);
@@ -120,7 +203,7 @@
     if (!container) return;
 
     var done = Progress.countDone(moduleNum);
-    var allDone = done === 5;
+    var allDone = done === lessonCount;
 
     var section = document.createElement('section');
     section.className = 'completion-section';
@@ -130,7 +213,7 @@
       '<div class="completion-inner" data-animate="fade-up">' +
       '<div class="completion-icon">' + (allDone ? '🎉' : '📚') + '</div>' +
       '<h2 class="completion-title">' +
-      (allDone ? 'Module Complete!' : done + ' of 5 Lessons Complete') +
+      (allDone ? 'Module Complete!' : done + ' of ' + lessonCount + ' Lessons Complete') +
       '</h2>' +
       '<p class="completion-text">' +
       (allDone
@@ -150,7 +233,7 @@
 
     var prog = Progress.getLessons(moduleNum);
     var html = '';
-    for (var i = 0; i < 5; i++) {
+    for (var i = 0; i < lessonCount; i++) {
       var isDone = !!prog[i];
       html += '<div class="lesson-dot-nav' + (isDone ? ' done' : '') +
         '" data-lesson-dot="' + i + '" onclick="CourseActions.scrollTo(' + (i + 1) +
@@ -216,17 +299,17 @@
       // update nav progress
       var progress = document.getElementById('navModProgress');
       var done = Progress.countDone(moduleNum);
-      if (progress) progress.textContent = done + '/5 lessons';
+      if (progress) progress.textContent = done + '/' + lessonCount + ' lessons';
 
       // update hero progress
       var fill = document.getElementById('courseProgFill');
       var label = document.getElementById('courseProgLabel');
-      var pct = Math.round((done / 5) * 100);
+      var pct = Math.round((done / lessonCount) * 100);
       if (fill) fill.style.width = pct + '%';
-      if (label) label.textContent = done + ' of 5 complete';
+      if (label) label.textContent = done + ' of ' + lessonCount + ' complete';
 
       // auto-scroll to next lesson
-      if (idx < 4) {
+      if (idx < lessonCount - 1) {
         setTimeout(function () {
           var next = document.getElementById('lesson-' + (idx + 2));
           if (next) next.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -234,7 +317,7 @@
       }
 
       // check if module is now complete
-      if (done === 5) {
+      if (done === lessonCount) {
         Progress.completeModule(moduleNum);
         var compTitle = document.querySelector('.completion-title');
         var compText = document.querySelector('.completion-text');
