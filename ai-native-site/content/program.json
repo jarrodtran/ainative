@@ -1,0 +1,78 @@
+{
+  "title": "AI Native Learning Program",
+  "description": "A practical curriculum for business individual contributors who need repeatable AI workflows, stronger review habits, and clearer judgment.",
+  "phases": [
+    {
+      "id": "phase-1",
+      "title": "AI Foundations",
+      "modules": [1, 2, 3, 4],
+      "focus": "Start here to build your mental model, tool judgment, prompting habits, and safety discipline.",
+      "outcomes": [
+        "Understand what AI is actually doing and where it fails.",
+        "Choose tools by workflow fit instead of hype.",
+        "Use prompts, context, and verification more deliberately."
+      ]
+    },
+    {
+      "id": "phase-2",
+      "title": "Productivity Acceleration",
+      "modules": [5, 6, 7, 8],
+      "focus": "Apply the fundamentals to writing, synthesis, prompting, and meeting workflows you already own.",
+      "outcomes": [
+        "Draft and revise faster without losing judgment.",
+        "Turn research and notes into usable outputs.",
+        "Build reusable prompt patterns for recurring work."
+      ]
+    },
+    {
+      "id": "phase-3",
+      "title": "Business Operations",
+      "modules": [9, 10, 11, 12, 13],
+      "focus": "Use AI on recurring operational work such as documentation, planning, analysis, and stakeholder communication.",
+      "outcomes": [
+        "Turn recurring work into clearer workflows and artifacts.",
+        "Use AI for decision support without skipping evidence.",
+        "Handle communication and vendor work with more structure."
+      ]
+    },
+    {
+      "id": "phase-4",
+      "title": "Advanced AI Workflows",
+      "modules": [14, 15, 16, 17],
+      "focus": "Move from single outputs into playbooks, embedded AI features, and practical agent-style workflows.",
+      "outcomes": [
+        "Understand what changes in more agentic systems.",
+        "Package good work into reusable playbooks.",
+        "Support adoption through examples, not hype."
+      ]
+    },
+    {
+      "id": "phase-5",
+      "title": "AI Strategy & Leadership",
+      "modules": [18, 19, 20, 21],
+      "focus": "Tie practical usage back to opportunity selection, governance, measurement, and sustainable learning.",
+      "outcomes": [
+        "Spot high-value use cases more clearly.",
+        "Measure workflow improvement credibly.",
+        "Build a lightweight system for staying current."
+      ]
+    }
+  ],
+  "recentUpdates": [
+    {
+      "date": "March 2026",
+      "title": "Structured content source introduced",
+      "summary": "The curriculum now builds from split JSON source files with validation instead of being maintained only as one large runtime JS file."
+    },
+    {
+      "date": "March 2026",
+      "title": "Representative modules refreshed",
+      "summary": "Modules 1, 7, 14, 20, and the OpenClaw bonus section were strengthened with better sequence rationale, more specific exercises, and curated official resources."
+    },
+    {
+      "date": "March 2026",
+      "title": "Key resources and review metadata added",
+      "summary": "Selected lessons and modules now surface official references, recent review dates, and clearer support for time-sensitive AI topics."
+    }
+  ]
+}

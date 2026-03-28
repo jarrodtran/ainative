@@ -21,6 +21,7 @@
     updateAllCards();
     updateContinueBtn();
     renderPhaseProgress();
+    renderRecentUpdates();
     bindReset();
   }
 
@@ -113,9 +114,10 @@
 
   function renderPhaseProgress() {
     var container = document.getElementById('phaseProgressGrid');
+    var phases = (typeof PROGRAM_META !== 'undefined' && PROGRAM_META.phases && PROGRAM_META.phases.length) ? PROGRAM_META.phases : PHASES;
     if (!container) return;
 
-    container.innerHTML = PHASES.map(function (phase, idx) {
+    container.innerHTML = phases.map(function (phase, idx) {
       var phaseLessons = phase.modules.length * LESSONS_PER_MODULE;
       var done = phaseDoneCount(phase);
       var pct = Math.round((done / phaseLessons) * 100);
@@ -128,6 +130,20 @@
         '<p>' + phase.focus + '</p>' +
         '<div class="phase-progress-bar"><div class="phase-progress-fill" style="width:' + pct + '%"></div></div>' +
         '</a>';
+    }).join('');
+  }
+
+  function renderRecentUpdates() {
+    var container = document.getElementById('recentUpdatesGrid');
+    var updates = typeof PROGRAM_META !== 'undefined' && PROGRAM_META.recentUpdates ? PROGRAM_META.recentUpdates : [];
+    if (!container || !updates.length) return;
+
+    container.innerHTML = updates.map(function (item) {
+      return '<article class="recent-update-card">' +
+        '<div class="recent-update-date">' + item.date + '</div>' +
+        '<h3>' + item.title + '</h3>' +
+        '<p>' + item.summary + '</p>' +
+        '</article>';
     }).join('');
   }
 

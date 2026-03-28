@@ -1,0 +1,345 @@
+{
+  "id": 13,
+  "slug": "module-13",
+  "title": "Vendor And Stakeholder Work",
+  "phase": 3,
+  "summary": "Use AI to prepare for vendor evaluation, contract review support, and stakeholder communication with stronger structure and clearer follow-through.",
+  "lessons": [
+    {
+      "id": "module-13-lesson-01",
+      "slug": "prepare-for-vendor-conversations",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Prepare For Vendor Conversations",
+      "subtitle": "AI can help you arrive with sharper questions and a clearer evaluation lens.",
+      "objective": "Use AI to prepare for vendor meetings and internal buy-or-wait discussions.",
+      "useWhen": "AI can help you arrive with sharper questions and a clearer evaluation lens.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Vendor work often mixes incomplete information, persuasion, and operational consequences. Strong preparation reduces noise.",
+      "coreConcepts": [
+        {
+          "title": "Know The Decision",
+          "text": "Are you exploring, shortlisting, negotiating, or preparing a recommendation?"
+        },
+        {
+          "title": "Define The Criteria",
+          "text": "Implementation fit, cost, risk, change burden, and evidence quality are common evaluation lenses."
+        },
+        {
+          "title": "Prepare Questions That Expose Reality",
+          "text": "Good vendor questions test integration effort, support quality, security, and operational readiness."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A team evaluates a new workflow tool with limited preparation time.",
+        "approach": "They use AI to create an evaluation brief and a question set tied to their own operating constraints.",
+        "result": "The conversation becomes more about fit than sales narrative.",
+        "verification": "They compare vendor claims against references, documentation, or internal experience before recommending anything."
+      },
+      "artifact": {
+        "label": "Brief",
+        "title": "Vendor prep brief",
+        "items": [
+          "Decision stage",
+          "Criteria",
+          "Questions",
+          "Risks to validate"
+        ]
+      },
+      "doThisNow": {
+        "task": "Build a prep brief for one real vendor conversation.",
+        "timebox": "8 minutes",
+        "steps": [
+          "State the decision stage.",
+          "List the evaluation criteria.",
+          "Draft five validation questions."
+        ]
+      },
+      "commonMistakes": [
+        "Letting the vendor’s framing define the evaluation.",
+        "Using generic questions.",
+        "Skipping internal fit criteria."
+      ],
+      "roleVariants": {
+        "manager": "Use AI to compare options, pressure-test plans, and prepare clearer stakeholder communication.",
+        "writer": "Turn rough thinking into structured documents, memos, and decision briefs.",
+        "analyst": "Ask for assumptions, ranges, and missing data before acting on recommendations.",
+        "operator": "Translate ambiguous work into checklists, workflows, and operating decisions."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-13-lesson-02",
+      "slug": "compare-vendors-more-systematically",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Compare Vendors More Systematically",
+      "subtitle": "A structured comparison reduces bias and sales-driven recency.",
+      "objective": "Create a repeatable framework for vendor comparison using AI as an organizing assistant.",
+      "useWhen": "A structured comparison reduces bias and sales-driven recency.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Vendor decisions get messy when information comes in different formats and from different stakeholders.",
+      "coreConcepts": [
+        {
+          "title": "Normalize The Comparison",
+          "text": "Ask AI to place each vendor against the same criteria and evidence fields."
+        },
+        {
+          "title": "Separate Claims From Evidence",
+          "text": "A comparison is stronger when it shows what is claimed versus what is independently supported."
+        },
+        {
+          "title": "Capture Open Questions",
+          "text": "Useful evaluations preserve unresolved concerns instead of hiding them."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A procurement lead compares three vendors whose proposals are structured differently.",
+        "approach": "They ask AI to normalize them into one matrix and flag missing evidence.",
+        "result": "The team can discuss fit and risk more clearly.",
+        "verification": "They review the matrix against the original proposals to ensure no nuance was lost."
+      },
+      "artifact": {
+        "label": "Matrix",
+        "title": "Vendor comparison fields",
+        "items": [
+          "Criteria",
+          "Vendor claim",
+          "Evidence",
+          "Risk",
+          "Open question"
+        ]
+      },
+      "doThisNow": {
+        "task": "Build a comparison matrix for one vendor review already in progress.",
+        "timebox": "10 minutes",
+        "steps": [
+          "Choose the criteria.",
+          "Normalize the source material.",
+          "Mark evidence gaps explicitly."
+        ]
+      },
+      "commonMistakes": [
+        "Comparing vendors with different criteria.",
+        "Collapsing claim and evidence together.",
+        "Forgetting to track open questions."
+      ],
+      "roleVariants": {
+        "manager": "Use AI to compare options, pressure-test plans, and prepare clearer stakeholder communication.",
+        "writer": "Turn rough thinking into structured documents, memos, and decision briefs.",
+        "analyst": "Ask for assumptions, ranges, and missing data before acting on recommendations.",
+        "operator": "Translate ambiguous work into checklists, workflows, and operating decisions."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-13-lesson-03",
+      "slug": "support-contract-review-safely",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Support Contract Review Safely",
+      "subtitle": "AI can help organize contract language, but it does not replace legal review.",
+      "objective": "Use AI to summarize and organize contract language while keeping approval and risk controls intact.",
+      "useWhen": "AI can help organize contract language, but it does not replace legal review.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Contract work is high consequence. The safe use case is drafting support and issue spotting, not authoritative interpretation.",
+      "coreConcepts": [
+        {
+          "title": "Use It For Organization",
+          "text": "AI can help extract obligations, timelines, and key terms into a reviewable structure."
+        },
+        {
+          "title": "Mark Uncertainty",
+          "text": "If a clause is ambiguous, the output should note that instead of forcing a confident interpretation."
+        },
+        {
+          "title": "Escalate To The Right Reviewer",
+          "text": "Legal, procurement, or policy owners still decide what the language means and what changes are acceptable."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A business owner needs to understand the main obligations in a draft agreement before legal review.",
+        "approach": "They ask AI to extract key clauses, dates, obligations, and questions for counsel.",
+        "result": "The legal review starts from a clearer issue list.",
+        "verification": "The owner checks the extracted language against the contract text and does not treat the summary as legal advice."
+      },
+      "artifact": {
+        "label": "Review Aid",
+        "title": "Contract extraction sections",
+        "items": [
+          "Obligations",
+          "Dates",
+          "Approvals",
+          "Questions for review"
+        ]
+      },
+      "doThisNow": {
+        "task": "Turn one contract or agreement excerpt into a reviewable issue list.",
+        "timebox": "8 minutes",
+        "steps": [
+          "Extract obligations and dates.",
+          "Mark ambiguous language.",
+          "List questions for the proper reviewer."
+        ]
+      },
+      "commonMistakes": [
+        "Treating AI output as legal interpretation.",
+        "Using AI on sensitive documents without approval.",
+        "Ignoring ambiguous language."
+      ],
+      "roleVariants": {
+        "manager": "Use AI to compare options, pressure-test plans, and prepare clearer stakeholder communication.",
+        "writer": "Turn rough thinking into structured documents, memos, and decision briefs.",
+        "analyst": "Ask for assumptions, ranges, and missing data before acting on recommendations.",
+        "operator": "Translate ambiguous work into checklists, workflows, and operating decisions."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-13-lesson-04",
+      "slug": "tailor-stakeholder-communication",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Tailor Stakeholder Communication",
+      "subtitle": "Different stakeholders need different levels of detail, risk visibility, and framing.",
+      "objective": "Use AI to adapt one core message for sponsors, peers, vendors, or working teams.",
+      "useWhen": "Different stakeholders need different levels of detail, risk visibility, and framing.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Stakeholder friction often comes from poor framing rather than disagreement with the underlying plan.",
+      "coreConcepts": [
+        {
+          "title": "Start From Shared Facts",
+          "text": "The core facts should remain stable even as the framing changes."
+        },
+        {
+          "title": "Match The Reader’s Lens",
+          "text": "Sponsors may care about outcomes and risk. Working teams may need tasks and dependencies."
+        },
+        {
+          "title": "Keep Political Reality In Mind",
+          "text": "AI can help you prepare, but you still need judgment about what is wise to say and when."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A team lead must explain the same vendor decision to finance, operations, and leadership.",
+        "approach": "They create three versions from the same source brief with different audience instructions.",
+        "result": "Each stakeholder gets a clearer, more relevant message.",
+        "verification": "The lead checks that none of the versions change the actual decision or overstate certainty."
+      },
+      "artifact": {
+        "label": "Matrix",
+        "title": "Stakeholder framing",
+        "items": [
+          "Audience",
+          "What they care about",
+          "What detail they need",
+          "Tone to avoid"
+        ]
+      },
+      "doThisNow": {
+        "task": "Draft two stakeholder-specific versions of one current message.",
+        "timebox": "7 minutes",
+        "steps": [
+          "List the shared facts.",
+          "Define the audience lens.",
+          "Review for consistency across versions."
+        ]
+      },
+      "commonMistakes": [
+        "Changing facts across audiences.",
+        "Using the same level of detail for everyone.",
+        "Letting AI smooth over real risks."
+      ],
+      "roleVariants": {
+        "manager": "Use AI to compare options, pressure-test plans, and prepare clearer stakeholder communication.",
+        "writer": "Turn rough thinking into structured documents, memos, and decision briefs.",
+        "analyst": "Ask for assumptions, ranges, and missing data before acting on recommendations.",
+        "operator": "Translate ambiguous work into checklists, workflows, and operating decisions."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-13-lesson-05",
+      "slug": "build-a-vendor-and-stakeholder-toolkit",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Build A Vendor And Stakeholder Toolkit",
+      "subtitle": "Save the structures that make recurring evaluation and communication work easier.",
+      "objective": "Create a reusable toolkit for vendor prep, comparison, contract issue spotting, and stakeholder messaging.",
+      "useWhen": "Save the structures that make recurring evaluation and communication work easier.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "A small toolkit keeps vendor work more consistent and easier to audit.",
+      "coreConcepts": [
+        {
+          "title": "Store The Evaluation Brief",
+          "text": "Start every new vendor review from a consistent decision frame."
+        },
+        {
+          "title": "Store The Comparison Matrix",
+          "text": "Comparisons are easier when the format is stable."
+        },
+        {
+          "title": "Store The Review Boundaries",
+          "text": "Capture what AI can support and what must go to legal, finance, or leadership review."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A business operations team evaluates several tools each quarter.",
+        "approach": "They save their best question sets, matrices, and review notes into one toolkit.",
+        "result": "Future evaluations become faster and less dependent on memory.",
+        "verification": "They update the toolkit after each review cycle to reflect what questions actually mattered."
+      },
+      "artifact": {
+        "label": "Toolkit",
+        "title": "Vendor toolkit",
+        "items": [
+          "Prep brief",
+          "Comparison matrix",
+          "Contract issue list",
+          "Stakeholder message formats"
+        ]
+      },
+      "doThisNow": {
+        "task": "Save one vendor evaluation workflow as a toolkit entry.",
+        "timebox": "8 minutes",
+        "steps": [
+          "Store the prep brief.",
+          "Store the matrix.",
+          "Store the review boundaries."
+        ]
+      },
+      "commonMistakes": [
+        "Saving prompts without the decision criteria.",
+        "Forgetting review boundaries.",
+        "Never updating the toolkit after a real cycle."
+      ],
+      "roleVariants": {
+        "manager": "Use AI to compare options, pressure-test plans, and prepare clearer stakeholder communication.",
+        "writer": "Turn rough thinking into structured documents, memos, and decision briefs.",
+        "analyst": "Ask for assumptions, ranges, and missing data before acting on recommendations.",
+        "operator": "Translate ambiguous work into checklists, workflows, and operating decisions."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    }
+  ],
+  "outcomes": [
+    "Prepare for vendor evaluation more systematically.",
+    "Tailor stakeholder messaging without changing the facts."
+  ],
+  "nextModuleBridge": "Next, step into advanced workflows where AI starts acting across multiple steps, tools, and contexts."
+}

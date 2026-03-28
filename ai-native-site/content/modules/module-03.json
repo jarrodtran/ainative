@@ -1,0 +1,344 @@
+{
+  "id": 3,
+  "slug": "module-03",
+  "title": "Prompting For Useful Work",
+  "phase": 1,
+  "summary": "Turn vague requests into clear, repeatable prompt patterns that produce work-ready drafts instead of generic filler.",
+  "lessons": [
+    {
+      "id": "module-03-lesson-01",
+      "slug": "the-four-inputs-of-a-strong-prompt",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "The Four Inputs Of A Strong Prompt",
+      "subtitle": "Task, audience, source material, and output shape.",
+      "objective": "Use a simple structure for prompts that improves quality without overcomplicating the request.",
+      "useWhen": "Task, audience, source material, and output shape.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Most weak prompts fail in predictable ways: unclear job, missing context, no audience, or no output shape.",
+      "coreConcepts": [
+        {
+          "title": "Task",
+          "text": "Say exactly what needs to be produced and what decision or action it should support."
+        },
+        {
+          "title": "Source Material",
+          "text": "Provide the raw material, approved facts, or examples the model should rely on."
+        },
+        {
+          "title": "Output Shape",
+          "text": "State the format you want so the draft arrives closer to how you need to use it."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A user asks for \"a better summary\" and gets a vague paragraph.",
+        "approach": "They specify audience, source notes, a three-bullet structure, and the decision the summary should support.",
+        "result": "The output becomes clear and directly usable.",
+        "verification": "They check whether every bullet is supported by the provided notes."
+      },
+      "artifact": {
+        "label": "Template",
+        "title": "Prompt skeleton",
+        "items": [
+          "Task",
+          "Audience",
+          "Source material",
+          "Format",
+          "Review instruction"
+        ]
+      },
+      "doThisNow": {
+        "task": "Rewrite one of your existing prompts using the prompt skeleton.",
+        "timebox": "8 minutes",
+        "steps": [
+          "State the exact deliverable.",
+          "Paste only the relevant source material.",
+          "Add a format and one review rule."
+        ]
+      },
+      "commonMistakes": [
+        "Trying to sound smart instead of specific.",
+        "Leaving the model to guess the audience.",
+        "Not asking for an explicit structure."
+      ],
+      "roleVariants": {
+        "manager": "Use AI to shorten prep, synthesis, and communication loops without removing judgment.",
+        "writer": "Push for clearer source material, tighter briefs, and reusable language patterns.",
+        "analyst": "Separate analysis from storytelling so you can verify numbers before sharing narratives.",
+        "operator": "Build repeatable handoff-ready outputs instead of one-off conversations."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-03-lesson-02",
+      "slug": "roles-and-perspective",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Roles And Perspective",
+      "subtitle": "A role is useful when it sharpens judgment, not when it adds theater.",
+      "objective": "Use role instructions to improve perspective and quality rather than to create empty prompt ritual.",
+      "useWhen": "A role is useful when it sharpens judgment, not when it adds theater.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "A good role narrows the lens of the response. A bad role just decorates the prompt without changing the work.",
+      "coreConcepts": [
+        {
+          "title": "Use Functional Roles",
+          "text": "Ask for the perspective that matters to the task: reviewer, planner, editor, or analyst."
+        },
+        {
+          "title": "Tie The Role To Criteria",
+          "text": "Define what the role should optimize for, such as clarity, risk awareness, or audience fit."
+        },
+        {
+          "title": "Keep The Role Lightweight",
+          "text": "One clear line about perspective is usually enough."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A manager needs a difficult status update rewritten for senior leaders.",
+        "approach": "They ask the model to act as an executive editor focused on clarity, risk visibility, and brevity.",
+        "result": "The tone and structure improve because the role changes the evaluation standard.",
+        "verification": "The manager checks that the new draft still reflects the actual project status and does not soften key risks."
+      },
+      "artifact": {
+        "label": "Prompt Move",
+        "title": "Role pattern",
+        "items": [
+          "Act as: [functional role]",
+          "Optimize for: [criteria]",
+          "Avoid: [what would make this wrong]"
+        ]
+      },
+      "doThisNow": {
+        "task": "Add one functional role and one optimization rule to a prompt you already use.",
+        "timebox": "5 minutes",
+        "steps": [
+          "Choose the relevant role.",
+          "Define what that role should optimize for.",
+          "Remove any decorative fluff."
+        ]
+      },
+      "commonMistakes": [
+        "Using a role with no evaluation criteria.",
+        "Adding dramatic persona language that does not affect the work.",
+        "Assuming the role changes facts."
+      ],
+      "roleVariants": {
+        "manager": "Use AI to shorten prep, synthesis, and communication loops without removing judgment.",
+        "writer": "Push for clearer source material, tighter briefs, and reusable language patterns.",
+        "analyst": "Separate analysis from storytelling so you can verify numbers before sharing narratives.",
+        "operator": "Build repeatable handoff-ready outputs instead of one-off conversations."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-03-lesson-03",
+      "slug": "examples-and-output-formats",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Examples And Output Formats",
+      "subtitle": "Examples are often the shortest path to better results.",
+      "objective": "Use examples, structure, and formatting cues to make outputs more consistent and easier to review.",
+      "useWhen": "Examples are often the shortest path to better results.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "When the model sees a good example or precise layout, it spends less effort guessing the form of the answer.",
+      "coreConcepts": [
+        {
+          "title": "Show, Do Not Only Tell",
+          "text": "A short example of the expected format usually improves output more than extra explanation."
+        },
+        {
+          "title": "Separate Content From Shape",
+          "text": "Define the structure clearly so you can judge the substance independently."
+        },
+        {
+          "title": "Consistency Helps Reuse",
+          "text": "Stable output formats are easier to turn into templates and team playbooks."
+        }
+      ],
+      "workedExample": {
+        "scenario": "An analyst needs weekly updates in the same format every time.",
+        "approach": "They provide last week’s approved format as the model example and ask the model to reuse the structure only.",
+        "result": "The update becomes consistent and easier to compare week to week.",
+        "verification": "The analyst confirms the new draft did not carry over stale facts from the example."
+      },
+      "artifact": {
+        "label": "Example",
+        "title": "Formatting moves",
+        "items": [
+          "Provide a small approved example.",
+          "Say which parts are structure only.",
+          "List any fields that must be updated from new source material."
+        ]
+      },
+      "doThisNow": {
+        "task": "Find one approved past document and use it as a format example in your next prompt.",
+        "timebox": "8 minutes",
+        "steps": [
+          "Highlight the structure you want to copy.",
+          "Tell the model not to reuse old facts.",
+          "Compare the final output against the original format."
+        ]
+      },
+      "commonMistakes": [
+        "Providing examples without saying what to copy.",
+        "Letting the model reuse stale content.",
+        "Treating format consistency as trivial."
+      ],
+      "roleVariants": {
+        "manager": "Use AI to shorten prep, synthesis, and communication loops without removing judgment.",
+        "writer": "Push for clearer source material, tighter briefs, and reusable language patterns.",
+        "analyst": "Separate analysis from storytelling so you can verify numbers before sharing narratives.",
+        "operator": "Build repeatable handoff-ready outputs instead of one-off conversations."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-03-lesson-04",
+      "slug": "fixing-a-weak-output",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Fixing A Weak Output",
+      "subtitle": "Do not start over every time; diagnose what is missing.",
+      "objective": "Use targeted follow-ups to improve low-quality drafts instead of repeatedly asking for a rewrite.",
+      "useWhen": "Do not start over every time; diagnose what is missing.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Most bad outputs fail for a small number of reasons. Diagnosing the failure saves time and teaches you which context matters most.",
+      "coreConcepts": [
+        {
+          "title": "Name The Failure",
+          "text": "Say whether the issue is missing context, wrong tone, weak structure, unsupported claims, or poor prioritization."
+        },
+        {
+          "title": "Add One Constraint At A Time",
+          "text": "Change a small number of variables so you learn what actually improved the result."
+        },
+        {
+          "title": "Reset When Needed",
+          "text": "If the thread is noisy or confused, restate the task in a clean prompt instead of patching endlessly."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A draft memo is too long and buries the decision.",
+        "approach": "The user asks for a rewrite that leads with the decision, limits the memo to five bullets, and marks any unsupported claims.",
+        "result": "The second draft is much easier to use because the failure mode was explicitly corrected.",
+        "verification": "The user checks that the shorter version still preserves the key facts from the source notes."
+      },
+      "artifact": {
+        "label": "Checklist",
+        "title": "Diagnose before rewrite",
+        "items": [
+          "What is wrong?",
+          "What is missing?",
+          "What should stay?",
+          "Is a clean restart faster?"
+        ]
+      },
+      "doThisNow": {
+        "task": "Take one weak AI output and improve it with a diagnostic follow-up instead of a generic rewrite request.",
+        "timebox": "7 minutes",
+        "steps": [
+          "Name the main failure mode.",
+          "Add one new rule.",
+          "Decide whether the thread should be reset."
+        ]
+      },
+      "commonMistakes": [
+        "Saying \"make it better\" with no diagnosis.",
+        "Changing too many variables at once.",
+        "Continuing a broken thread too long."
+      ],
+      "roleVariants": {
+        "manager": "Use AI to shorten prep, synthesis, and communication loops without removing judgment.",
+        "writer": "Push for clearer source material, tighter briefs, and reusable language patterns.",
+        "analyst": "Separate analysis from storytelling so you can verify numbers before sharing narratives.",
+        "operator": "Build repeatable handoff-ready outputs instead of one-off conversations."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-03-lesson-05",
+      "slug": "building-a-reusable-prompt-library",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Building A Reusable Prompt Library",
+      "subtitle": "Save patterns, not just good prompts.",
+      "objective": "Turn successful prompts into reusable assets that are easier to maintain and teach.",
+      "useWhen": "Save patterns, not just good prompts.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "A prompt library compounds your learning. It reduces rework and gives teammates a starting point that already reflects your standards.",
+      "coreConcepts": [
+        {
+          "title": "Save The Context Pattern",
+          "text": "What matters most is often the structure of the request and review rules, not the exact wording."
+        },
+        {
+          "title": "Store An Example Output",
+          "text": "A prompt paired with a good sample is easier to reuse than a prompt alone."
+        },
+        {
+          "title": "Note The Review Standard",
+          "text": "Capture what still had to be checked or edited so others understand the limits."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A coordinator keeps rebuilding the same meeting follow-up prompt from scratch.",
+        "approach": "They save the context block, the output format, and the review notes from a successful version.",
+        "result": "Future follow-ups become faster and more consistent.",
+        "verification": "They confirm the saved prompt works on a second meeting before calling it reusable."
+      },
+      "artifact": {
+        "label": "Library",
+        "title": "Prompt entry fields",
+        "items": [
+          "Use case",
+          "Prompt pattern",
+          "Example output",
+          "Review notes",
+          "Last reviewed"
+        ]
+      },
+      "doThisNow": {
+        "task": "Create one prompt library entry from a prompt that worked well this month.",
+        "timebox": "10 minutes",
+        "steps": [
+          "Save the prompt pattern.",
+          "Attach the source material rules.",
+          "Note what still required human review."
+        ]
+      },
+      "commonMistakes": [
+        "Saving only the final wording.",
+        "Not storing examples.",
+        "Assuming a prompt is reusable after one success."
+      ],
+      "roleVariants": {
+        "manager": "Use AI to shorten prep, synthesis, and communication loops without removing judgment.",
+        "writer": "Push for clearer source material, tighter briefs, and reusable language patterns.",
+        "analyst": "Separate analysis from storytelling so you can verify numbers before sharing narratives.",
+        "operator": "Build repeatable handoff-ready outputs instead of one-off conversations."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    }
+  ],
+  "outcomes": [
+    "Write clearer prompts for real work.",
+    "Turn successful prompts into reusable patterns."
+  ],
+  "nextModuleBridge": "Next, apply those prompting skills with stronger safety, privacy, and verification habits."
+}

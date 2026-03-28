@@ -1,0 +1,341 @@
+{
+  "id": 15,
+  "slug": "module-15",
+  "title": "AI Inside Your Existing Tools",
+  "phase": 4,
+  "summary": "Get more value from AI where your work already lives by matching embedded features to specific jobs and review standards.",
+  "lessons": [
+    {
+      "id": "module-15-lesson-01",
+      "slug": "why-embedded-ai-often-wins",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Why Embedded AI Often Wins",
+      "subtitle": "Context already in the workspace can matter more than raw model novelty.",
+      "objective": "Identify when embedded AI features inside your current tools are the best option.",
+      "useWhen": "Context already in the workspace can matter more than raw model novelty.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "The strongest AI workflow is often the one with the least friction and the most relevant context already attached.",
+      "coreConcepts": [
+        {
+          "title": "Context Is The Advantage",
+          "text": "Email, docs, tickets, chats, and calendars already contain the material that general assistants often need you to paste manually."
+        },
+        {
+          "title": "Workflow Fit Matters",
+          "text": "A slightly weaker model inside the right tool can still produce better outcomes because setup friction is lower."
+        },
+        {
+          "title": "Review Standards Stay The Same",
+          "text": "Better integration does not remove the need to verify high-risk output."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A manager uses a standalone tool for meeting follow-ups even though the notes already live in their workspace.",
+        "approach": "They compare the embedded AI feature against the external workflow on the same meeting.",
+        "result": "The embedded tool wins because setup is lighter and the context is closer.",
+        "verification": "They still check owners, dates, and factual accuracy before sending. "
+      },
+      "artifact": {
+        "label": "Decision Rule",
+        "title": "Use embedded AI when",
+        "items": [
+          "The source material already lives there",
+          "Setup friction is lower",
+          "The review burden stays manageable"
+        ]
+      },
+      "doThisNow": {
+        "task": "List one task that would be easier inside your current workspace than in a separate AI tool.",
+        "timebox": "5 minutes",
+        "steps": [
+          "Name the task.",
+          "Name where the context lives.",
+          "State how you will review the output."
+        ]
+      },
+      "commonMistakes": [
+        "Ignoring embedded tools you already pay for.",
+        "Assuming embedded AI means safer output automatically.",
+        "Switching tools without comparing the workflow end to end."
+      ],
+      "roleVariants": {
+        "manager": "Model safe adoption through small pilots, clear examples, and lightweight team habits.",
+        "writer": "Document the prompts, examples, and edits that help others replicate quality.",
+        "analyst": "Define simple measures and evidence standards so adoption conversations stay grounded.",
+        "operator": "Focus on workflow change and training, not just tool access."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-15-lesson-02",
+      "slug": "evaluate-embedded-features-by-task",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Evaluate Embedded Features By Task",
+      "subtitle": "Judge the feature on what you actually do, not on screenshots or launch claims.",
+      "objective": "Test embedded AI features against real workflow tasks.",
+      "useWhen": "Judge the feature on what you actually do, not on screenshots or launch claims.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Embedded AI varies widely. The right question is whether it improves your work inside the tool, not whether it looks impressive in a demo.",
+      "coreConcepts": [
+        {
+          "title": "Use Real Inputs",
+          "text": "Test on the emails, docs, chats, or tickets you actually work with."
+        },
+        {
+          "title": "Measure Time To Final",
+          "text": "The best feature usually produces the shortest path to a reviewed final output."
+        },
+        {
+          "title": "Check Integration Quality",
+          "text": "See whether the feature actually respects the context and structure of the tool. "
+        }
+      ],
+      "workedExample": {
+        "scenario": "A writer evaluates an embedded document assistant.",
+        "approach": "They test outline generation, editing, and recap drafting on real documents.",
+        "result": "They discover the feature is strong for editing but weak for initial synthesis.",
+        "verification": "They compare the same task against a general assistant to understand the tradeoff."
+      },
+      "artifact": {
+        "label": "Test Grid",
+        "title": "Embedded AI evaluation",
+        "items": [
+          "Task",
+          "Input source",
+          "Time to reviewed output",
+          "What still needed manual work"
+        ]
+      },
+      "doThisNow": {
+        "task": "Run one real task through an embedded AI feature and score the result.",
+        "timebox": "10 minutes",
+        "steps": [
+          "Pick a real task.",
+          "Use your normal source material.",
+          "Score the cleanup burden honestly."
+        ]
+      },
+      "commonMistakes": [
+        "Testing only novelty features.",
+        "Ignoring review burden.",
+        "Assuming a native integration means the output is automatically correct."
+      ],
+      "roleVariants": {
+        "manager": "Model safe adoption through small pilots, clear examples, and lightweight team habits.",
+        "writer": "Document the prompts, examples, and edits that help others replicate quality.",
+        "analyst": "Define simple measures and evidence standards so adoption conversations stay grounded.",
+        "operator": "Focus on workflow change and training, not just tool access."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-15-lesson-03",
+      "slug": "use-workspace-context-better",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Use Workspace Context Better",
+      "subtitle": "The win comes from asking with the right nearby material, not from the tool label.",
+      "objective": "Write better prompts for AI features embedded in docs, chat, and productivity suites.",
+      "useWhen": "The win comes from asking with the right nearby material, not from the tool label.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Even inside your workspace, AI still needs clear intent, constraints, and review instructions.",
+      "coreConcepts": [
+        {
+          "title": "Point To The Right Material",
+          "text": "Call out which email thread, notes, paragraph, or document section should drive the answer."
+        },
+        {
+          "title": "State The Action",
+          "text": "Ask for the exact outcome: summary, reply, next-step list, rewrite, or agenda."
+        },
+        {
+          "title": "Limit The Output",
+          "text": "Embedded AI works better when the output is bounded and immediately usable."
+        }
+      ],
+      "workedExample": {
+        "scenario": "An operator asks an embedded email assistant for a reply and gets a generic response.",
+        "approach": "They reference the exact thread, the approved facts, and the tone needed.",
+        "result": "The draft becomes more useful and less generic.",
+        "verification": "They check that the reply reflects the current thread and does not invent commitments."
+      },
+      "artifact": {
+        "label": "Prompt Pattern",
+        "title": "Embedded AI request",
+        "items": [
+          "Use this source",
+          "Produce this action",
+          "Keep this constraint"
+        ]
+      },
+      "doThisNow": {
+        "task": "Rewrite one embedded AI request to point to exact source material and a bounded action.",
+        "timebox": "6 minutes",
+        "steps": [
+          "Name the source material.",
+          "Name the action.",
+          "Add one review constraint."
+        ]
+      },
+      "commonMistakes": [
+        "Prompting vaguely just because the tool is nearby.",
+        "Letting the model choose the source context.",
+        "Skipping the same review rules you would use elsewhere."
+      ],
+      "roleVariants": {
+        "manager": "Model safe adoption through small pilots, clear examples, and lightweight team habits.",
+        "writer": "Document the prompts, examples, and edits that help others replicate quality.",
+        "analyst": "Define simple measures and evidence standards so adoption conversations stay grounded.",
+        "operator": "Focus on workflow change and training, not just tool access."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-15-lesson-04",
+      "slug": "build-stable-integration-patterns",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Build Stable Integration Patterns",
+      "subtitle": "The best embedded AI uses become habits, not experiments.",
+      "objective": "Turn successful embedded AI use cases into reliable daily or weekly routines.",
+      "useWhen": "The best embedded AI uses become habits, not experiments.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "A tool feature matters only when it changes how work gets done consistently.",
+      "coreConcepts": [
+        {
+          "title": "Capture The Trigger",
+          "text": "Know what event starts the workflow: weekly review, incoming request, meeting end, or document draft."
+        },
+        {
+          "title": "Capture The Prompt Pattern",
+          "text": "Save the instructions and source references that work repeatedly."
+        },
+        {
+          "title": "Capture The Final Review",
+          "text": "Every integration pattern should include the human checkpoint."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A manager uses an embedded chat feature inconsistently.",
+        "approach": "They standardize one pattern for meeting prep and one pattern for follow-up communication.",
+        "result": "The feature becomes part of real work instead of a novelty button.",
+        "verification": "They review whether the pattern still holds after a few uses or needs more context. "
+      },
+      "artifact": {
+        "label": "Pattern",
+        "title": "Integration pattern fields",
+        "items": [
+          "Trigger",
+          "Source context",
+          "Prompt pattern",
+          "Final review"
+        ]
+      },
+      "doThisNow": {
+        "task": "Document one embedded AI pattern you want to use repeatedly.",
+        "timebox": "8 minutes",
+        "steps": [
+          "Name the trigger.",
+          "Save the source context rule.",
+          "Save the review step."
+        ]
+      },
+      "commonMistakes": [
+        "Relying on memory instead of storing patterns.",
+        "Using the feature ad hoc with no repeatable structure.",
+        "Forgetting the review step."
+      ],
+      "roleVariants": {
+        "manager": "Model safe adoption through small pilots, clear examples, and lightweight team habits.",
+        "writer": "Document the prompts, examples, and edits that help others replicate quality.",
+        "analyst": "Define simple measures and evidence standards so adoption conversations stay grounded.",
+        "operator": "Focus on workflow change and training, not just tool access."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-15-lesson-05",
+      "slug": "design-your-daily-ai-workflow",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Design Your Daily AI Workflow",
+      "subtitle": "Mix embedded and general tools intentionally instead of randomly.",
+      "objective": "Create a daily workflow that combines your core AI tools with less switching and more consistency.",
+      "useWhen": "Mix embedded and general tools intentionally instead of randomly.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "A coherent workflow reduces tool sprawl and helps you know where each task belongs.",
+      "coreConcepts": [
+        {
+          "title": "Use The Closest Useful Tool",
+          "text": "If the work lives in your workspace, start there. Switch tools only when the task genuinely demands it."
+        },
+        {
+          "title": "Separate Creation From Verification",
+          "text": "Embedded AI may draft inside the workspace while source-forward tools or manual review handle verification."
+        },
+        {
+          "title": "Keep The Stack Small",
+          "text": "A small set of reliable patterns beats a scattered set of partially adopted features."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A business IC jumps between five AI tools during a normal day.",
+        "approach": "They map which tasks belong in the workspace, which need a general assistant, and which need source-first research.",
+        "result": "The day becomes less fragmented and the outputs become easier to trust.",
+        "verification": "They review whether the new workflow reduces switching and cleanup rather than adding more tools to manage."
+      },
+      "artifact": {
+        "label": "Workflow Map",
+        "title": "Daily AI workflow map",
+        "items": [
+          "Draft in workspace",
+          "Deep thinking in general assistant",
+          "Verification in source-first workflow"
+        ]
+      },
+      "doThisNow": {
+        "task": "Map your current AI tasks into a smaller daily workflow.",
+        "timebox": "9 minutes",
+        "steps": [
+          "List the tasks.",
+          "Assign the best tool mode.",
+          "Remove one unnecessary switch."
+        ]
+      },
+      "commonMistakes": [
+        "Using different tools for the same job with no reason.",
+        "Treating embedded AI and general AI as competitors instead of complements.",
+        "Growing the stack without redesigning the workflow."
+      ],
+      "roleVariants": {
+        "manager": "Model safe adoption through small pilots, clear examples, and lightweight team habits.",
+        "writer": "Document the prompts, examples, and edits that help others replicate quality.",
+        "analyst": "Define simple measures and evidence standards so adoption conversations stay grounded.",
+        "operator": "Focus on workflow change and training, not just tool access."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    }
+  ],
+  "outcomes": [
+    "Choose when embedded AI beats a separate tool.",
+    "Build lower-friction daily AI patterns."
+  ],
+  "nextModuleBridge": "Next, package the workflows that work into reusable playbooks for yourself and your team."
+}

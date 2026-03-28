@@ -1,0 +1,347 @@
+{
+  "id": 16,
+  "slug": "module-16",
+  "title": "Reusable AI Playbooks",
+  "phase": 4,
+  "summary": "Turn successful AI workflows into repeatable playbooks that others can use, review, and improve.",
+  "lessons": [
+    {
+      "id": "module-16-lesson-01",
+      "slug": "what-a-playbook-actually-is",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "What A Playbook Actually Is",
+      "subtitle": "A playbook is a reusable workflow with context, prompts, review rules, and examples.",
+      "objective": "Define playbooks in a way that makes them useful for individuals and teams.",
+      "useWhen": "A playbook is a reusable workflow with context, prompts, review rules, and examples.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "A good playbook captures not only prompt wording but also the surrounding workflow that makes the output trustworthy.",
+      "coreConcepts": [
+        {
+          "title": "Playbooks Capture Workflow",
+          "text": "They include when to use the workflow, what inputs are needed, and what review is required."
+        },
+        {
+          "title": "Playbooks Reduce Reinvention",
+          "text": "They turn trial-and-error into a reusable starting point."
+        },
+        {
+          "title": "Playbooks Improve Team Consistency",
+          "text": "People can produce more consistent work when the structure and review rules are shared. "
+        }
+      ],
+      "workedExample": {
+        "scenario": "A team has one person who is unusually effective with AI for customer recap notes.",
+        "approach": "That person turns their working method into a playbook with a context block, prompt, and review checklist.",
+        "result": "Others can start from a proven workflow instead of copying random prompts.",
+        "verification": "The team tests the playbook on a second case before sharing it broadly."
+      },
+      "artifact": {
+        "label": "Definition",
+        "title": "Playbook fields",
+        "items": [
+          "Use case",
+          "Inputs",
+          "Prompt pattern",
+          "Output format",
+          "Review checklist"
+        ]
+      },
+      "doThisNow": {
+        "task": "Identify one AI workflow you should convert into a playbook.",
+        "timebox": "5 minutes",
+        "steps": [
+          "Name the use case.",
+          "List the required inputs.",
+          "List what review is required."
+        ]
+      },
+      "commonMistakes": [
+        "Treating a single prompt as a full playbook.",
+        "Ignoring review instructions.",
+        "Writing playbooks for rare tasks."
+      ],
+      "roleVariants": {
+        "manager": "Model safe adoption through small pilots, clear examples, and lightweight team habits.",
+        "writer": "Document the prompts, examples, and edits that help others replicate quality.",
+        "analyst": "Define simple measures and evidence standards so adoption conversations stay grounded.",
+        "operator": "Focus on workflow change and training, not just tool access."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-16-lesson-02",
+      "slug": "design-the-inputs-first",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Design The Inputs First",
+      "subtitle": "Most playbooks live or die by the quality of their inputs.",
+      "objective": "Define the input package needed to make a playbook reliable.",
+      "useWhen": "Most playbooks live or die by the quality of their inputs.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Playbooks fail when they depend on hidden knowledge or messy context that is never documented.",
+      "coreConcepts": [
+        {
+          "title": "List Required Inputs",
+          "text": "Templates, notes, examples, approved facts, and output destinations should be explicit."
+        },
+        {
+          "title": "Show What Good Looks Like",
+          "text": "An example output or completed case makes the playbook easier to use."
+        },
+        {
+          "title": "Remove Hidden Assumptions",
+          "text": "If the playbook assumes internal jargon or unwritten policy, capture that openly."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A writing playbook works for its creator but fails for teammates.",
+        "approach": "They discover the missing ingredient was the approved tone guide and a sample output.",
+        "result": "The playbook becomes much more reusable once the inputs are explicit.",
+        "verification": "A teammate uses the playbook independently to confirm the input list is complete."
+      },
+      "artifact": {
+        "label": "Input Pack",
+        "title": "Required input checklist",
+        "items": [
+          "Source material",
+          "Examples",
+          "Constraints",
+          "Approval rules"
+        ]
+      },
+      "doThisNow": {
+        "task": "Write the required input list for one playbook you want to create.",
+        "timebox": "7 minutes",
+        "steps": [
+          "List the source inputs.",
+          "List the examples needed.",
+          "List the approval or policy rules."
+        ]
+      },
+      "commonMistakes": [
+        "Assuming others know the hidden context.",
+        "Forgetting examples.",
+        "Leaving review rules implicit."
+      ],
+      "roleVariants": {
+        "manager": "Model safe adoption through small pilots, clear examples, and lightweight team habits.",
+        "writer": "Document the prompts, examples, and edits that help others replicate quality.",
+        "analyst": "Define simple measures and evidence standards so adoption conversations stay grounded.",
+        "operator": "Focus on workflow change and training, not just tool access."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-16-lesson-03",
+      "slug": "use-system-prompts-and-guidance-carefully",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Use System Prompts And Guidance Carefully",
+      "subtitle": "Persistent instructions are valuable when they encode standards, not wishful thinking.",
+      "objective": "Write stable guidance for repeated AI workflows without overcomplicating the setup.",
+      "useWhen": "Persistent instructions are valuable when they encode standards, not wishful thinking.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Persistent instructions can save time, but only when they encode durable standards and real boundaries.",
+      "coreConcepts": [
+        {
+          "title": "Encode Standards",
+          "text": "Voice, structure, prohibited moves, and review rules are good candidates for persistent guidance."
+        },
+        {
+          "title": "Do Not Encode Unverified Assumptions",
+          "text": "Persistent instructions should not hard-code facts that change often."
+        },
+        {
+          "title": "Keep It Readable",
+          "text": "If nobody can understand or update the guidance, the playbook will decay quickly."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A team uses a persistent instruction set for executive updates.",
+        "approach": "They encode style, format, and review rules, but keep project facts in the task-specific prompt.",
+        "result": "The setup stays reusable without going stale immediately.",
+        "verification": "They review the persistent guidance quarterly to remove outdated assumptions."
+      },
+      "artifact": {
+        "label": "Guidance",
+        "title": "What belongs in persistent instructions",
+        "items": [
+          "Style rules",
+          "Output structure",
+          "Review rules",
+          "What never belongs: changing facts"
+        ]
+      },
+      "doThisNow": {
+        "task": "Split one prompt into durable guidance and task-specific context.",
+        "timebox": "8 minutes",
+        "steps": [
+          "Highlight what stays constant.",
+          "Move changing facts into the task prompt.",
+          "Review for outdated assumptions."
+        ]
+      },
+      "commonMistakes": [
+        "Packing every fact into persistent instructions.",
+        "Making guidance too long to maintain.",
+        "Never reviewing what became outdated."
+      ],
+      "roleVariants": {
+        "manager": "Model safe adoption through small pilots, clear examples, and lightweight team habits.",
+        "writer": "Document the prompts, examples, and edits that help others replicate quality.",
+        "analyst": "Define simple measures and evidence standards so adoption conversations stay grounded.",
+        "operator": "Focus on workflow change and training, not just tool access."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-16-lesson-04",
+      "slug": "test-and-improve-playbooks",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Test And Improve Playbooks",
+      "subtitle": "A playbook is not finished when it works once.",
+      "objective": "Create a lightweight test method for AI playbooks.",
+      "useWhen": "A playbook is not finished when it works once.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Playbooks should survive more than one happy-path example.",
+      "coreConcepts": [
+        {
+          "title": "Test On Multiple Cases",
+          "text": "A playbook should work on varied inputs from the same workflow."
+        },
+        {
+          "title": "Track Failure Modes",
+          "text": "Most playbook improvement comes from seeing where it breaks, not where it shines."
+        },
+        {
+          "title": "Update The Smallest Useful Thing",
+          "text": "Revise the missing input, unclear constraint, or review step before rewriting the whole playbook."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A support recap playbook works well on simple tickets but fails on escalations.",
+        "approach": "The team adds an escalation branch and a new review rule instead of rewriting the full playbook.",
+        "result": "The playbook becomes more reliable while staying simple.",
+        "verification": "They retest it on another escalation case to confirm the revision helped."
+      },
+      "artifact": {
+        "label": "Test Sheet",
+        "title": "Playbook test fields",
+        "items": [
+          "Case used",
+          "What worked",
+          "What failed",
+          "What changed"
+        ]
+      },
+      "doThisNow": {
+        "task": "Test one playbook on a second real case and record what broke.",
+        "timebox": "10 minutes",
+        "steps": [
+          "Run the playbook on a new case.",
+          "Note the failure mode.",
+          "Revise the smallest useful part."
+        ]
+      },
+      "commonMistakes": [
+        "Declaring success after one use.",
+        "Overhauling the playbook without diagnosing the failure.",
+        "Not recording what changed."
+      ],
+      "roleVariants": {
+        "manager": "Model safe adoption through small pilots, clear examples, and lightweight team habits.",
+        "writer": "Document the prompts, examples, and edits that help others replicate quality.",
+        "analyst": "Define simple measures and evidence standards so adoption conversations stay grounded.",
+        "operator": "Focus on workflow change and training, not just tool access."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-16-lesson-05",
+      "slug": "maintain-a-shared-playbook-library",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Maintain A Shared Playbook Library",
+      "subtitle": "The value grows when others can find, trust, and update the right workflow.",
+      "objective": "Create a simple shared library for team playbooks.",
+      "useWhen": "The value grows when others can find, trust, and update the right workflow.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "A library makes AI knowledge operational. It also reduces repeated errors and duplicated effort.",
+      "coreConcepts": [
+        {
+          "title": "Make Entries Scannable",
+          "text": "Use case, inputs, prompt pattern, review checklist, owner, and last review date should be visible."
+        },
+        {
+          "title": "Assign Ownership",
+          "text": "Someone should be responsible for updating the playbook when the workflow changes."
+        },
+        {
+          "title": "Prune Aggressively",
+          "text": "Outdated or unused playbooks create noise and reduce trust."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A team has dozens of saved prompts spread across chat threads and docs.",
+        "approach": "They move the useful ones into a shared library with ownership and last-reviewed dates.",
+        "result": "The best workflows become easier to discover and maintain.",
+        "verification": "They remove duplicate entries and test the top three playbooks to ensure they still work."
+      },
+      "artifact": {
+        "label": "Library",
+        "title": "Shared playbook entry",
+        "items": [
+          "Use case",
+          "Owner",
+          "Last reviewed",
+          "Inputs",
+          "Prompt",
+          "Review rules"
+        ]
+      },
+      "doThisNow": {
+        "task": "Create one clean shared library entry from a playbook you trust.",
+        "timebox": "8 minutes",
+        "steps": [
+          "Write the use case and owner.",
+          "Add the prompt pattern and review rules.",
+          "Set a next review month."
+        ]
+      },
+      "commonMistakes": [
+        "Saving playbooks with no owner.",
+        "Keeping old entries forever.",
+        "Hiding the review rules."
+      ],
+      "roleVariants": {
+        "manager": "Model safe adoption through small pilots, clear examples, and lightweight team habits.",
+        "writer": "Document the prompts, examples, and edits that help others replicate quality.",
+        "analyst": "Define simple measures and evidence standards so adoption conversations stay grounded.",
+        "operator": "Focus on workflow change and training, not just tool access."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    }
+  ],
+  "outcomes": [
+    "Turn good prompts into reusable playbooks.",
+    "Capture inputs, review rules, and examples that others can follow."
+  ],
+  "nextModuleBridge": "Next, move from personal effectiveness into practical team adoption."
+}

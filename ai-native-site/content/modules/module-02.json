@@ -1,0 +1,341 @@
+{
+  "id": 2,
+  "slug": "module-02",
+  "title": "Choosing The Right AI Tool",
+  "phase": 1,
+  "summary": "Learn how to match tasks to tool types, evaluate tradeoffs, and build a small stack that fits your real work.",
+  "lessons": [
+    {
+      "id": "module-02-lesson-01",
+      "slug": "tool-types-not-tool-hype",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Tool Types, Not Tool Hype",
+      "subtitle": "Think in capabilities first: chat, search, workspace, embedded AI, and automation.",
+      "objective": "Classify AI tools by job-to-be-done so you can choose based on workflow fit instead of brand familiarity.",
+      "useWhen": "Think in capabilities first: chat, search, workspace, embedded AI, and automation.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Teams lose time when they switch tools for novelty instead of capability. A capability-first view reduces tool sprawl.",
+      "coreConcepts": [
+        {
+          "title": "General Assistants",
+          "text": "Best for drafting, summarizing, outlining, and structured thinking when you can provide the needed context."
+        },
+        {
+          "title": "Research-Oriented Tools",
+          "text": "Best when recent information, link tracing, and source visibility matter more than broad drafting flexibility."
+        },
+        {
+          "title": "Embedded AI",
+          "text": "Best when the strongest advantage is access to work already living in email, docs, chat, or your existing stack."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A business analyst uses one chat tool for everything, including fresh market research and internal document drafting.",
+        "approach": "They separate the work into recent-information tasks, internal-document tasks, and writing tasks.",
+        "result": "They stop forcing one tool to cover every mode of work.",
+        "verification": "They compare output quality and review effort across three real tasks before deciding which tools stay in their stack."
+      },
+      "artifact": {
+        "label": "Map",
+        "title": "Capability map",
+        "items": [
+          "Drafting and synthesis",
+          "Recent research",
+          "Work-inside-your-stack",
+          "Repeatable automation"
+        ]
+      },
+      "doThisNow": {
+        "task": "List the last five AI tasks you attempted and label which capability type each one actually needed.",
+        "timebox": "9 minutes",
+        "steps": [
+          "Write the task.",
+          "Label the tool type that fits it best.",
+          "Circle where you used the wrong mode."
+        ]
+      },
+      "commonMistakes": [
+        "Using a familiar tool for every task.",
+        "Comparing tools without testing the same workflow.",
+        "Mistaking marketing claims for workflow fit."
+      ],
+      "roleVariants": {
+        "manager": "Frame AI requests around a deliverable, risk level, and reviewer before you ask for output.",
+        "writer": "Use AI as a drafting and editing partner, then review for voice, facts, and audience fit.",
+        "analyst": "Treat AI as a hypothesis generator and explainer, not as a trusted source of record.",
+        "operator": "Anchor every prompt in the real workflow, inputs, and downstream handoff."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-02-lesson-02",
+      "slug": "selecting-between-general-assistants",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Selecting Between General Assistants",
+      "subtitle": "Choose based on workflow fit, source handling, and the kind of help you need.",
+      "objective": "Create a practical rubric for choosing among general AI assistants without relying on stale feature lists.",
+      "useWhen": "Choose based on workflow fit, source handling, and the kind of help you need.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Tool capabilities change frequently. A decision rubric survives updates better than memorizing comparisons.",
+      "coreConcepts": [
+        {
+          "title": "Start With Your Work",
+          "text": "Evaluate tools against writing, synthesis, document review, and analysis tasks you already do every week."
+        },
+        {
+          "title": "Judge The Review Burden",
+          "text": "A tool that gives a decent draft with low cleanup can be more valuable than one that looks smarter in a demo."
+        },
+        {
+          "title": "Consider Trust And Access",
+          "text": "Workspace integration, source visibility, and company approval may matter more than raw model quality."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A manager debates between two assistants based on online opinions.",
+        "approach": "They test both on a meeting summary, policy rewrite, and planning memo using the same inputs and rubric.",
+        "result": "The choice becomes obvious because one tool fits their actual review burden and integration needs better.",
+        "verification": "They compare draft quality, time-to-final, and whether the tool exposes enough evidence for checking."
+      },
+      "artifact": {
+        "label": "Scorecard",
+        "title": "General assistant scorecard",
+        "items": [
+          "Quality on my tasks",
+          "Cleanup required",
+          "Evidence and transparency",
+          "Workspace fit"
+        ]
+      },
+      "doThisNow": {
+        "task": "Build a four-column scorecard for any two AI assistants you are considering.",
+        "timebox": "8 minutes",
+        "steps": [
+          "Choose two real tasks.",
+          "Run the same input through both tools.",
+          "Score which one created less cleanup."
+        ]
+      },
+      "commonMistakes": [
+        "Choosing from internet rankings alone.",
+        "Testing only fun prompts.",
+        "Ignoring security or approval constraints."
+      ],
+      "roleVariants": {
+        "manager": "Frame AI requests around a deliverable, risk level, and reviewer before you ask for output.",
+        "writer": "Use AI as a drafting and editing partner, then review for voice, facts, and audience fit.",
+        "analyst": "Treat AI as a hypothesis generator and explainer, not as a trusted source of record.",
+        "operator": "Anchor every prompt in the real workflow, inputs, and downstream handoff."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-02-lesson-03",
+      "slug": "when-research-tools-win",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "When Research Tools Win",
+      "subtitle": "Recent information and source traceability require a different evaluation standard.",
+      "objective": "Know when to switch from a drafting assistant to a research-oriented tool or a manual search workflow.",
+      "useWhen": "Recent information and source traceability require a different evaluation standard.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "The wrong tool can make fresh-information tasks look easier than they are, while quietly introducing unsupported claims.",
+      "coreConcepts": [
+        {
+          "title": "Freshness Matters",
+          "text": "If the answer depends on current information, look for tools or workflows that expose sources and timestamps."
+        },
+        {
+          "title": "Traceability Matters More",
+          "text": "A weaker answer with clear links is often better than a polished answer with no visible evidence."
+        },
+        {
+          "title": "Research Still Needs Review",
+          "text": "AI can speed triage and synthesis, but you still decide what evidence is credible enough to use."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A writer needs current policy language for a client note.",
+        "approach": "They use a source-forward research workflow, then bring verified excerpts back into a drafting assistant.",
+        "result": "The final note is both current and well-written.",
+        "verification": "They open the linked sources and confirm the exact language before publishing."
+      },
+      "artifact": {
+        "label": "Decision Rule",
+        "title": "Switch to research mode when",
+        "items": [
+          "The answer depends on recent events.",
+          "You need citations or links.",
+          "You must defend the evidence to another person."
+        ]
+      },
+      "doThisNow": {
+        "task": "Identify one task this week where you should use a source-first workflow instead of a general chat prompt.",
+        "timebox": "5 minutes",
+        "steps": [
+          "Write the task.",
+          "State why freshness matters.",
+          "Decide how you will verify the sources."
+        ]
+      },
+      "commonMistakes": [
+        "Asking a general assistant for live facts without checking.",
+        "Sharing research summaries with no links.",
+        "Confusing a confident answer with a sourced answer."
+      ],
+      "roleVariants": {
+        "manager": "Frame AI requests around a deliverable, risk level, and reviewer before you ask for output.",
+        "writer": "Use AI as a drafting and editing partner, then review for voice, facts, and audience fit.",
+        "analyst": "Treat AI as a hypothesis generator and explainer, not as a trusted source of record.",
+        "operator": "Anchor every prompt in the real workflow, inputs, and downstream handoff."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-02-lesson-04",
+      "slug": "build-a-small-stable-stack",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Build A Small, Stable Stack",
+      "subtitle": "Most people need fewer tools, not more.",
+      "objective": "Decide what belongs in your personal stack and what should stay on a watch list.",
+      "useWhen": "Most people need fewer tools, not more.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Too many tools create cognitive load, inconsistent habits, and duplicated subscriptions with little added value.",
+      "coreConcepts": [
+        {
+          "title": "Keep A Core Stack",
+          "text": "One general assistant, one research workflow, and the AI already embedded in your primary workspace is enough for most business ICs."
+        },
+        {
+          "title": "Use A Watch List",
+          "text": "Capture interesting tools without adopting them immediately. Curiosity is good; constant switching is expensive."
+        },
+        {
+          "title": "Adopt For A Task",
+          "text": "Add a tool only when it clearly improves a recurring task you already care about."
+        }
+      ],
+      "workedExample": {
+        "scenario": "An operator has five subscriptions but still uses only two each week.",
+        "approach": "They map each tool to a recurring workflow and cancel the ones with no clear role.",
+        "result": "Their stack gets smaller and their habits improve.",
+        "verification": "They measure whether the remaining tools cover the same work with less switching."
+      },
+      "artifact": {
+        "label": "Inventory",
+        "title": "Keep / watch / cancel",
+        "items": [
+          "Keep what improves a recurring task.",
+          "Watch what looks promising but unproven.",
+          "Cancel what adds no clear workflow value."
+        ]
+      },
+      "doThisNow": {
+        "task": "Sort your current AI tools into keep, watch, and cancel.",
+        "timebox": "10 minutes",
+        "steps": [
+          "Write the task each tool supports.",
+          "Mark how often you actually use it.",
+          "Cancel or pause one tool that lacks a clear role."
+        ]
+      },
+      "commonMistakes": [
+        "Keeping tools for hypothetical future use.",
+        "Adding tools before mastering the current stack.",
+        "Letting demos drive adoption."
+      ],
+      "roleVariants": {
+        "manager": "Frame AI requests around a deliverable, risk level, and reviewer before you ask for output.",
+        "writer": "Use AI as a drafting and editing partner, then review for voice, facts, and audience fit.",
+        "analyst": "Treat AI as a hypothesis generator and explainer, not as a trusted source of record.",
+        "operator": "Anchor every prompt in the real workflow, inputs, and downstream handoff."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-02-lesson-05",
+      "slug": "evaluate-new-tools-without-distraction",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Evaluate New Tools Without Distraction",
+      "subtitle": "Use a simple test plan before changing your workflow.",
+      "objective": "Create a lightweight evaluation habit for new AI tools and features.",
+      "useWhen": "Use a simple test plan before changing your workflow.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "The field changes quickly. A repeatable evaluation approach lets you stay current without becoming reactive.",
+      "coreConcepts": [
+        {
+          "title": "Test On Real Work",
+          "text": "The only fair evaluation is a task you already do, with the same review standard you would use in production."
+        },
+        {
+          "title": "Measure Adoption Cost",
+          "text": "Setup time, switching friction, and training needs count just as much as output quality."
+        },
+        {
+          "title": "Delay Optional Decisions",
+          "text": "Interesting does not mean urgent. Most tools can wait until they prove a real workflow advantage."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A coordinator is tempted by a new AI note-taking app.",
+        "approach": "They test it on one live meeting, compare the output to their current process, and score the cleanup burden.",
+        "result": "They make a grounded decision in one short session instead of weeks of low-grade distraction.",
+        "verification": "They compare accuracy, follow-up usefulness, and the effort needed to onboard the rest of the team."
+      },
+      "artifact": {
+        "label": "Test Plan",
+        "title": "30-minute tool evaluation",
+        "items": [
+          "Pick one recurring task.",
+          "Use the same source material.",
+          "Score quality, review effort, and switching cost."
+        ]
+      },
+      "doThisNow": {
+        "task": "Write a 30-minute evaluation plan for the next AI tool you are curious about.",
+        "timebox": "6 minutes",
+        "steps": [
+          "Name the task you will test.",
+          "State what success looks like.",
+          "List what would make the tool not worth adopting."
+        ]
+      },
+      "commonMistakes": [
+        "Researching endlessly before testing.",
+        "Testing on novelty prompts.",
+        "Ignoring onboarding and change costs."
+      ],
+      "roleVariants": {
+        "manager": "Frame AI requests around a deliverable, risk level, and reviewer before you ask for output.",
+        "writer": "Use AI as a drafting and editing partner, then review for voice, facts, and audience fit.",
+        "analyst": "Treat AI as a hypothesis generator and explainer, not as a trusted source of record.",
+        "operator": "Anchor every prompt in the real workflow, inputs, and downstream handoff."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    }
+  ],
+  "outcomes": [
+    "Choose tools by workflow fit.",
+    "Keep a smaller, more stable AI stack."
+  ],
+  "nextModuleBridge": "Next, use the right tool choices to write sharper prompts and reusable workflows."
+}

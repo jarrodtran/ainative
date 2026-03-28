@@ -2,5 +2,10 @@
   "name": "ai-native-learning",
   "version": "1.0.0",
   "private": true,
-  "description": "AI Native Learning Program — a scroll-driven interactive course"
+  "description": "AI Native Learning Program — a scroll-driven interactive course",
+  "scripts": {
+    "build:content": "node scripts/build-content.js",
+    "split:content": "node scripts/split-content.js",
+    "validate:content": "node scripts/build-content.js"
+  }
 }

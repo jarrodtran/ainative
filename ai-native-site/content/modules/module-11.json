@@ -1,0 +1,343 @@
+{
+  "id": 11,
+  "slug": "module-11",
+  "title": "Data Analysis Without Code",
+  "phase": 3,
+  "summary": "Use AI to explore, explain, and communicate data when the job is analytical thinking, pattern finding, and decision support.",
+  "lessons": [
+    {
+      "id": "module-11-lesson-01",
+      "slug": "what-ai-can-and-cannot-do-with-data",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "What AI Can And Cannot Do With Data",
+      "subtitle": "AI can help interpret and communicate data, but the workflow needs care.",
+      "objective": "Use AI for data-adjacent analysis while understanding where verification and tooling still matter.",
+      "useWhen": "AI can help interpret and communicate data, but the workflow needs care.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "People often ask AI for statistical certainty or hidden truth when what they really need is structured exploration and explanation.",
+      "coreConcepts": [
+        {
+          "title": "Good At Framing And Explaining",
+          "text": "AI is useful for asking questions, spotting patterns, and drafting explanations from structured inputs."
+        },
+        {
+          "title": "Weak Without Reliable Inputs",
+          "text": "Messy data descriptions or missing context produce shallow insights and invented interpretations."
+        },
+        {
+          "title": "Verification Remains Essential",
+          "text": "Numbers, formulas, and conclusions still need checking against the real dataset or source system."
+        }
+      ],
+      "workedExample": {
+        "scenario": "An analyst wants help interpreting weekly performance data.",
+        "approach": "They describe the metrics, time period, and business context before asking for patterns and questions to investigate.",
+        "result": "The AI output becomes a useful thinking aid rather than fake certainty.",
+        "verification": "The analyst checks any claimed trend or number against the actual dashboard."
+      },
+      "artifact": {
+        "label": "Frame",
+        "title": "Data analysis brief",
+        "items": [
+          "Metric definitions",
+          "Time period",
+          "Context",
+          "Question to answer"
+        ]
+      },
+      "doThisNow": {
+        "task": "Write a brief for one dataset or dashboard you need to interpret this week.",
+        "timebox": "7 minutes",
+        "steps": [
+          "Define the metrics.",
+          "State the business question.",
+          "List what must be checked manually."
+        ]
+      },
+      "commonMistakes": [
+        "Asking for insights without defining the metrics.",
+        "Trusting numbers from the model without checking.",
+        "Expecting AI to replace analysis discipline."
+      ],
+      "roleVariants": {
+        "manager": "Use AI to compare options, pressure-test plans, and prepare clearer stakeholder communication.",
+        "writer": "Turn rough thinking into structured documents, memos, and decision briefs.",
+        "analyst": "Ask for assumptions, ranges, and missing data before acting on recommendations.",
+        "operator": "Translate ambiguous work into checklists, workflows, and operating decisions."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-11-lesson-02",
+      "slug": "describe-the-data-well",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Describe The Data Well",
+      "subtitle": "The model needs metric definitions, context, and comparison points.",
+      "objective": "Provide data context so AI can help with interpretation rather than guessing.",
+      "useWhen": "The model needs metric definitions, context, and comparison points.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Poor data descriptions lead to generic commentary that sounds analytical without being useful.",
+      "coreConcepts": [
+        {
+          "title": "Define The Measures",
+          "text": "State what each metric means and why it matters."
+        },
+        {
+          "title": "Add Baselines",
+          "text": "Comparisons to prior periods, targets, or segments make interpretation more grounded."
+        },
+        {
+          "title": "Explain The Situation",
+          "text": "Recent events, campaign changes, staffing shifts, or product launches often explain the numbers better than the numbers alone."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A manager pastes weekly numbers with no labels and gets vague commentary.",
+        "approach": "They rerun the task with metric definitions, target ranges, and context on a recent launch.",
+        "result": "The analysis becomes more relevant and less generic.",
+        "verification": "They confirm that any trend explanation is supported by known events or clearly marked as a hypothesis."
+      },
+      "artifact": {
+        "label": "Input Format",
+        "title": "Describe your data",
+        "items": [
+          "Metric name",
+          "Definition",
+          "Comparison point",
+          "Known context"
+        ]
+      },
+      "doThisNow": {
+        "task": "Rewrite one data prompt to include definitions, baselines, and context.",
+        "timebox": "6 minutes",
+        "steps": [
+          "Define each metric.",
+          "Add a comparison point.",
+          "Mark what is known vs hypothesized."
+        ]
+      },
+      "commonMistakes": [
+        "Pasting unlabeled numbers.",
+        "Skipping baselines.",
+        "Confusing hypotheses with observations."
+      ],
+      "roleVariants": {
+        "manager": "Use AI to compare options, pressure-test plans, and prepare clearer stakeholder communication.",
+        "writer": "Turn rough thinking into structured documents, memos, and decision briefs.",
+        "analyst": "Ask for assumptions, ranges, and missing data before acting on recommendations.",
+        "operator": "Translate ambiguous work into checklists, workflows, and operating decisions."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-11-lesson-03",
+      "slug": "generate-questions-and-hypotheses",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Generate Questions And Hypotheses",
+      "subtitle": "One of AI’s best uses is widening the set of reasonable questions.",
+      "objective": "Use AI to generate follow-up questions, hypotheses, and segments worth investigating.",
+      "useWhen": "One of AI’s best uses is widening the set of reasonable questions.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Analysis improves when you ask better questions, not only when you draft cleaner charts.",
+      "coreConcepts": [
+        {
+          "title": "Ask For Possibilities, Not Certainty",
+          "text": "Prompt for plausible explanations and next checks rather than definitive claims."
+        },
+        {
+          "title": "Prioritize By Decision Value",
+          "text": "The best follow-up questions are the ones that could change an action or decision."
+        },
+        {
+          "title": "Use AI To Surface Blind Spots",
+          "text": "The model can suggest segments, time windows, or comparison points you did not initially consider."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A dashboard shows declining conversion but no obvious root cause.",
+        "approach": "The analyst asks AI for plausible hypotheses, segmented cuts to inspect, and what evidence would confirm each one.",
+        "result": "The next analysis step becomes clearer.",
+        "verification": "Each hypothesis is tested against actual data rather than accepted as the explanation."
+      },
+      "artifact": {
+        "label": "Prompt Pattern",
+        "title": "Hypothesis request",
+        "items": [
+          "Observed change",
+          "Possible explanations",
+          "What data would test each explanation"
+        ]
+      },
+      "doThisNow": {
+        "task": "Use AI to generate three testable hypotheses from one business metric change.",
+        "timebox": "8 minutes",
+        "steps": [
+          "State the observed change.",
+          "Ask for hypotheses and tests.",
+          "Select the one most worth checking."
+        ]
+      },
+      "commonMistakes": [
+        "Asking AI to name the root cause directly.",
+        "Not defining how a hypothesis would be tested.",
+        "Using too many low-value follow-up questions."
+      ],
+      "roleVariants": {
+        "manager": "Use AI to compare options, pressure-test plans, and prepare clearer stakeholder communication.",
+        "writer": "Turn rough thinking into structured documents, memos, and decision briefs.",
+        "analyst": "Ask for assumptions, ranges, and missing data before acting on recommendations.",
+        "operator": "Translate ambiguous work into checklists, workflows, and operating decisions."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-11-lesson-04",
+      "slug": "turn-analysis-into-communication",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Turn Analysis Into Communication",
+      "subtitle": "Insights only matter when other people can understand and act on them.",
+      "objective": "Draft clear narratives, readouts, and chart explanations from analytical work.",
+      "useWhen": "Insights only matter when other people can understand and act on them.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Many data problems are communication problems. AI can help translate analysis into decision-friendly language.",
+      "coreConcepts": [
+        {
+          "title": "Separate Insight From Evidence",
+          "text": "State the observation, then the likely implication, then the evidence that supports it."
+        },
+        {
+          "title": "Write For The Reader",
+          "text": "Leaders want implications. Working teams often need the operational detail behind the conclusion."
+        },
+        {
+          "title": "Keep Confidence Honest",
+          "text": "Be explicit about what is observed, what is inferred, and what still needs analysis."
+        }
+      ],
+      "workedExample": {
+        "scenario": "An analyst has solid findings but struggles to present them to non-technical stakeholders.",
+        "approach": "They ask AI to draft a short readout using observed trend, likely implication, and suggested action.",
+        "result": "The story becomes easier to grasp.",
+        "verification": "The analyst checks that the final narrative does not claim more certainty than the data supports."
+      },
+      "artifact": {
+        "label": "Readout Format",
+        "title": "Insight narrative",
+        "items": [
+          "What changed",
+          "Why it matters",
+          "What we think explains it",
+          "What to do next"
+        ]
+      },
+      "doThisNow": {
+        "task": "Turn one chart or dashboard finding into a short executive readout.",
+        "timebox": "7 minutes",
+        "steps": [
+          "Name the observation.",
+          "State the implication.",
+          "Add a confidence qualifier."
+        ]
+      },
+      "commonMistakes": [
+        "Using charts with no narrative.",
+        "Blurring observation and inference.",
+        "Overstating causal claims."
+      ],
+      "roleVariants": {
+        "manager": "Use AI to compare options, pressure-test plans, and prepare clearer stakeholder communication.",
+        "writer": "Turn rough thinking into structured documents, memos, and decision briefs.",
+        "analyst": "Ask for assumptions, ranges, and missing data before acting on recommendations.",
+        "operator": "Translate ambiguous work into checklists, workflows, and operating decisions."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-11-lesson-05",
+      "slug": "build-a-data-interpretation-toolkit",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Build A Data Interpretation Toolkit",
+      "subtitle": "Save the prompts and formats that support recurring analysis work.",
+      "objective": "Create reusable assets for framing, hypothesis generation, and readout drafting.",
+      "useWhen": "Save the prompts and formats that support recurring analysis work.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Analytical quality improves when you reuse proven questions and communication structures.",
+      "coreConcepts": [
+        {
+          "title": "Store The Data Brief",
+          "text": "Keep the input pattern that produced a good analysis session."
+        },
+        {
+          "title": "Store The Hypothesis Prompt",
+          "text": "Save the prompts that lead to useful next questions."
+        },
+        {
+          "title": "Store The Readout Format",
+          "text": "A strong narrative structure is as reusable as a strong analysis prompt."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A business analyst repeatedly explains weekly KPIs to different audiences.",
+        "approach": "They build a toolkit with a data brief, a hypothesis prompt, and two readout formats.",
+        "result": "The weekly cycle becomes faster and more consistent.",
+        "verification": "They refresh the toolkit when changes in the dashboard make an old prompt misleading."
+      },
+      "artifact": {
+        "label": "Toolkit",
+        "title": "Data toolkit assets",
+        "items": [
+          "Data brief",
+          "Hypothesis prompt",
+          "Readout template",
+          "Verification rules"
+        ]
+      },
+      "doThisNow": {
+        "task": "Save one analysis workflow as a reusable toolkit entry.",
+        "timebox": "8 minutes",
+        "steps": [
+          "Capture the input pattern.",
+          "Capture the question pattern.",
+          "Capture the output format."
+        ]
+      },
+      "commonMistakes": [
+        "Saving only the final prompt.",
+        "Ignoring the verification step.",
+        "Letting the toolkit drift when metrics change."
+      ],
+      "roleVariants": {
+        "manager": "Use AI to compare options, pressure-test plans, and prepare clearer stakeholder communication.",
+        "writer": "Turn rough thinking into structured documents, memos, and decision briefs.",
+        "analyst": "Ask for assumptions, ranges, and missing data before acting on recommendations.",
+        "operator": "Translate ambiguous work into checklists, workflows, and operating decisions."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    }
+  ],
+  "outcomes": [
+    "Frame data questions more clearly.",
+    "Turn analysis into decision-ready communication."
+  ],
+  "nextModuleBridge": "Next, use AI to support higher-level choices, tradeoffs, and strategic reasoning."
+}

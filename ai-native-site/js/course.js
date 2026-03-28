@@ -60,6 +60,19 @@
     }).join('');
   }
 
+  function renderResources(resources) {
+    if (!resources || !resources.length) return '';
+    return '<div class="resource-list">' +
+      resources.map(function (resource) {
+        return '<a class="resource-card" href="' + escapeHTML(resource.url) + '" target="_blank" rel="noreferrer">' +
+          '<div class="resource-type">' + escapeHTML(resource.type) + '</div>' +
+          '<div class="resource-title">' + escapeHTML(resource.title) + '</div>' +
+          (resource.note ? '<div class="resource-note">' + escapeHTML(resource.note) + '</div>' : '') +
+          '</a>';
+      }).join('') +
+      '</div>';
+  }
+
   function renderRoleVariants(variants) {
     var roles = [
       { key: 'manager', label: 'Manager' },
@@ -118,6 +131,15 @@
         '</div>';
     }
 
+    var trustHTML = '';
+    if (course.lastReviewed || (course.resources && course.resources.length)) {
+      trustHTML = '<div class="hero-panel" data-animate="fade-up" data-delay="225">' +
+        '<div class="hero-panel-label">Module Notes</div>' +
+        (course.lastReviewed ? '<div class="hero-panel-meta"><strong>Last reviewed:</strong> ' + escapeHTML(course.lastReviewed) + '</div>' : '') +
+        (course.resources && course.resources.length ? '<div class="hero-panel-subhead">Key Resources</div>' + renderResources(course.resources) : '') +
+        '</div>';
+    }
+
     var outlineHTML = '<div class="hero-panel" data-animate="fade-up" data-delay="200">' +
       '<div class="hero-panel-label">Lesson Outline</div>' +
       '<div class="lesson-outline-list">';
@@ -149,7 +171,7 @@
       '</div>' +
       '</div>';
 
-    extras.innerHTML = outcomesHTML + outlineHTML + nextHTML;
+    extras.innerHTML = outcomesHTML + outlineHTML + trustHTML + nextHTML;
     heroInner.appendChild(extras);
   }
 
@@ -204,6 +226,7 @@
       var section = document.createElement('section');
       var bookmarkState = Progress.isBookmarked(scopeKind, scopeId, idx);
       var artifactText = lesson.artifact ? [lesson.artifact.title].concat(lesson.artifact.items).join('\n') : '';
+      var promptText = lesson.promptExample ? lesson.promptExample.prompt : '';
 
       section.className = 'lesson-section';
       section.id = 'lesson-' + lessonNumber;
@@ -222,6 +245,7 @@
         '<div class="lesson-use-when" id="lesson-' + lessonNumber + '-outcome"><strong>Use this when:</strong> ' + escapeHTML(lesson.useWhen || lesson.subtitle) + '</div>' +
         '<div class="lesson-objective">Outcome: ' + escapeHTML(lesson.objective) + '</div>' +
         '<div class="lesson-estimate">Estimated lesson time: ' + escapeHTML(lesson.estimatedMinutes) + ' minutes</div>' +
+        '<div class="lesson-sequence-note"><strong>Why this lesson is here:</strong> ' + escapeHTML(lesson.sequenceRationale) + '</div>' +
         '<div class="lesson-block">' +
         '<h3>Why This Matters</h3>' +
         '<p>' + escapeHTML(lesson.whyItMatters) + '</p>' +
@@ -264,6 +288,14 @@
           '<div class="try-it-text"><strong>' + escapeHTML(lesson.doThisNow.task) + '</strong></div>' +
           renderList(lesson.doThisNow.steps) +
           '</div>' : '') +
+        (lesson.promptExample ? '<div class="try-it-box prompt-example-box">' +
+          '<div class="try-it-head">' +
+          '<div><div class="try-it-label">Prompt Example</div><div class="try-it-text"><strong>' + escapeHTML(lesson.promptExample.title) + '</strong></div></div>' +
+          '<button class="copy-artifact-btn" onclick="CourseActions.copyPrompt(' + idx + ')" data-copy-text="' + escapeHTML(promptText) + '">Copy</button>' +
+          '</div>' +
+          '<pre class="prompt-example-text">' + escapeHTML(promptText) + '</pre>' +
+          (lesson.promptExample.note ? '<div class="prompt-example-note">' + escapeHTML(lesson.promptExample.note) + '</div>' : '') +
+          '</div>' : '') +
         '<div class="lesson-meta-card">' +
         '<div class="try-it-label">Role Variants</div>' +
         '<div class="role-grid">' + renderRoleVariants(lesson.roleVariants) + '</div>' +
@@ -273,6 +305,10 @@
         '<div class="lesson-meta-line"><strong>Last reviewed:</strong> ' + escapeHTML(lesson.lastReviewed) + '</div>' +
         renderList(lesson.sourceNotes) +
         '</div>' +
+        (lesson.resources && lesson.resources.length ? '<div class="lesson-meta-card">' +
+        '<div class="try-it-label">Key Resources</div>' +
+        renderResources(lesson.resources) +
+        '</div>' : '') +
         '</div>' +
         '</div>';
 
@@ -477,6 +513,14 @@
       var text = [lesson.artifact.title].concat(lesson.artifact.items).join('\n');
       if (navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText(text);
+      }
+    },
+
+    copyPrompt: function (idx) {
+      var lesson = course.lessons[idx];
+      if (!lesson || !lesson.promptExample) return;
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(lesson.promptExample.prompt);
       }
     }
   };

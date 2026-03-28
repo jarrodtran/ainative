@@ -1,0 +1,354 @@
+{
+  "id": 20,
+  "slug": "module-20",
+  "title": "Measuring AI Impact",
+  "phase": 5,
+  "summary": "Move beyond anecdotes by measuring time saved, quality changes, and adoption outcomes on real workflows.",
+  "lessons": [
+    {
+      "id": "module-20-lesson-01",
+      "slug": "measure-work-not-wonder",
+      "sequenceRationale": "This lesson resets the measurement conversation away from vague impressions and toward observable workflow change.",
+      "title": "Measure Work, Not Wonder",
+      "subtitle": "The point of AI measurement is to understand workflow improvement, not to defend a trend.",
+      "objective": "Define the kinds of impact that matter when evaluating AI-assisted workflows.",
+      "useWhen": "The point of AI measurement is to understand workflow improvement, not to defend a trend.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Teams often say AI is valuable without showing where the value appears. Measurement sharpens priorities and trust.",
+      "coreConcepts": [
+        {
+          "title": "Focus On Workflow Outcomes",
+          "text": "Time to final output, reduced rework, better coverage, and clearer communication are common outcomes."
+        },
+        {
+          "title": "Keep It Close To The Work",
+          "text": "The most useful measures are attached to a specific workflow, not to AI use in general."
+        },
+        {
+          "title": "Pair Numbers With Examples",
+          "text": "Quantitative signals are stronger when paired with before-and-after outputs. "
+        }
+      ],
+      "workedExample": {
+        "scenario": "A team claims AI saves time but cannot explain where.",
+        "approach": "They measure one workflow: weekly status reporting.",
+        "result": "The claim becomes concrete and discussable.",
+        "verification": "They compare the measured workflow against the prior manual version rather than relying on memory."
+      },
+      "artifact": {
+        "label": "Measure Set",
+        "title": "Useful workflow measures",
+        "items": [
+          "Time to final output",
+          "Review burden",
+          "Error rate",
+          "Throughput"
+        ]
+      },
+      "doThisNow": {
+        "task": "Pick one AI workflow and define two measures that would actually matter for it.",
+        "timebox": "6 minutes",
+        "steps": [
+          "Choose the workflow.",
+          "Choose one speed measure.",
+          "Choose one quality or reliability measure."
+        ]
+      },
+      "commonMistakes": [
+        "Measuring AI use in general.",
+        "Choosing metrics nobody can observe.",
+        "Using only a story with no evidence."
+      ],
+      "roleVariants": {
+        "manager": "Model safe adoption through small pilots, clear examples, and lightweight team habits.",
+        "writer": "Document the prompts, examples, and edits that help others replicate quality.",
+        "analyst": "Define simple measures and evidence standards so adoption conversations stay grounded.",
+        "operator": "Focus on workflow change and training, not just tool access."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-20-lesson-02",
+      "slug": "use-simple-roi-thinking",
+      "sequenceRationale": "With the measurement target defined, this lesson introduces lightweight ROI thinking that business ICs can use without building a finance model.",
+      "title": "Use Simple ROI Thinking",
+      "subtitle": "You often need only rough math to make a smarter decision.",
+      "objective": "Estimate impact and cost without building an overly complex financial model.",
+      "useWhen": "You often need only rough math to make a smarter decision.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Simple ROI thinking helps prioritize workflows and communicate value credibly.",
+      "coreConcepts": [
+        {
+          "title": "Estimate Time Gain",
+          "text": "How much time or rework could the workflow save per cycle?"
+        },
+        {
+          "title": "Estimate Frequency",
+          "text": "How often does the workflow happen?"
+        },
+        {
+          "title": "Estimate Implementation Cost",
+          "text": "Training, setup, review, and change management all affect the true payoff."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A team debates whether a new AI-supported recap workflow is worth standardizing.",
+        "approach": "They estimate minutes saved per meeting, meetings per month, and the setup/training effort.",
+        "result": "The value conversation becomes more grounded.",
+        "verification": "They sanity-check the assumptions after a short pilot rather than freezing the estimate forever."
+      },
+      "artifact": {
+        "label": "ROI Lite",
+        "title": "Rough ROI inputs",
+        "items": [
+          "Time saved per cycle",
+          "Cycles per period",
+          "Setup and training cost",
+          "Review burden"
+        ]
+      },
+      "doThisNow": {
+        "task": "Run a rough ROI estimate for one AI workflow you use or want to use.",
+        "timebox": "8 minutes",
+        "steps": [
+          "Estimate the current effort.",
+          "Estimate the likely gain.",
+          "Estimate the setup and review cost."
+        ]
+      },
+      "commonMistakes": [
+        "Demanding exactness too early.",
+        "Ignoring setup cost.",
+        "Ignoring quality risks that erase the saved time."
+      ],
+      "roleVariants": {
+        "manager": "Model safe adoption through small pilots, clear examples, and lightweight team habits.",
+        "writer": "Document the prompts, examples, and edits that help others replicate quality.",
+        "analyst": "Define simple measures and evidence standards so adoption conversations stay grounded.",
+        "operator": "Focus on workflow change and training, not just tool access."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-20-lesson-03",
+      "slug": "use-before-and-after-pilots",
+      "sequenceRationale": "Before-and-after pilots come next because they create the simplest credible evidence when baseline data is weak or informal.",
+      "title": "Use Before-And-After Pilots",
+      "subtitle": "Pilots become persuasive when they compare the old workflow to the new one on the same task.",
+      "objective": "Design simple before-and-after pilots for AI workflows.",
+      "useWhen": "Pilots become persuasive when they compare the old workflow to the new one on the same task.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Before-and-after evidence is easy for teams and leaders to understand, and it exposes tradeoffs better than abstract claims.",
+      "coreConcepts": [
+        {
+          "title": "Use Comparable Work",
+          "text": "Compare similar cases or repeated cycles of the same workflow."
+        },
+        {
+          "title": "Capture Both Speed And Quality",
+          "text": "A faster workflow is not a win if the review burden or error rate spikes."
+        },
+        {
+          "title": "Keep The Pilot Small",
+          "text": "A handful of cycles is often enough to learn whether the workflow has promise."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A team tests AI-assisted customer recap emails.",
+        "approach": "They compare four manual recaps with four AI-assisted recaps using the same review standard.",
+        "result": "The tradeoffs become visible quickly.",
+        "verification": "They inspect both time saved and any mistakes caught in review."
+      },
+      "artifact": {
+        "label": "Pilot",
+        "title": "Before-and-after pilot sheet",
+        "items": [
+          "Task",
+          "Old time",
+          "New time",
+          "Review issues",
+          "Final quality note"
+        ]
+      },
+      "doThisNow": {
+        "task": "Design a small before-and-after pilot for one workflow.",
+        "timebox": "8 minutes",
+        "steps": [
+          "Choose the workflow.",
+          "Choose the comparable cases.",
+          "Choose the measures you will capture."
+        ]
+      },
+      "commonMistakes": [
+        "Comparing unrelated tasks.",
+        "Measuring only speed.",
+        "Running a pilot with no consistent review standard."
+      ],
+      "roleVariants": {
+        "manager": "Model safe adoption through small pilots, clear examples, and lightweight team habits.",
+        "writer": "Document the prompts, examples, and edits that help others replicate quality.",
+        "analyst": "Define simple measures and evidence standards so adoption conversations stay grounded.",
+        "operator": "Focus on workflow change and training, not just tool access."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-20-lesson-04",
+      "slug": "communicate-impact-upward",
+      "sequenceRationale": "After evidence exists, this lesson focuses on communicating impact upward without overstating certainty or claiming unrealistic savings.",
+      "title": "Communicate Impact Upward",
+      "subtitle": "Leaders usually want evidence tied to outcomes, risk, and scale.",
+      "objective": "Present AI impact in language that decision-makers can act on.",
+      "useWhen": "Leaders usually want evidence tied to outcomes, risk, and scale.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Good work gets ignored if the impact is communicated vaguely or without enough evidence.",
+      "coreConcepts": [
+        {
+          "title": "Lead With Workflow Outcome",
+          "text": "Start with what improved and for whom."
+        },
+        {
+          "title": "Show The Evidence",
+          "text": "Use short metrics plus concrete before-and-after examples."
+        },
+        {
+          "title": "State The Next Decision",
+          "text": "Should the workflow continue, expand, or stop? The communication should support that choice."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A team has positive pilot results but struggles to explain them to leadership.",
+        "approach": "They present the workflow, the measured change, the risk controls, and the next step recommendation.",
+        "result": "The conversation becomes easier to advance.",
+        "verification": "They ensure every claim in the readout maps to collected pilot evidence."
+      },
+      "artifact": {
+        "label": "Readout",
+        "title": "Impact readout sections",
+        "items": [
+          "Workflow",
+          "Evidence",
+          "Risk controls",
+          "Recommendation",
+          "Next step"
+        ]
+      },
+      "doThisNow": {
+        "task": "Draft a one-page impact readout for one AI workflow.",
+        "timebox": "9 minutes",
+        "steps": [
+          "Lead with the workflow outcome.",
+          "Add the evidence.",
+          "Add the decision you want."
+        ]
+      },
+      "commonMistakes": [
+        "Leading with excitement instead of evidence.",
+        "Skipping the risk controls.",
+        "Presenting impact without a next decision."
+      ],
+      "roleVariants": {
+        "manager": "Model safe adoption through small pilots, clear examples, and lightweight team habits.",
+        "writer": "Document the prompts, examples, and edits that help others replicate quality.",
+        "analyst": "Define simple measures and evidence standards so adoption conversations stay grounded.",
+        "operator": "Focus on workflow change and training, not just tool access."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-20-lesson-05",
+      "slug": "build-a-small-measurement-system",
+      "sequenceRationale": "The module closes by turning the earlier pieces into a small recurring measurement system instead of a one-time case study.",
+      "title": "Build A Small Measurement System",
+      "subtitle": "Measurement works best when it is easy to maintain.",
+      "objective": "Create a lightweight recurring measurement habit for AI workflows.",
+      "useWhen": "Measurement works best when it is easy to maintain.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "If measurement is too heavy, it disappears. If it is too vague, it never helps decisions.",
+      "coreConcepts": [
+        {
+          "title": "Choose A Small Set Of Workflows",
+          "text": "Measure the workflows that matter most rather than everything."
+        },
+        {
+          "title": "Use Simple Templates",
+          "text": "A recurring pilot sheet or evidence log keeps collection manageable."
+        },
+        {
+          "title": "Review On A Rhythm",
+          "text": "A monthly or quarterly review is often enough to make better decisions."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A team keeps losing impact evidence because every pilot is tracked differently.",
+        "approach": "They adopt one template and a monthly review habit.",
+        "result": "Comparisons become easier and evidence accumulates.",
+        "verification": "They check that the template still captures the most decision-useful data after a few cycles."
+      },
+      "artifact": {
+        "label": "System",
+        "title": "Measurement system basics",
+        "items": [
+          "Workflow list",
+          "Common template",
+          "Review cadence",
+          "Owner"
+        ]
+      },
+      "doThisNow": {
+        "task": "Write a one-page measurement rhythm for one AI-supported workflow you already use.",
+        "timebox": "10 minutes",
+        "steps": [
+          "Pick one output, one quality check, and one time or effort measure.",
+          "Choose how often you will review the workflow.",
+          "Write the rule for when you will keep, change, or stop the workflow."
+        ]
+      },
+      "commonMistakes": [
+        "Trying to measure everything.",
+        "Changing templates constantly.",
+        "Collecting evidence but never reviewing it."
+      ],
+      "roleVariants": {
+        "manager": "Model safe adoption through small pilots, clear examples, and lightweight team habits.",
+        "writer": "Document the prompts, examples, and edits that help others replicate quality.",
+        "analyst": "Define simple measures and evidence standards so adoption conversations stay grounded.",
+        "operator": "Focus on workflow change and training, not just tool access."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    }
+  ],
+  "outcomes": [
+    "Measure workflow impact more clearly.",
+    "Communicate AI value with stronger evidence."
+  ],
+  "nextModuleBridge": "Next, end the core program by building a sustainable system for staying current without drowning in noise.",
+  "resources": [
+    {
+      "title": "NIST AI RMF Playbook",
+      "url": "https://airc.nist.gov/airmf-resources/playbook/",
+      "type": "reference",
+      "note": "Practical reference for governance, measurement, and risk-management language that stays more durable than vendor marketing."
+    }
+  ]
+}

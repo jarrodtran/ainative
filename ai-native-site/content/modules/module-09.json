@@ -1,0 +1,345 @@
+{
+  "id": 9,
+  "slug": "module-09",
+  "title": "Documentation And SOPs",
+  "phase": 3,
+  "summary": "Use AI to document work more clearly, improve process clarity, and turn tribal knowledge into usable team assets.",
+  "lessons": [
+    {
+      "id": "module-09-lesson-01",
+      "slug": "why-documentation-is-a-strong-fit",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Why Documentation Is A Strong Fit",
+      "subtitle": "Documentation work usually starts with scattered knowledge and rough inputs.",
+      "objective": "Identify documentation tasks where AI can reduce friction without reducing accuracy.",
+      "useWhen": "Documentation work usually starts with scattered knowledge and rough inputs.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Documentation often stalls because the work feels time-consuming and messy. AI helps most when the job is organizing and clarifying existing knowledge.",
+      "coreConcepts": [
+        {
+          "title": "Draft From Existing Knowledge",
+          "text": "Recordings, notes, process bullets, and examples make documentation much easier to generate."
+        },
+        {
+          "title": "Clarity Beats Elegance",
+          "text": "The goal of SOPs and FAQs is usability, not impressive prose."
+        },
+        {
+          "title": "Accuracy Still Comes First",
+          "text": "AI can create a first structure, but the people closest to the process must validate the steps."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A team has an undocumented refund process known only by two operators.",
+        "approach": "They capture the current steps in rough bullets and ask AI to structure them into an SOP draft.",
+        "result": "The process becomes reviewable and sharable.",
+        "verification": "The operators walk through the draft step by step to catch missing exceptions."
+      },
+      "artifact": {
+        "label": "Prompt Frame",
+        "title": "Documentation request",
+        "items": [
+          "What process this is",
+          "Who uses it",
+          "Source notes",
+          "Known exceptions"
+        ]
+      },
+      "doThisNow": {
+        "task": "Choose one undocumented process and gather the rough source notes for an SOP draft.",
+        "timebox": "10 minutes",
+        "steps": [
+          "Name the process.",
+          "List the main steps.",
+          "List who should validate the draft."
+        ]
+      },
+      "commonMistakes": [
+        "Trying to document from memory only.",
+        "Optimizing for style over usability.",
+        "Publishing without process-owner review."
+      ],
+      "roleVariants": {
+        "manager": "Use AI to shorten prep, synthesis, and communication loops without removing judgment.",
+        "writer": "Push for clearer source material, tighter briefs, and reusable language patterns.",
+        "analyst": "Separate analysis from storytelling so you can verify numbers before sharing narratives.",
+        "operator": "Build repeatable handoff-ready outputs instead of one-off conversations."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-09-lesson-02",
+      "slug": "create-sops-people-will-actually-use",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Create SOPs People Will Actually Use",
+      "subtitle": "Useful SOPs are specific, scannable, and built around decisions and exceptions.",
+      "objective": "Draft standard operating procedures that help people complete work, not just read about it.",
+      "useWhen": "Useful SOPs are specific, scannable, and built around decisions and exceptions.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Many SOPs fail because they describe a process abstractly rather than guiding someone through the real task.",
+      "coreConcepts": [
+        {
+          "title": "Write For The User",
+          "text": "Say who the SOP is for, what triggers it, and what outcome they should achieve."
+        },
+        {
+          "title": "Include Exceptions",
+          "text": "Real work breaks at the edges. If known exceptions are missing, the SOP will fail in practice."
+        },
+        {
+          "title": "Use Clear Step Shapes",
+          "text": "Steps, owners, required tools, and escalation rules should be easy to scan."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A finance team needs a close checklist for a new team member.",
+        "approach": "They build the SOP around trigger, inputs, steps, validation points, and exception handling.",
+        "result": "The new team member can follow the work without constant shadowing.",
+        "verification": "An experienced operator tests the SOP by walking through it line by line."
+      },
+      "artifact": {
+        "label": "SOP Format",
+        "title": "SOP sections",
+        "items": [
+          "Purpose",
+          "Trigger",
+          "Inputs",
+          "Steps",
+          "Exceptions",
+          "Escalation"
+        ]
+      },
+      "doThisNow": {
+        "task": "Draft the sections of one SOP before asking AI to write the prose.",
+        "timebox": "8 minutes",
+        "steps": [
+          "Write the trigger and outcome.",
+          "List the main steps.",
+          "Add at least one known exception."
+        ]
+      },
+      "commonMistakes": [
+        "Writing the SOP as a narrative.",
+        "Leaving out exceptions.",
+        "Failing to identify who the SOP is for."
+      ],
+      "roleVariants": {
+        "manager": "Use AI to shorten prep, synthesis, and communication loops without removing judgment.",
+        "writer": "Push for clearer source material, tighter briefs, and reusable language patterns.",
+        "analyst": "Separate analysis from storytelling so you can verify numbers before sharing narratives.",
+        "operator": "Build repeatable handoff-ready outputs instead of one-off conversations."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-09-lesson-03",
+      "slug": "turn-repeated-questions-into-faqs",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Turn Repeated Questions Into FAQs",
+      "subtitle": "FAQ generation works best when the real questions come from support or operational history.",
+      "objective": "Create internal or external FAQs from actual recurring questions and approved answers.",
+      "useWhen": "FAQ generation works best when the real questions come from support or operational history.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "FAQ content is valuable when it reduces future interruptions and improves consistency of responses.",
+      "coreConcepts": [
+        {
+          "title": "Use Real Questions",
+          "text": "Support logs, chat threads, and onboarding notes are better sources than imagined FAQs."
+        },
+        {
+          "title": "Keep Answers Operational",
+          "text": "Answers should tell people what to do, not just define terms."
+        },
+        {
+          "title": "Mark Approval Boundaries",
+          "text": "If a topic changes often, include who owns updates and what must be verified before publishing."
+        }
+      ],
+      "workedExample": {
+        "scenario": "An operations team receives the same onboarding questions every week.",
+        "approach": "They pull real questions from chat and support notes, then ask AI to cluster and draft clear answers.",
+        "result": "The FAQ reflects actual confusion points.",
+        "verification": "The team checks each answer against the current process and removes any speculative guidance."
+      },
+      "artifact": {
+        "label": "FAQ Pack",
+        "title": "FAQ entry fields",
+        "items": [
+          "Question",
+          "Approved answer",
+          "When it changes",
+          "Owner"
+        ]
+      },
+      "doThisNow": {
+        "task": "Collect five recurring questions from recent work and turn them into draft FAQ entries.",
+        "timebox": "10 minutes",
+        "steps": [
+          "Pull real questions.",
+          "Draft concise answers.",
+          "Verify each answer with the process owner."
+        ]
+      },
+      "commonMistakes": [
+        "Inventing questions nobody asked.",
+        "Writing answers that are too broad.",
+        "Skipping ownership for updates."
+      ],
+      "roleVariants": {
+        "manager": "Use AI to shorten prep, synthesis, and communication loops without removing judgment.",
+        "writer": "Push for clearer source material, tighter briefs, and reusable language patterns.",
+        "analyst": "Separate analysis from storytelling so you can verify numbers before sharing narratives.",
+        "operator": "Build repeatable handoff-ready outputs instead of one-off conversations."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-09-lesson-04",
+      "slug": "use-ai-to-improve-existing-processes",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Use AI To Improve Existing Processes",
+      "subtitle": "Documentation can reveal where the work itself is weak.",
+      "objective": "Use AI to identify ambiguity, duplication, or friction in an existing process.",
+      "useWhen": "Documentation can reveal where the work itself is weak.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Once a process is documented, AI can help critique it for handoff problems, unclear ownership, or unnecessary steps.",
+      "coreConcepts": [
+        {
+          "title": "Critique The Process, Not Just The Writing",
+          "text": "Ask where steps are vague, duplicated, or lacking a clear owner."
+        },
+        {
+          "title": "Find Decision Points",
+          "text": "Good process reviews reveal where human judgment is required and where better rules would help."
+        },
+        {
+          "title": "Separate Improvement From Approval",
+          "text": "AI can suggest changes, but process owners still decide what gets adopted."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A service request workflow causes repeated back-and-forth.",
+        "approach": "The team asks AI to review the draft SOP for unclear steps and missing ownership.",
+        "result": "They identify two unnecessary handoffs and one missing approval gate.",
+        "verification": "They confirm the proposed fixes against how the work actually runs today."
+      },
+      "artifact": {
+        "label": "Review Prompt",
+        "title": "Process critique lens",
+        "items": [
+          "Where is ownership unclear?",
+          "Where are steps duplicated?",
+          "Where do exceptions break the flow?"
+        ]
+      },
+      "doThisNow": {
+        "task": "Ask AI to critique one process you already documented.",
+        "timebox": "7 minutes",
+        "steps": [
+          "Paste the process.",
+          "Ask for unclear ownership and duplicate steps.",
+          "Review the suggestions with a process owner."
+        ]
+      },
+      "commonMistakes": [
+        "Editing wording without examining the workflow.",
+        "Treating AI suggestions as approved changes.",
+        "Ignoring exception handling."
+      ],
+      "roleVariants": {
+        "manager": "Use AI to shorten prep, synthesis, and communication loops without removing judgment.",
+        "writer": "Push for clearer source material, tighter briefs, and reusable language patterns.",
+        "analyst": "Separate analysis from storytelling so you can verify numbers before sharing narratives.",
+        "operator": "Build repeatable handoff-ready outputs instead of one-off conversations."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-09-lesson-05",
+      "slug": "build-a-documentation-toolkit",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Build A Documentation Toolkit",
+      "subtitle": "Turn successful documentation workflows into repeatable assets.",
+      "objective": "Create a small toolkit for SOPs, FAQs, and process reviews.",
+      "useWhen": "Turn successful documentation workflows into repeatable assets.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Documentation quality improves when the team reuses proven formats and review routines.",
+      "coreConcepts": [
+        {
+          "title": "Store The Source Pattern",
+          "text": "Capture the kinds of raw inputs that produce strong drafts."
+        },
+        {
+          "title": "Save The Format",
+          "text": "A good SOP or FAQ structure can be reused across teams and topics."
+        },
+        {
+          "title": "Keep A Review Checklist",
+          "text": "Documentation needs a standard final pass for accuracy, usability, and ownership."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A team repeatedly documents new workflows during a process redesign.",
+        "approach": "They build a shared toolkit with prompt frames, formats, and review rules.",
+        "result": "New documentation takes less time and requires less reinvention.",
+        "verification": "The toolkit includes a requirement that every draft be tested by a real user of the process."
+      },
+      "artifact": {
+        "label": "Toolkit",
+        "title": "Documentation toolkit contents",
+        "items": [
+          "SOP format",
+          "FAQ format",
+          "Process critique prompt",
+          "Review checklist"
+        ]
+      },
+      "doThisNow": {
+        "task": "Save one documentation workflow as a reusable toolkit entry.",
+        "timebox": "8 minutes",
+        "steps": [
+          "Store the source pattern.",
+          "Store the format.",
+          "Store the review checklist."
+        ]
+      },
+      "commonMistakes": [
+        "Saving only prompts and not formats.",
+        "Forgetting who validates the draft.",
+        "Treating documentation as one-off work."
+      ],
+      "roleVariants": {
+        "manager": "Use AI to shorten prep, synthesis, and communication loops without removing judgment.",
+        "writer": "Push for clearer source material, tighter briefs, and reusable language patterns.",
+        "analyst": "Separate analysis from storytelling so you can verify numbers before sharing narratives.",
+        "operator": "Build repeatable handoff-ready outputs instead of one-off conversations."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    }
+  ],
+  "outcomes": [
+    "Draft SOPs and FAQs from real inputs.",
+    "Use documentation to improve process clarity."
+  ],
+  "nextModuleBridge": "Next, carry those documentation habits into planning, coordination, and project work."
+}

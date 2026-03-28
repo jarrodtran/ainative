@@ -1,0 +1,347 @@
+{
+  "id": 17,
+  "slug": "module-17",
+  "title": "Helping Your Team Adopt AI",
+  "phase": 4,
+  "summary": "Move from personal AI competence to team enablement with practical demos, simple habits, and clearer safety boundaries.",
+  "lessons": [
+    {
+      "id": "module-17-lesson-01",
+      "slug": "why-team-adoption-stalls",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Why Team Adoption Stalls",
+      "subtitle": "The blockers are usually clarity, trust, and workflow fit.",
+      "objective": "Identify the common reasons teams fail to adopt AI even when individuals see value.",
+      "useWhen": "The blockers are usually clarity, trust, and workflow fit.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Understanding the blockers helps you support better adoption from your seat, even without formal authority.",
+      "coreConcepts": [
+        {
+          "title": "People Need Clear Use Cases",
+          "text": "Abstract enthusiasm does not change behavior. Concrete workflows do."
+        },
+        {
+          "title": "Trust Requires Boundaries",
+          "text": "Teams adopt faster when they know what is safe, what must be reviewed, and where AI is not appropriate."
+        },
+        {
+          "title": "Workflow Fit Beats Inspiration",
+          "text": "People keep using AI when it makes their actual work easier, not when it only looks impressive in a demo."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A team attends an AI demo but changes nothing the following week.",
+        "approach": "One team member reframes adoption around two recurring workflows and a clear safe-use checklist.",
+        "result": "Usage starts to move because the next action is concrete.",
+        "verification": "They ask teammates which parts of the workflow still felt unclear or risky and adjust the support accordingly."
+      },
+      "artifact": {
+        "label": "Checklist",
+        "title": "Adoption blockers to check",
+        "items": [
+          "Clear use case?",
+          "Safe path?",
+          "Easy workflow?",
+          "Visible example?"
+        ]
+      },
+      "doThisNow": {
+        "task": "Name the biggest blocker to AI use on your team right now.",
+        "timebox": "5 minutes",
+        "steps": [
+          "Choose one blocker.",
+          "Write one way to reduce it.",
+          "Tie it to a real workflow."
+        ]
+      },
+      "commonMistakes": [
+        "Assuming resistance is just fear.",
+        "Leading with hype instead of workflow examples.",
+        "Ignoring policy confusion."
+      ],
+      "roleVariants": {
+        "manager": "Model safe adoption through small pilots, clear examples, and lightweight team habits.",
+        "writer": "Document the prompts, examples, and edits that help others replicate quality.",
+        "analyst": "Define simple measures and evidence standards so adoption conversations stay grounded.",
+        "operator": "Focus on workflow change and training, not just tool access."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-17-lesson-02",
+      "slug": "create-a-small-adoption-play",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Create A Small Adoption Play",
+      "subtitle": "Start with one workflow, one audience, and one example.",
+      "objective": "Design a lightweight adoption play you can run without needing a large change program.",
+      "useWhen": "Start with one workflow, one audience, and one example.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Small wins build credibility much faster than broad evangelism.",
+      "coreConcepts": [
+        {
+          "title": "Choose A Useful Workflow",
+          "text": "Pick work that many people do and that already has a painful manual version."
+        },
+        {
+          "title": "Use A Real Example",
+          "text": "Show the workflow on actual work, not a toy example."
+        },
+        {
+          "title": "Include The Review Step",
+          "text": "People trust the workflow more when they see how quality is controlled. "
+        }
+      ],
+      "workedExample": {
+        "scenario": "A coordinator wants teammates to adopt AI for meeting recaps.",
+        "approach": "They show one real before-and-after example with the source notes and the final review checklist.",
+        "result": "Teammates can imagine themselves using the workflow.",
+        "verification": "They watch whether the example is actually replicable by others and refine the instructions based on feedback."
+      },
+      "artifact": {
+        "label": "Play",
+        "title": "Adoption play fields",
+        "items": [
+          "Workflow",
+          "Audience",
+          "Real example",
+          "Review step",
+          "Success sign"
+        ]
+      },
+      "doThisNow": {
+        "task": "Design one small adoption play for a workflow your team already does.",
+        "timebox": "8 minutes",
+        "steps": [
+          "Choose the workflow.",
+          "Choose the audience.",
+          "Choose the example you will show."
+        ]
+      },
+      "commonMistakes": [
+        "Trying to teach everything at once.",
+        "Using demo examples with no real relevance.",
+        "Skipping the quality control explanation."
+      ],
+      "roleVariants": {
+        "manager": "Model safe adoption through small pilots, clear examples, and lightweight team habits.",
+        "writer": "Document the prompts, examples, and edits that help others replicate quality.",
+        "analyst": "Define simple measures and evidence standards so adoption conversations stay grounded.",
+        "operator": "Focus on workflow change and training, not just tool access."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-17-lesson-03",
+      "slug": "run-better-demos-and-training",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Run Better Demos And Training",
+      "subtitle": "People learn faster when they can see the workflow, the output, and the review step.",
+      "objective": "Prepare short AI demos that teach a workflow rather than just entertaining the audience.",
+      "useWhen": "People learn faster when they can see the workflow, the output, and the review step.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "A strong demo lowers adoption friction by showing exactly what input, output, and review look like in practice.",
+      "coreConcepts": [
+        {
+          "title": "Demo Real Work",
+          "text": "Use a realistic task with realistic constraints."
+        },
+        {
+          "title": "Narrate The Decisions",
+          "text": "Explain why the prompt includes certain context and why certain review steps are required."
+        },
+        {
+          "title": "End With A Repeatable Pattern",
+          "text": "The audience should leave with something they can try immediately."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A team lead runs a short session on AI-assisted status reporting.",
+        "approach": "They show the source tracker, the prompt, the draft, and the final review edits.",
+        "result": "The audience sees the full workflow instead of just the shiny middle step.",
+        "verification": "They ask one teammate to repeat the demo workflow afterward to prove it was teachable."
+      },
+      "artifact": {
+        "label": "Demo Plan",
+        "title": "Good demo structure",
+        "items": [
+          "Task",
+          "Source material",
+          "Prompt",
+          "Draft",
+          "Review",
+          "Takeaway"
+        ]
+      },
+      "doThisNow": {
+        "task": "Outline a 10-minute demo for one AI workflow your team should learn.",
+        "timebox": "7 minutes",
+        "steps": [
+          "Choose the task.",
+          "List the source material.",
+          "List the review points you will show."
+        ]
+      },
+      "commonMistakes": [
+        "Only showing the output.",
+        "Using unrealistically clean input.",
+        "Ending with inspiration instead of a repeatable next step."
+      ],
+      "roleVariants": {
+        "manager": "Model safe adoption through small pilots, clear examples, and lightweight team habits.",
+        "writer": "Document the prompts, examples, and edits that help others replicate quality.",
+        "analyst": "Define simple measures and evidence standards so adoption conversations stay grounded.",
+        "operator": "Focus on workflow change and training, not just tool access."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-17-lesson-04",
+      "slug": "handle-resistance-productively",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Handle Resistance Productively",
+      "subtitle": "The goal is not to win an argument; it is to clarify risk, fit, and boundaries.",
+      "objective": "Respond to common concerns about AI adoption with practical clarity.",
+      "useWhen": "The goal is not to win an argument; it is to clarify risk, fit, and boundaries.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Resistance often points to real workflow, trust, or policy concerns that need a better answer than enthusiasm.",
+      "coreConcepts": [
+        {
+          "title": "Treat Concerns As Design Input",
+          "text": "Questions about accuracy, privacy, and quality often reveal what the workflow still lacks."
+        },
+        {
+          "title": "Answer With Boundaries",
+          "text": "People gain trust when you can say where AI should and should not be used."
+        },
+        {
+          "title": "Use Evidence, Not Pressure",
+          "text": "A small working example beats a broad claim that \"everyone needs to use AI now.\""
+        }
+      ],
+      "workedExample": {
+        "scenario": "A teammate worries that AI-generated recaps will create false accountability.",
+        "approach": "You show the labeled notes, the review step, and the rule that owners are always checked manually.",
+        "result": "The concern becomes a design rule rather than a blocker.",
+        "verification": "You confirm whether the revised workflow addresses the concern in practice. "
+      },
+      "artifact": {
+        "label": "Responses",
+        "title": "Useful response pattern",
+        "items": [
+          "Acknowledge the concern",
+          "Show the boundary",
+          "Show the review step",
+          "Offer a small trial"
+        ]
+      },
+      "doThisNow": {
+        "task": "Write a practical response to one common AI objection on your team.",
+        "timebox": "6 minutes",
+        "steps": [
+          "Name the concern.",
+          "Write the boundary.",
+          "Point to the workflow control that addresses it."
+        ]
+      },
+      "commonMistakes": [
+        "Treating skepticism as ignorance.",
+        "Defending AI in the abstract.",
+        "Ignoring valid concerns about safety or quality."
+      ],
+      "roleVariants": {
+        "manager": "Model safe adoption through small pilots, clear examples, and lightweight team habits.",
+        "writer": "Document the prompts, examples, and edits that help others replicate quality.",
+        "analyst": "Define simple measures and evidence standards so adoption conversations stay grounded.",
+        "operator": "Focus on workflow change and training, not just tool access."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-17-lesson-05",
+      "slug": "measure-whether-adoption-is-working",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Measure Whether Adoption Is Working",
+      "subtitle": "Use simple evidence, not vanity metrics.",
+      "objective": "Track whether AI adoption is improving team work in concrete ways.",
+      "useWhen": "Use simple evidence, not vanity metrics.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Adoption stories get stronger when they are tied to specific workflow outcomes, not just usage counts.",
+      "coreConcepts": [
+        {
+          "title": "Track Workflow Outcomes",
+          "text": "Time saved, cycle time, quality improvements, or reduced rework matter more than raw prompt counts."
+        },
+        {
+          "title": "Use Small Evidence Sets",
+          "text": "A handful of before-and-after examples can be more persuasive than noisy aggregate metrics."
+        },
+        {
+          "title": "Learn From Drop-Off",
+          "text": "When people stop using a workflow, the reason often reveals what needs improvement."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A team tries AI-assisted status reporting for a month.",
+        "approach": "They collect three before-and-after examples, average time to final, and common review issues.",
+        "result": "The team can decide whether the workflow is worth keeping.",
+        "verification": "They compare the examples against the prior process rather than reporting only how many times the feature was used."
+      },
+      "artifact": {
+        "label": "Measures",
+        "title": "Simple adoption evidence",
+        "items": [
+          "Time to final output",
+          "Quality issues found",
+          "Number of repeat users",
+          "Before-and-after samples"
+        ]
+      },
+      "doThisNow": {
+        "task": "Choose one adoption workflow and define how you will judge whether it is working.",
+        "timebox": "8 minutes",
+        "steps": [
+          "Pick the workflow.",
+          "Pick two outcome metrics.",
+          "Choose one example set to review."
+        ]
+      },
+      "commonMistakes": [
+        "Measuring only usage.",
+        "Not collecting examples.",
+        "Treating low adoption as proof the idea was bad without diagnosing why."
+      ],
+      "roleVariants": {
+        "manager": "Model safe adoption through small pilots, clear examples, and lightweight team habits.",
+        "writer": "Document the prompts, examples, and edits that help others replicate quality.",
+        "analyst": "Define simple measures and evidence standards so adoption conversations stay grounded.",
+        "operator": "Focus on workflow change and training, not just tool access."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    }
+  ],
+  "outcomes": [
+    "Teach AI through workflows, not hype.",
+    "Support adoption with examples, boundaries, and evidence."
+  ],
+  "nextModuleBridge": "Next, look for the best opportunities to apply AI more broadly across work."
+}

@@ -1,0 +1,345 @@
+{
+  "id": 18,
+  "slug": "module-18",
+  "title": "Finding Better AI Opportunities",
+  "phase": 5,
+  "summary": "Identify where AI creates real value by examining work patterns, friction points, and decision-heavy tasks with a clear evaluation lens.",
+  "lessons": [
+    {
+      "id": "module-18-lesson-01",
+      "slug": "adopt-the-opportunity-audit-mindset",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Adopt The Opportunity Audit Mindset",
+      "subtitle": "Look for repeated work, information friction, and review-heavy bottlenecks.",
+      "objective": "Find AI opportunities by observing work patterns instead of chasing trends.",
+      "useWhen": "Look for repeated work, information friction, and review-heavy bottlenecks.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "The best AI opportunities usually come from boring recurring pain, not from abstract innovation sessions.",
+      "coreConcepts": [
+        {
+          "title": "Look For Repetition",
+          "text": "Repeated drafting, summarizing, organizing, and comparison work are common signals."
+        },
+        {
+          "title": "Look For Delay",
+          "text": "Waiting for documentation, follow-up, or synthesis often points to high-value use cases."
+        },
+        {
+          "title": "Look For Review Bottlenecks",
+          "text": "If experts spend time reformatting or clarifying work, AI may help reduce that burden."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A business operations team feels busy but cannot name where AI would help.",
+        "approach": "They review a week of work and highlight repeated drafting, recap, and coordination tasks.",
+        "result": "Several realistic AI use cases appear quickly.",
+        "verification": "They confirm the tasks are truly recurring rather than one-off spikes."
+      },
+      "artifact": {
+        "label": "Audit Lens",
+        "title": "Opportunity signals",
+        "items": [
+          "Repetition",
+          "Delay",
+          "Reformatting",
+          "Synthesis burden"
+        ]
+      },
+      "doThisNow": {
+        "task": "Review the last week of your work and list three recurring tasks that match the audit lens.",
+        "timebox": "8 minutes",
+        "steps": [
+          "Scan your calendar or task list.",
+          "Mark repeated jobs.",
+          "Choose the one with the clearest pain."
+        ]
+      },
+      "commonMistakes": [
+        "Starting from tool ideas instead of work pain.",
+        "Ignoring small repeated burdens.",
+        "Choosing flashy use cases over recurring ones."
+      ],
+      "roleVariants": {
+        "manager": "Model safe adoption through small pilots, clear examples, and lightweight team habits.",
+        "writer": "Document the prompts, examples, and edits that help others replicate quality.",
+        "analyst": "Define simple measures and evidence standards so adoption conversations stay grounded.",
+        "operator": "Focus on workflow change and training, not just tool access."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-18-lesson-02",
+      "slug": "classify-tasks-automate-augment-avoid",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Classify Tasks: Automate, Augment, Avoid",
+      "subtitle": "Not every task should be given to AI, and not every good use case deserves full automation.",
+      "objective": "Sort tasks into the right level of AI support.",
+      "useWhen": "Not every task should be given to AI, and not every good use case deserves full automation.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "The right level of intervention depends on risk, ambiguity, and how much judgment the task requires.",
+      "coreConcepts": [
+        {
+          "title": "Automate Bounded Repetition",
+          "text": "Low-risk, repeatable sequences with clear review paths are the best automation candidates."
+        },
+        {
+          "title": "Augment Judgment-Heavy Work",
+          "text": "Many tasks benefit most from AI support rather than full handoff."
+        },
+        {
+          "title": "Avoid High-Risk, Low-Clarity Tasks",
+          "text": "If the task is sensitive, ambiguous, or hard to review, AI may not be the right first move."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A team debates whether to automate customer escalations.",
+        "approach": "They classify the work and realize drafting summaries is augmentable, but outbound decisions should not be automated.",
+        "result": "The scope becomes safer and more realistic.",
+        "verification": "They review whether the classification reflects the actual consequences of being wrong."
+      },
+      "artifact": {
+        "label": "Classifier",
+        "title": "Task classification questions",
+        "items": [
+          "How repeatable is it?",
+          "How risky is it?",
+          "How much judgment does it require?",
+          "How easy is it to review?"
+        ]
+      },
+      "doThisNow": {
+        "task": "Classify three current tasks as automate, augment, or avoid.",
+        "timebox": "7 minutes",
+        "steps": [
+          "List the tasks.",
+          "Score risk and reviewability.",
+          "Assign the level of AI support."
+        ]
+      },
+      "commonMistakes": [
+        "Trying to automate judgment-heavy work first.",
+        "Treating every good use case as an automation candidate.",
+        "Ignoring reviewability."
+      ],
+      "roleVariants": {
+        "manager": "Model safe adoption through small pilots, clear examples, and lightweight team habits.",
+        "writer": "Document the prompts, examples, and edits that help others replicate quality.",
+        "analyst": "Define simple measures and evidence standards so adoption conversations stay grounded.",
+        "operator": "Focus on workflow change and training, not just tool access."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-18-lesson-03",
+      "slug": "estimate-value-quickly",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Estimate Value Quickly",
+      "subtitle": "Rough ROI thinking is enough to prioritize early opportunities.",
+      "objective": "Use simple value estimates to compare candidate AI opportunities.",
+      "useWhen": "Rough ROI thinking is enough to prioritize early opportunities.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "You do not need perfect ROI math to decide what to test next, but you do need a way to compare options.",
+      "coreConcepts": [
+        {
+          "title": "Estimate Frequency",
+          "text": "How often does the work happen?"
+        },
+        {
+          "title": "Estimate Current Effort",
+          "text": "How much time, rework, or coordination does it currently require?"
+        },
+        {
+          "title": "Estimate Adoption Cost",
+          "text": "Training, setup, risk controls, and change effort all count."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A team must choose between automating weekly status updates or improving vendor research.",
+        "approach": "They compare frequency, current effort, and change cost.",
+        "result": "The priority becomes clearer without elaborate spreadsheets.",
+        "verification": "They sanity-check the estimates with the people doing the work each week."
+      },
+      "artifact": {
+        "label": "ROI Lite",
+        "title": "Opportunity estimate",
+        "items": [
+          "Frequency",
+          "Current effort",
+          "Potential gain",
+          "Change cost"
+        ]
+      },
+      "doThisNow": {
+        "task": "Score two candidate AI opportunities with rough ROI estimates.",
+        "timebox": "8 minutes",
+        "steps": [
+          "Choose two opportunities.",
+          "Estimate the current burden.",
+          "Estimate the change cost and likely gain."
+        ]
+      },
+      "commonMistakes": [
+        "Demanding perfect precision before testing.",
+        "Ignoring change cost.",
+        "Using only hype to prioritize."
+      ],
+      "roleVariants": {
+        "manager": "Model safe adoption through small pilots, clear examples, and lightweight team habits.",
+        "writer": "Document the prompts, examples, and edits that help others replicate quality.",
+        "analyst": "Define simple measures and evidence standards so adoption conversations stay grounded.",
+        "operator": "Focus on workflow change and training, not just tool access."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-18-lesson-04",
+      "slug": "start-with-quick-wins",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Start With Quick Wins",
+      "subtitle": "The first AI opportunity should teach you something and lower adoption friction.",
+      "objective": "Choose first opportunities that are visible, safe, and teachable.",
+      "useWhen": "The first AI opportunity should teach you something and lower adoption friction.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Quick wins create evidence and confidence. They also reveal what support structures you actually need.",
+      "coreConcepts": [
+        {
+          "title": "Pick Visible Value",
+          "text": "The improvement should be easy for others to notice and understand."
+        },
+        {
+          "title": "Keep The Workflow Narrow",
+          "text": "A clear boundary reduces implementation and review complexity."
+        },
+        {
+          "title": "Choose Teachable Work",
+          "text": "The best first wins are easy to explain and repeat."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A team considers a complex workflow automation as its first AI initiative.",
+        "approach": "They instead start with a repeatable meeting follow-up workflow that saves time and is easy to review.",
+        "result": "They get a cleaner early win and learn faster.",
+        "verification": "They compare the before-and-after workflow to confirm the gain is real and visible. "
+      },
+      "artifact": {
+        "label": "Quick Win Filter",
+        "title": "First-opportunity criteria",
+        "items": [
+          "Visible benefit",
+          "Low to medium risk",
+          "Clear review step",
+          "Easy to teach"
+        ]
+      },
+      "doThisNow": {
+        "task": "Choose the best first AI opportunity from your current shortlist.",
+        "timebox": "6 minutes",
+        "steps": [
+          "Apply the quick-win filter.",
+          "Pick the smallest useful workflow.",
+          "Write why it is the right first move."
+        ]
+      },
+      "commonMistakes": [
+        "Picking the most ambitious use case first.",
+        "Choosing invisible back-office wins nobody notices.",
+        "Ignoring whether others can learn the workflow."
+      ],
+      "roleVariants": {
+        "manager": "Model safe adoption through small pilots, clear examples, and lightweight team habits.",
+        "writer": "Document the prompts, examples, and edits that help others replicate quality.",
+        "analyst": "Define simple measures and evidence standards so adoption conversations stay grounded.",
+        "operator": "Focus on workflow change and training, not just tool access."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-18-lesson-05",
+      "slug": "write-an-opportunity-brief",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Write An Opportunity Brief",
+      "subtitle": "A short brief is enough to align people on what you want to test.",
+      "objective": "Draft a one-page brief for an AI opportunity you want to pursue.",
+      "useWhen": "A short brief is enough to align people on what you want to test.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "A brief turns a good idea into something others can evaluate, support, or refine.",
+      "coreConcepts": [
+        {
+          "title": "Describe The Current Pain",
+          "text": "State what the workflow looks like today and why it is worth improving."
+        },
+        {
+          "title": "Describe The Proposed Change",
+          "text": "Show exactly where AI would help and where people still review."
+        },
+        {
+          "title": "Describe Success",
+          "text": "Define the outcome, not just the implementation. "
+        }
+      ],
+      "workedExample": {
+        "scenario": "An individual contributor wants approval to test AI-assisted research summaries.",
+        "approach": "They write a short brief with current effort, proposed workflow, review rules, and simple success measures.",
+        "result": "The idea becomes easy to discuss and approve.",
+        "verification": "They review the brief to ensure it describes the real workflow instead of a vague AI ambition."
+      },
+      "artifact": {
+        "label": "Brief",
+        "title": "Opportunity brief sections",
+        "items": [
+          "Current problem",
+          "Proposed workflow",
+          "Review rule",
+          "Success measure",
+          "Owner"
+        ]
+      },
+      "doThisNow": {
+        "task": "Write an opportunity brief for one AI use case you want to test.",
+        "timebox": "10 minutes",
+        "steps": [
+          "State the current pain.",
+          "State the proposed AI role.",
+          "State how you will know if it works."
+        ]
+      },
+      "commonMistakes": [
+        "Writing about AI in general instead of one workflow.",
+        "Leaving out the review rule.",
+        "Not assigning an owner."
+      ],
+      "roleVariants": {
+        "manager": "Model safe adoption through small pilots, clear examples, and lightweight team habits.",
+        "writer": "Document the prompts, examples, and edits that help others replicate quality.",
+        "analyst": "Define simple measures and evidence standards so adoption conversations stay grounded.",
+        "operator": "Focus on workflow change and training, not just tool access."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    }
+  ],
+  "outcomes": [
+    "Find high-value AI opportunities in real work.",
+    "Sort tasks into automate, augment, or avoid."
+  ],
+  "nextModuleBridge": "Next, support those opportunities with clear ownership, change habits, and governance."
+}

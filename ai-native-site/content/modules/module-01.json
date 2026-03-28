@@ -1,0 +1,364 @@
+{
+  "id": 1,
+  "slug": "module-01",
+  "title": "How To Work With AI Systems",
+  "phase": 1,
+  "summary": "Build a durable mental model for how AI responds, where it fails, and how to work with it safely in everyday knowledge work.",
+  "lessons": [
+    {
+      "id": "module-01-lesson-01",
+      "slug": "a-working-mental-model",
+      "sequenceRationale": "This opening lesson establishes the mental model that the rest of the module depends on before the learner changes any prompts or workflows.",
+      "title": "A Working Mental Model",
+      "subtitle": "Understand prediction, pattern matching, and why that changes how you prompt.",
+      "objective": "Explain what an AI assistant is doing well enough to choose better requests and better review habits.",
+      "useWhen": "Understand prediction, pattern matching, and why that changes how you prompt.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "People over-trust AI when they treat it like a database and under-use it when they treat it like a toy. A practical mental model gives you the useful middle ground.",
+      "coreConcepts": [
+        {
+          "title": "Prediction, Not Recall",
+          "text": "Most AI assistants generate the next useful token based on patterns. That makes them flexible for drafting, summarizing, and restructuring work, but unreliable as an unverified source of truth."
+        },
+        {
+          "title": "Context Shapes Output",
+          "text": "The model only sees the instructions, examples, and source material you provide in the current interaction. Better context almost always beats clever phrasing."
+        },
+        {
+          "title": "Judgment Stays Human",
+          "text": "Your job is to define the task, supply the right material, and review the output for fit, facts, and consequences."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A team lead asks AI to write a customer update with no context and gets a generic, overly confident email.",
+        "approach": "They retry with the audience, decision status, approved facts, and tone requirements.",
+        "result": "The second draft is close to usable because the model is predicting from the right context instead of filling gaps with generic business language.",
+        "verification": "The lead checks dates, ownership, and any promises before sending."
+      },
+      "artifact": {
+        "label": "Checklist",
+        "title": "Before you ask AI for help",
+        "items": [
+          "Name the deliverable.",
+          "State the audience.",
+          "Add the source material.",
+          "State what must not be changed."
+        ]
+      },
+      "doThisNow": {
+        "task": "Take one recurring writing or analysis task and rewrite your prompt around the real deliverable.",
+        "timebox": "8 minutes",
+        "steps": [
+          "Write the exact output you need.",
+          "List the facts or source notes the model must use.",
+          "Add one sentence describing what a good result should sound like."
+        ]
+      },
+      "commonMistakes": [
+        "Asking for output before defining the job.",
+        "Treating a fluent answer as a verified answer.",
+        "Leaving out audience or constraints."
+      ],
+      "roleVariants": {
+        "manager": "Frame AI requests around a deliverable, risk level, and reviewer before you ask for output.",
+        "writer": "Use AI as a drafting and editing partner, then review for voice, facts, and audience fit.",
+        "analyst": "Treat AI as a hypothesis generator and explainer, not as a trusted source of record.",
+        "operator": "Anchor every prompt in the real workflow, inputs, and downstream handoff."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-01-lesson-02",
+      "slug": "inputs-context-and-constraints",
+      "sequenceRationale": "Once the learner understands the model, this lesson shows how to shape output quality with better inputs, source material, and constraints.",
+      "title": "Inputs, Context, and Constraints",
+      "subtitle": "Most quality problems begin with missing context.",
+      "objective": "Learn how to feed AI the information it needs without drowning it in irrelevant detail.",
+      "useWhen": "Most quality problems begin with missing context.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "The fastest way to improve results is usually not a smarter model. It is clearer source material, sharper constraints, and better examples.",
+      "coreConcepts": [
+        {
+          "title": "Inputs Beat Instructions Alone",
+          "text": "A request like \"summarize this for executives\" works best when the relevant document, decision context, and audience needs are present."
+        },
+        {
+          "title": "Constraints Improve Quality",
+          "text": "Word count, format, tone, exclusions, and approval boundaries narrow the solution space and reduce cleanup work."
+        },
+        {
+          "title": "Relevant Context Only",
+          "text": "Include what changes the answer. Remove background that does not affect the deliverable or the model will spend attention on the wrong things."
+        }
+      ],
+      "workedExample": {
+        "scenario": "An operations manager asks AI to draft a process update from memory.",
+        "approach": "They provide the old SOP, the actual policy change, and the intended audience.",
+        "result": "The revision preserves what matters and updates only the sections that changed.",
+        "verification": "The manager compares the output against the source policy and flags any steps that sound plausible but were not explicitly provided."
+      },
+      "artifact": {
+        "label": "Template",
+        "title": "Context block",
+        "items": [
+          "Goal: what needs to be produced",
+          "Audience: who will use it",
+          "Source: what material is authoritative",
+          "Constraints: what cannot change"
+        ]
+      },
+      "doThisNow": {
+        "task": "Pick one active task and build a four-line context block before your next AI prompt.",
+        "timebox": "10 minutes",
+        "steps": [
+          "List the authoritative source.",
+          "Write two constraints.",
+          "Add the audience and expected format."
+        ]
+      },
+      "commonMistakes": [
+        "Pasting everything you have.",
+        "Forgetting to say what source is authoritative.",
+        "Asking for polish before accuracy."
+      ],
+      "roleVariants": {
+        "manager": "Frame AI requests around a deliverable, risk level, and reviewer before you ask for output.",
+        "writer": "Use AI as a drafting and editing partner, then review for voice, facts, and audience fit.",
+        "analyst": "Treat AI as a hypothesis generator and explainer, not as a trusted source of record.",
+        "operator": "Anchor every prompt in the real workflow, inputs, and downstream handoff."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-01-lesson-03",
+      "slug": "why-output-varies",
+      "sequenceRationale": "After context design, the learner needs a realistic view of why outputs vary so they can stabilize quality without chasing magic prompts.",
+      "title": "Why Output Varies",
+      "subtitle": "Different outputs from the same request do not mean the system is broken.",
+      "objective": "Set realistic expectations for variability and learn when to rerun, refine, or reset a conversation.",
+      "useWhen": "Different outputs from the same request do not mean the system is broken.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "AI is probabilistic. Understanding that helps you stop chasing a perfect single prompt and instead manage the workflow around the model.",
+      "coreConcepts": [
+        {
+          "title": "Variation Is Normal",
+          "text": "Small wording shifts, model updates, and conversation history can change results. That is expected behavior, not necessarily a failure."
+        },
+        {
+          "title": "Threads Accumulate Baggage",
+          "text": "Long chats often mix old assumptions with new requests. Starting a clean thread is often faster than arguing with stale context."
+        },
+        {
+          "title": "Stability Comes From Structure",
+          "text": "Examples, explicit rubrics, and clear output formats make results more consistent than vague requests for the \"best answer.\""
+        }
+      ],
+      "workedExample": {
+        "scenario": "A writer gets three noticeably different summaries from the same document.",
+        "approach": "They create a rubric with audience, length, sections, and source-only requirements.",
+        "result": "The summaries become far more stable because the expected structure is fixed.",
+        "verification": "The writer compares each summary against the rubric instead of comparing vibes alone."
+      },
+      "artifact": {
+        "label": "Rubric",
+        "title": "Stability rubric",
+        "items": [
+          "Audience",
+          "Length",
+          "Must-cover points",
+          "What to exclude"
+        ]
+      },
+      "doThisNow": {
+        "task": "Rewrite one prompt as a rubric-based request and rerun it in a clean thread.",
+        "timebox": "7 minutes",
+        "steps": [
+          "Specify the output sections.",
+          "Add what counts as success.",
+          "Compare the new result to your old version."
+        ]
+      },
+      "commonMistakes": [
+        "Assuming one great output means the prompt is production-ready.",
+        "Continuing a noisy thread too long.",
+        "Measuring quality without criteria."
+      ],
+      "roleVariants": {
+        "manager": "Frame AI requests around a deliverable, risk level, and reviewer before you ask for output.",
+        "writer": "Use AI as a drafting and editing partner, then review for voice, facts, and audience fit.",
+        "analyst": "Treat AI as a hypothesis generator and explainer, not as a trusted source of record.",
+        "operator": "Anchor every prompt in the real workflow, inputs, and downstream handoff."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-01-lesson-04",
+      "slug": "hallucinations-and-overreach",
+      "sequenceRationale": "This lesson turns the mental model into risk awareness by focusing on where fluent output becomes dangerous without verification.",
+      "title": "Hallucinations and Overreach",
+      "subtitle": "Fluent language can hide weak evidence.",
+      "objective": "Recognize when AI is inventing, stretching, or blending information so you can verify the right things.",
+      "useWhen": "Fluent language can hide weak evidence.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "The harm usually comes from confident specifics: dates, names, citations, causal claims, and policy statements that sound reasonable but were not grounded in source material.",
+      "coreConcepts": [
+        {
+          "title": "High-Risk Claims",
+          "text": "Factual statements, recommendations with business consequences, and anything that cites a source need more scrutiny than simple drafting assistance."
+        },
+        {
+          "title": "Source Grounding Reduces Drift",
+          "text": "When you require the model to use supplied material and call out uncertainty, invented details decrease."
+        },
+        {
+          "title": "Verification Is Part Of The Task",
+          "text": "Do not treat review as optional cleanup. It is part of the workflow whenever the output could influence a decision."
+        }
+      ],
+      "workedExample": {
+        "scenario": "An analyst asks AI for a competitor feature comparison and receives several unsupported claims.",
+        "approach": "They rerun the task using pasted source excerpts and a \"say unknown if not stated\" rule.",
+        "result": "The second output is narrower but more trustworthy.",
+        "verification": "The analyst spot-checks every feature claim against the source notes before sharing."
+      },
+      "artifact": {
+        "label": "Verification",
+        "title": "Claim check sequence",
+        "items": [
+          "Highlight all factual claims.",
+          "Mark which source supports each one.",
+          "Replace unsupported claims with \"unknown\" or a follow-up task."
+        ]
+      },
+      "doThisNow": {
+        "task": "Take one AI output you planned to use today and run a simple claim check on it.",
+        "timebox": "10 minutes",
+        "steps": [
+          "Underline every specific fact.",
+          "Find the source for each fact.",
+          "Revise or remove anything unsupported."
+        ]
+      },
+      "commonMistakes": [
+        "Checking only tone and grammar.",
+        "Letting the model invent citations.",
+        "Asking for certainty when the evidence is incomplete."
+      ],
+      "roleVariants": {
+        "manager": "Frame AI requests around a deliverable, risk level, and reviewer before you ask for output.",
+        "writer": "Use AI as a drafting and editing partner, then review for voice, facts, and audience fit.",
+        "analyst": "Treat AI as a hypothesis generator and explainer, not as a trusted source of record.",
+        "operator": "Anchor every prompt in the real workflow, inputs, and downstream handoff."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026",
+      "resources": [
+        {
+          "title": "NIST AI RMF Playbook",
+          "url": "https://airc.nist.gov/airmf-resources/playbook/",
+          "type": "reference",
+          "note": "Practical reference for governance, measurement, and risk-management language that stays more durable than vendor marketing."
+        }
+      ]
+    },
+    {
+      "id": "module-01-lesson-05",
+      "slug": "a-daily-operating-pattern",
+      "sequenceRationale": "The module closes by translating the earlier concepts into a repeatable daily operating pattern the learner can use immediately on live work.",
+      "title": "A Daily Operating Pattern",
+      "subtitle": "Use AI with the same lightweight sequence every time.",
+      "objective": "Build a repeatable loop for safe, efficient AI use on common business tasks.",
+      "useWhen": "Use AI with the same lightweight sequence every time.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Consistency matters more than prompt cleverness. A simple operating pattern prevents avoidable errors and keeps the tool useful under time pressure.",
+      "coreConcepts": [
+        {
+          "title": "Frame",
+          "text": "Define the task, audience, and constraints before you prompt."
+        },
+        {
+          "title": "Generate",
+          "text": "Ask for a first pass with an explicit structure."
+        },
+        {
+          "title": "Review",
+          "text": "Verify claims, adjust tone, and turn the output into a final work product."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A project coordinator needs a vendor follow-up note, meeting summary, and task list.",
+        "approach": "They run the same three-step loop for each output instead of improvising every time.",
+        "result": "The work is faster and more consistent because the operating pattern stays fixed even when the task changes.",
+        "verification": "Before sending, they confirm names, dates, and owner assignments."
+      },
+      "artifact": {
+        "label": "Workflow",
+        "title": "Three-step AI loop",
+        "items": [
+          "Frame the work",
+          "Generate a first pass",
+          "Review and finalize"
+        ]
+      },
+      "doThisNow": {
+        "task": "Build a one-page AI operating checklist for one live task you own this week.",
+        "timebox": "10 minutes",
+        "steps": [
+          "Name the deliverable and the source of truth.",
+          "Write the three checks you must do before sharing output.",
+          "Save the checklist where you will see it during the next run of that task."
+        ]
+      },
+      "commonMistakes": [
+        "Skipping the review step when you are rushed.",
+        "Changing your approach completely for every task.",
+        "Using AI before clarifying the goal."
+      ],
+      "roleVariants": {
+        "manager": "Frame AI requests around a deliverable, risk level, and reviewer before you ask for output.",
+        "writer": "Use AI as a drafting and editing partner, then review for voice, facts, and audience fit.",
+        "analyst": "Treat AI as a hypothesis generator and explainer, not as a trusted source of record.",
+        "operator": "Anchor every prompt in the real workflow, inputs, and downstream handoff."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    }
+  ],
+  "outcomes": [
+    "Build a durable AI mental model.",
+    "Learn how to review output instead of trusting fluency."
+  ],
+  "nextModuleBridge": "Next, turn that mental model into better tool choices so you stop forcing one product to do every job.",
+  "resources": [
+    {
+      "title": "NIST AI RMF Playbook",
+      "url": "https://airc.nist.gov/airmf-resources/playbook/",
+      "type": "reference",
+      "note": "Practical reference for governance, measurement, and risk-management language that stays more durable than vendor marketing."
+    },
+    {
+      "title": "OpenAI prompt engineering guide",
+      "url": "https://platform.openai.com/docs/guides/prompt-engineering",
+      "type": "official",
+      "note": "Useful for context design, examples, and prompt structure when a lesson discusses prompt quality."
+    }
+  ]
+}

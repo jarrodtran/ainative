@@ -1,0 +1,390 @@
+{
+  "id": 7,
+  "slug": "module-07",
+  "title": "Advanced Prompting And Decomposition",
+  "phase": 2,
+  "summary": "Break complex work into stages, use examples and structure more deliberately, and turn better prompting into better workflow design.",
+  "lessons": [
+    {
+      "id": "module-07-lesson-01",
+      "slug": "when-simple-prompts-stop-working",
+      "sequenceRationale": "This lesson sets the threshold for when the learner should stop using one-shot prompting and move into more structured prompt design.",
+      "title": "When Simple Prompts Stop Working",
+      "subtitle": "Complex work usually needs staged thinking, not longer prompts.",
+      "objective": "Recognize when a task should be broken into parts instead of pushed through a single request.",
+      "useWhen": "Complex work usually needs staged thinking, not longer prompts.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "As tasks get more complex, one-pass prompting often hides reasoning gaps, mixes goals, and creates difficult review work.",
+      "coreConcepts": [
+        {
+          "title": "Complexity Is A Workflow Problem",
+          "text": "When the task includes interpretation, tradeoffs, or multiple outputs, sequence matters more than clever wording."
+        },
+        {
+          "title": "One Pass Creates Hidden Failure",
+          "text": "A single prompt can blur analysis, drafting, and recommendation into one opaque answer."
+        },
+        {
+          "title": "Decompose By Decision Point",
+          "text": "Split the work where a human would naturally pause to review or redirect."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A manager asks AI to analyze feedback, identify themes, recommend actions, and draft an executive memo in one prompt.",
+        "approach": "They split it into theme extraction, recommendation ranking, and memo drafting.",
+        "result": "Each step becomes easier to inspect and improve.",
+        "verification": "The manager checks the recommended actions against the extracted themes before asking for the memo."
+      },
+      "artifact": {
+        "label": "Pattern",
+        "title": "Decompose when the task has",
+        "items": [
+          "Multiple outputs",
+          "Tradeoff-heavy reasoning",
+          "High review cost",
+          "A human decision between stages"
+        ]
+      },
+      "doThisNow": {
+        "task": "Take one messy AI task and divide it into two or three stages.",
+        "timebox": "8 minutes",
+        "steps": [
+          "Find the natural review points.",
+          "Write one prompt per stage.",
+          "Decide what you will verify before moving on."
+        ]
+      },
+      "commonMistakes": [
+        "Trying to solve workflow problems with longer prompts.",
+        "Combining analysis and recommendation in one opaque step.",
+        "Skipping the human checkpoint."
+      ],
+      "roleVariants": {
+        "manager": "Use AI to shorten prep, synthesis, and communication loops without removing judgment.",
+        "writer": "Push for clearer source material, tighter briefs, and reusable language patterns.",
+        "analyst": "Separate analysis from storytelling so you can verify numbers before sharing narratives.",
+        "operator": "Build repeatable handoff-ready outputs instead of one-off conversations."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-07-lesson-02",
+      "slug": "examples-for-reasoning-and-format",
+      "sequenceRationale": "With the threshold clear, this lesson introduces examples as the first practical lever for improving consistency and format control.",
+      "title": "Examples For Reasoning And Format",
+      "subtitle": "Examples are useful when they teach the model how to think or how to shape output.",
+      "objective": "Use examples more deliberately for classification, extraction, and consistent formatting.",
+      "useWhen": "Examples are useful when they teach the model how to think or how to shape output.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Well-chosen examples reduce ambiguity and improve repeatability on structured tasks.",
+      "coreConcepts": [
+        {
+          "title": "Examples Set The Pattern",
+          "text": "A short example can teach the model how to classify, prioritize, or structure output."
+        },
+        {
+          "title": "Match The Example To The Task",
+          "text": "Use representative examples, not idealized ones that ignore real ambiguity."
+        },
+        {
+          "title": "Explain The Lesson",
+          "text": "Tell the model what the example demonstrates so it copies the right thing."
+        }
+      ],
+      "workedExample": {
+        "scenario": "An analyst wants support tickets categorized consistently.",
+        "approach": "They provide three examples showing how to label root cause, severity, and next action.",
+        "result": "Classification becomes more stable.",
+        "verification": "They manually review a small sample to confirm the examples did not encode a bad rule."
+      },
+      "artifact": {
+        "label": "Example Set",
+        "title": "What a good example includes",
+        "items": [
+          "Representative input",
+          "Desired output",
+          "Short note on why it is correct"
+        ]
+      },
+      "doThisNow": {
+        "task": "Add two short examples to a prompt for a structured task you do often.",
+        "timebox": "9 minutes",
+        "steps": [
+          "Choose representative cases.",
+          "Show the output you want.",
+          "Review whether the examples taught the right rule."
+        ]
+      },
+      "commonMistakes": [
+        "Using unrealistic examples.",
+        "Adding too many examples with no explanation.",
+        "Assuming examples remove the need for verification."
+      ],
+      "roleVariants": {
+        "manager": "Use AI to shorten prep, synthesis, and communication loops without removing judgment.",
+        "writer": "Push for clearer source material, tighter briefs, and reusable language patterns.",
+        "analyst": "Separate analysis from storytelling so you can verify numbers before sharing narratives.",
+        "operator": "Build repeatable handoff-ready outputs instead of one-off conversations."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026",
+      "resources": [
+        {
+          "title": "Anthropic multishot prompting guide",
+          "url": "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/multishot-prompting",
+          "type": "official",
+          "note": "Concrete guidance on using examples when consistent structure matters."
+        }
+      ]
+    },
+    {
+      "id": "module-07-lesson-03",
+      "slug": "structured-prompts-for-complex-work",
+      "sequenceRationale": "After examples, the learner needs a stronger scaffolding method for complex tasks that involve multiple requirements or sections.",
+      "title": "Structured Prompts For Complex Work",
+      "subtitle": "Headings, labels, and bounded sections help both the model and the reviewer.",
+      "objective": "Use structured prompts to manage multi-part tasks more reliably.",
+      "useWhen": "Headings, labels, and bounded sections help both the model and the reviewer.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "As prompts become longer, structure matters. Clear sections keep the request readable and make later edits easier.",
+      "coreConcepts": [
+        {
+          "title": "Label The Sections",
+          "text": "Separate goal, context, sources, constraints, and output format so nothing important is buried."
+        },
+        {
+          "title": "Keep Each Section Purposeful",
+          "text": "Every section should change the answer. If it does not, remove it."
+        },
+        {
+          "title": "Reuse The Shape",
+          "text": "Structured prompts are easier to turn into templates than free-form chat requests."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A writer uses a long unstructured prompt for a proposal draft and keeps getting mixed results.",
+        "approach": "They reorganize the same information under clear headings with explicit source boundaries.",
+        "result": "The model follows the request more consistently and the prompt becomes reusable.",
+        "verification": "The writer checks whether the output reflects each section and whether any section can be shortened without loss. "
+      },
+      "artifact": {
+        "label": "Structure",
+        "title": "Complex prompt sections",
+        "items": [
+          "Goal",
+          "Audience",
+          "Source material",
+          "Constraints",
+          "Output format",
+          "Review notes"
+        ]
+      },
+      "doThisNow": {
+        "task": "Turn one messy real-world request into a structured prompt for an active document, memo, or report.",
+        "timebox": "9 minutes",
+        "steps": [
+          "Separate context, instructions, and output format into labeled sections.",
+          "Add one non-negotiable constraint and one success criterion.",
+          "Run the prompt on your real task and note what still needs review."
+        ]
+      },
+      "commonMistakes": [
+        "Confusing structure with length.",
+        "Adding headings that do not affect the answer.",
+        "Packing too many tasks into one structured prompt anyway."
+      ],
+      "roleVariants": {
+        "manager": "Use AI to shorten prep, synthesis, and communication loops without removing judgment.",
+        "writer": "Push for clearer source material, tighter briefs, and reusable language patterns.",
+        "analyst": "Separate analysis from storytelling so you can verify numbers before sharing narratives.",
+        "operator": "Build repeatable handoff-ready outputs instead of one-off conversations."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026",
+      "resources": [
+        {
+          "title": "Anthropic XML tags prompting guide",
+          "url": "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/use-xml-tags",
+          "type": "official",
+          "note": "Useful for separating context, instructions, and examples in more complex prompts."
+        }
+      ]
+    },
+    {
+      "id": "module-07-lesson-04",
+      "slug": "prompt-chaining-for-multi-step-work",
+      "sequenceRationale": "Only after structure is in place does prompt chaining make sense, because the learner can now break a workflow into reliable intermediate steps.",
+      "title": "Prompt Chaining For Multi-Step Work",
+      "subtitle": "Move from one answer to a managed sequence.",
+      "objective": "Link multiple prompts into a workflow where each stage feeds the next.",
+      "useWhen": "Move from one answer to a managed sequence.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Prompt chains make complex work easier to inspect, improve, and reuse. They also map better to how real business tasks unfold.",
+      "coreConcepts": [
+        {
+          "title": "Define The Hand-Off",
+          "text": "Each stage should produce an output that is useful on its own and usable by the next stage."
+        },
+        {
+          "title": "Insert Review Gates",
+          "text": "The chain should stop where a human must validate, choose, or redirect."
+        },
+        {
+          "title": "Capture Intermediate Assets",
+          "text": "Save outlines, extracted themes, or ranked options because they can be reused later."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A team lead wants AI help turning survey feedback into an action memo.",
+        "approach": "They chain prompts for extraction, theme grouping, recommendation drafting, and memo writing.",
+        "result": "The memo is more defensible because the upstream reasoning is visible.",
+        "verification": "They validate the extracted themes and ranking before generating the final memo."
+      },
+      "artifact": {
+        "label": "Workflow",
+        "title": "Prompt chain map",
+        "items": [
+          "Stage 1: extract",
+          "Stage 2: organize",
+          "Stage 3: recommend",
+          "Stage 4: draft"
+        ]
+      },
+      "doThisNow": {
+        "task": "Create a simple three-step prompt chain for a recurring task.",
+        "timebox": "10 minutes",
+        "steps": [
+          "Name each stage.",
+          "Define the output of each stage.",
+          "Add one review gate before the final draft."
+        ]
+      },
+      "commonMistakes": [
+        "Chaining too many tiny steps.",
+        "Not defining what passes to the next stage.",
+        "Skipping the review gate because the final draft looks polished."
+      ],
+      "roleVariants": {
+        "manager": "Use AI to shorten prep, synthesis, and communication loops without removing judgment.",
+        "writer": "Push for clearer source material, tighter briefs, and reusable language patterns.",
+        "analyst": "Separate analysis from storytelling so you can verify numbers before sharing narratives.",
+        "operator": "Build repeatable handoff-ready outputs instead of one-off conversations."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026",
+      "resources": [
+        {
+          "title": "Anthropic chain-of-thought guide",
+          "url": "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/chain-of-thought",
+          "type": "official",
+          "note": "Useful when a lesson covers decomposition and intermediate reasoning for complex tasks."
+        },
+        {
+          "title": "OpenAI prompt engineering guide",
+          "url": "https://platform.openai.com/docs/guides/prompt-engineering",
+          "type": "official",
+          "note": "Useful for context design, examples, and prompt structure when a lesson discusses prompt quality."
+        }
+      ]
+    },
+    {
+      "id": "module-07-lesson-05",
+      "slug": "your-advanced-prompt-toolkit",
+      "sequenceRationale": "The final lesson packages the module into a reusable toolkit so the learner can choose the lightest prompt pattern that fits the job.",
+      "title": "Your Advanced Prompt Toolkit",
+      "subtitle": "Keep a small set of moves you can apply deliberately.",
+      "objective": "Build a practical toolkit of advanced prompt moves and when to use each one.",
+      "useWhen": "Keep a small set of moves you can apply deliberately.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Advanced prompting is useful only when you know which move fits which problem.",
+      "coreConcepts": [
+        {
+          "title": "Use The Smallest Useful Move",
+          "text": "If a role and structure fix the problem, do not jump to a complex chain."
+        },
+        {
+          "title": "Map Moves To Failure Modes",
+          "text": "Examples help with format consistency. Chains help with multi-step work. Critique prompts help with reasoning quality."
+        },
+        {
+          "title": "Document What Works",
+          "text": "The toolkit becomes valuable when it is stored and reused, not when it lives only in memory."
+        }
+      ],
+      "workedExample": {
+        "scenario": "An operator keeps overcomplicating simple tasks with advanced prompt patterns.",
+        "approach": "They build a one-page toolkit listing failure modes and the smallest useful prompt move for each.",
+        "result": "Their prompting becomes simpler and more reliable.",
+        "verification": "They test the toolkit on three different tasks to make sure the guidance holds up."
+      },
+      "artifact": {
+        "label": "Reference",
+        "title": "Advanced prompt moves",
+        "items": [
+          "Role for perspective",
+          "Example for pattern",
+          "Structure for clarity",
+          "Chain for staged work",
+          "Critique for review"
+        ]
+      },
+      "doThisNow": {
+        "task": "Write a one-page toolkit mapping common failures to prompt moves.",
+        "timebox": "10 minutes",
+        "steps": [
+          "List three failure modes you see often.",
+          "Assign one prompt move to each.",
+          "Save one example for later reuse."
+        ]
+      },
+      "commonMistakes": [
+        "Using advanced patterns by default.",
+        "Collecting prompt tricks with no workflow reason.",
+        "Not documenting when a move actually helped."
+      ],
+      "roleVariants": {
+        "manager": "Use AI to shorten prep, synthesis, and communication loops without removing judgment.",
+        "writer": "Push for clearer source material, tighter briefs, and reusable language patterns.",
+        "analyst": "Separate analysis from storytelling so you can verify numbers before sharing narratives.",
+        "operator": "Build repeatable handoff-ready outputs instead of one-off conversations."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    }
+  ],
+  "outcomes": [
+    "Decompose larger problems into better prompt workflows.",
+    "Use examples, structure, and chaining more deliberately."
+  ],
+  "nextModuleBridge": "Next, bring those techniques into meetings, notes, and follow-up work.",
+  "resources": [
+    {
+      "title": "OpenAI prompt engineering guide",
+      "url": "https://platform.openai.com/docs/guides/prompt-engineering",
+      "type": "official",
+      "note": "Useful for context design, examples, and prompt structure when a lesson discusses prompt quality."
+    },
+    {
+      "title": "Anthropic prompt engineering overview",
+      "url": "https://docs.anthropic.com/en/docs/prompt-engineering",
+      "type": "official",
+      "note": "Helpful reference for structured prompting patterns and evaluation-oriented prompt iteration."
+    }
+  ]
+}

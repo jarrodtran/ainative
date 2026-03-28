@@ -1,0 +1,346 @@
+{
+  "id": 12,
+  "slug": "module-12",
+  "title": "Decision Support And Strategy",
+  "phase": 3,
+  "summary": "Use AI to structure choices, stress-test reasoning, and communicate decisions with more clarity.",
+  "lessons": [
+    {
+      "id": "module-12-lesson-01",
+      "slug": "use-ai-as-a-thinking-partner",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Use AI As A Thinking Partner",
+      "subtitle": "The model can improve decision quality by structuring options and tradeoffs.",
+      "objective": "Use AI to support strategic thinking without handing over the decision itself.",
+      "useWhen": "The model can improve decision quality by structuring options and tradeoffs.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "AI is helpful when the task is exploring options, assumptions, and implications. It is not the accountable decision-maker.",
+      "coreConcepts": [
+        {
+          "title": "Frame The Decision",
+          "text": "State what choice is being made, by whom, by when, and under which constraints."
+        },
+        {
+          "title": "Ask For Structure",
+          "text": "Request options, assumptions, tradeoffs, and missing information rather than a single recommendation first."
+        },
+        {
+          "title": "Keep The Human Owner Visible",
+          "text": "Decision authority should be explicit. AI is there to support judgment, not replace it."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A manager must choose whether to delay a launch to improve onboarding.",
+        "approach": "They ask AI to lay out options, assumptions, affected stakeholders, and likely consequences.",
+        "result": "The choice becomes easier to discuss.",
+        "verification": "The manager checks the assumptions against actual constraints and team capacity before deciding."
+      },
+      "artifact": {
+        "label": "Decision Brief",
+        "title": "Decision framing",
+        "items": [
+          "Decision owner",
+          "Options",
+          "Constraints",
+          "Assumptions",
+          "Deadline"
+        ]
+      },
+      "doThisNow": {
+        "task": "Write a decision brief for one open decision you are facing.",
+        "timebox": "8 minutes",
+        "steps": [
+          "State the decision.",
+          "List two options.",
+          "List the main constraints and assumptions."
+        ]
+      },
+      "commonMistakes": [
+        "Asking AI to make the decision with no framing.",
+        "Skipping the assumptions.",
+        "Treating a recommendation as a mandate."
+      ],
+      "roleVariants": {
+        "manager": "Use AI to compare options, pressure-test plans, and prepare clearer stakeholder communication.",
+        "writer": "Turn rough thinking into structured documents, memos, and decision briefs.",
+        "analyst": "Ask for assumptions, ranges, and missing data before acting on recommendations.",
+        "operator": "Translate ambiguous work into checklists, workflows, and operating decisions."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-12-lesson-02",
+      "slug": "structure-options-and-tradeoffs",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Structure Options And Tradeoffs",
+      "subtitle": "Good decisions compare meaningful choices against explicit criteria.",
+      "objective": "Use AI to build option comparisons that are easier to evaluate and explain.",
+      "useWhen": "Good decisions compare meaningful choices against explicit criteria.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Many strategic discussions go nowhere because the options or evaluation criteria remain fuzzy.",
+      "coreConcepts": [
+        {
+          "title": "Name The Real Options",
+          "text": "A valid option set includes choices someone could actually approve and execute."
+        },
+        {
+          "title": "Define The Criteria",
+          "text": "Cost, speed, risk, customer impact, and reversibility are common lenses."
+        },
+        {
+          "title": "Show Tradeoffs Clearly",
+          "text": "A useful comparison makes the downside of each option visible, not just the upside."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A program lead is comparing three rollout approaches.",
+        "approach": "They ask AI to build a criteria matrix and summarize tradeoffs in plain language.",
+        "result": "Stakeholders can compare the options more quickly.",
+        "verification": "The lead confirms that the criteria reflect what the decision-makers actually care about."
+      },
+      "artifact": {
+        "label": "Matrix",
+        "title": "Option comparison matrix",
+        "items": [
+          "Option",
+          "Pros",
+          "Cons",
+          "Risk",
+          "Confidence"
+        ]
+      },
+      "doThisNow": {
+        "task": "Create a tradeoff matrix for one live choice.",
+        "timebox": "9 minutes",
+        "steps": [
+          "List the real options.",
+          "Define three evaluation criteria.",
+          "Ask AI to surface tradeoffs."
+        ]
+      },
+      "commonMistakes": [
+        "Comparing unrealistic options.",
+        "Leaving criteria implicit.",
+        "Presenting only benefits."
+      ],
+      "roleVariants": {
+        "manager": "Use AI to compare options, pressure-test plans, and prepare clearer stakeholder communication.",
+        "writer": "Turn rough thinking into structured documents, memos, and decision briefs.",
+        "analyst": "Ask for assumptions, ranges, and missing data before acting on recommendations.",
+        "operator": "Translate ambiguous work into checklists, workflows, and operating decisions."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-12-lesson-03",
+      "slug": "use-ai-as-a-devil-s-advocate",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Use AI As A Devil’s Advocate",
+      "subtitle": "Pressure-test plans before other people do it for you.",
+      "objective": "Use critique prompts to find weak assumptions, missing risks, and overlooked stakeholder concerns.",
+      "useWhen": "Pressure-test plans before other people do it for you.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "A structured challenge pass reduces blind spots and improves your ability to defend a plan.",
+      "coreConcepts": [
+        {
+          "title": "Ask For Failure Modes",
+          "text": "Prompt for why the proposal might fail operationally, financially, or politically."
+        },
+        {
+          "title": "Ask From Stakeholder Views",
+          "text": "Different stakeholders object for different reasons. Name those lenses explicitly."
+        },
+        {
+          "title": "Turn Critique Into Revision",
+          "text": "A devil’s advocate step is useful only if it produces changes or better questions."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A team wants to centralize a workflow quickly.",
+        "approach": "The lead asks AI to critique the plan from adoption, support, and executive visibility perspectives.",
+        "result": "Several realistic objections surface before the presentation.",
+        "verification": "The lead checks whether each objection is grounded in the real organization rather than generic caution."
+      },
+      "artifact": {
+        "label": "Critique Prompt",
+        "title": "Pressure-test this plan",
+        "items": [
+          "What assumptions fail?",
+          "Who might resist and why?",
+          "What risks are understated?"
+        ]
+      },
+      "doThisNow": {
+        "task": "Run a devil’s advocate pass on one current proposal.",
+        "timebox": "6 minutes",
+        "steps": [
+          "Name the stakeholder lenses.",
+          "Ask for likely objections.",
+          "Revise the plan or message accordingly."
+        ]
+      },
+      "commonMistakes": [
+        "Treating critique as negativity.",
+        "Ignoring stakeholder-specific objections.",
+        "Running critique with no follow-up revision."
+      ],
+      "roleVariants": {
+        "manager": "Use AI to compare options, pressure-test plans, and prepare clearer stakeholder communication.",
+        "writer": "Turn rough thinking into structured documents, memos, and decision briefs.",
+        "analyst": "Ask for assumptions, ranges, and missing data before acting on recommendations.",
+        "operator": "Translate ambiguous work into checklists, workflows, and operating decisions."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-12-lesson-04",
+      "slug": "build-repeatable-decision-frameworks",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Build Repeatable Decision Frameworks",
+      "subtitle": "Recurring decisions deserve reusable structures.",
+      "objective": "Turn repeated decisions into frameworks you can reuse and improve.",
+      "useWhen": "Recurring decisions deserve reusable structures.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "A framework improves consistency and reduces the chance that each decision starts from scratch.",
+      "coreConcepts": [
+        {
+          "title": "Frameworks Fit Recurring Choices",
+          "text": "Vendor selection, staffing tradeoffs, rollout timing, and priority calls often repeat."
+        },
+        {
+          "title": "Store Criteria And Questions",
+          "text": "The most reusable part of the framework is the evaluation logic."
+        },
+        {
+          "title": "Keep It Lightweight",
+          "text": "A framework should guide judgment, not replace it with bureaucracy."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A manager repeatedly chooses between feature requests with similar tradeoffs.",
+        "approach": "They build a simple framework with impact, effort, urgency, and dependency checks.",
+        "result": "The decision conversation becomes faster and more consistent.",
+        "verification": "They review the framework after a few uses to make sure it is still helping rather than oversimplifying."
+      },
+      "artifact": {
+        "label": "Framework",
+        "title": "Decision framework fields",
+        "items": [
+          "Decision type",
+          "Criteria",
+          "Questions",
+          "Evidence needed",
+          "Review owner"
+        ]
+      },
+      "doThisNow": {
+        "task": "Create a lightweight framework for one recurring decision type in your work.",
+        "timebox": "10 minutes",
+        "steps": [
+          "Choose the decision type.",
+          "Write the evaluation criteria.",
+          "List what evidence you need each time."
+        ]
+      },
+      "commonMistakes": [
+        "Building frameworks for one-off decisions.",
+        "Adding too many criteria.",
+        "Forgetting to revisit the framework after use."
+      ],
+      "roleVariants": {
+        "manager": "Use AI to compare options, pressure-test plans, and prepare clearer stakeholder communication.",
+        "writer": "Turn rough thinking into structured documents, memos, and decision briefs.",
+        "analyst": "Ask for assumptions, ranges, and missing data before acting on recommendations.",
+        "operator": "Translate ambiguous work into checklists, workflows, and operating decisions."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-12-lesson-05",
+      "slug": "create-a-decision-support-toolkit",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Create A Decision Support Toolkit",
+      "subtitle": "Save the prompts, matrices, and critique patterns that improve strategic work.",
+      "objective": "Build a reusable toolkit for option framing, tradeoff analysis, and critique.",
+      "useWhen": "Save the prompts, matrices, and critique patterns that improve strategic work.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Decision quality improves when the best questions and formats are easy to reach.",
+      "coreConcepts": [
+        {
+          "title": "Save The Decision Brief",
+          "text": "A clear framing format helps every later prompt perform better."
+        },
+        {
+          "title": "Save The Comparison Template",
+          "text": "Matrices and summary formats make stakeholder discussions clearer."
+        },
+        {
+          "title": "Save The Critique Pass",
+          "text": "Every major decision should have a reusable challenge step."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A strategy lead makes frequent tradeoff calls but improvises the AI prompts each time.",
+        "approach": "They create a toolkit with a decision brief, a comparison matrix, and a critique prompt.",
+        "result": "Their process becomes easier to repeat and teach.",
+        "verification": "They test the toolkit on a second decision to ensure the prompts are not overfit to one case."
+      },
+      "artifact": {
+        "label": "Toolkit",
+        "title": "Decision toolkit",
+        "items": [
+          "Decision brief",
+          "Options matrix",
+          "Devil’s advocate prompt",
+          "Review checklist"
+        ]
+      },
+      "doThisNow": {
+        "task": "Package one decision workflow into a reusable toolkit entry.",
+        "timebox": "8 minutes",
+        "steps": [
+          "Save the framing prompt.",
+          "Save the comparison format.",
+          "Save the critique step."
+        ]
+      },
+      "commonMistakes": [
+        "Saving only the recommendation prompt.",
+        "Skipping the critique pattern.",
+        "Assuming one strong prompt covers every decision type."
+      ],
+      "roleVariants": {
+        "manager": "Use AI to compare options, pressure-test plans, and prepare clearer stakeholder communication.",
+        "writer": "Turn rough thinking into structured documents, memos, and decision briefs.",
+        "analyst": "Ask for assumptions, ranges, and missing data before acting on recommendations.",
+        "operator": "Translate ambiguous work into checklists, workflows, and operating decisions."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    }
+  ],
+  "outcomes": [
+    "Structure options and tradeoffs better.",
+    "Use AI to challenge assumptions before decisions are made."
+  ],
+  "nextModuleBridge": "Next, apply that same structured thinking to vendors, contracts, and stakeholder work."
+}

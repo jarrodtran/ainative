@@ -1,0 +1,460 @@
+{
+  "id": "agents",
+  "slug": "agents-in-practice",
+  "title": "Agents In Practice",
+  "label": "Bonus Section",
+  "summary": "A practical endcap on OpenClaw and other agents: what they do, where they help, where they add risk, and how to evaluate them without hype.",
+  "outcomes": [
+    "Understand what agent-style tools change compared with a normal assistant.",
+    "Use OpenClaw as one concrete example inside a broader agent landscape.",
+    "Evaluate agents by oversight, tool reach, review burden, and reliability."
+  ],
+  "lessons": [
+    {
+      "id": "agents-lesson-01",
+      "slug": "what-this-class-of-agent-tools-does",
+      "sequenceRationale": "The bonus section opens by defining the category so the learner can evaluate agent-style tools without collapsing everything into the same label.",
+      "title": "What This Class Of Agent Tools Does",
+      "subtitle": "Agents orchestrate steps, tools, and follow-through instead of only answering one request.",
+      "objective": "Distinguish a normal assistant interaction from a more agentic workflow that plans, uses tools, and keeps going.",
+      "useWhen": "Use this when you need to understand what changes when an AI tool moves from chat responses into multi-step execution.",
+      "estimatedMinutes": 7,
+      "whyItMatters": "The practical question is not whether agents are impressive. It is whether the added autonomy meaningfully improves a workflow you actually care about.",
+      "coreConcepts": [
+        {
+          "title": "Multi-Step Execution",
+          "text": "Agent-style systems can continue through several steps, gather inputs, and update outputs without needing a fresh prompt every time."
+        },
+        {
+          "title": "Tool Reach",
+          "text": "The real shift comes from tool access: files, inboxes, calendars, task systems, browsers, terminals, or other connected systems."
+        },
+        {
+          "title": "Oversight Still Matters",
+          "text": "More autonomy increases the importance of checkpoints, review rules, and clear stop conditions."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A normal assistant can draft a meeting recap, while an agentic workflow could also send a draft message, update tasks, and create a reminder.",
+        "approach": "The difference is not magic. It is workflow orchestration plus tool access.",
+        "result": "You start evaluating agents based on sequence, review cost, and reliability rather than novelty.",
+        "verification": "For each step, ask what would happen if it ran with the wrong assumption and whether the workflow has a safe checkpoint."
+      },
+      "artifact": {
+        "label": "Checklist",
+        "title": "Agent workflow lens",
+        "items": [
+          "What steps does it handle?",
+          "What tools can it access?",
+          "Where does a human still review?"
+        ]
+      },
+      "doThisNow": {
+        "task": "Pick one recurring task and write the difference between a chat-only version and an agent-style version.",
+        "timebox": "7 minutes",
+        "steps": [
+          "List the steps.",
+          "Mark where tool access matters.",
+          "Mark where you would require review."
+        ]
+      },
+      "commonMistakes": [
+        "Calling every automation an agent.",
+        "Focusing on model quality while ignoring tool access.",
+        "Skipping oversight design."
+      ],
+      "roleVariants": {
+        "manager": "Model safe adoption through small pilots, clear examples, and lightweight team habits.",
+        "writer": "Document the prompts, examples, and edits that help others replicate quality.",
+        "analyst": "Define simple measures and evidence standards so adoption conversations stay grounded.",
+        "operator": "Focus on workflow change and training, not just tool access."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "agents-lesson-02",
+      "slug": "openclaw-in-context",
+      "sequenceRationale": "Once the category is clear, this lesson uses OpenClaw as a concrete reference point without letting one product define the whole space.",
+      "title": "OpenClaw In Context",
+      "subtitle": "Use OpenClaw as a concrete example of a more agent-style personal assistant without treating it as the whole category.",
+      "objective": "Understand how OpenClaw fits into the broader landscape of agent-style tools and assistants.",
+      "useWhen": "Use this when you want one concrete reference point for what a more action-oriented personal assistant can look like.",
+      "estimatedMinutes": 8,
+      "whyItMatters": "OpenClaw is useful as a reference because it emphasizes doing things through connected tools and chat interfaces, but the right lesson is how to evaluate the pattern, not how to memorize one product.",
+      "coreConcepts": [
+        {
+          "title": "Personal Assistant Framing",
+          "text": "OpenClaw presents itself as a personal AI assistant rather than only a chat bot, emphasizing actions, memory, and connected workflows."
+        },
+        {
+          "title": "One Example, Not The Whole Market",
+          "text": "Use it as one example of a system that blends memory, communication channels, and tool execution."
+        },
+        {
+          "title": "Review Product Claims Carefully",
+          "text": "Agent tools evolve fast. Treat feature lists as moving examples and focus on the underlying evaluation criteria."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A learner hears about OpenClaw and assumes all agents work the same way.",
+        "approach": "They instead ask what kind of workflows it supports, what tools it can reach, and what review burden it creates.",
+        "result": "The conversation moves from hype to evaluation.",
+        "verification": "Before adopting or recommending any agent tool, confirm the current capabilities, approval path, and risk controls for your environment."
+      },
+      "artifact": {
+        "label": "Evaluation",
+        "title": "Questions to ask about OpenClaw",
+        "items": [
+          "What work would it actually improve?",
+          "What systems would it touch?",
+          "What would need human approval first?"
+        ]
+      },
+      "doThisNow": {
+        "task": "Write a short evaluation note on OpenClaw as if you were deciding whether it is relevant to your work.",
+        "timebox": "8 minutes",
+        "steps": [
+          "Name one use case.",
+          "Name the tool access required.",
+          "Name the review boundary."
+        ]
+      },
+      "commonMistakes": [
+        "Treating one product as the whole category.",
+        "Trusting social proof over workflow fit.",
+        "Adopting based on excitement rather than task relevance."
+      ],
+      "roleVariants": {
+        "manager": "Model safe adoption through small pilots, clear examples, and lightweight team habits.",
+        "writer": "Document the prompts, examples, and edits that help others replicate quality.",
+        "analyst": "Define simple measures and evidence standards so adoption conversations stay grounded.",
+        "operator": "Focus on workflow change and training, not just tool access."
+      },
+      "sourceNotes": [
+        "Reviewed against the OpenClaw homepage positioning on March 28, 2026.",
+        "Keep product claims general unless they are re-checked during the next review cycle."
+      ],
+      "lastReviewed": "March 2026",
+      "resources": [
+        {
+          "title": "OpenClaw official site",
+          "url": "https://openclaw.ai/",
+          "type": "official",
+          "note": "Use this to confirm current positioning and capabilities before making tool-specific claims."
+        }
+      ]
+    },
+    {
+      "id": "agents-lesson-03",
+      "slug": "how-openclaw-compares-with-other-agents",
+      "sequenceRationale": "After establishing OpenClaw in context, the learner needs a durable comparison frame that works across agent products and patterns.",
+      "title": "How OpenClaw Compares With Other Agents",
+      "subtitle": "Compare agents by workflow shape, tool reach, and supervision model rather than by marketing language.",
+      "objective": "Build a practical comparison lens for OpenClaw and other agents.",
+      "useWhen": "Use this when you are comparing OpenClaw with other agent tools, coding agents, or workflow automation systems.",
+      "estimatedMinutes": 8,
+      "whyItMatters": "Agent tools differ most in where they live, what they can touch, how much they remember, and how much supervision they require.",
+      "coreConcepts": [
+        {
+          "title": "Where The Agent Lives",
+          "text": "Some agents live inside a chat interface, some in developer tools, and some inside workflow platforms or business apps."
+        },
+        {
+          "title": "What The Agent Can Touch",
+          "text": "Tool access determines both usefulness and risk. The more systems an agent can use, the more valuable and risky it becomes."
+        },
+        {
+          "title": "How The Agent Is Supervised",
+          "text": "The key comparison is not only raw capability. It is whether the workflow exposes enough checkpoints, traceability, and recovery options."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A team compares OpenClaw, a coding-focused agent, and a workflow automation bot.",
+        "approach": "They compare where each tool lives, what systems it touches, and how review happens.",
+        "result": "The team chooses based on workflow fit rather than brand excitement.",
+        "verification": "They test each option on one real workflow and compare review effort, not just output quality."
+      },
+      "artifact": {
+        "label": "Matrix",
+        "title": "Agent comparison criteria",
+        "items": [
+          "Interface and home base",
+          "Tool access",
+          "Memory",
+          "Oversight model",
+          "Review burden"
+        ]
+      },
+      "doThisNow": {
+        "task": "Compare two agent tools or agent patterns using the matrix.",
+        "timebox": "8 minutes",
+        "steps": [
+          "Choose a real workflow.",
+          "Score tool reach and oversight.",
+          "Decide which option has the safer path to value."
+        ]
+      },
+      "commonMistakes": [
+        "Comparing by hype alone.",
+        "Ignoring where the agent lives.",
+        "Skipping the review burden in comparisons."
+      ],
+      "roleVariants": {
+        "manager": "Model safe adoption through small pilots, clear examples, and lightweight team habits.",
+        "writer": "Document the prompts, examples, and edits that help others replicate quality.",
+        "analyst": "Define simple measures and evidence standards so adoption conversations stay grounded.",
+        "operator": "Focus on workflow change and training, not just tool access."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026",
+      "resources": [
+        {
+          "title": "OpenClaw official site",
+          "url": "https://openclaw.ai/",
+          "type": "official",
+          "note": "Use this to confirm current positioning and capabilities before making tool-specific claims."
+        },
+        {
+          "title": "OpenAI safety in building agents",
+          "url": "https://developers.openai.com/api/docs/guides/agent-builder-safety",
+          "type": "official",
+          "note": "Useful reference for approval points, prompt injection risk, and guardrails in agent workflows."
+        }
+      ]
+    },
+    {
+      "id": "agents-lesson-04",
+      "slug": "when-to-use-an-agent-versus-a-normal-assistant",
+      "sequenceRationale": "This lesson narrows the decision from broad comparison into task selection so the learner does not over-apply agent tools.",
+      "title": "When To Use An Agent Versus A Normal Assistant",
+      "subtitle": "Choose agentic tools when orchestration and follow-through matter more than one good answer.",
+      "objective": "Decide when an agentic tool is appropriate and when a normal assistant is the better choice.",
+      "useWhen": "Use this when you are deciding whether a task really needs an agent or just a better prompt and a better workflow.",
+      "estimatedMinutes": 7,
+      "whyItMatters": "Many tasks do not need an agent. The wrong level of autonomy adds risk, setup cost, and complexity without improving the work.",
+      "coreConcepts": [
+        {
+          "title": "Use A Normal Assistant For Bounded Thinking",
+          "text": "Drafting, summarizing, outlining, and one-step analysis often do not need tool orchestration."
+        },
+        {
+          "title": "Use An Agent For Repeatable Multi-Step Work",
+          "text": "Agentic workflows make more sense when several steps, tools, or follow-up actions happen together."
+        },
+        {
+          "title": "Start With The Simplest Useful Mode",
+          "text": "If a normal assistant plus a short checklist solves the problem, do not add more autonomy yet."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A manager considers using an agent for weekly status summaries.",
+        "approach": "They compare a normal assistant plus manual review against an agent that gathers inputs and prepares the draft automatically.",
+        "result": "The team chooses based on where the real friction lies.",
+        "verification": "They check whether the automated version truly reduces manual work without hiding errors until later."
+      },
+      "artifact": {
+        "label": "Decision Rule",
+        "title": "Agent or assistant?",
+        "items": [
+          "Is the work multi-step?",
+          "Does tool access matter?",
+          "Would added autonomy reduce real friction?",
+          "Can I review it safely?"
+        ]
+      },
+      "doThisNow": {
+        "task": "Evaluate one workflow and decide whether it deserves a normal assistant or an agent-style tool.",
+        "timebox": "7 minutes",
+        "steps": [
+          "List the current steps.",
+          "Mark where tool access helps.",
+          "Choose the simplest useful mode."
+        ]
+      },
+      "commonMistakes": [
+        "Using agents for simple drafting work.",
+        "Assuming more autonomy equals more value.",
+        "Adding complexity before proving the need."
+      ],
+      "roleVariants": {
+        "manager": "Model safe adoption through small pilots, clear examples, and lightweight team habits.",
+        "writer": "Document the prompts, examples, and edits that help others replicate quality.",
+        "analyst": "Define simple measures and evidence standards so adoption conversations stay grounded.",
+        "operator": "Focus on workflow change and training, not just tool access."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "agents-lesson-05",
+      "slug": "practical-evaluation-checklist",
+      "sequenceRationale": "With the use-case decision in place, this lesson supplies the evaluation checklist needed before any pilot or recommendation.",
+      "title": "Practical Evaluation Checklist",
+      "subtitle": "Judge agents by reliability, supervision, and operational fit.",
+      "objective": "Use a practical checklist to decide whether an agent is safe and worthwhile for your environment.",
+      "useWhen": "Use this when you are piloting or recommending any agent tool, including OpenClaw.",
+      "estimatedMinutes": 8,
+      "whyItMatters": "The right evaluation questions prevent agent adoption from becoming a mix of hype, vague hope, and hidden risk.",
+      "coreConcepts": [
+        {
+          "title": "Reliability",
+          "text": "Does the agent complete the workflow consistently enough to be useful?"
+        },
+        {
+          "title": "Oversight",
+          "text": "Can you see what it did, stop it, and recover when it goes wrong?"
+        },
+        {
+          "title": "Operational Fit",
+          "text": "Does it fit your approved tools, data boundaries, and the kind of work you actually do?"
+        }
+      ],
+      "workedExample": {
+        "scenario": "A team wants to try an agent that can manage inbox and calendar workflows.",
+        "approach": "They run the checklist on tool access, approval, review, traceability, and error recovery.",
+        "result": "The pilot scope becomes safer and more realistic.",
+        "verification": "They reject workflows where tool access and risk controls are mismatched, even if the demo looked impressive."
+      },
+      "artifact": {
+        "label": "Checklist",
+        "title": "Agent evaluation checklist",
+        "items": [
+          "What can it access?",
+          "How does review happen?",
+          "What breaks if it is wrong?",
+          "How do I recover?",
+          "Is this approved for my environment?"
+        ]
+      },
+      "doThisNow": {
+        "task": "Run the evaluation checklist on one agent you are considering.",
+        "timebox": "8 minutes",
+        "steps": [
+          "List the systems it touches.",
+          "List the review points.",
+          "Write one reason to pilot and one reason to wait."
+        ]
+      },
+      "commonMistakes": [
+        "Ignoring recovery paths.",
+        "Testing with too much access too early.",
+        "Letting demos substitute for evaluation."
+      ],
+      "roleVariants": {
+        "manager": "Model safe adoption through small pilots, clear examples, and lightweight team habits.",
+        "writer": "Document the prompts, examples, and edits that help others replicate quality.",
+        "analyst": "Define simple measures and evidence standards so adoption conversations stay grounded.",
+        "operator": "Focus on workflow change and training, not just tool access."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026",
+      "resources": [
+        {
+          "title": "OpenAI safety in building agents",
+          "url": "https://developers.openai.com/api/docs/guides/agent-builder-safety",
+          "type": "official",
+          "note": "Useful reference for approval points, prompt injection risk, and guardrails in agent workflows."
+        },
+        {
+          "title": "NIST AI RMF Playbook",
+          "url": "https://airc.nist.gov/airmf-resources/playbook/",
+          "type": "reference",
+          "note": "Practical reference for governance, measurement, and risk-management language that stays more durable than vendor marketing."
+        }
+      ]
+    },
+    {
+      "id": "agents-lesson-06",
+      "slug": "safe-first-experiments",
+      "sequenceRationale": "The section ends with safe first experiments so the learner leaves with a bounded pilot pattern rather than a product opinion.",
+      "title": "Safe First Experiments",
+      "subtitle": "Start with bounded workflows, visible review, and low-consequence outputs.",
+      "objective": "Design a safe first experiment with an agent-style tool.",
+      "useWhen": "Use this when you want to test OpenClaw or another agent safely for the first time.",
+      "estimatedMinutes": 7,
+      "whyItMatters": "The first experiment should produce evidence, not exposure. A narrow pilot teaches you more than a dramatic but risky rollout.",
+      "coreConcepts": [
+        {
+          "title": "Choose A Bounded Task",
+          "text": "Good first tests include recurring summaries, internal follow-up drafts, or low-risk personal workflows."
+        },
+        {
+          "title": "Limit Access",
+          "text": "Start with the minimum systems and permissions needed to learn something useful."
+        },
+        {
+          "title": "Review Every Output",
+          "text": "Early experiments should make human review explicit and unavoidable."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A user wants to try OpenClaw for personal scheduling and lightweight internal follow-up.",
+        "approach": "They start with one bounded workflow, limited access, and manual approval before any outbound action.",
+        "result": "They learn where the tool helps without overcommitting or overexposing sensitive systems.",
+        "verification": "After a few runs, they review where the agent helped, where it drifted, and what access should still remain off-limits."
+      },
+      "artifact": {
+        "label": "Pilot Plan",
+        "title": "Safe first experiment",
+        "items": [
+          "One bounded workflow",
+          "Minimum tool access",
+          "Required manual approval",
+          "Short review window"
+        ]
+      },
+      "doThisNow": {
+        "task": "Draft a first-pass pilot brief for OpenClaw or another agent you are considering.",
+        "timebox": "8 minutes",
+        "steps": [
+          "Choose one low-consequence workflow and define the output.",
+          "List the minimum systems and permissions required.",
+          "Write the stop rule and the human approval point before any outbound action."
+        ]
+      },
+      "commonMistakes": [
+        "Starting with a high-consequence workflow.",
+        "Granting broad access before learning.",
+        "Skipping review because the task feels small."
+      ],
+      "roleVariants": {
+        "manager": "Model safe adoption through small pilots, clear examples, and lightweight team habits.",
+        "writer": "Document the prompts, examples, and edits that help others replicate quality.",
+        "analyst": "Define simple measures and evidence standards so adoption conversations stay grounded.",
+        "operator": "Focus on workflow change and training, not just tool access."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    }
+  ],
+  "resources": [
+    {
+      "title": "OpenClaw official site",
+      "url": "https://openclaw.ai/",
+      "type": "official",
+      "note": "Use this to confirm current positioning and capabilities before making tool-specific claims."
+    },
+    {
+      "title": "OpenAI safety in building agents",
+      "url": "https://developers.openai.com/api/docs/guides/agent-builder-safety",
+      "type": "official",
+      "note": "Useful reference for approval points, prompt injection risk, and guardrails in agent workflows."
+    }
+  ]
+}

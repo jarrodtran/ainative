@@ -1,0 +1,345 @@
+{
+  "id": 6,
+  "slug": "module-06",
+  "title": "Research And Synthesis",
+  "phase": 2,
+  "summary": "Use AI to speed up reading, synthesis, and insight generation while staying anchored in source material.",
+  "lessons": [
+    {
+      "id": "module-06-lesson-01",
+      "slug": "research-starts-with-a-question",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Research Starts With A Question",
+      "subtitle": "Vague research requests create vague synthesis.",
+      "objective": "Frame research tasks so AI helps narrow, compare, and summarize instead of producing generic overviews.",
+      "useWhen": "Vague research requests create vague synthesis.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "A sharp research question drives what sources matter, what output shape you need, and how you will judge success.",
+      "coreConcepts": [
+        {
+          "title": "Ask Decision-Oriented Questions",
+          "text": "Research is more useful when tied to a decision, recommendation, or known uncertainty."
+        },
+        {
+          "title": "Bound The Scope",
+          "text": "Define the timeframe, geography, audience, or competitor set so the model does not drift into filler."
+        },
+        {
+          "title": "State The Output",
+          "text": "Say whether you want a scan, comparison, risk list, or recommendation draft."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A PM asks AI for \"everything important\" about a market segment.",
+        "approach": "They narrow the ask to adoption risks, buyer criteria, and three competitors.",
+        "result": "The synthesis becomes much more actionable.",
+        "verification": "The PM checks whether every major claim ties back to an identifiable source or source note."
+      },
+      "artifact": {
+        "label": "Question Frame",
+        "title": "Research brief",
+        "items": [
+          "Decision or question",
+          "Scope boundary",
+          "Needed output",
+          "Verification method"
+        ]
+      },
+      "doThisNow": {
+        "task": "Rewrite one current research task as a decision-oriented research brief.",
+        "timebox": "7 minutes",
+        "steps": [
+          "State the decision.",
+          "Add a scope boundary.",
+          "Name how you will verify the answer."
+        ]
+      },
+      "commonMistakes": [
+        "Researching too broadly.",
+        "Starting with tools before defining the question.",
+        "Not deciding how the output will be used."
+      ],
+      "roleVariants": {
+        "manager": "Use AI to shorten prep, synthesis, and communication loops without removing judgment.",
+        "writer": "Push for clearer source material, tighter briefs, and reusable language patterns.",
+        "analyst": "Separate analysis from storytelling so you can verify numbers before sharing narratives.",
+        "operator": "Build repeatable handoff-ready outputs instead of one-off conversations."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-06-lesson-02",
+      "slug": "summarize-for-action",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Summarize For Action",
+      "subtitle": "A useful summary tells the reader what matters and what to do next.",
+      "objective": "Produce summaries that retain key nuance while making action easier.",
+      "useWhen": "A useful summary tells the reader what matters and what to do next.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Many AI summaries are technically correct but operationally useless because they compress content without preserving the decision context.",
+      "coreConcepts": [
+        {
+          "title": "Summarize To A Reader",
+          "text": "The summary should reflect what the reader needs to know, not just what the source contains."
+        },
+        {
+          "title": "Preserve What Could Change The Decision",
+          "text": "Caveats, constraints, and outliers matter if they would alter the next step."
+        },
+        {
+          "title": "Add A Recommended Next Move",
+          "text": "A summary becomes more useful when it ends with open questions or recommended actions."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A writer summarizes a long vendor document for procurement.",
+        "approach": "They ask for a summary focused on pricing levers, implementation risk, and unanswered questions.",
+        "result": "Procurement gets a concise document that supports the next meeting.",
+        "verification": "The writer verifies every pricing or commitment statement against the source document."
+      },
+      "artifact": {
+        "label": "Summary Format",
+        "title": "Action summary sections",
+        "items": [
+          "What matters",
+          "What changed",
+          "What is uncertain",
+          "Recommended next step"
+        ]
+      },
+      "doThisNow": {
+        "task": "Summarize one document into an action-oriented format for a real reader.",
+        "timebox": "8 minutes",
+        "steps": [
+          "Name the reader.",
+          "Name the decision they face.",
+          "Check the key claims against the source."
+        ]
+      },
+      "commonMistakes": [
+        "Summarizing for nobody in particular.",
+        "Dropping the caveats.",
+        "Treating a summary as a substitute for source review on high-risk material."
+      ],
+      "roleVariants": {
+        "manager": "Use AI to shorten prep, synthesis, and communication loops without removing judgment.",
+        "writer": "Push for clearer source material, tighter briefs, and reusable language patterns.",
+        "analyst": "Separate analysis from storytelling so you can verify numbers before sharing narratives.",
+        "operator": "Build repeatable handoff-ready outputs instead of one-off conversations."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-06-lesson-03",
+      "slug": "synthesize-across-sources",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Synthesize Across Sources",
+      "subtitle": "The value is in the comparison, not just the compression.",
+      "objective": "Combine multiple documents into a coherent comparison or takeaway set.",
+      "useWhen": "The value is in the comparison, not just the compression.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "AI is useful when the job is not only to read faster, but to spot patterns, disagreements, and recurring themes across materials.",
+      "coreConcepts": [
+        {
+          "title": "Normalize The Inputs",
+          "text": "Tell the model how to compare the sources: by theme, risk, opportunity, audience, or timeline."
+        },
+        {
+          "title": "Track Agreement And Conflict",
+          "text": "A synthesis is more trustworthy when it separates shared conclusions from contested ones."
+        },
+        {
+          "title": "Keep Source Traceability",
+          "text": "If the synthesis will influence a decision, preserve notes on where each major point came from."
+        }
+      ],
+      "workedExample": {
+        "scenario": "An analyst compares customer feedback, support tickets, and win-loss notes.",
+        "approach": "They ask AI to cluster common themes and call out where the sources disagree.",
+        "result": "The synthesis is more useful than three separate summaries.",
+        "verification": "The analyst spot-checks one example for each major theme against the underlying source set."
+      },
+      "artifact": {
+        "label": "Synthesis Grid",
+        "title": "Cross-source comparison",
+        "items": [
+          "Theme",
+          "Evidence by source",
+          "Agreement level",
+          "Open questions"
+        ]
+      },
+      "doThisNow": {
+        "task": "Take two to three related inputs and create a single comparison grid.",
+        "timebox": "10 minutes",
+        "steps": [
+          "Choose the comparison lens.",
+          "Ask AI to separate agreement from conflict.",
+          "Verify one point from each theme."
+        ]
+      },
+      "commonMistakes": [
+        "Combining too many unrelated sources.",
+        "Letting the model collapse disagreements into false consensus.",
+        "Losing track of which source supported which claim."
+      ],
+      "roleVariants": {
+        "manager": "Use AI to shorten prep, synthesis, and communication loops without removing judgment.",
+        "writer": "Push for clearer source material, tighter briefs, and reusable language patterns.",
+        "analyst": "Separate analysis from storytelling so you can verify numbers before sharing narratives.",
+        "operator": "Build repeatable handoff-ready outputs instead of one-off conversations."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-06-lesson-04",
+      "slug": "challenge-the-research-output",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Challenge The Research Output",
+      "subtitle": "Good synthesis still needs interrogation.",
+      "objective": "Use AI to critique its own research output and reveal weak claims, missing evidence, or blind spots.",
+      "useWhen": "Good synthesis still needs interrogation.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "The first research output should rarely be the final one. A second-pass critique surfaces what still needs checking.",
+      "coreConcepts": [
+        {
+          "title": "Ask For Missing Evidence",
+          "text": "Have the model identify which conclusions are strongest, weakest, and dependent on assumptions."
+        },
+        {
+          "title": "Separate Fact From Inference",
+          "text": "Many research mistakes come from passing off an interpretation as if it were directly observed."
+        },
+        {
+          "title": "Turn Weakness Into Follow-Up Work",
+          "text": "The right response to uncertainty is a next question, not fake confidence."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A research summary recommends a vendor aggressively.",
+        "approach": "The user asks the model to critique the recommendation, list assumptions, and identify missing evidence.",
+        "result": "The output becomes more balanced and decision-ready.",
+        "verification": "The user checks that the critique points map back to actual gaps in the source material."
+      },
+      "artifact": {
+        "label": "Critique Prompt",
+        "title": "Challenge the synthesis",
+        "items": [
+          "What claims are weakest?",
+          "What evidence is missing?",
+          "What assumptions drive the conclusion?",
+          "What should be researched next?"
+        ]
+      },
+      "doThisNow": {
+        "task": "Run a critique pass on one AI-generated summary you already have.",
+        "timebox": "6 minutes",
+        "steps": [
+          "Ask for weakest claims.",
+          "Ask for missing evidence.",
+          "Turn the answer into follow-up questions."
+        ]
+      },
+      "commonMistakes": [
+        "Treating the first synthesis as final.",
+        "Ignoring inferences disguised as facts.",
+        "Not converting open questions into follow-up research."
+      ],
+      "roleVariants": {
+        "manager": "Use AI to shorten prep, synthesis, and communication loops without removing judgment.",
+        "writer": "Push for clearer source material, tighter briefs, and reusable language patterns.",
+        "analyst": "Separate analysis from storytelling so you can verify numbers before sharing narratives.",
+        "operator": "Build repeatable handoff-ready outputs instead of one-off conversations."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-06-lesson-05",
+      "slug": "build-a-research-workflow",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Build A Research Workflow",
+      "subtitle": "Good research is a repeatable sequence, not a single magic prompt.",
+      "objective": "Create a repeatable AI-assisted workflow for reading, synthesis, critique, and final output.",
+      "useWhen": "Good research is a repeatable sequence, not a single magic prompt.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "A workflow is easier to trust, teach, and improve than a collection of disconnected chat sessions.",
+      "coreConcepts": [
+        {
+          "title": "Collect",
+          "text": "Gather and label the sources that matter."
+        },
+        {
+          "title": "Synthesize",
+          "text": "Ask for a structured comparison or action summary."
+        },
+        {
+          "title": "Critique",
+          "text": "Challenge the weak spots and verify the critical claims."
+        }
+      ],
+      "workedExample": {
+        "scenario": "An operator regularly prepares market scans for a weekly leadership meeting.",
+        "approach": "They standardize the sequence and store the output format and review checks.",
+        "result": "The scan becomes faster, more consistent, and easier for others to cover.",
+        "verification": "The workflow includes a required check on freshness and source credibility before the scan is shared."
+      },
+      "artifact": {
+        "label": "Workflow",
+        "title": "Research operating sequence",
+        "items": [
+          "Collect sources",
+          "Summarize to decision",
+          "Challenge the draft",
+          "Verify key claims",
+          "Publish"
+        ]
+      },
+      "doThisNow": {
+        "task": "Write your own five-step research workflow for a recurring task.",
+        "timebox": "9 minutes",
+        "steps": [
+          "List the input sources.",
+          "Define the synthesis format.",
+          "Add the critique and verification step."
+        ]
+      },
+      "commonMistakes": [
+        "Treating research as one prompt.",
+        "Skipping the critique step.",
+        "Not saving the workflow once it works."
+      ],
+      "roleVariants": {
+        "manager": "Use AI to shorten prep, synthesis, and communication loops without removing judgment.",
+        "writer": "Push for clearer source material, tighter briefs, and reusable language patterns.",
+        "analyst": "Separate analysis from storytelling so you can verify numbers before sharing narratives.",
+        "operator": "Build repeatable handoff-ready outputs instead of one-off conversations."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    }
+  ],
+  "outcomes": [
+    "Summarize and synthesize source material better.",
+    "Turn research into action-oriented output."
+  ],
+  "nextModuleBridge": "Next, level up prompting for more complex and multi-step work."
+}

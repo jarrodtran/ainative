@@ -1,0 +1,345 @@
+{
+  "id": 8,
+  "slug": "module-08",
+  "title": "Meetings, Notes, And Follow-Up",
+  "phase": 2,
+  "summary": "Use AI before, during, and after meetings to reduce prep time and improve the quality of follow-through.",
+  "lessons": [
+    {
+      "id": "module-08-lesson-01",
+      "slug": "prep-with-intention",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Prep With Intention",
+      "subtitle": "Use AI to arrive with clearer goals, sharper questions, and better framing.",
+      "objective": "Prepare for meetings faster by using AI to structure your thinking before the call.",
+      "useWhen": "Use AI to arrive with clearer goals, sharper questions, and better framing.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Meeting quality usually depends on preparation, not note-taking alone.",
+      "coreConcepts": [
+        {
+          "title": "Define The Outcome",
+          "text": "State what you need by the end of the meeting: a decision, alignment, information, or commitment."
+        },
+        {
+          "title": "Use AI To Draft Questions",
+          "text": "Ask for questions, risks, and likely objections from the audience perspective."
+        },
+        {
+          "title": "Bring Real Context",
+          "text": "Prep gets better when you include the agenda, participant roles, and current status. "
+        }
+      ],
+      "workedExample": {
+        "scenario": "A manager has a vendor review meeting with limited prep time.",
+        "approach": "They use AI to create a short briefing with objectives, questions, and risk areas based on the agenda and prior notes.",
+        "result": "The meeting starts with better focus.",
+        "verification": "They check that the briefing reflects the latest vendor status, not stale assumptions from older notes."
+      },
+      "artifact": {
+        "label": "Briefing",
+        "title": "Meeting prep brief",
+        "items": [
+          "Outcome needed",
+          "Participants",
+          "Open questions",
+          "Risks to surface"
+        ]
+      },
+      "doThisNow": {
+        "task": "Prepare for one real meeting using a prep brief.",
+        "timebox": "8 minutes",
+        "steps": [
+          "Paste the agenda or notes.",
+          "Ask AI for key questions and risks.",
+          "Review the brief before the meeting."
+        ]
+      },
+      "commonMistakes": [
+        "Using AI to overprepare instead of clarify.",
+        "Forgetting to include participant context.",
+        "Treating prep questions as facts."
+      ],
+      "roleVariants": {
+        "manager": "Use AI to shorten prep, synthesis, and communication loops without removing judgment.",
+        "writer": "Push for clearer source material, tighter briefs, and reusable language patterns.",
+        "analyst": "Separate analysis from storytelling so you can verify numbers before sharing narratives.",
+        "operator": "Build repeatable handoff-ready outputs instead of one-off conversations."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-08-lesson-02",
+      "slug": "capture-notes-you-can-use",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Capture Notes You Can Use",
+      "subtitle": "Raw notes are only valuable if they preserve decisions and actions accurately.",
+      "objective": "Turn rough meeting notes into structured, reviewable material.",
+      "useWhen": "Raw notes are only valuable if they preserve decisions and actions accurately.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Most post-meeting confusion comes from weak capture of decisions, owners, and open questions.",
+      "coreConcepts": [
+        {
+          "title": "Label What You Heard",
+          "text": "Separate facts, decisions, risks, and next steps while notes are still fresh."
+        },
+        {
+          "title": "Ask AI To Organize, Not Guess",
+          "text": "The model should structure your notes, not invent details you missed."
+        },
+        {
+          "title": "Review The Commitments",
+          "text": "Owner assignments and deadlines must be checked manually."
+        }
+      ],
+      "workedExample": {
+        "scenario": "An operator leaves a cross-functional sync with fragmented notes.",
+        "approach": "They ask AI to turn the notes into decisions, owners, blockers, and open questions.",
+        "result": "The recap becomes readable and easier to share.",
+        "verification": "The operator checks all dates and assignments against what was actually agreed. "
+      },
+      "artifact": {
+        "label": "Organizer",
+        "title": "Meeting note labels",
+        "items": [
+          "Decision",
+          "Owner",
+          "Due date",
+          "Risk",
+          "Open question"
+        ]
+      },
+      "doThisNow": {
+        "task": "Take one set of rough notes and convert it into labeled meeting output.",
+        "timebox": "9 minutes",
+        "steps": [
+          "Label the note fragments.",
+          "Ask AI to structure them.",
+          "Manually confirm decisions and owners."
+        ]
+      },
+      "commonMistakes": [
+        "Pasting unlabeled notes.",
+        "Letting AI assign owners or deadlines.",
+        "Confusing discussion with decision."
+      ],
+      "roleVariants": {
+        "manager": "Use AI to shorten prep, synthesis, and communication loops without removing judgment.",
+        "writer": "Push for clearer source material, tighter briefs, and reusable language patterns.",
+        "analyst": "Separate analysis from storytelling so you can verify numbers before sharing narratives.",
+        "operator": "Build repeatable handoff-ready outputs instead of one-off conversations."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-08-lesson-03",
+      "slug": "produce-better-recaps",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Produce Better Recaps",
+      "subtitle": "A recap should lower future confusion, not just summarize the past.",
+      "objective": "Draft recap messages that make next actions clear to the right audience.",
+      "useWhen": "A recap should lower future confusion, not just summarize the past.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Meeting value is realized in the follow-through, not the transcript.",
+      "coreConcepts": [
+        {
+          "title": "Write To The Receiver",
+          "text": "A recap for participants is different from a recap for leadership or an absent stakeholder."
+        },
+        {
+          "title": "Lead With Decisions",
+          "text": "Most readers want the outcome, not a blow-by-blow replay."
+        },
+        {
+          "title": "Make Action Visible",
+          "text": "If the recap does not clarify owners, dates, or questions, it will not change what happens next."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A project coordinator needs a recap after a weekly steering meeting.",
+        "approach": "They draft a recap with decisions first, then actions, then open questions.",
+        "result": "Stakeholders can scan the message and know what changed.",
+        "verification": "The coordinator checks that the recap reflects the approved decisions, not tentative discussion points."
+      },
+      "artifact": {
+        "label": "Format",
+        "title": "Recap sections",
+        "items": [
+          "Decision summary",
+          "Actions and owners",
+          "Open questions",
+          "Risks or blockers"
+        ]
+      },
+      "doThisNow": {
+        "task": "Rewrite one recap into a decision-first format.",
+        "timebox": "7 minutes",
+        "steps": [
+          "Move decisions to the top.",
+          "List owners and dates.",
+          "Remove discussion detail that does not matter."
+        ]
+      },
+      "commonMistakes": [
+        "Leading with narrative instead of outcomes.",
+        "Sending the same recap to every audience.",
+        "Including tentative ideas as settled decisions."
+      ],
+      "roleVariants": {
+        "manager": "Use AI to shorten prep, synthesis, and communication loops without removing judgment.",
+        "writer": "Push for clearer source material, tighter briefs, and reusable language patterns.",
+        "analyst": "Separate analysis from storytelling so you can verify numbers before sharing narratives.",
+        "operator": "Build repeatable handoff-ready outputs instead of one-off conversations."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-08-lesson-04",
+      "slug": "follow-through-between-meetings",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Follow Through Between Meetings",
+      "subtitle": "AI can help reduce the admin drag that causes next steps to slip.",
+      "objective": "Use AI to turn meeting outputs into practical follow-up assets.",
+      "useWhen": "AI can help reduce the admin drag that causes next steps to slip.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Follow-up work is often small, repetitive, and time-sensitive, which makes it a strong fit for AI assistance.",
+      "coreConcepts": [
+        {
+          "title": "Turn Actions Into Work Items",
+          "text": "Convert notes into task lists, owner reminders, or status questions quickly after the meeting."
+        },
+        {
+          "title": "Tailor The Message",
+          "text": "A reminder to a teammate is different from a readout to leadership."
+        },
+        {
+          "title": "Keep Humans On Accountability",
+          "text": "AI can draft the communication, but you still decide whether the assigned work is accurate and fair."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A team lead needs three different follow-ups from the same meeting.",
+        "approach": "They use one source note set and ask AI for a task list, owner check-in messages, and a short leader readout.",
+        "result": "The follow-up happens faster with less duplication.",
+        "verification": "The lead confirms the owner assignments and due dates before sending any messages."
+      },
+      "artifact": {
+        "label": "Bundle",
+        "title": "Follow-up asset bundle",
+        "items": [
+          "Task list",
+          "Owner message",
+          "Leader readout"
+        ]
+      },
+      "doThisNow": {
+        "task": "Turn one meeting outcome into two different follow-up assets.",
+        "timebox": "8 minutes",
+        "steps": [
+          "Use the same source notes.",
+          "Draft two audience-specific outputs.",
+          "Verify owners and deadlines."
+        ]
+      },
+      "commonMistakes": [
+        "Sending every follow-up in the same voice.",
+        "Letting AI define accountability.",
+        "Waiting too long after the meeting to structure the notes."
+      ],
+      "roleVariants": {
+        "manager": "Use AI to shorten prep, synthesis, and communication loops without removing judgment.",
+        "writer": "Push for clearer source material, tighter briefs, and reusable language patterns.",
+        "analyst": "Separate analysis from storytelling so you can verify numbers before sharing narratives.",
+        "operator": "Build repeatable handoff-ready outputs instead of one-off conversations."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-08-lesson-05",
+      "slug": "build-your-meeting-workflow",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Build Your Meeting Workflow",
+      "subtitle": "Prep, capture, recap, and follow-up work best as one system.",
+      "objective": "Create a repeatable end-to-end meeting workflow supported by AI.",
+      "useWhen": "Prep, capture, recap, and follow-up work best as one system.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Meeting work becomes easier to delegate and improve when the sequence is explicit.",
+      "coreConcepts": [
+        {
+          "title": "Use The Same Sequence",
+          "text": "Prep, capture, recap, and follow-up are the core stages for most meetings."
+        },
+        {
+          "title": "Store The Inputs",
+          "text": "Agenda, notes, recap template, and follow-up prompts should live together."
+        },
+        {
+          "title": "Review The High-Risk Fields",
+          "text": "Decisions, owners, dates, and commitments always need a human pass."
+        }
+      ],
+      "workedExample": {
+        "scenario": "An operator supports recurring cross-functional meetings every week.",
+        "approach": "They create a standard workflow and template pack for every meeting cycle.",
+        "result": "The work gets faster and less error-prone.",
+        "verification": "The workflow includes a mandatory final review of decisions and assigned owners."
+      },
+      "artifact": {
+        "label": "Workflow",
+        "title": "Meeting system",
+        "items": [
+          "Prep brief",
+          "Note labels",
+          "Recap format",
+          "Follow-up bundle",
+          "Review check"
+        ]
+      },
+      "doThisNow": {
+        "task": "Document your meeting workflow for one recurring meeting.",
+        "timebox": "10 minutes",
+        "steps": [
+          "List the stages.",
+          "Save the supporting prompts.",
+          "Add the final review step."
+        ]
+      },
+      "commonMistakes": [
+        "Improving only one stage.",
+        "Forgetting where the source notes live.",
+        "Not storing the workflow for reuse."
+      ],
+      "roleVariants": {
+        "manager": "Use AI to shorten prep, synthesis, and communication loops without removing judgment.",
+        "writer": "Push for clearer source material, tighter briefs, and reusable language patterns.",
+        "analyst": "Separate analysis from storytelling so you can verify numbers before sharing narratives.",
+        "operator": "Build repeatable handoff-ready outputs instead of one-off conversations."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    }
+  ],
+  "outcomes": [
+    "Prepare for meetings faster.",
+    "Create clearer recaps and follow-through."
+  ],
+  "nextModuleBridge": "Next, apply the same workflow thinking to documentation and SOP creation."
+}

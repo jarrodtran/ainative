@@ -1,0 +1,346 @@
+{
+  "id": 5,
+  "slug": "module-05",
+  "title": "Writing And Communication",
+  "phase": 2,
+  "summary": "Use AI to draft, reshape, and polish everyday business communication without losing judgment or voice.",
+  "lessons": [
+    {
+      "id": "module-05-lesson-01",
+      "slug": "draft-from-a-real-brief",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Draft From A Real Brief",
+      "subtitle": "Writing gets better when the prompt starts from intent, audience, and source facts.",
+      "objective": "Use AI to create stronger first drafts for emails, memos, updates, and internal notes.",
+      "useWhen": "Writing gets better when the prompt starts from intent, audience, and source facts.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Most business writing problems are not grammar problems. They are clarity, audience, and structure problems, which AI can help surface quickly.",
+      "coreConcepts": [
+        {
+          "title": "Brief First",
+          "text": "State the message, the audience, and the desired response before asking for prose."
+        },
+        {
+          "title": "Source The Facts",
+          "text": "Provide approved facts and decisions so the draft does not invent context."
+        },
+        {
+          "title": "Draft In Layers",
+          "text": "Get the structure right first, then refine tone and polish."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A project lead needs to explain a slip in timeline without causing panic.",
+        "approach": "They provide the facts, audience concerns, and the one action they want from the reader.",
+        "result": "The draft communicates clearly without sounding vague or defensive.",
+        "verification": "They check that the note does not overpromise recovery steps not yet approved."
+      },
+      "artifact": {
+        "label": "Brief",
+        "title": "Writing brief",
+        "items": [
+          "What happened",
+          "What matters to the reader",
+          "What action or response you want",
+          "What not to imply"
+        ]
+      },
+      "doThisNow": {
+        "task": "Use a four-line brief to draft one message you already need to send today.",
+        "timebox": "8 minutes",
+        "steps": [
+          "Write the reader and goal.",
+          "Paste the approved facts.",
+          "Ask for a structured first draft."
+        ]
+      },
+      "commonMistakes": [
+        "Prompting from memory instead of source notes.",
+        "Optimizing for polish before clarity.",
+        "Letting the draft make promises you have not approved."
+      ],
+      "roleVariants": {
+        "manager": "Use AI to shorten prep, synthesis, and communication loops without removing judgment.",
+        "writer": "Push for clearer source material, tighter briefs, and reusable language patterns.",
+        "analyst": "Separate analysis from storytelling so you can verify numbers before sharing narratives.",
+        "operator": "Build repeatable handoff-ready outputs instead of one-off conversations."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-05-lesson-02",
+      "slug": "rewrite-for-audience-and-tone",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Rewrite For Audience And Tone",
+      "subtitle": "The same information should sound different to different readers.",
+      "objective": "Adapt one core message for executives, peers, customers, or partners without rewriting from scratch each time.",
+      "useWhen": "The same information should sound different to different readers.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Audience mismatch is one of the most common communication failures. AI can help vary tone and density while keeping the core message stable.",
+      "coreConcepts": [
+        {
+          "title": "Keep The Message Stable",
+          "text": "Change tone, framing, and detail level without changing the approved facts."
+        },
+        {
+          "title": "Name The Reader’s Need",
+          "text": "Executives want direction and risk. Peers often want process detail. Customers want impact and next steps."
+        },
+        {
+          "title": "Review For Over-Editing",
+          "text": "AI can over-soften or over-formalize. Preserve the actual stakes and your own voice."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A writer needs one update for leadership and another for a customer account team.",
+        "approach": "They generate two versions from the same source facts with different audience instructions.",
+        "result": "The outputs are tailored without creating conflicting stories.",
+        "verification": "They compare both versions against the same approved fact list."
+      },
+      "artifact": {
+        "label": "Matrix",
+        "title": "Audience matrix",
+        "items": [
+          "Audience",
+          "What they care about",
+          "What detail they need",
+          "Tone to avoid"
+        ]
+      },
+      "doThisNow": {
+        "task": "Take one message and rewrite it for two different audiences.",
+        "timebox": "9 minutes",
+        "steps": [
+          "List the shared facts.",
+          "Define the audience needs.",
+          "Check both versions for consistency."
+        ]
+      },
+      "commonMistakes": [
+        "Changing the facts with the tone.",
+        "Using one-size-fits-all language.",
+        "Forgetting to remove internal jargon for external readers."
+      ],
+      "roleVariants": {
+        "manager": "Use AI to shorten prep, synthesis, and communication loops without removing judgment.",
+        "writer": "Push for clearer source material, tighter briefs, and reusable language patterns.",
+        "analyst": "Separate analysis from storytelling so you can verify numbers before sharing narratives.",
+        "operator": "Build repeatable handoff-ready outputs instead of one-off conversations."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-05-lesson-03",
+      "slug": "edit-and-tighten",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Edit And Tighten",
+      "subtitle": "AI is often more valuable as an editor than as a first drafter.",
+      "objective": "Use AI to improve clarity, flow, and concision on material you already wrote.",
+      "useWhen": "AI is often more valuable as an editor than as a first drafter.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Editing preserves your reasoning while reducing the time spent trimming, smoothing, and restructuring.",
+      "coreConcepts": [
+        {
+          "title": "Start With Your Draft",
+          "text": "When the ideas are already yours, AI can help with clarity without taking over the substance."
+        },
+        {
+          "title": "Ask For A Specific Edit",
+          "text": "Shorter, clearer, more direct, more executive-friendly, or more diplomatic are better instructions than \"improve this.\""
+        },
+        {
+          "title": "Compare Versions",
+          "text": "Review what changed so you do not accidentally lose important nuance."
+        }
+      ],
+      "workedExample": {
+        "scenario": "An analyst has a strong draft but it reads too dense for leadership.",
+        "approach": "They ask AI to preserve the logic while shortening, clarifying, and moving the recommendation to the top.",
+        "result": "The memo stays accurate but becomes easier to consume.",
+        "verification": "They compare the original and edited version to ensure caveats were not dropped."
+      },
+      "artifact": {
+        "label": "Prompt Move",
+        "title": "Editing request",
+        "items": [
+          "Keep the facts unchanged.",
+          "Improve clarity for [audience].",
+          "Shorten by [target].",
+          "Preserve these points."
+        ]
+      },
+      "doThisNow": {
+        "task": "Take one piece of writing you drafted yourself and use AI as an editor rather than a writer.",
+        "timebox": "7 minutes",
+        "steps": [
+          "Paste your draft.",
+          "State what to preserve.",
+          "Review what changed before accepting edits."
+        ]
+      },
+      "commonMistakes": [
+        "Accepting edits without comparison.",
+        "Giving no preservation rules.",
+        "Using editing help to avoid making the actual decision."
+      ],
+      "roleVariants": {
+        "manager": "Use AI to shorten prep, synthesis, and communication loops without removing judgment.",
+        "writer": "Push for clearer source material, tighter briefs, and reusable language patterns.",
+        "analyst": "Separate analysis from storytelling so you can verify numbers before sharing narratives.",
+        "operator": "Build repeatable handoff-ready outputs instead of one-off conversations."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-05-lesson-04",
+      "slug": "turn-notes-into-communication",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Turn Notes Into Communication",
+      "subtitle": "Move from rough bullet points to useful communication assets.",
+      "objective": "Convert meeting notes, project bullets, or rough thinking into clear communication artifacts.",
+      "useWhen": "Move from rough bullet points to useful communication assets.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "A lot of writing work starts as fragments. AI is especially good at lifting fragments into a usable first structure.",
+      "coreConcepts": [
+        {
+          "title": "Structure The Fragments",
+          "text": "Tell the model what each bullet represents before asking for finished prose."
+        },
+        {
+          "title": "Ask For Missing Questions",
+          "text": "A good assistant can point out what information is absent before you finalize the draft."
+        },
+        {
+          "title": "Keep Humans On Commitments",
+          "text": "Never let AI decide ownership, dates, or promises from incomplete notes."
+        }
+      ],
+      "workedExample": {
+        "scenario": "An operator has messy notes after a customer call.",
+        "approach": "They label the notes as facts, requests, risks, and next steps before asking for a recap email.",
+        "result": "The final message is cleaner and more accurate.",
+        "verification": "They confirm the draft did not invent commitments not present in the notes."
+      },
+      "artifact": {
+        "label": "Organizer",
+        "title": "Fragment labels",
+        "items": [
+          "Facts",
+          "Decisions",
+          "Requests",
+          "Risks",
+          "Next steps"
+        ]
+      },
+      "doThisNow": {
+        "task": "Take a rough set of bullets and turn them into one polished communication asset.",
+        "timebox": "10 minutes",
+        "steps": [
+          "Label the bullets first.",
+          "Ask for a draft in your required format.",
+          "Review every commitment and owner."
+        ]
+      },
+      "commonMistakes": [
+        "Pasting unlabeled notes.",
+        "Letting the model infer commitments.",
+        "Skipping a final fact check because the prose looks finished."
+      ],
+      "roleVariants": {
+        "manager": "Use AI to shorten prep, synthesis, and communication loops without removing judgment.",
+        "writer": "Push for clearer source material, tighter briefs, and reusable language patterns.",
+        "analyst": "Separate analysis from storytelling so you can verify numbers before sharing narratives.",
+        "operator": "Build repeatable handoff-ready outputs instead of one-off conversations."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-05-lesson-05",
+      "slug": "create-writing-templates-that-stick",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Create Writing Templates That Stick",
+      "subtitle": "Capture your strongest communication patterns for reuse.",
+      "objective": "Turn repeat writing tasks into reusable prompt-and-review templates.",
+      "useWhen": "Capture your strongest communication patterns for reuse.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Templates reduce decision fatigue and make quality easier to reproduce across the month, not just once.",
+      "coreConcepts": [
+        {
+          "title": "Template The Repeated Jobs",
+          "text": "Status updates, customer recaps, meeting follow-ups, and executive notes are prime candidates."
+        },
+        {
+          "title": "Include Review Rules",
+          "text": "A template is not complete until it says what must be checked before sending."
+        },
+        {
+          "title": "Refresh With Real Use",
+          "text": "Templates improve through reuse. Update them when your edits reveal a missing rule."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A manager writes the same project update every Friday.",
+        "approach": "They save the context pattern, section headings, and review rules from a successful version.",
+        "result": "Friday updates become faster without feeling robotic.",
+        "verification": "They revise the template after two uses to remove redundant instructions and add a missed risk check."
+      },
+      "artifact": {
+        "label": "Template",
+        "title": "Communication template fields",
+        "items": [
+          "Use case",
+          "Context block",
+          "Required sections",
+          "Review checklist",
+          "Last updated"
+        ]
+      },
+      "doThisNow": {
+        "task": "Convert one frequent writing job into a reusable template.",
+        "timebox": "10 minutes",
+        "steps": [
+          "Pick the recurring message.",
+          "Save the prompt structure.",
+          "Add the final review checklist."
+        ]
+      },
+      "commonMistakes": [
+        "Saving a prompt without the review rules.",
+        "Templateing rare tasks.",
+        "Never updating the template after reuse."
+      ],
+      "roleVariants": {
+        "manager": "Use AI to shorten prep, synthesis, and communication loops without removing judgment.",
+        "writer": "Push for clearer source material, tighter briefs, and reusable language patterns.",
+        "analyst": "Separate analysis from storytelling so you can verify numbers before sharing narratives.",
+        "operator": "Build repeatable handoff-ready outputs instead of one-off conversations."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    }
+  ],
+  "outcomes": [
+    "Draft and revise business writing faster.",
+    "Adapt messages for audience and tone."
+  ],
+  "nextModuleBridge": "Next, use the same discipline on research and synthesis, where source handling matters even more."
+}

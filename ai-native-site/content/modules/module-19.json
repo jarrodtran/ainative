@@ -1,0 +1,346 @@
+{
+  "id": 19,
+  "slug": "module-19",
+  "title": "AI Change And Governance",
+  "phase": 5,
+  "summary": "Support sustainable AI adoption by planning for workflow change, decision rights, and simple governance that people can actually use.",
+  "lessons": [
+    {
+      "id": "module-19-lesson-01",
+      "slug": "why-ai-initiatives-fail",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Why AI Initiatives Fail",
+      "subtitle": "Failure usually comes from workflow gaps, trust gaps, and unclear ownership.",
+      "objective": "Recognize the common causes of weak AI initiatives so you can avoid repeating them.",
+      "useWhen": "Failure usually comes from workflow gaps, trust gaps, and unclear ownership.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Many initiatives fail not because the model is weak, but because the surrounding workflow, training, and governance are unfinished.",
+      "coreConcepts": [
+        {
+          "title": "No Clear Workflow",
+          "text": "People are asked to \"use AI more\" without a defined process or use case."
+        },
+        {
+          "title": "No Review Design",
+          "text": "Outputs are generated, but nobody knows what must be checked or approved."
+        },
+        {
+          "title": "No Ownership",
+          "text": "Without clear ownership, the initiative becomes everybody’s idea and nobody’s responsibility."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A team rolls out an AI tool broadly and sees little lasting use.",
+        "approach": "A review reveals there were no shared workflows, no training on review standards, and no owner for the rollout.",
+        "result": "The failure becomes understandable and fixable.",
+        "verification": "The team confirms the diagnosis with actual user feedback rather than guessing at the reasons."
+      },
+      "artifact": {
+        "label": "Failure Scan",
+        "title": "Why this might fail",
+        "items": [
+          "No use case",
+          "No review standard",
+          "No owner",
+          "No evidence of value"
+        ]
+      },
+      "doThisNow": {
+        "task": "Review one AI effort you have seen and note which failure pattern was present.",
+        "timebox": "6 minutes",
+        "steps": [
+          "Choose the effort.",
+          "Apply the failure scan.",
+          "Write one fix you would add."
+        ]
+      },
+      "commonMistakes": [
+        "Blaming the model alone.",
+        "Ignoring workflow design.",
+        "Calling adoption poor without asking why."
+      ],
+      "roleVariants": {
+        "manager": "Model safe adoption through small pilots, clear examples, and lightweight team habits.",
+        "writer": "Document the prompts, examples, and edits that help others replicate quality.",
+        "analyst": "Define simple measures and evidence standards so adoption conversations stay grounded.",
+        "operator": "Focus on workflow change and training, not just tool access."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-19-lesson-02",
+      "slug": "use-a-simple-transformation-sequence",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Use A Simple Transformation Sequence",
+      "subtitle": "Discover, pilot, evaluate, and scale only what proves itself.",
+      "objective": "Apply a lightweight sequence for moving from idea to tested AI workflow.",
+      "useWhen": "Discover, pilot, evaluate, and scale only what proves itself.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "A small sequence keeps teams from leaping straight from curiosity to broad rollout.",
+      "coreConcepts": [
+        {
+          "title": "Discover",
+          "text": "Find the workflow and define the problem."
+        },
+        {
+          "title": "Pilot",
+          "text": "Run a bounded test with a clear review path."
+        },
+        {
+          "title": "Scale Carefully",
+          "text": "Expand only after the workflow shows evidence of value and manageable risk."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A business unit wants to improve recurring report creation with AI.",
+        "approach": "They discover the main friction, pilot one report workflow, and measure the result before sharing broadly.",
+        "result": "The sequence produces evidence instead of hype.",
+        "verification": "They use the pilot evidence, not enthusiasm, to decide whether to scale."
+      },
+      "artifact": {
+        "label": "Sequence",
+        "title": "Transformation steps",
+        "items": [
+          "Discover",
+          "Pilot",
+          "Evaluate",
+          "Scale"
+        ]
+      },
+      "doThisNow": {
+        "task": "Map one AI opportunity onto the simple transformation sequence.",
+        "timebox": "7 minutes",
+        "steps": [
+          "Write the workflow.",
+          "Define the pilot boundary.",
+          "Define the evaluation step."
+        ]
+      },
+      "commonMistakes": [
+        "Skipping the pilot.",
+        "Scaling before learning.",
+        "Treating the sequence as a bureaucratic exercise instead of a risk-control tool."
+      ],
+      "roleVariants": {
+        "manager": "Model safe adoption through small pilots, clear examples, and lightweight team habits.",
+        "writer": "Document the prompts, examples, and edits that help others replicate quality.",
+        "analyst": "Define simple measures and evidence standards so adoption conversations stay grounded.",
+        "operator": "Focus on workflow change and training, not just tool access."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-19-lesson-03",
+      "slug": "use-lightweight-governance",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Use Lightweight Governance",
+      "subtitle": "Governance should clarify what people can do, not freeze the work.",
+      "objective": "Define simple governance elements that keep AI use safe and practical.",
+      "useWhen": "Governance should clarify what people can do, not freeze the work.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Overly heavy governance kills momentum, but no governance creates avoidable risk and mistrust.",
+      "coreConcepts": [
+        {
+          "title": "Clarify Approved Paths",
+          "text": "People need to know which tools, data classes, and workflows are allowed."
+        },
+        {
+          "title": "Clarify Review And Escalation",
+          "text": "The governance needs a clear answer to \"who checks this?\" and \"who decides if this is okay?\""
+        },
+        {
+          "title": "Clarify Ownership",
+          "text": "Someone should own the workflow, the training, and the evidence collection."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A team is interested in AI but avoids it because the rules feel unclear.",
+        "approach": "A lead creates a simple approved-path guide with tool, data, review, and escalation rules.",
+        "result": "People start using AI more confidently within the boundary.",
+        "verification": "They check whether the guide answered the real questions users were asking."
+      },
+      "artifact": {
+        "label": "Governance",
+        "title": "Minimum governance set",
+        "items": [
+          "Approved tools",
+          "Allowed data",
+          "Review rules",
+          "Escalation path",
+          "Owner"
+        ]
+      },
+      "doThisNow": {
+        "task": "Write the minimum governance notes needed for one AI workflow you want to support.",
+        "timebox": "8 minutes",
+        "steps": [
+          "Name the tool.",
+          "Name the data rules.",
+          "Name the reviewer and escalation path."
+        ]
+      },
+      "commonMistakes": [
+        "Creating policy with no workflow connection.",
+        "Forgetting escalation paths.",
+        "Making the rules so vague that nobody can use them."
+      ],
+      "roleVariants": {
+        "manager": "Model safe adoption through small pilots, clear examples, and lightweight team habits.",
+        "writer": "Document the prompts, examples, and edits that help others replicate quality.",
+        "analyst": "Define simple measures and evidence standards so adoption conversations stay grounded.",
+        "operator": "Focus on workflow change and training, not just tool access."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-19-lesson-04",
+      "slug": "support-the-human-change",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Support The Human Change",
+      "subtitle": "People need habits, examples, and confidence, not just access.",
+      "objective": "Plan for the human side of AI-enabled workflow change.",
+      "useWhen": "People need habits, examples, and confidence, not just access.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Adoption fails when teams treat AI as a tool installation instead of a workflow change.",
+      "coreConcepts": [
+        {
+          "title": "Change The Workflow, Not Just The Tool",
+          "text": "People need to know how their daily work should change."
+        },
+        {
+          "title": "Provide Examples",
+          "text": "Examples lower cognitive load and increase trust."
+        },
+        {
+          "title": "Normalize Review",
+          "text": "The team should see review and correction as part of the process, not as failure."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A rollout gives everyone access to AI but usage remains low.",
+        "approach": "The team adds workflow examples, office hours, and a review checklist.",
+        "result": "Usage improves because the change becomes concrete and supported.",
+        "verification": "They ask whether people can now describe exactly when and how to use AI in one recurring task."
+      },
+      "artifact": {
+        "label": "Support Plan",
+        "title": "Human change supports",
+        "items": [
+          "Example workflow",
+          "Training touchpoint",
+          "Review checklist",
+          "Feedback loop"
+        ]
+      },
+      "doThisNow": {
+        "task": "Choose one support element your team is currently missing for AI adoption.",
+        "timebox": "5 minutes",
+        "steps": [
+          "Pick the workflow.",
+          "Name the missing support.",
+          "Write how you would add it this month."
+        ]
+      },
+      "commonMistakes": [
+        "Confusing access with adoption.",
+        "Treating review as embarrassing.",
+        "Failing to show the changed workflow."
+      ],
+      "roleVariants": {
+        "manager": "Model safe adoption through small pilots, clear examples, and lightweight team habits.",
+        "writer": "Document the prompts, examples, and edits that help others replicate quality.",
+        "analyst": "Define simple measures and evidence standards so adoption conversations stay grounded.",
+        "operator": "Focus on workflow change and training, not just tool access."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-19-lesson-05",
+      "slug": "write-a-90-day-action-plan",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Write A 90-Day Action Plan",
+      "subtitle": "A short plan helps move from intention to measured change.",
+      "objective": "Create a 90-day plan for one AI workflow or team adoption effort.",
+      "useWhen": "A short plan helps move from intention to measured change.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "A 90-day horizon is long enough to learn something and short enough to stay concrete.",
+      "coreConcepts": [
+        {
+          "title": "Pick One Priority Workflow",
+          "text": "Trying to transform everything at once creates noise."
+        },
+        {
+          "title": "Define Milestones",
+          "text": "Discovery, pilot, review, and next-step decisions should all be visible."
+        },
+        {
+          "title": "Assign Evidence",
+          "text": "Decide what examples or metrics will show progress. "
+        }
+      ],
+      "workedExample": {
+        "scenario": "A team wants to improve recurring internal reporting with AI.",
+        "approach": "They build a 90-day plan covering design, pilot, evidence review, and team sharing.",
+        "result": "The work becomes easier to coordinate and less likely to stall.",
+        "verification": "They check whether each milestone names an owner and a specific output."
+      },
+      "artifact": {
+        "label": "Plan",
+        "title": "90-day plan fields",
+        "items": [
+          "Priority workflow",
+          "Milestones",
+          "Owner",
+          "Evidence",
+          "Review date"
+        ]
+      },
+      "doThisNow": {
+        "task": "Draft a 90-day plan for one AI initiative you can actually influence.",
+        "timebox": "10 minutes",
+        "steps": [
+          "Choose the workflow.",
+          "Set three milestones.",
+          "Set the evidence and review date."
+        ]
+      },
+      "commonMistakes": [
+        "Writing an initiative with no clear owner.",
+        "Trying to cover too many workflows.",
+        "Leaving evidence undefined."
+      ],
+      "roleVariants": {
+        "manager": "Model safe adoption through small pilots, clear examples, and lightweight team habits.",
+        "writer": "Document the prompts, examples, and edits that help others replicate quality.",
+        "analyst": "Define simple measures and evidence standards so adoption conversations stay grounded.",
+        "operator": "Focus on workflow change and training, not just tool access."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    }
+  ],
+  "outcomes": [
+    "Use lightweight governance that people can actually follow.",
+    "Support human workflow change, not just tool rollout."
+  ],
+  "nextModuleBridge": "Next, measure what changed so AI improvement becomes credible, not anecdotal."
+}

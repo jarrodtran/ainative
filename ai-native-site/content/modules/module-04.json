@@ -1,0 +1,343 @@
+{
+  "id": 4,
+  "slug": "module-04",
+  "title": "Safe And Responsible AI Use",
+  "phase": 1,
+  "summary": "Use AI with stronger data judgment, verification habits, and policy awareness so speed never outruns trust.",
+  "lessons": [
+    {
+      "id": "module-04-lesson-01",
+      "slug": "know-your-data-boundaries",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Know Your Data Boundaries",
+      "subtitle": "The first safety question is what material belongs in the prompt at all.",
+      "objective": "Classify inputs by sensitivity and choose safer ways to work when the material is risky.",
+      "useWhen": "The first safety question is what material belongs in the prompt at all.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "The easiest AI mistake is not a bad answer. It is putting the wrong information into the system in the first place.",
+      "coreConcepts": [
+        {
+          "title": "Separate Public From Sensitive",
+          "text": "Not all work material carries the same risk. Customer data, employee data, contracts, and regulated information need stricter handling."
+        },
+        {
+          "title": "Minimize Before You Paste",
+          "text": "If you can abstract, redact, or summarize the sensitive parts while preserving the task, do that first."
+        },
+        {
+          "title": "Use Approved Paths",
+          "text": "Company-approved tools, internal instances, and redaction workflows matter more than individual convenience."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A writer wants AI help on a customer escalation note that contains account details.",
+        "approach": "They remove identifying information and provide the issue pattern, approved facts, and desired tone instead of raw customer data.",
+        "result": "They still get useful writing help without moving sensitive details into the prompt.",
+        "verification": "They confirm the final note reintroduces only the approved customer-specific facts from the source system."
+      },
+      "artifact": {
+        "label": "Checklist",
+        "title": "Before you paste work material",
+        "items": [
+          "Is this approved for AI use?",
+          "Can I redact or abstract it?",
+          "Do I need a safer workflow?"
+        ]
+      },
+      "doThisNow": {
+        "task": "Pick one AI use case you do today and define what data must be removed before prompting.",
+        "timebox": "6 minutes",
+        "steps": [
+          "Name the task.",
+          "List the sensitive fields.",
+          "Write a redacted version you could safely use."
+        ]
+      },
+      "commonMistakes": [
+        "Pasting raw customer or employee data by default.",
+        "Assuming paid access equals full approval.",
+        "Ignoring redaction because it feels inconvenient."
+      ],
+      "roleVariants": {
+        "manager": "Frame AI requests around a deliverable, risk level, and reviewer before you ask for output.",
+        "writer": "Use AI as a drafting and editing partner, then review for voice, facts, and audience fit.",
+        "analyst": "Treat AI as a hypothesis generator and explainer, not as a trusted source of record.",
+        "operator": "Anchor every prompt in the real workflow, inputs, and downstream handoff."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-04-lesson-02",
+      "slug": "what-to-never-trust-without-review",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "What To Never Trust Without Review",
+      "subtitle": "Some outputs always deserve a second look.",
+      "objective": "Identify categories of AI output that require explicit human review before use.",
+      "useWhen": "Some outputs always deserve a second look.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Not all AI mistakes are equal. Review effort should scale with the business consequence of being wrong.",
+      "coreConcepts": [
+        {
+          "title": "High-Consequence Claims",
+          "text": "Legal, compliance, financial, customer-facing, and policy statements deserve stricter checks."
+        },
+        {
+          "title": "Specifics Need Evidence",
+          "text": "Dates, names, numbers, pricing, citations, and quoted language should be verified against a real source."
+        },
+        {
+          "title": "Advice Is Still Drafting",
+          "text": "Even when AI suggests a strong course of action, it is preparing a recommendation for human judgment, not making the decision."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A program manager asks AI to summarize new contract language.",
+        "approach": "They treat the output as a drafting aid and compare every obligation statement to the actual contract.",
+        "result": "The summary becomes useful without pretending the AI performed legal review.",
+        "verification": "Every clause used in the summary is checked against the source document."
+      },
+      "artifact": {
+        "label": "Review Rule",
+        "title": "Mandatory review categories",
+        "items": [
+          "Anything customer-facing",
+          "Anything with numbers",
+          "Anything policy-related",
+          "Anything that changes risk or cost"
+        ]
+      },
+      "doThisNow": {
+        "task": "Write your personal \"always review\" list for the work you do most often.",
+        "timebox": "5 minutes",
+        "steps": [
+          "List the risky output types.",
+          "Define who should review them.",
+          "Save the list beside your prompt library."
+        ]
+      },
+      "commonMistakes": [
+        "Reviewing every output the same way.",
+        "Skipping checks on polished language.",
+        "Treating AI summaries as authoritative."
+      ],
+      "roleVariants": {
+        "manager": "Frame AI requests around a deliverable, risk level, and reviewer before you ask for output.",
+        "writer": "Use AI as a drafting and editing partner, then review for voice, facts, and audience fit.",
+        "analyst": "Treat AI as a hypothesis generator and explainer, not as a trusted source of record.",
+        "operator": "Anchor every prompt in the real workflow, inputs, and downstream handoff."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-04-lesson-03",
+      "slug": "verification-as-a-habit",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Verification As A Habit",
+      "subtitle": "Fast review beats late correction.",
+      "objective": "Build a lightweight verification sequence that fits daily work instead of feeling like extra bureaucracy.",
+      "useWhen": "Fast review beats late correction.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Verification only works if it is simple enough to use under deadline pressure.",
+      "coreConcepts": [
+        {
+          "title": "Check The Critical Few",
+          "text": "Review the parts that could cause harm: claims, commitments, owners, numbers, and policy statements."
+        },
+        {
+          "title": "Use Source-First Review",
+          "text": "Go back to the original note, document, spreadsheet, or policy before trusting the polished output."
+        },
+        {
+          "title": "Mark Uncertainty",
+          "text": "If something cannot be confirmed quickly, label it as open instead of pretending certainty."
+        }
+      ],
+      "workedExample": {
+        "scenario": "An analyst uses AI to prepare a project status summary from meeting notes.",
+        "approach": "They verify dates, owners, and blockers against the source notes and mark uncertain items as open questions.",
+        "result": "The summary remains fast to produce without spreading bad details.",
+        "verification": "The analyst checks three items systematically before sending: owner, deadline, and risk statement."
+      },
+      "artifact": {
+        "label": "Sequence",
+        "title": "Three-point verification",
+        "items": [
+          "Check the facts.",
+          "Check the decision or owner.",
+          "Check anything that could create risk if wrong."
+        ]
+      },
+      "doThisNow": {
+        "task": "Attach a three-point verification routine to one of your common AI workflows.",
+        "timebox": "7 minutes",
+        "steps": [
+          "Choose the workflow.",
+          "List the three fields you must check.",
+          "Use it on the next output you generate."
+        ]
+      },
+      "commonMistakes": [
+        "Only reading for tone.",
+        "Assuming shorter outputs need less review.",
+        "Ignoring uncertainty because the draft looks finished."
+      ],
+      "roleVariants": {
+        "manager": "Frame AI requests around a deliverable, risk level, and reviewer before you ask for output.",
+        "writer": "Use AI as a drafting and editing partner, then review for voice, facts, and audience fit.",
+        "analyst": "Treat AI as a hypothesis generator and explainer, not as a trusted source of record.",
+        "operator": "Anchor every prompt in the real workflow, inputs, and downstream handoff."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-04-lesson-04",
+      "slug": "working-within-policy",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Working Within Policy",
+      "subtitle": "Good AI habits include knowing what your organization has already decided.",
+      "objective": "Translate organizational AI policy into practical day-to-day behavior.",
+      "useWhen": "Good AI habits include knowing what your organization has already decided.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Adoption stalls when policy feels abstract. It succeeds when people know exactly what rules mean in the moment of work.",
+      "coreConcepts": [
+        {
+          "title": "Know The Allowed Tools",
+          "text": "Approval often applies to specific tools, plans, connectors, or data classes rather than to AI in general."
+        },
+        {
+          "title": "Know The Escalation Path",
+          "text": "When the work falls into a gray area, knowing who decides is part of responsible use."
+        },
+        {
+          "title": "Turn Policy Into Prompts",
+          "text": "Simple reminders such as \"use source text only\" or \"do not include identifiers\" make policy practical."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A team member is unsure whether internal financial notes can be used in an approved AI workspace.",
+        "approach": "They check the policy, confirm the allowed data classes, and ask the reviewer when the case is ambiguous.",
+        "result": "The work continues without guessing at the rule.",
+        "verification": "The final workflow is documented so the next person does not have to rediscover the same boundary."
+      },
+      "artifact": {
+        "label": "Policy Notes",
+        "title": "Translate policy into action",
+        "items": [
+          "Approved tool",
+          "Allowed data",
+          "Required review",
+          "Escalation contact"
+        ]
+      },
+      "doThisNow": {
+        "task": "Write a one-page translation of your organization’s AI policy into plain working rules.",
+        "timebox": "10 minutes",
+        "steps": [
+          "List approved tools.",
+          "List prohibited data.",
+          "List who to ask when unsure."
+        ]
+      },
+      "commonMistakes": [
+        "Assuming policy is obvious.",
+        "Treating approval as universal across all data types.",
+        "Relying on hearsay instead of the actual rule."
+      ],
+      "roleVariants": {
+        "manager": "Frame AI requests around a deliverable, risk level, and reviewer before you ask for output.",
+        "writer": "Use AI as a drafting and editing partner, then review for voice, facts, and audience fit.",
+        "analyst": "Treat AI as a hypothesis generator and explainer, not as a trusted source of record.",
+        "operator": "Anchor every prompt in the real workflow, inputs, and downstream handoff."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-04-lesson-05",
+      "slug": "a-safe-daily-checklist",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "A Safe Daily Checklist",
+      "subtitle": "Use the same short checklist whenever you work with AI.",
+      "objective": "Create a daily checklist that balances speed, privacy, and verification.",
+      "useWhen": "Use the same short checklist whenever you work with AI.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "A short checklist is easier to maintain than a long policy deck, and it keeps good habits visible under pressure.",
+      "coreConcepts": [
+        {
+          "title": "Check The Inputs",
+          "text": "Is this prompt safe for the selected tool?"
+        },
+        {
+          "title": "Check The Output",
+          "text": "What claims or commitments need review before use?"
+        },
+        {
+          "title": "Check The Destination",
+          "text": "Who will read this and what happens if it is wrong?"
+        }
+      ],
+      "workedExample": {
+        "scenario": "A coordinator uses AI several times per day for communication and planning.",
+        "approach": "They keep a visible checklist next to their prompt library and apply it before sharing any final output.",
+        "result": "The workflow stays fast while avoiding careless errors.",
+        "verification": "The checklist includes a final stop on factual and approval-sensitive claims."
+      },
+      "artifact": {
+        "label": "Checklist",
+        "title": "Daily safe-use checklist",
+        "items": [
+          "Safe input?",
+          "Clear task?",
+          "Verified claims?",
+          "Right reviewer?",
+          "Right destination?"
+        ]
+      },
+      "doThisNow": {
+        "task": "Draft a five-line AI checklist you can use daily.",
+        "timebox": "5 minutes",
+        "steps": [
+          "Write the five questions.",
+          "Keep them visible.",
+          "Use them on your next AI-generated deliverable."
+        ]
+      },
+      "commonMistakes": [
+        "Making the checklist too long.",
+        "Using it only for big tasks.",
+        "Skipping it when the output looks polished."
+      ],
+      "roleVariants": {
+        "manager": "Frame AI requests around a deliverable, risk level, and reviewer before you ask for output.",
+        "writer": "Use AI as a drafting and editing partner, then review for voice, facts, and audience fit.",
+        "analyst": "Treat AI as a hypothesis generator and explainer, not as a trusted source of record.",
+        "operator": "Anchor every prompt in the real workflow, inputs, and downstream handoff."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    }
+  ],
+  "outcomes": [
+    "Use AI with better data judgment.",
+    "Add lightweight verification to daily work."
+  ],
+  "nextModuleBridge": "Next, move from foundations into daily productivity workflows where AI can save immediate time."
+}

@@ -1,0 +1,347 @@
+{
+  "id": 10,
+  "slug": "module-10",
+  "title": "Project And Program Management",
+  "phase": 3,
+  "summary": "Use AI to improve planning, risk management, stakeholder updates, and recurring coordination work.",
+  "lessons": [
+    {
+      "id": "module-10-lesson-01",
+      "slug": "ai-as-a-project-co-pilot",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "AI As A Project Co-Pilot",
+      "subtitle": "Use AI to support planning and communication, not replace project judgment.",
+      "objective": "Identify where AI adds leverage in the project workflow and where human decisions still dominate.",
+      "useWhen": "Use AI to support planning and communication, not replace project judgment.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Project work mixes structure and judgment. AI is strong at organizing inputs and drafting outputs, but weak at owning tradeoffs.",
+      "coreConcepts": [
+        {
+          "title": "Use AI For Structure",
+          "text": "Planning outlines, risk lists, recap drafts, and status formats are all strong fits."
+        },
+        {
+          "title": "Keep Humans On Tradeoffs",
+          "text": "Priority, scope, staffing, and escalation still require human authority."
+        },
+        {
+          "title": "Anchor In Real Project Artifacts",
+          "text": "Briefs, timelines, issue logs, and meeting notes make AI output much more reliable."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A PM needs to turn a rough initiative brief into a kickoff plan.",
+        "approach": "They provide the brief, milestones, constraints, and stakeholders, then ask AI for a planning skeleton.",
+        "result": "The first draft is more structured and easier to refine.",
+        "verification": "The PM checks scope, dependency assumptions, and resource implications before sharing."
+      },
+      "artifact": {
+        "label": "Map",
+        "title": "Good PM uses for AI",
+        "items": [
+          "Plan skeletons",
+          "Risk lists",
+          "Status summaries",
+          "Stakeholder drafts"
+        ]
+      },
+      "doThisNow": {
+        "task": "Identify three PM tasks you can accelerate safely with AI this week.",
+        "timebox": "6 minutes",
+        "steps": [
+          "List the task.",
+          "List the source artifact.",
+          "List what still needs human review."
+        ]
+      },
+      "commonMistakes": [
+        "Asking AI to make project decisions alone.",
+        "Planning from memory instead of artifacts.",
+        "Skipping dependency review."
+      ],
+      "roleVariants": {
+        "manager": "Use AI to compare options, pressure-test plans, and prepare clearer stakeholder communication.",
+        "writer": "Turn rough thinking into structured documents, memos, and decision briefs.",
+        "analyst": "Ask for assumptions, ranges, and missing data before acting on recommendations.",
+        "operator": "Translate ambiguous work into checklists, workflows, and operating decisions."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-10-lesson-02",
+      "slug": "plan-from-a-brief",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Plan From A Brief",
+      "subtitle": "Good plans start with clear goals, boundaries, and assumptions.",
+      "objective": "Use AI to draft project plans and milestone structures from an existing brief.",
+      "useWhen": "Good plans start with clear goals, boundaries, and assumptions.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Project plans improve when AI helps surface missing assumptions and organize tasks into a clearer sequence.",
+      "coreConcepts": [
+        {
+          "title": "Start With The Goal",
+          "text": "Define the outcome, deadline, and constraints before asking for tasks."
+        },
+        {
+          "title": "Surface Assumptions",
+          "text": "Plans are only as good as the assumptions behind them. Ask AI to identify what is unknown or unstated."
+        },
+        {
+          "title": "Use Reviewable Structure",
+          "text": "Ask for phases, milestones, dependencies, and risks instead of one long prose plan."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A program manager receives a vague internal request with a target quarter.",
+        "approach": "They use AI to turn the brief into milestones, open assumptions, and a draft dependency list.",
+        "result": "The conversation shifts from vague ambition to a concrete planning discussion.",
+        "verification": "The PM checks that milestone dates and dependencies align with actual team capacity."
+      },
+      "artifact": {
+        "label": "Plan Format",
+        "title": "Planning outputs",
+        "items": [
+          "Milestones",
+          "Dependencies",
+          "Assumptions",
+          "Risks",
+          "Decision points"
+        ]
+      },
+      "doThisNow": {
+        "task": "Use one active brief to generate a milestone-based project outline.",
+        "timebox": "9 minutes",
+        "steps": [
+          "Provide the goal and date.",
+          "Ask for assumptions and dependencies.",
+          "Review the draft with actual constraints in mind."
+        ]
+      },
+      "commonMistakes": [
+        "Using AI without a real brief.",
+        "Treating assumptions as facts.",
+        "Sharing the plan before checking feasibility."
+      ],
+      "roleVariants": {
+        "manager": "Use AI to compare options, pressure-test plans, and prepare clearer stakeholder communication.",
+        "writer": "Turn rough thinking into structured documents, memos, and decision briefs.",
+        "analyst": "Ask for assumptions, ranges, and missing data before acting on recommendations.",
+        "operator": "Translate ambiguous work into checklists, workflows, and operating decisions."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-10-lesson-03",
+      "slug": "use-ai-for-risk-reviews",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Use AI For Risk Reviews",
+      "subtitle": "Risk identification improves when you ask from multiple perspectives.",
+      "objective": "Generate better risk lists and mitigation options using structured prompts.",
+      "useWhen": "Risk identification improves when you ask from multiple perspectives.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Teams often under-scan risk because they focus on delivery tasks and ignore stakeholder, resource, or change-management issues.",
+      "coreConcepts": [
+        {
+          "title": "Prompt From Different Lenses",
+          "text": "Schedule, resource, dependency, stakeholder, and adoption lenses reveal different categories of risk."
+        },
+        {
+          "title": "Ask For Mitigation, Not Just Lists",
+          "text": "A useful risk review includes early warning signals and response options."
+        },
+        {
+          "title": "Separate Probability From Impact",
+          "text": "A ranked list is more useful than a brainstormed pile."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A project has a strong delivery plan but weak adoption planning.",
+        "approach": "The PM asks AI to review the plan from delivery, stakeholder, and change-management perspectives.",
+        "result": "New risks appear that were invisible in the first draft.",
+        "verification": "The PM validates which risks are real versus generic and adds only those supported by the project context."
+      },
+      "artifact": {
+        "label": "Risk Lens",
+        "title": "Risk review categories",
+        "items": [
+          "Delivery",
+          "Dependencies",
+          "Stakeholders",
+          "Adoption",
+          "Governance"
+        ]
+      },
+      "doThisNow": {
+        "task": "Run a two-lens risk review on one project you own.",
+        "timebox": "8 minutes",
+        "steps": [
+          "Choose two lenses.",
+          "Ask for ranked risks.",
+          "Validate which risks actually apply."
+        ]
+      },
+      "commonMistakes": [
+        "Collecting risks with no ranking.",
+        "Ignoring stakeholder or adoption risk.",
+        "Accepting generic mitigation advice without context."
+      ],
+      "roleVariants": {
+        "manager": "Use AI to compare options, pressure-test plans, and prepare clearer stakeholder communication.",
+        "writer": "Turn rough thinking into structured documents, memos, and decision briefs.",
+        "analyst": "Ask for assumptions, ranges, and missing data before acting on recommendations.",
+        "operator": "Translate ambiguous work into checklists, workflows, and operating decisions."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-10-lesson-04",
+      "slug": "write-faster-status-updates",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Write Faster Status Updates",
+      "subtitle": "Status work is easier when AI organizes the raw material first.",
+      "objective": "Create faster, clearer status reports from existing project notes and trackers.",
+      "useWhen": "Status work is easier when AI organizes the raw material first.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Status reporting is repetitive and format-driven, making it a strong fit for AI support.",
+      "coreConcepts": [
+        {
+          "title": "Collect The Inputs",
+          "text": "Issue logs, milestone status, notes, and blockers should feed the draft."
+        },
+        {
+          "title": "Lead With What Changed",
+          "text": "Good status updates highlight movement, risk, and decisions needed."
+        },
+        {
+          "title": "Tailor For The Reader",
+          "text": "Leadership, peers, and working teams want different levels of detail."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A PM spends 45 minutes every week consolidating updates.",
+        "approach": "They use AI to turn the tracker and notes into a status draft with a fixed format.",
+        "result": "The reporting time drops and the message becomes clearer.",
+        "verification": "The PM checks that the report reflects the current tracker, not old thread context."
+      },
+      "artifact": {
+        "label": "Status Format",
+        "title": "Status sections",
+        "items": [
+          "What changed",
+          "Current risks",
+          "Next milestones",
+          "Help needed"
+        ]
+      },
+      "doThisNow": {
+        "task": "Use a current tracker and notes to draft one status report.",
+        "timebox": "7 minutes",
+        "steps": [
+          "Paste the relevant inputs.",
+          "Ask for a fixed format.",
+          "Verify the dates and risks before sending."
+        ]
+      },
+      "commonMistakes": [
+        "Writing status updates from memory.",
+        "Using the same detail level for every audience.",
+        "Letting AI hide bad news in polished prose."
+      ],
+      "roleVariants": {
+        "manager": "Use AI to compare options, pressure-test plans, and prepare clearer stakeholder communication.",
+        "writer": "Turn rough thinking into structured documents, memos, and decision briefs.",
+        "analyst": "Ask for assumptions, ranges, and missing data before acting on recommendations.",
+        "operator": "Translate ambiguous work into checklists, workflows, and operating decisions."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-10-lesson-05",
+      "slug": "build-a-pm-prompt-library",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Build A PM Prompt Library",
+      "subtitle": "Store the patterns that help recurring project work move faster.",
+      "objective": "Capture reusable prompts and formats for planning, risk review, and status updates.",
+      "useWhen": "Store the patterns that help recurring project work move faster.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Project work repeats. Saving what works reduces rework and makes team norms more consistent.",
+      "coreConcepts": [
+        {
+          "title": "Save Prompt + Artifact",
+          "text": "Keep the prompt alongside the input pattern and output format."
+        },
+        {
+          "title": "Document Review Rules",
+          "text": "Record what must be checked before sharing the draft."
+        },
+        {
+          "title": "Version The Pattern",
+          "text": "Update the prompt when you learn a better way to frame the work."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A PM creates a planning prompt that works well but cannot remember why.",
+        "approach": "They save the prompt, the planning brief structure, and the review notes.",
+        "result": "The next project kickoff starts from a proven asset instead of a blank page.",
+        "verification": "They test the saved pattern on a second project before adopting it more broadly."
+      },
+      "artifact": {
+        "label": "Library",
+        "title": "PM library entry",
+        "items": [
+          "Use case",
+          "Input artifact",
+          "Prompt pattern",
+          "Output format",
+          "Review notes"
+        ]
+      },
+      "doThisNow": {
+        "task": "Save one effective PM prompt as a reusable library entry.",
+        "timebox": "8 minutes",
+        "steps": [
+          "Capture the input pattern.",
+          "Capture the format.",
+          "Capture the review standard."
+        ]
+      },
+      "commonMistakes": [
+        "Saving only the wording.",
+        "Forgetting the review standard.",
+        "Not retesting the prompt on another project."
+      ],
+      "roleVariants": {
+        "manager": "Use AI to compare options, pressure-test plans, and prepare clearer stakeholder communication.",
+        "writer": "Turn rough thinking into structured documents, memos, and decision briefs.",
+        "analyst": "Ask for assumptions, ranges, and missing data before acting on recommendations.",
+        "operator": "Translate ambiguous work into checklists, workflows, and operating decisions."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    }
+  ],
+  "outcomes": [
+    "Use AI as a project planning and reporting co-pilot.",
+    "Surface assumptions, risks, and status faster."
+  ],
+  "nextModuleBridge": "Next, use AI for data interpretation and business analysis without losing rigor."
+}

@@ -1,0 +1,373 @@
+{
+  "id": 14,
+  "slug": "module-14",
+  "title": "Practical AI Agents And Automation",
+  "phase": 4,
+  "summary": "Understand agentic workflows in practical terms: where they help, what oversight they need, and how to start safely.",
+  "lessons": [
+    {
+      "id": "module-14-lesson-01",
+      "slug": "what-makes-an-agent-different",
+      "sequenceRationale": "This opening lesson clarifies what is actually different about agents before the module discusses tooling, oversight, or pilot design.",
+      "title": "What Makes An Agent Different",
+      "subtitle": "An agent is a workflow pattern, not magic autonomy.",
+      "objective": "Explain the difference between a one-shot assistant interaction and a multi-step agentic workflow.",
+      "useWhen": "An agent is a workflow pattern, not magic autonomy.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Agent language creates hype quickly. A practical definition helps you decide where autonomy is useful and where it creates unnecessary risk.",
+      "coreConcepts": [
+        {
+          "title": "Assistants Respond, Agents Orchestrate",
+          "text": "A simple assistant answers a request. An agentic workflow can plan, use tools, and continue through several steps."
+        },
+        {
+          "title": "Autonomy Is A Spectrum",
+          "text": "Some systems only suggest next actions. Others perform them. Oversight should match the consequence of being wrong."
+        },
+        {
+          "title": "Workflow Design Matters More Than Labels",
+          "text": "A reliable sequence with clear checks is more important than whether the product calls itself an agent."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A team uses AI to draft a customer follow-up after reading notes.",
+        "approach": "They compare that one-shot use with an agentic workflow that reads notes, drafts the follow-up, logs tasks, and creates a reminder.",
+        "result": "The difference becomes concrete: multi-step coordination, not just better chat.",
+        "verification": "They define which steps can be automated and which still need human approval."
+      },
+      "artifact": {
+        "label": "Definition",
+        "title": "Agentic workflow ingredients",
+        "items": [
+          "Goal",
+          "Steps",
+          "Tools",
+          "Memory",
+          "Review gates"
+        ]
+      },
+      "doThisNow": {
+        "task": "Pick one recurring task and decide whether it is better handled as an assistant prompt or a multi-step workflow.",
+        "timebox": "8 minutes",
+        "steps": [
+          "List the steps.",
+          "Mark which require human judgment.",
+          "Decide where automation would actually help."
+        ]
+      },
+      "commonMistakes": [
+        "Calling every AI use case an agent.",
+        "Assuming more autonomy is always better.",
+        "Skipping review design."
+      ],
+      "roleVariants": {
+        "manager": "Model safe adoption through small pilots, clear examples, and lightweight team habits.",
+        "writer": "Document the prompts, examples, and edits that help others replicate quality.",
+        "analyst": "Define simple measures and evidence standards so adoption conversations stay grounded.",
+        "operator": "Focus on workflow change and training, not just tool access."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-14-lesson-02",
+      "slug": "tools-memory-and-planning",
+      "sequenceRationale": "Once the learner sees the category clearly, this lesson breaks down the practical ingredients that make agent workflows useful and risky.",
+      "title": "Tools, Memory, And Planning",
+      "subtitle": "These are the building blocks behind most practical agentic systems.",
+      "objective": "Understand the three design questions behind useful automation: what it can access, what it remembers, and how it sequences work.",
+      "useWhen": "These are the building blocks behind most practical agentic systems.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Once you understand the building blocks, agentic systems become easier to evaluate without relying on product hype.",
+      "coreConcepts": [
+        {
+          "title": "Tools Give Reach",
+          "text": "The workflow becomes useful when it can read a doc, update a task, send a draft, or retrieve needed information."
+        },
+        {
+          "title": "Memory Preserves Context",
+          "text": "Saved instructions, prior outputs, or known preferences help reduce repeated setup work."
+        },
+        {
+          "title": "Planning Controls Sequence",
+          "text": "Good plans are explicit about steps, stop conditions, and when a human must step in."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A team wants AI to prepare weekly project updates automatically.",
+        "approach": "They identify the tool access needed, the context that should persist, and the checkpoints before anything is shared.",
+        "result": "The automation design becomes tangible instead of abstract.",
+        "verification": "They test the workflow on a sample week and inspect each step before moving toward real use."
+      },
+      "artifact": {
+        "label": "Design Canvas",
+        "title": "Agentic design questions",
+        "items": [
+          "What can it access?",
+          "What should it remember?",
+          "What steps can run automatically?",
+          "Where does human review happen?"
+        ]
+      },
+      "doThisNow": {
+        "task": "Sketch the tool, memory, and planning needs for one candidate workflow.",
+        "timebox": "10 minutes",
+        "steps": [
+          "Name the inputs.",
+          "Name what must persist.",
+          "List where a person must approve or edit."
+        ]
+      },
+      "commonMistakes": [
+        "Focusing on the model only.",
+        "Ignoring what context must persist.",
+        "Treating planning as an afterthought."
+      ],
+      "roleVariants": {
+        "manager": "Model safe adoption through small pilots, clear examples, and lightweight team habits.",
+        "writer": "Document the prompts, examples, and edits that help others replicate quality.",
+        "analyst": "Define simple measures and evidence standards so adoption conversations stay grounded.",
+        "operator": "Focus on workflow change and training, not just tool access."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-14-lesson-03",
+      "slug": "design-human-in-the-loop-oversight",
+      "sequenceRationale": "Human oversight comes next because tool access and memory increase risk faster than output quality alone can justify.",
+      "title": "Design Human-In-The-Loop Oversight",
+      "subtitle": "Oversight should match the risk, not the hype.",
+      "objective": "Create practical review checkpoints for multi-step AI workflows.",
+      "useWhen": "Oversight should match the risk, not the hype.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Agentic workflows fail when teams either automate everything too early or make approval so heavy that the system provides no benefit.",
+      "coreConcepts": [
+        {
+          "title": "Use Risk-Based Oversight",
+          "text": "Low-risk drafting can often be reviewed at the end. High-risk actions may need approval before execution."
+        },
+        {
+          "title": "Review The Right Checkpoints",
+          "text": "The important review moments are usually before external communication, data updates, or consequential recommendations."
+        },
+        {
+          "title": "Keep The Workflow Usable",
+          "text": "Oversight should reduce risk without rebuilding the full manual process. "
+        }
+      ],
+      "workedExample": {
+        "scenario": "A team wants an AI workflow to draft client recaps and update tasks.",
+        "approach": "They require approval before sending the recap but allow automatic task draft creation.",
+        "result": "The workflow saves time without risking external mistakes.",
+        "verification": "They review error patterns after the first few runs and adjust the checkpoints as needed."
+      },
+      "artifact": {
+        "label": "Oversight Map",
+        "title": "Where to review",
+        "items": [
+          "Before external send",
+          "Before system update",
+          "Before high-impact recommendation"
+        ]
+      },
+      "doThisNow": {
+        "task": "Map one agent workflow you are considering and insert explicit approval points before any high-consequence action.",
+        "timebox": "10 minutes",
+        "steps": [
+          "List the steps the agent would perform.",
+          "Mark where it reads or writes to real systems.",
+          "Add the exact human checkpoint for any action that changes data, sends communication, or triggers spend."
+        ]
+      },
+      "commonMistakes": [
+        "Using the same oversight for every step.",
+        "Automating outbound actions too early.",
+        "Making the review process so heavy that nobody uses the workflow."
+      ],
+      "roleVariants": {
+        "manager": "Model safe adoption through small pilots, clear examples, and lightweight team habits.",
+        "writer": "Document the prompts, examples, and edits that help others replicate quality.",
+        "analyst": "Define simple measures and evidence standards so adoption conversations stay grounded.",
+        "operator": "Focus on workflow change and training, not just tool access."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026",
+      "resources": [
+        {
+          "title": "OpenAI safety in building agents",
+          "url": "https://developers.openai.com/api/docs/guides/agent-builder-safety",
+          "type": "official",
+          "note": "Useful reference for approval points, prompt injection risk, and guardrails in agent workflows."
+        },
+        {
+          "title": "NIST AI RMF Playbook",
+          "url": "https://airc.nist.gov/airmf-resources/playbook/",
+          "type": "reference",
+          "note": "Practical reference for governance, measurement, and risk-management language that stays more durable than vendor marketing."
+        }
+      ]
+    },
+    {
+      "id": "module-14-lesson-04",
+      "slug": "find-practical-agent-use-cases",
+      "sequenceRationale": "After oversight design, the learner can identify where agents are actually useful instead of copying consumer demos into the wrong workflows.",
+      "title": "Find Practical Agent Use Cases",
+      "subtitle": "Start where the sequence is predictable and the review cost is manageable.",
+      "objective": "Identify realistic agentic use cases for business IC workflows.",
+      "useWhen": "Start where the sequence is predictable and the review cost is manageable.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "The best early use cases are not the flashiest. They are repetitive, multi-step, and easy to inspect.",
+      "coreConcepts": [
+        {
+          "title": "Good Candidates",
+          "text": "Weekly status preparation, meeting follow-up bundles, intake triage, and recurring report assembly are common starting points."
+        },
+        {
+          "title": "Bad Early Candidates",
+          "text": "Open-ended strategy, sensitive approvals, and customer-facing autonomy without review create more risk than value."
+        },
+        {
+          "title": "Scope Small",
+          "text": "Start with one bounded sequence and prove reliability before expanding the workflow."
+        }
+      ],
+      "workedExample": {
+        "scenario": "An operations team wants an \"AI agent for everything.\"",
+        "approach": "They narrow the idea to triaging requests, drafting an internal summary, and preparing a human-reviewed response.",
+        "result": "The scope becomes testable and useful.",
+        "verification": "They compare error rate and review effort against the manual process before expanding."
+      },
+      "artifact": {
+        "label": "Use Case Filter",
+        "title": "Strong first agentic use cases",
+        "items": [
+          "Repeatable",
+          "Multi-step",
+          "Low to medium risk",
+          "Easy to review"
+        ]
+      },
+      "doThisNow": {
+        "task": "List three candidate workflows and choose the safest first agentic use case.",
+        "timebox": "8 minutes",
+        "steps": [
+          "Write the workflow steps.",
+          "Score the risk and review cost.",
+          "Pick the smallest useful one."
+        ]
+      },
+      "commonMistakes": [
+        "Starting with the most ambitious use case.",
+        "Ignoring review cost.",
+        "Choosing tasks with unclear success criteria."
+      ],
+      "roleVariants": {
+        "manager": "Model safe adoption through small pilots, clear examples, and lightweight team habits.",
+        "writer": "Document the prompts, examples, and edits that help others replicate quality.",
+        "analyst": "Define simple measures and evidence standards so adoption conversations stay grounded.",
+        "operator": "Focus on workflow change and training, not just tool access."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-14-lesson-05",
+      "slug": "start-with-a-pilot-not-a-myth",
+      "sequenceRationale": "The module ends with pilot design so the learner leaves with a bounded first experiment instead of a vague belief about autonomous AI.",
+      "title": "Start With A Pilot, Not A Myth",
+      "subtitle": "The first goal is evidence, not transformation.",
+      "objective": "Plan a small agentic pilot with clear scope, review rules, and a success measure.",
+      "useWhen": "The first goal is evidence, not transformation.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Small pilots produce evidence. Vague automation ambitions usually produce confusion.",
+      "coreConcepts": [
+        {
+          "title": "Pilot One Workflow",
+          "text": "Choose one repeatable sequence with a clear owner and clear review step."
+        },
+        {
+          "title": "Measure The Right Thing",
+          "text": "Time saved, review effort, and error rate matter more than how impressive the demo looks."
+        },
+        {
+          "title": "Document What You Learned",
+          "text": "A good pilot leaves behind a pattern others can reuse or a clear reason not to expand."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A team pilots an AI-generated weekly summary workflow.",
+        "approach": "They run it for four cycles with manual review and compare it to the old process.",
+        "result": "They get real evidence about reliability and time savings.",
+        "verification": "They inspect misses, not just wins, before deciding whether to scale."
+      },
+      "artifact": {
+        "label": "Pilot Plan",
+        "title": "Agentic pilot fields",
+        "items": [
+          "Workflow",
+          "Owner",
+          "Review step",
+          "Metrics",
+          "End date"
+        ]
+      },
+      "doThisNow": {
+        "task": "Write a one-page pilot plan for one small agentic workflow.",
+        "timebox": "10 minutes",
+        "steps": [
+          "Define the workflow.",
+          "Define the review step.",
+          "Define how you will judge the pilot."
+        ]
+      },
+      "commonMistakes": [
+        "Starting with a vague vision.",
+        "Measuring only time saved.",
+        "Expanding before understanding failure patterns."
+      ],
+      "roleVariants": {
+        "manager": "Model safe adoption through small pilots, clear examples, and lightweight team habits.",
+        "writer": "Document the prompts, examples, and edits that help others replicate quality.",
+        "analyst": "Define simple measures and evidence standards so adoption conversations stay grounded.",
+        "operator": "Focus on workflow change and training, not just tool access."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    }
+  ],
+  "outcomes": [
+    "Understand what makes agentic workflows different.",
+    "Design safer oversight for more autonomous systems."
+  ],
+  "nextModuleBridge": "Next, look at the AI features already inside your existing tools so advanced workflows stay grounded in real work.",
+  "resources": [
+    {
+      "title": "OpenAI safety in building agents",
+      "url": "https://developers.openai.com/api/docs/guides/agent-builder-safety",
+      "type": "official",
+      "note": "Useful reference for approval points, prompt injection risk, and guardrails in agent workflows."
+    },
+    {
+      "title": "NIST AI RMF Playbook",
+      "url": "https://airc.nist.gov/airmf-resources/playbook/",
+      "type": "reference",
+      "note": "Practical reference for governance, measurement, and risk-management language that stays more durable than vendor marketing."
+    }
+  ]
+}

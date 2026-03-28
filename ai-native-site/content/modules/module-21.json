@@ -1,0 +1,340 @@
+{
+  "id": 21,
+  "slug": "module-21",
+  "title": "Staying Current Without Noise",
+  "phase": 5,
+  "summary": "Build a sustainable learning system so you can keep improving your AI practice without drowning in tool news and hype.",
+  "lessons": [
+    {
+      "id": "module-21-lesson-01",
+      "slug": "the-signal-to-noise-problem",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "The Signal-To-Noise Problem",
+      "subtitle": "Most AI news is not useful for your job this week.",
+      "objective": "Filter AI information based on whether it changes your real workflows, not just your curiosity.",
+      "useWhen": "Most AI news is not useful for your job this week.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Without a filter, AI news becomes a distraction engine. With a filter, it becomes a source of selective improvement.",
+      "coreConcepts": [
+        {
+          "title": "Most News Is Optional",
+          "text": "Only a small portion of releases will change how you work in the near term."
+        },
+        {
+          "title": "Track Workflow Relevance",
+          "text": "Ask whether the update affects a task you do often, a tool you already use, or a policy boundary you care about."
+        },
+        {
+          "title": "Prefer Durable Learning",
+          "text": "Capabilities, workflow patterns, and review habits matter longer than feature launches."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A business IC feels pressure to follow every AI announcement.",
+        "approach": "They filter updates by current stack relevance and workflow impact.",
+        "result": "They spend less time consuming news and more time improving real use cases.",
+        "verification": "They review which updates actually changed a workflow over the past month."
+      },
+      "artifact": {
+        "label": "Filter",
+        "title": "News filter questions",
+        "items": [
+          "Does this affect my current stack?",
+          "Does this change a real workflow?",
+          "Do I need to act now?"
+        ]
+      },
+      "doThisNow": {
+        "task": "Apply the noise filter to the last three AI updates you noticed.",
+        "timebox": "5 minutes",
+        "steps": [
+          "List the updates.",
+          "Answer the filter questions.",
+          "Ignore at least one that does not matter."
+        ]
+      },
+      "commonMistakes": [
+        "Following every announcement.",
+        "Confusing novelty with usefulness.",
+        "Letting reading replace practice."
+      ],
+      "roleVariants": {
+        "manager": "Model safe adoption through small pilots, clear examples, and lightweight team habits.",
+        "writer": "Document the prompts, examples, and edits that help others replicate quality.",
+        "analyst": "Define simple measures and evidence standards so adoption conversations stay grounded.",
+        "operator": "Focus on workflow change and training, not just tool access."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-21-lesson-02",
+      "slug": "build-a-small-ai-radar",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Build A Small AI Radar",
+      "subtitle": "You need a few trusted sources, not a firehose.",
+      "objective": "Create a simple information system for staying current on AI tools and workflows.",
+      "useWhen": "You need a few trusted sources, not a firehose.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "A small radar helps you notice meaningful change without spending your week in newsletters and feeds.",
+      "coreConcepts": [
+        {
+          "title": "Track Tool Sources",
+          "text": "Follow the official update channels for the tools you already use."
+        },
+        {
+          "title": "Track Practical Interpreters",
+          "text": "A few practitioners who translate updates into workflow impact are more useful than a large feed of opinions."
+        },
+        {
+          "title": "Track Your Own Experiments",
+          "text": "Your most valuable source is still your own record of what worked on real tasks."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A team member follows dozens of AI accounts but cannot remember what was useful.",
+        "approach": "They reduce the list to tool updates, two practical sources, and an experiment log.",
+        "result": "Their learning becomes more focused and actionable.",
+        "verification": "After a few weeks, they review whether the sources actually led to useful workflow changes."
+      },
+      "artifact": {
+        "label": "Radar",
+        "title": "Three-part radar",
+        "items": [
+          "Official tool updates",
+          "Practical workflow interpreters",
+          "Your experiment log"
+        ]
+      },
+      "doThisNow": {
+        "task": "Choose the small set of sources that will make up your AI radar.",
+        "timebox": "8 minutes",
+        "steps": [
+          "List the tools you use.",
+          "Choose one or two practical sources.",
+          "Create a place to record experiments."
+        ]
+      },
+      "commonMistakes": [
+        "Following too many sources.",
+        "Mixing entertainment with learning.",
+        "Not capturing what you tested yourself."
+      ],
+      "roleVariants": {
+        "manager": "Model safe adoption through small pilots, clear examples, and lightweight team habits.",
+        "writer": "Document the prompts, examples, and edits that help others replicate quality.",
+        "analyst": "Define simple measures and evidence standards so adoption conversations stay grounded.",
+        "operator": "Focus on workflow change and training, not just tool access."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-21-lesson-03",
+      "slug": "use-a-weekly-learning-habit",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Use A Weekly Learning Habit",
+      "subtitle": "A small recurring routine beats occasional bursts of enthusiasm.",
+      "objective": "Adopt a simple weekly rhythm for reading, testing, and reflecting.",
+      "useWhen": "A small recurring routine beats occasional bursts of enthusiasm.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Steady experimentation on real work is what turns AI from curiosity into professional capability.",
+      "coreConcepts": [
+        {
+          "title": "Scan Briefly",
+          "text": "Spend a small amount of time noticing meaningful updates."
+        },
+        {
+          "title": "Test One Thing",
+          "text": "Apply one workflow idea or prompt improvement to real work every week."
+        },
+        {
+          "title": "Log What Changed",
+          "text": "A short note on what worked or failed builds a personal evidence base."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A product manager wants to improve AI use without adding another side project.",
+        "approach": "They create a weekly 30-minute rhythm: scan, test, and log.",
+        "result": "Improvement becomes sustainable.",
+        "verification": "They review the log after a month to see which experiments actually improved their work."
+      },
+      "artifact": {
+        "label": "Routine",
+        "title": "Weekly learning rhythm",
+        "items": [
+          "10 minutes scan",
+          "15 minutes test",
+          "5 minutes log"
+        ]
+      },
+      "doThisNow": {
+        "task": "Put a weekly AI learning block on your calendar and define what you will do in it.",
+        "timebox": "6 minutes",
+        "steps": [
+          "Choose the day.",
+          "Choose the routine.",
+          "Create a place to log what you learn."
+        ]
+      },
+      "commonMistakes": [
+        "Waiting for free time.",
+        "Reading without testing.",
+        "Testing without logging the result."
+      ],
+      "roleVariants": {
+        "manager": "Model safe adoption through small pilots, clear examples, and lightweight team habits.",
+        "writer": "Document the prompts, examples, and edits that help others replicate quality.",
+        "analyst": "Define simple measures and evidence standards so adoption conversations stay grounded.",
+        "operator": "Focus on workflow change and training, not just tool access."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-21-lesson-04",
+      "slug": "evaluate-new-tools-without-fomo",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Evaluate New Tools Without FOMO",
+      "subtitle": "Curiosity is good; reactive switching is expensive.",
+      "objective": "Use a disciplined approach to deciding when a new tool deserves your attention.",
+      "useWhen": "Curiosity is good; reactive switching is expensive.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "A deliberate evaluation habit keeps your stack stable while still leaving room for meaningful improvement.",
+      "coreConcepts": [
+        {
+          "title": "Tie Every Evaluation To A Task",
+          "text": "If you cannot name the recurring task, you probably do not need the tool yet."
+        },
+        {
+          "title": "Use A Time Box",
+          "text": "A short, structured evaluation prevents endless research and low-grade distraction."
+        },
+        {
+          "title": "Keep A Watch List",
+          "text": "Interesting tools can wait until they prove themselves or become relevant."
+        }
+      ],
+      "workedExample": {
+        "scenario": "An analyst keeps bookmarking new AI tools but never uses them well.",
+        "approach": "They evaluate only when a tool maps to a recurring task and can be tested in a short session.",
+        "result": "Their stack gets calmer and more effective.",
+        "verification": "They review whether the tool improved a real workflow enough to justify the change."
+      },
+      "artifact": {
+        "label": "Rule",
+        "title": "Evaluate only when",
+        "items": [
+          "A recurring task exists",
+          "A short test is possible",
+          "The switching cost is acceptable"
+        ]
+      },
+      "doThisNow": {
+        "task": "Pick one new AI tool you are curious about and decide whether it belongs on a watch list or in a test plan.",
+        "timebox": "5 minutes",
+        "steps": [
+          "Name the task it would improve.",
+          "Estimate the switching cost.",
+          "Choose watch or test."
+        ]
+      },
+      "commonMistakes": [
+        "Testing tools with no workflow need.",
+        "Confusing curiosity with urgency.",
+        "Keeping too many simultaneous experiments active."
+      ],
+      "roleVariants": {
+        "manager": "Model safe adoption through small pilots, clear examples, and lightweight team habits.",
+        "writer": "Document the prompts, examples, and edits that help others replicate quality.",
+        "analyst": "Define simple measures and evidence standards so adoption conversations stay grounded.",
+        "operator": "Focus on workflow change and training, not just tool access."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    },
+    {
+      "id": "module-21-lesson-05",
+      "slug": "build-your-personal-learning-system",
+      "sequenceRationale": "This lesson exists here to move the learner from understanding the pattern to applying it on a live work artifact.",
+      "title": "Build Your Personal Learning System",
+      "subtitle": "The goal is not to know everything. It is to keep improving what matters to your work.",
+      "objective": "Create a sustainable personal system for AI learning and application.",
+      "useWhen": "The goal is not to know everything. It is to keep improving what matters to your work.",
+      "estimatedMinutes": 6,
+      "whyItMatters": "Your advantage comes from applied practice on your own work, not from memorizing the most updates.",
+      "coreConcepts": [
+        {
+          "title": "Keep The System Small",
+          "text": "A small set of sources, a weekly practice rhythm, and an experiment log are enough."
+        },
+        {
+          "title": "Tie Learning To Work",
+          "text": "The best experiments improve tasks you already own."
+        },
+        {
+          "title": "Review Periodically",
+          "text": "A monthly or quarterly review helps you keep what works and drop what does not."
+        }
+      ],
+      "workedExample": {
+        "scenario": "A business IC wants to stay current without treating AI as a second job.",
+        "approach": "They build a small system based on one routine, one experiment log, and quarterly review of their stack and workflows.",
+        "result": "Learning becomes sustainable and useful.",
+        "verification": "They check whether the system led to real workflow improvements, not just more reading."
+      },
+      "artifact": {
+        "label": "System",
+        "title": "Personal AI learning system",
+        "items": [
+          "Small radar",
+          "Weekly experiment rhythm",
+          "Experiment log",
+          "Quarterly review"
+        ]
+      },
+      "doThisNow": {
+        "task": "Write your one-page personal AI learning system.",
+        "timebox": "10 minutes",
+        "steps": [
+          "List your sources.",
+          "Set the weekly rhythm.",
+          "Define the review cadence."
+        ]
+      },
+      "commonMistakes": [
+        "Trying to know everything.",
+        "Building a complex system you will not maintain.",
+        "Separating learning from daily work."
+      ],
+      "roleVariants": {
+        "manager": "Model safe adoption through small pilots, clear examples, and lightweight team habits.",
+        "writer": "Document the prompts, examples, and edits that help others replicate quality.",
+        "analyst": "Define simple measures and evidence standards so adoption conversations stay grounded.",
+        "operator": "Focus on workflow change and training, not just tool access."
+      },
+      "sourceNotes": [
+        "Reviewed for business IC relevance and durable workflow guidance.",
+        "Keep verification and organizational policy checks explicit in future revisions."
+      ],
+      "lastReviewed": "March 2026"
+    }
+  ],
+  "outcomes": [
+    "Build a small, durable AI learning system.",
+    "Stay current through practice rather than hype consumption."
+  ],
+  "nextModuleBridge": "If you want to go further, the bonus section on OpenClaw and other agents explores more autonomous tools and how to evaluate them safely."
+}
