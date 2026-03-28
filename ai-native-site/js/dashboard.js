@@ -1,18 +1,26 @@
 /* ═══════════════════════════════════════════════════════
    dashboard.js — Dashboard page logic
-   Progress rings, module card state, reset
+   Progress ring, phase summaries, resume state, and card state
    ═══════════════════════════════════════════════════════ */
 
 (function () {
   var TOTAL_MODULES = 21;
   var LESSONS_PER_MODULE = 5;
   var TOTAL_LESSONS = TOTAL_MODULES * LESSONS_PER_MODULE;
+  var PHASES = [
+    { id: 'phase-1', title: 'AI Foundations', modules: [1, 2, 3, 4], focus: 'Start here to build your mental model, prompt habits, and safe-use discipline.' },
+    { id: 'phase-2', title: 'Productivity Acceleration', modules: [5, 6, 7, 8], focus: 'Best for daily productivity once the basics are in place.' },
+    { id: 'phase-3', title: 'Business Operations', modules: [9, 10, 11, 12, 13], focus: 'Use AI on documentation, analysis, project work, and stakeholder communication.' },
+    { id: 'phase-4', title: 'Advanced AI Workflows', modules: [14, 15, 16, 17], focus: 'Use after the workflow modules when you are ready for playbooks and agentic patterns.' },
+    { id: 'phase-5', title: 'AI Strategy & Leadership', modules: [18, 19, 20, 21], focus: 'Turn practical use into opportunity selection, governance, and measurement.' }
+  ];
 
   function init() {
     updateProgressRing();
     updateHeroStats();
     updateAllCards();
     updateContinueBtn();
+    renderPhaseProgress();
     bindReset();
   }
 
@@ -23,7 +31,7 @@
 
     var done = Progress.totalModulesDone();
     var pct = Math.round((done / TOTAL_MODULES) * 100);
-    var circumference = 2 * Math.PI * 52; // r=52
+    var circumference = 2 * Math.PI * 52;
     ring.style.strokeDasharray = circumference;
     ring.style.strokeDashoffset = circumference - (pct / 100) * circumference;
     text.textContent = pct + '%';
@@ -47,43 +55,80 @@
     if (!card) return;
 
     var done = Progress.countDone(n);
-    var total = LESSONS_PER_MODULE;
-    var pct = Math.round((done / total) * 100);
-    var isComplete = done === total;
-
+    var pct = Math.round((done / LESSONS_PER_MODULE) * 100);
+    var isComplete = done === LESSONS_PER_MODULE;
     var fill = card.querySelector('.module-card-bar-fill');
     var label = card.querySelector('.module-card-pct');
 
     if (fill) {
       fill.style.width = pct + '%';
-      if (isComplete) fill.classList.add('complete');
-      else fill.classList.remove('complete');
+      fill.classList.toggle('complete', isComplete);
     }
-    if (label) label.textContent = done + '/' + total;
+    if (label) label.textContent = done + '/' + LESSONS_PER_MODULE;
 
-    if (isComplete) {
-      card.classList.add('complete');
-      if (!Progress.isModuleComplete(n)) Progress.completeModule(n);
-    } else {
-      card.classList.remove('complete');
-    }
+    card.classList.toggle('complete', isComplete);
+    if (isComplete && !Progress.isModuleComplete(n)) Progress.completeModule(n);
   }
 
   function updateContinueBtn() {
     var btn = document.getElementById('continueBtn');
+    var resumeMeta = document.getElementById('resumeMeta');
+    var last = Progress.getLastVisited();
+
     if (!btn) return;
+
+    if (last && last.path) {
+      btn.href = last.kind === 'bonus' ? last.path : 'modules/' + last.path;
+      btn.style.display = 'inline-flex';
+      btn.textContent = last.kind === 'bonus' ? 'Resume Bonus Section →' : 'Resume: Module ' + last.id + ' →';
+      if (resumeMeta) {
+        resumeMeta.textContent = last.kind === 'bonus'
+          ? 'Resume your last visited bonus lesson.'
+          : 'Last visited lesson ' + last.lesson + ' in module ' + last.id + '.';
+      }
+      return;
+    }
+
     for (var n = 1; n <= TOTAL_MODULES; n++) {
       if (Progress.countDone(n) < LESSONS_PER_MODULE) {
         btn.href = 'modules/module-' + n + '.html';
         btn.style.display = 'inline-flex';
-        btn.textContent = 'Continue: Module ' + n + ' →';
+        btn.textContent = 'Start Module ' + n + ' →';
+        if (resumeMeta) resumeMeta.textContent = n === 1 ? 'Start at Module 1 and move in order through the program.' : 'Continue with the next incomplete module.';
         return;
       }
     }
-    // all complete
-    btn.textContent = 'All Complete! Review Any Module →';
+
+    btn.textContent = 'Core Program Complete →';
     btn.style.display = 'inline-flex';
-    btn.href = '#phase-1';
+    btn.href = 'agents-in-practice.html';
+    if (resumeMeta) resumeMeta.textContent = 'You finished the 21-module core path. Continue into the bonus agent section.';
+  }
+
+  function phaseDoneCount(phase) {
+    return phase.modules.reduce(function (count, moduleNum) {
+      return count + Progress.countDone(moduleNum);
+    }, 0);
+  }
+
+  function renderPhaseProgress() {
+    var container = document.getElementById('phaseProgressGrid');
+    if (!container) return;
+
+    container.innerHTML = PHASES.map(function (phase, idx) {
+      var phaseLessons = phase.modules.length * LESSONS_PER_MODULE;
+      var done = phaseDoneCount(phase);
+      var pct = Math.round((done / phaseLessons) * 100);
+      return '<a class="phase-progress-card" href="#' + phase.id + '">' +
+        '<div class="phase-progress-top">' +
+        '<div class="phase-progress-label">Phase ' + (idx + 1) + '</div>' +
+        '<div class="phase-progress-value">' + done + '/' + phaseLessons + '</div>' +
+        '</div>' +
+        '<h3>' + phase.title + '</h3>' +
+        '<p>' + phase.focus + '</p>' +
+        '<div class="phase-progress-bar"><div class="phase-progress-fill" style="width:' + pct + '%"></div></div>' +
+        '</a>';
+    }).join('');
   }
 
   function bindReset() {
