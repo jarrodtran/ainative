@@ -24,7 +24,13 @@
 <!-- ── NAV ──────────────────────────────────────── -->
 <nav class="nav">
   <div class="nav-inner">
-    <div class="nav-logo"><span>AI Native</span> Learning</div>
+    <a href="/" class="nav-logo"><span>AI Native</span> Learning</a>
+    <div class="nav-tabs">
+      <a href="/" class="nav-tab active">Learn</a>
+      <a href="glossary.html" class="nav-tab">Glossary</a>
+      <a href="prompt-library.html" class="nav-tab">Prompt Library</a>
+      <a href="tools.html" class="nav-tab">Tools &amp; Resources</a>
+    </div>
     <div class="nav-spacer"></div>
     <div class="nav-progress-text" id="navProgress"></div>
   </div>
@@ -35,27 +41,31 @@
 <section class="hero">
   <div class="container">
     <div class="hero-content" data-animate="fade-up">
-      <h1 class="hero-title">Become <span class="accent">AI Native</span></h1>
-      <p class="hero-subtitle">21 modules. 105 practical lessons for everyday knowledge work. Learn the habits, workflows, and review skills that make AI useful at work.</p>
-      <div class="hero-stats" data-animate="fade-up" data-delay="200">
-        <div class="hero-stat">
-          <div class="hero-stat-value" id="statModules">0/21</div>
-          <div class="hero-stat-label">Modules</div>
+      <div class="hero-left">
+        <h1 class="hero-title">Become <span class="accent">AI Native</span></h1>
+        <p class="hero-subtitle">21 modules. 105 practical lessons for everyday knowledge work. Learn the habits, workflows, and review skills that make AI useful at work.</p>
+        <div class="hero-stats" data-animate="fade-up" data-delay="200">
+          <div class="hero-stat">
+            <div class="hero-stat-value" id="statModules">0/21</div>
+            <div class="hero-stat-label">Modules</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-value" id="statLessons">0/105</div>
+            <div class="hero-stat-label">Lessons</div>
+          </div>
         </div>
-        <div class="hero-stat">
-          <div class="hero-stat-value" id="statLessons">0/105</div>
-          <div class="hero-stat-label">Lessons</div>
+        <p class="hero-resume-meta" id="resumeMeta">Start at Module 1 and work forward through the program.</p>
+        <a href="#" class="hero-continue" id="continueBtn" style="display:none" data-animate="fade-up" data-delay="400">Continue Learning →</a>
+      </div>
+      <div class="hero-right" data-animate="fade-up" data-delay="300">
+        <div class="progress-ring-wrap">
+          <svg class="progress-ring" width="200" height="200">
+            <circle class="progress-ring-bg" cx="100" cy="100" r="87"/>
+            <circle class="progress-ring-fill" cx="100" cy="100" r="87"/>
+          </svg>
+          <div class="progress-ring-text">0%</div>
         </div>
       </div>
-      <div class="progress-ring-wrap" data-animate="fade-up" data-delay="300">
-        <svg class="progress-ring" width="120" height="120">
-          <circle class="progress-ring-bg" cx="60" cy="60" r="52"/>
-          <circle class="progress-ring-fill" cx="60" cy="60" r="52"/>
-        </svg>
-        <div class="progress-ring-text">0%</div>
-      </div>
-      <p class="hero-resume-meta" id="resumeMeta">Start at Module 1 and work forward through the program.</p>
-      <a href="#" class="hero-continue" id="continueBtn" style="display:none" data-animate="fade-up" data-delay="400">Continue Learning →</a>
     </div>
   </div>
   <div class="scroll-indicator">
@@ -132,10 +142,12 @@
      ═══════════════════════════════════════════════════ -->
 <section class="phase-section section-alt" id="phase-1">
   <div class="container">
-    <div class="phase-header" data-animate="fade-up">
-      <div class="phase-label"><span class="phase-number">01</span> Phase 1 · Weeks 1–3</div>
-      <h2 class="phase-title">AI Foundations</h2>
-      <p class="phase-description">Build a durable mental model, choose tools by workflow fit, write stronger prompts, and use AI with better verification and data judgment.</p>
+    <div class="phase-header phase-header--split" data-animate="fade-up">
+      <div class="phase-header-main">
+        <div class="phase-label"><span class="phase-number">01</span> Phase 1 · Weeks 1–3</div>
+        <h2 class="phase-title">AI Foundations</h2>
+        <p class="phase-description">Build a durable mental model, choose tools by workflow fit, write stronger prompts, and use AI with better verification and data judgment.</p>
+      </div>
       <ul class="phase-outcomes">
         <li>Start here if you are new to structured AI work.</li>
         <li>Best for building judgment, safety, and prompt fundamentals.</li>
@@ -197,10 +209,12 @@
      ═══════════════════════════════════════════════════ -->
 <section class="phase-section" id="phase-2">
   <div class="container">
-    <div class="phase-header" data-animate="fade-up">
-      <div class="phase-label"><span class="phase-number">02</span> Phase 2 · Weeks 4–6</div>
-      <h2 class="phase-title">Productivity Acceleration</h2>
-      <p class="phase-description">Improve the work you already do every day: writing, synthesis, advanced prompting, and meeting follow-through.</p>
+    <div class="phase-header phase-header--split" data-animate="fade-up">
+      <div class="phase-header-main">
+        <div class="phase-label"><span class="phase-number">02</span> Phase 2 · Weeks 4–6</div>
+        <h2 class="phase-title">Productivity Acceleration</h2>
+        <p class="phase-description">Improve the work you already do every day: writing, synthesis, advanced prompting, and meeting follow-through.</p>
+      </div>
       <ul class="phase-outcomes">
         <li>Best for immediate day-to-day productivity gains.</li>
         <li>Use after Phase 1 when your review habits are already in place.</li>
@@ -262,10 +276,12 @@
      ═══════════════════════════════════════════════════ -->
 <section class="phase-section section-alt" id="phase-3">
   <div class="container">
-    <div class="phase-header" data-animate="fade-up">
-      <div class="phase-label"><span class="phase-number">03</span> Phase 3 · Weeks 7–10</div>
-      <h2 class="phase-title">Business Operations</h2>
-      <p class="phase-description">Apply AI to recurring operational work such as documentation, project coordination, analysis, decision support, and stakeholder communication.</p>
+    <div class="phase-header phase-header--split" data-animate="fade-up">
+      <div class="phase-header-main">
+        <div class="phase-label"><span class="phase-number">03</span> Phase 3 · Weeks 7–10</div>
+        <h2 class="phase-title">Business Operations</h2>
+        <p class="phase-description">Apply AI to recurring operational work such as documentation, project coordination, analysis, decision support, and stakeholder communication.</p>
+      </div>
       <ul class="phase-outcomes">
         <li>Use this phase when you want workflow leverage, not just better prompts.</li>
         <li>Strong fit for managers, analysts, coordinators, and operators.</li>
@@ -337,10 +353,12 @@
      ═══════════════════════════════════════════════════ -->
 <section class="phase-section" id="phase-4">
   <div class="container">
-    <div class="phase-header" data-animate="fade-up">
-      <div class="phase-label"><span class="phase-number">04</span> Phase 4 · Weeks 11–13</div>
-      <h2 class="phase-title">Advanced AI Workflows</h2>
-      <p class="phase-description">Turn good AI habits into repeatable systems through agentic workflows, embedded tools, reusable playbooks, and team enablement.</p>
+    <div class="phase-header phase-header--split" data-animate="fade-up">
+      <div class="phase-header-main">
+        <div class="phase-label"><span class="phase-number">04</span> Phase 4 · Weeks 11–13</div>
+        <h2 class="phase-title">Advanced AI Workflows</h2>
+        <p class="phase-description">Turn good AI habits into repeatable systems through agentic workflows, embedded tools, reusable playbooks, and team enablement.</p>
+      </div>
       <ul class="phase-outcomes">
         <li>Best after the core workflow modules are already familiar.</li>
         <li>Focuses on systems, enablement, and higher-autonomy patterns.</li>
@@ -402,10 +420,12 @@
      ═══════════════════════════════════════════════════ -->
 <section class="phase-section section-alt" id="phase-5">
   <div class="container">
-    <div class="phase-header" data-animate="fade-up">
-      <div class="phase-label"><span class="phase-number">05</span> Phase 5 · Weeks 14–16</div>
-      <h2 class="phase-title">AI Strategy & Leadership</h2>
-      <p class="phase-description">Find better AI opportunities, support sustainable rollout, measure impact, and keep learning without getting buried in noise.</p>
+    <div class="phase-header phase-header--split" data-animate="fade-up">
+      <div class="phase-header-main">
+        <div class="phase-label"><span class="phase-number">05</span> Phase 5 · Weeks 14–16</div>
+        <h2 class="phase-title">AI Strategy & Leadership</h2>
+        <p class="phase-description">Find better AI opportunities, support sustainable rollout, measure impact, and keep learning without getting buried in noise.</p>
+      </div>
       <ul class="phase-outcomes">
         <li>Use this phase to prioritize, govern, and measure AI work more clearly.</li>
         <li>Finish here before jumping into the bonus agent landscape.</li>
@@ -466,10 +486,12 @@
      ═══════════════════════════════════════════════════ -->
 <section class="phase-section bonus-section" id="bonus-agents">
   <div class="container">
-    <div class="phase-header" data-animate="fade-up">
-      <div class="phase-label"><span class="phase-number">B1</span> Bonus Section</div>
-      <h2 class="phase-title">Agents In Practice</h2>
-      <p class="phase-description">A final advanced section on OpenClaw and other agents: what they do, where they help, where they add risk, and how to evaluate them without hype.</p>
+    <div class="phase-header phase-header--split" data-animate="fade-up">
+      <div class="phase-header-main">
+        <div class="phase-label"><span class="phase-number">B1</span> Bonus Section</div>
+        <h2 class="phase-title">Agents In Practice</h2>
+        <p class="phase-description">A final advanced section on OpenClaw and other agents: what they do, where they help, where they add risk, and how to evaluate them without hype.</p>
+      </div>
       <ul class="phase-outcomes">
         <li>Use this after the 21-module core path, not before it.</li>
         <li>OpenClaw appears here as one concrete example inside a broader agent category.</li>
@@ -487,6 +509,400 @@
         </div>
       </a>
     </div>
+  </div>
+</section>
+
+<!-- resources section moved to dedicated pages (glossary.html, prompt-library.html, tools.html) -->
+<section class="resources-section" id="resources" style="display:none">
+  <div class="container">
+    <div class="phase-header" data-animate="fade-up">
+      <div class="phase-label"><span class="phase-number">R</span> Quick Reference</div>
+      <h2 class="phase-title">Reference & Resources</h2>
+      <p class="phase-description">Glossary of AI terms, reusable prompt templates you can copy immediately, and curated links to the best tools and learning resources.</p>
+    </div>
+
+    <div class="resource-tab-nav" role="tablist">
+      <button class="resource-tab-btn active" data-tab="glossary" role="tab">Glossary</button>
+      <button class="resource-tab-btn" data-tab="prompts" role="tab">Prompt Library</button>
+      <button class="resource-tab-btn" data-tab="links" role="tab">Tools & Resources</button>
+    </div>
+
+    <!-- ── GLOSSARY ──────────────────────────────── -->
+    <div class="resource-tab-panel active" id="rtab-glossary" role="tabpanel">
+      <div class="glossary-grid" data-animate="fade-up">
+
+        <div class="glossary-item">
+          <div class="glossary-term">Agent</div>
+          <div class="glossary-def">An AI system that can plan and take actions autonomously, using tools like web search or code execution to complete multi-step tasks with minimal oversight.</div>
+        </div>
+
+        <div class="glossary-item">
+          <div class="glossary-term">Artifact</div>
+          <div class="glossary-def">The specific output you're asking AI to produce: a document, email, table, summary, or other deliverable. Defining it clearly before prompting improves quality.</div>
+        </div>
+
+        <div class="glossary-item">
+          <div class="glossary-term">Chain-of-thought</div>
+          <div class="glossary-def">A prompting technique that asks the AI to reason through a problem step by step before giving a final answer. Improves accuracy on complex or multi-part tasks.</div>
+        </div>
+
+        <div class="glossary-item">
+          <div class="glossary-term">Context window</div>
+          <div class="glossary-def">The maximum amount of text a model can process in one interaction—your input plus its output combined. Most frontier models now handle 100,000+ tokens.</div>
+        </div>
+
+        <div class="glossary-item">
+          <div class="glossary-term">Embedding</div>
+          <div class="glossary-def">A numerical representation of text that captures semantic meaning. Used to power semantic search, document retrieval, and similarity matching in AI systems.</div>
+        </div>
+
+        <div class="glossary-item">
+          <div class="glossary-term">Few-shot prompting</div>
+          <div class="glossary-def">Providing 2–5 examples inside your prompt to show the model the exact format, tone, or structure you want in the output. More reliable than describing the format in words.</div>
+        </div>
+
+        <div class="glossary-item">
+          <div class="glossary-term">Fine-tuning</div>
+          <div class="glossary-def">Training an existing model on a curated dataset to specialize its behavior for a particular domain, task, or style. Requires technical infrastructure and labeled data.</div>
+        </div>
+
+        <div class="glossary-item">
+          <div class="glossary-term">Foundation model</div>
+          <div class="glossary-def">A large AI model trained on broad data (like Claude, GPT-4, or Gemini) that can be applied to many tasks without retraining. The base most AI products are built on.</div>
+        </div>
+
+        <div class="glossary-item">
+          <div class="glossary-term">Grounding</div>
+          <div class="glossary-def">Connecting AI responses to specific verified documents or data sources. Reduces hallucination by anchoring the model to facts rather than relying on training alone.</div>
+        </div>
+
+        <div class="glossary-item">
+          <div class="glossary-term">Hallucination</div>
+          <div class="glossary-def">When an AI confidently generates false, fabricated, or inaccurate information that sounds plausible. The most important failure mode to verify against before using AI output.</div>
+        </div>
+
+        <div class="glossary-item">
+          <div class="glossary-term">Inference</div>
+          <div class="glossary-def">The process of an AI model generating a response from its training. Inference cost and speed vary by model size—larger models are slower and more expensive to run.</div>
+        </div>
+
+        <div class="glossary-item">
+          <div class="glossary-term">LLM</div>
+          <div class="glossary-def">Large Language Model. An AI model trained on vast amounts of text to understand and generate natural language. The core technology behind most conversational AI tools.</div>
+        </div>
+
+        <div class="glossary-item">
+          <div class="glossary-term">Multimodal</div>
+          <div class="glossary-def">AI systems that can process multiple input types—text, images, audio, or video—in a single model. GPT-4o, Claude, and Gemini are all multimodal models.</div>
+        </div>
+
+        <div class="glossary-item">
+          <div class="glossary-term">Prompt</div>
+          <div class="glossary-def">The instruction, question, or input you give to an AI model to guide its response. Prompt quality is the primary lever for output quality in everyday AI use.</div>
+        </div>
+
+        <div class="glossary-item">
+          <div class="glossary-term">RAG</div>
+          <div class="glossary-def">Retrieval-Augmented Generation. Relevant documents are fetched and added to the AI's context before it responds, grounding answers in real data rather than training memory.</div>
+        </div>
+
+        <div class="glossary-item">
+          <div class="glossary-term">System prompt</div>
+          <div class="glossary-def">Instructions set before a conversation begins that shape the AI's behavior, persona, or constraints throughout the session. Used in products to define tone and scope.</div>
+        </div>
+
+        <div class="glossary-item">
+          <div class="glossary-term">Temperature</div>
+          <div class="glossary-def">A parameter controlling output randomness. Low values produce focused, consistent responses. High values produce more varied or creative ones. Most tools set this automatically.</div>
+        </div>
+
+        <div class="glossary-item">
+          <div class="glossary-term">Token</div>
+          <div class="glossary-def">The basic unit an LLM processes—roughly ¾ of a word on average. Context limits, API costs, and processing speed are all measured in tokens.</div>
+        </div>
+
+        <div class="glossary-item">
+          <div class="glossary-term">Tool use</div>
+          <div class="glossary-def">The ability of an AI model to call external functions—web search, code execution, calendar access, APIs—during a conversation to retrieve live information or take action.</div>
+        </div>
+
+        <div class="glossary-item">
+          <div class="glossary-term">Zero-shot</div>
+          <div class="glossary-def">Asking an AI to perform a task without providing any examples, relying entirely on the instruction and its training. Works well for common tasks; few-shot helps for unusual formats.</div>
+        </div>
+
+      </div>
+    </div><!-- /glossary -->
+
+    <!-- ── PROMPT LIBRARY ────────────────────────── -->
+    <div class="resource-tab-panel" id="rtab-prompts" role="tabpanel">
+      <div class="prompt-lib-grid" data-animate="fade-up">
+
+        <div class="prompt-lib-card">
+          <div class="prompt-lib-header">
+            <div class="prompt-lib-meta">
+              <span class="prompt-lib-cat">Universal</span>
+              <div class="prompt-lib-name">Starter Template</div>
+            </div>
+            <button class="prompt-copy-btn">Copy</button>
+          </div>
+          <div class="prompt-lib-text">Help me with this task: [describe the task clearly]
+
+Goal: [what a good result looks like]
+Audience: [who will read or use this]
+Format: [how you want the output structured]
+Constraints: [anything it must or must not include]</div>
+        </div>
+
+        <div class="prompt-lib-card">
+          <div class="prompt-lib-header">
+            <div class="prompt-lib-meta">
+              <span class="prompt-lib-cat">Universal</span>
+              <div class="prompt-lib-name">Structured Complex Request</div>
+            </div>
+            <button class="prompt-copy-btn">Copy</button>
+          </div>
+          <div class="prompt-lib-text">[TASK]
+[describe the task in one sentence]
+
+[CONTEXT]
+Audience: [who will use this]
+Background: [relevant context]
+Source material: [what to use as input]
+
+[REQUIREMENTS]
+Must include: [required elements or sections]
+Must not include: [exclusions or constraints]
+Format: [desired output structure]
+
+[SUCCESS CRITERIA]
+A good result will: [what makes it successful]</div>
+        </div>
+
+        <div class="prompt-lib-card">
+          <div class="prompt-lib-header">
+            <div class="prompt-lib-meta">
+              <span class="prompt-lib-cat">Writing</span>
+              <div class="prompt-lib-name">Draft a Message</div>
+            </div>
+            <button class="prompt-copy-btn">Copy</button>
+          </div>
+          <div class="prompt-lib-text">Write a [formal/friendly/brief] [email/memo/update] to [audience] about [topic].
+
+Key points to cover:
+- [point 1]
+- [point 2]
+- [point 3]
+
+Tone: [professional/warm/direct]
+Length: Under [X] words.
+Do not include: [anything to avoid]</div>
+        </div>
+
+        <div class="prompt-lib-card">
+          <div class="prompt-lib-header">
+            <div class="prompt-lib-meta">
+              <span class="prompt-lib-cat">Writing</span>
+              <div class="prompt-lib-name">Rewrite for a Different Audience</div>
+            </div>
+            <button class="prompt-copy-btn">Copy</button>
+          </div>
+          <div class="prompt-lib-text">Rewrite this message for [new audience].
+
+They care about: [their priorities]
+What they already know: [shared context]
+What they need to do next: [required action or decision]
+Tone: [appropriate tone for this audience]
+
+Original:
+[paste message here]</div>
+        </div>
+
+        <div class="prompt-lib-card">
+          <div class="prompt-lib-header">
+            <div class="prompt-lib-meta">
+              <span class="prompt-lib-cat">Writing</span>
+              <div class="prompt-lib-name">Polish Existing Text</div>
+            </div>
+            <button class="prompt-copy-btn">Copy</button>
+          </div>
+          <div class="prompt-lib-text">Improve the clarity of this text. Keep the meaning intact.
+
+Flag anything that is vague, could be misread, weakens the point, or is unnecessarily long.
+
+Text:
+[paste text here]</div>
+        </div>
+
+        <div class="prompt-lib-card">
+          <div class="prompt-lib-header">
+            <div class="prompt-lib-meta">
+              <span class="prompt-lib-cat">Meetings</span>
+              <div class="prompt-lib-name">Meeting Recap</div>
+            </div>
+            <button class="prompt-copy-btn">Copy</button>
+          </div>
+          <div class="prompt-lib-text">Turn these meeting notes into a structured recap.
+
+Include:
+1. Key decisions made (with brief context)
+2. Action items (owner and deadline where mentioned)
+3. Open questions or unresolved items
+4. Recommended next steps
+
+Notes:
+[paste notes here]</div>
+        </div>
+
+        <div class="prompt-lib-card">
+          <div class="prompt-lib-header">
+            <div class="prompt-lib-meta">
+              <span class="prompt-lib-cat">Research</span>
+              <div class="prompt-lib-name">Research Brief</div>
+            </div>
+            <button class="prompt-copy-btn">Copy</button>
+          </div>
+          <div class="prompt-lib-text">I need to understand [topic] for [specific purpose].
+
+Give me:
+1. The core concept in plain English (2–3 sentences)
+2. Three key things I need to know
+3. Main risks or misconceptions to watch for
+4. One question I should ask before relying on this
+
+I am not a technical expert — keep it practical.</div>
+        </div>
+
+        <div class="prompt-lib-card">
+          <div class="prompt-lib-header">
+            <div class="prompt-lib-meta">
+              <span class="prompt-lib-cat">Research</span>
+              <div class="prompt-lib-name">Action-Oriented Summary</div>
+            </div>
+            <button class="prompt-copy-btn">Copy</button>
+          </div>
+          <div class="prompt-lib-text">Summarize this document for [audience] who needs to [make a decision / take action].
+
+Include:
+- The key finding in one sentence
+- What it means for [audience]
+- Recommended next step
+- What is still uncertain or unknown
+
+Source:
+[paste document here]</div>
+        </div>
+
+        <div class="prompt-lib-card">
+          <div class="prompt-lib-header">
+            <div class="prompt-lib-meta">
+              <span class="prompt-lib-cat">Analysis</span>
+              <div class="prompt-lib-name">Compare Options</div>
+            </div>
+            <button class="prompt-copy-btn">Copy</button>
+          </div>
+          <div class="prompt-lib-text">Compare [option A] and [option B] for [use case].
+
+Create a comparison table with these criteria:
+- [criterion 1]
+- [criterion 2]
+- [criterion 3]
+
+Then give a recommendation based on: [my priorities or constraints].
+Note any trade-offs I should think through before deciding.</div>
+        </div>
+
+        <div class="prompt-lib-card">
+          <div class="prompt-lib-header">
+            <div class="prompt-lib-meta">
+              <span class="prompt-lib-cat">Analysis</span>
+              <div class="prompt-lib-name">Risk Check</div>
+            </div>
+            <button class="prompt-copy-btn">Copy</button>
+          </div>
+          <div class="prompt-lib-text">Review this [plan/proposal/decision] and identify:
+1. Risks I might have missed
+2. Assumptions that could be wrong
+3. Questions a skeptic would raise
+4. One thing to verify before moving forward
+
+[paste here]</div>
+        </div>
+
+      </div>
+    </div><!-- /prompts -->
+
+    <!-- ── TOOLS & RESOURCES ─────────────────────── -->
+    <div class="resource-tab-panel" id="rtab-links" role="tabpanel">
+
+      <div class="resource-links-group" data-animate="fade-up">
+        <div class="resource-links-label">AI Assistants</div>
+        <div class="resource-links-row">
+          <a href="https://claude.ai" target="_blank" rel="noopener" class="resource-link-card">
+            <div class="resource-link-name">Claude</div>
+            <div class="resource-link-desc">Anthropic's AI assistant. Strong for long documents, nuanced analysis, and careful reasoning. Recommended for professional and sensitive work.</div>
+          </a>
+          <a href="https://chat.openai.com" target="_blank" rel="noopener" class="resource-link-card">
+            <div class="resource-link-name">ChatGPT</div>
+            <div class="resource-link-desc">OpenAI's widely-used assistant. Large plugin and GPT ecosystem. Strong general-purpose capabilities with image generation via DALL-E.</div>
+          </a>
+          <a href="https://gemini.google.com" target="_blank" rel="noopener" class="resource-link-card">
+            <div class="resource-link-name">Gemini</div>
+            <div class="resource-link-desc">Google's AI model. Integrates with Google Workspace (Docs, Sheets, Gmail). Best choice if your organization runs on Google tools.</div>
+          </a>
+          <a href="https://www.perplexity.ai" target="_blank" rel="noopener" class="resource-link-card">
+            <div class="resource-link-name">Perplexity</div>
+            <div class="resource-link-desc">AI search with real-time web access and inline citations. Best for research tasks where source traceability matters.</div>
+          </a>
+          <a href="https://copilot.microsoft.com" target="_blank" rel="noopener" class="resource-link-card">
+            <div class="resource-link-name">Microsoft Copilot</div>
+            <div class="resource-link-desc">AI built into Microsoft 365 and Windows. Best for organizations on the Microsoft stack — Word, Excel, Outlook, Teams.</div>
+          </a>
+          <a href="https://notebooklm.google.com" target="_blank" rel="noopener" class="resource-link-card">
+            <div class="resource-link-name">NotebookLM</div>
+            <div class="resource-link-desc">Google's research assistant. Upload your own documents and have AI answer questions based solely on your sources — great for grounded research.</div>
+          </a>
+        </div>
+      </div>
+
+      <div class="resource-links-group" data-animate="fade-up" data-delay="100">
+        <div class="resource-links-label">Prompting & Learning</div>
+        <div class="resource-links-row">
+          <a href="https://www.promptingguide.ai" target="_blank" rel="noopener" class="resource-link-card">
+            <div class="resource-link-name">Prompt Engineering Guide</div>
+            <div class="resource-link-desc">Comprehensive, research-backed guide to prompting techniques: zero-shot, few-shot, chain-of-thought, RAG, and more. Updated regularly.</div>
+          </a>
+          <a href="https://learnprompting.org" target="_blank" rel="noopener" class="resource-link-card">
+            <div class="resource-link-name">Learn Prompting</div>
+            <div class="resource-link-desc">Free open-source course covering practical prompting from basics to advanced techniques. Community-maintained with examples across many use cases.</div>
+          </a>
+          <a href="https://platform.openai.com/docs/guides/prompt-engineering" target="_blank" rel="noopener" class="resource-link-card">
+            <div class="resource-link-name">OpenAI Prompt Engineering Guide</div>
+            <div class="resource-link-desc">Official guide from OpenAI with six strategies for getting better results. Practical examples for clarity, context, and structured outputs.</div>
+          </a>
+        </div>
+      </div>
+
+      <div class="resource-links-group" data-animate="fade-up" data-delay="200">
+        <div class="resource-links-label">Standards & Safety</div>
+        <div class="resource-links-row">
+          <a href="https://www.nist.gov/artificial-intelligence" target="_blank" rel="noopener" class="resource-link-card">
+            <div class="resource-link-name">NIST AI Resources</div>
+            <div class="resource-link-desc">The US government's AI Risk Management Framework (AI RMF 1.0) and related standards. The most widely cited framework for enterprise AI governance.</div>
+          </a>
+          <a href="https://www.anthropic.com/research" target="_blank" rel="noopener" class="resource-link-card">
+            <div class="resource-link-name">Anthropic Research</div>
+            <div class="resource-link-desc">Published research on AI safety, interpretability, and responsible scaling. Useful for understanding how frontier models are evaluated and constrained.</div>
+          </a>
+          <a href="https://openai.com/research" target="_blank" rel="noopener" class="resource-link-card">
+            <div class="resource-link-name">OpenAI Research</div>
+            <div class="resource-link-desc">OpenAI's published papers on model capabilities, alignment, and safety evaluations. Includes the GPT-4 technical report and usage policy documentation.</div>
+          </a>
+        </div>
+      </div>
+
+    </div><!-- /links -->
+
   </div>
 </section>
 
@@ -510,6 +926,32 @@
 <script src="js/animations.js"></script>
 <script src="js/nav.js"></script>
 <script src="js/dashboard.js"></script>
+<script>
+(function () {
+  // Tab switching
+  document.querySelectorAll('.resource-tab-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      document.querySelectorAll('.resource-tab-btn').forEach(function (b) { b.classList.remove('active'); });
+      document.querySelectorAll('.resource-tab-panel').forEach(function (p) { p.classList.remove('active'); });
+      btn.classList.add('active');
+      var panel = document.getElementById('rtab-' + btn.dataset.tab);
+      if (panel) panel.classList.add('active');
+    });
+  });
+
+  // Copy prompt buttons
+  document.querySelectorAll('.prompt-copy-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var text = btn.closest('.prompt-lib-card').querySelector('.prompt-lib-text').textContent;
+      navigator.clipboard.writeText(text.trim()).then(function () {
+        btn.textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(function () { btn.textContent = 'Copy'; btn.classList.remove('copied'); }, 1800);
+      });
+    });
+  });
+})();
+</script>
 
 </body>
 </html>

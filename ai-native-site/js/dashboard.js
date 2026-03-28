@@ -32,7 +32,7 @@
 
     var done = Progress.totalModulesDone();
     var pct = Math.round((done / TOTAL_MODULES) * 100);
-    var circumference = 2 * Math.PI * 52;
+    var circumference = 2 * Math.PI * 87;
     ring.style.strokeDasharray = circumference;
     ring.style.strokeDashoffset = circumference - (pct / 100) * circumference;
     text.textContent = pct + '%';

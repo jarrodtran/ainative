@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Glossary — AI Native Learning</title>
+<meta name="description" content="Plain-English definitions of the AI terms you'll encounter when working with modern AI tools and reading about AI at work.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo"><span>AI Native</span> Learning</a>
+    <div class="nav-tabs">
+      <a href="/" class="nav-tab">Learn</a>
+      <a href="glossary.html" class="nav-tab active">Glossary</a>
+      <a href="prompt-library.html" class="nav-tab">Prompt Library</a>
+      <a href="tools.html" class="nav-tab">Tools &amp; Resources</a>
+    </div>
+    <div class="nav-spacer"></div>
+  </div>
+</nav>
+<div class="scroll-progress"><div class="scroll-progress-fill"></div></div>
+
+<section class="ref-hero">
+  <div class="container">
+    <div data-animate="fade-up">
+      <div class="ref-hero-eyebrow">Quick Reference</div>
+      <h1 class="ref-hero-title">Glossary of AI Terms</h1>
+      <p class="ref-hero-desc">Plain-English definitions of the terms you'll encounter when working with AI tools and reading about AI at work. Listed alphabetically.</p>
+    </div>
+  </div>
+</section>
+
+<section class="ref-content">
+  <div class="container">
+    <div class="glossary-grid" data-animate="fade-up">
+
+      <div class="glossary-item">
+        <div class="glossary-term">Agent</div>
+        <div class="glossary-def">An AI system that can plan and take actions autonomously, using tools like web search or code execution to complete multi-step tasks with minimal oversight.</div>
+      </div>
+
+      <div class="glossary-item">
+        <div class="glossary-term">Agentic workflow</div>
+        <div class="glossary-def">A task sequence where AI decisions and outputs feed into the next step automatically, requiring little human input between actions. Useful for complex, multi-stage processes.</div>
+      </div>
+
+      <div class="glossary-item">
+        <div class="glossary-term">Alignment</div>
+        <div class="glossary-def">The degree to which an AI system's behavior matches human intentions, values, and goals. Misalignment is when the model does something technically correct but not what you actually wanted.</div>
+      </div>
+
+      <div class="glossary-item">
+        <div class="glossary-term">API</div>
+        <div class="glossary-def">Application Programming Interface. The technical bridge that lets software systems talk to each other. AI APIs let developers embed model capabilities directly into apps and workflows.</div>
+      </div>
+
+      <div class="glossary-item">
+        <div class="glossary-term">Artifact</div>
+        <div class="glossary-def">The specific output you're asking AI to produce: a document, email, table, summary, or other deliverable. Defining it clearly before prompting improves quality.</div>
+      </div>
+
+      <div class="glossary-item">
+        <div class="glossary-term">Attention mechanism</div>
+        <div class="glossary-def">The core innovation inside transformer models. It allows the model to weigh how relevant each word in the input is to every other word — enabling nuanced understanding of context.</div>
+      </div>
+
+      <div class="glossary-item">
+        <div class="glossary-term">Benchmark</div>
+        <div class="glossary-def">A standardized test used to measure and compare AI model capabilities — reasoning, coding, factual accuracy, safety, etc. Useful for comparing models but not a complete picture of real-world performance.</div>
+      </div>
+
+      <div class="glossary-item">
+        <div class="glossary-term">Chain-of-thought</div>
+        <div class="glossary-def">A prompting technique that asks the AI to reason through a problem step by step before giving a final answer. Improves accuracy on complex or multi-part tasks.</div>
+      </div>
+
+      <div class="glossary-item">
+        <div class="glossary-term">Chunking</div>
+        <div class="glossary-def">Breaking large documents into smaller, overlapping segments before feeding them into an AI model or vector database. Necessary because models have context limits and retrieve information in pieces.</div>
+      </div>
+
+      <div class="glossary-item">
+        <div class="glossary-term">Constitutional AI</div>
+        <div class="glossary-def">Anthropic's approach to training AI systems using a set of explicit principles (a "constitution") that the model uses to critique and revise its own outputs during training.</div>
+      </div>
+
+      <div class="glossary-item">
+        <div class="glossary-term">Context collapse</div>
+        <div class="glossary-def">When important earlier information in a conversation is effectively forgotten or deprioritized as the context window fills up. Longer conversations can cause models to lose track of early instructions.</div>
+      </div>
+
+      <div class="glossary-item">
+        <div class="glossary-term">Context window</div>
+        <div class="glossary-def">The maximum amount of text a model can process in one interaction—your input plus its output combined. Most frontier models now handle 100,000+ tokens.</div>
+      </div>
+
+      <div class="glossary-item">
+        <div class="glossary-term">Embedding</div>
+        <div class="glossary-def">A numerical representation of text that captures semantic meaning. Used to power semantic search, document retrieval, and similarity matching in AI systems.</div>
+      </div>
+
+      <div class="glossary-item">
+        <div class="glossary-term">Emergent behavior</div>
+        <div class="glossary-def">Capabilities that appear in larger models that were not explicitly trained for and were not present in smaller versions of the same model. Emergent abilities are difficult to predict in advance.</div>
+      </div>
+
+      <div class="glossary-item">
+        <div class="glossary-term">Evals (Evaluation)</div>
+        <div class="glossary-def">Systematic tests used to measure AI model outputs for quality, accuracy, safety, or reliability. Well-designed evals are the gold standard for knowing whether an AI system actually works for your use case.</div>
+      </div>
+
+      <div class="glossary-item">
+        <div class="glossary-term">Few-shot prompting</div>
+        <div class="glossary-def">Providing 2–5 examples inside your prompt to show the model the exact format, tone, or structure you want in the output. More reliable than describing the format in words.</div>
+      </div>
+
+      <div class="glossary-item">
+        <div class="glossary-term">Fine-tuning</div>
+        <div class="glossary-def">Training an existing model on a curated dataset to specialize its behavior for a particular domain, task, or style. Requires technical infrastructure and labeled data.</div>
+      </div>
+
+      <div class="glossary-item">
+        <div class="glossary-term">Foundation model</div>
+        <div class="glossary-def">A large AI model trained on broad data (like Claude, GPT-4, or Gemini) that can be applied to many tasks without retraining. The base most AI products are built on.</div>
+      </div>
+
+      <div class="glossary-item">
+        <div class="glossary-term">Generative AI</div>
+        <div class="glossary-def">AI systems that produce new content — text, images, code, audio, video — rather than simply classifying or predicting from existing data. The category that includes LLMs, image generators, and voice models.</div>
+      </div>
+
+      <div class="glossary-item">
+        <div class="glossary-term">Grounding</div>
+        <div class="glossary-def">Connecting AI responses to specific verified documents or data sources. Reduces hallucination by anchoring the model to facts rather than relying on training alone.</div>
+      </div>
+
+      <div class="glossary-item">
+        <div class="glossary-term">Guardrails</div>
+        <div class="glossary-def">Constraints built into an AI system to prevent harmful, off-topic, or policy-violating outputs. Can be implemented in the model itself, through system prompts, or via output filtering layers.</div>
+      </div>
+
+      <div class="glossary-item">
+        <div class="glossary-term">Hallucination</div>
+        <div class="glossary-def">When an AI confidently generates false, fabricated, or inaccurate information that sounds plausible. The most important failure mode to verify against before using AI output.</div>
+      </div>
+
+      <div class="glossary-item">
+        <div class="glossary-term">Human-in-the-loop</div>
+        <div class="glossary-def">A workflow design where a human reviews, approves, or corrects AI outputs before they are acted upon. Essential in high-stakes contexts where errors are costly or hard to reverse.</div>
+      </div>
+
+      <div class="glossary-item">
+        <div class="glossary-term">Inference</div>
+        <div class="glossary-def">The process of an AI model generating a response from its training. Inference cost and speed vary by model size—larger models are slower and more expensive to run.</div>
+      </div>
+
+      <div class="glossary-item">
+        <div class="glossary-term">Instruction following</div>
+        <div class="glossary-def">A model's ability to accurately carry out specific directives in a prompt. Stronger instruction-following means the model does what you say, even on nuanced or multi-step tasks.</div>
+      </div>
+
+      <div class="glossary-item">
+        <div class="glossary-term">Knowledge cutoff</div>
+        <div class="glossary-def">The date after which a model has no training data. Events, publications, or changes after this date are unknown to the model unless provided in the prompt. Always check cutoff dates for time-sensitive topics.</div>
+      </div>
+
+      <div class="glossary-item">
+        <div class="glossary-term">Latency</div>
+        <div class="glossary-def">The time it takes for a model to begin or complete a response. Larger models typically have higher latency. Important consideration when integrating AI into real-time or user-facing workflows.</div>
+      </div>
+
+      <div class="glossary-item">
+        <div class="glossary-term">LLM</div>
+        <div class="glossary-def">Large Language Model. An AI model trained on vast amounts of text to understand and generate natural language. The core technology behind most conversational AI tools.</div>
+      </div>
+
+      <div class="glossary-item">
+        <div class="glossary-term">Model</div>
+        <div class="glossary-def">A trained AI system with specific capabilities, a defined size (measured in parameters), and distinct behavioral characteristics. Different models — even from the same provider — behave differently and suit different tasks.</div>
+      </div>
+
+      <div class="glossary-item">
+        <div class="glossary-term">Multimodal</div>
+        <div class="glossary-def">AI systems that can process multiple input types—text, images, audio, or video—in a single model. GPT-4o, Claude, and Gemini are all multimodal models.</div>
+      </div>
+
+      <div class="glossary-item">
+        <div class="glossary-term">Neural network</div>
+        <div class="glossary-def">The computational architecture underlying modern AI models. Loosely inspired by the brain, it consists of layers of mathematical operations that learn patterns from training data.</div>
+      </div>
+
+      <div class="glossary-item">
+        <div class="glossary-term">Orchestration</div>
+        <div class="glossary-def">Coordinating multiple AI models, tools, or agents to complete a complex task. An orchestration layer routes inputs, manages outputs, and chains steps together — often invisibly to the end user.</div>
+      </div>
+
+      <div class="glossary-item">
+        <div class="glossary-term">Parameters</div>
+        <div class="glossary-def">The numerical weights inside a model that encode everything it has learned during training. Model size (e.g., "7B" or "70B") refers to how many billions of parameters the model has.</div>
+      </div>
+
+      <div class="glossary-item">
+        <div class="glossary-term">Persona</div>
+        <div class="glossary-def">A defined role or character given to an AI via a system prompt to shape its communication style, expertise, or perspective. Useful for creating consistent product experiences or tailored assistants.</div>
+      </div>
+
+      <div class="glossary-item">
+        <div class="glossary-term">Prompt</div>
+        <div class="glossary-def">The instruction, question, or input you give to an AI model to guide its response. Prompt quality is the primary lever for output quality in everyday AI use.</div>
+      </div>
+
+      <div class="glossary-item">
+        <div class="glossary-term">Prompt injection</div>
+        <div class="glossary-def">An attack where malicious instructions are embedded in content the AI reads — a document, email, or web page — causing it to override its original instructions. A key security risk in agentic workflows.</div>
+      </div>
+
+      <div class="glossary-item">
+        <div class="glossary-term">RAG</div>
+        <div class="glossary-def">Retrieval-Augmented Generation. Relevant documents are fetched and added to the AI's context before it responds, grounding answers in real data rather than training memory.</div>
+      </div>
+
+      <div class="glossary-item">
+        <div class="glossary-term">Reasoning model</div>
+        <div class="glossary-def">AI models (like o1 or Claude's extended thinking mode) that generate an internal chain of reasoning before producing a final answer. Slower and more expensive, but substantially more accurate on hard problems.</div>
+      </div>
+
+      <div class="glossary-item">
+        <div class="glossary-term">Role prompting</div>
+        <div class="glossary-def">Assigning the AI a specific role or area of expertise in your prompt ("Act as a senior editor…") to shape the style, depth, and focus of its response.</div>
+      </div>
+
+      <div class="glossary-item">
+        <div class="glossary-term">Semantic search</div>
+        <div class="glossary-def">Search that retrieves results based on conceptual meaning rather than exact keyword matches. Powered by embeddings — finds "heart attack symptoms" even if the document says "myocardial infarction."</div>
+      </div>
+
+      <div class="glossary-item">
+        <div class="glossary-term">Structured output</div>
+        <div class="glossary-def">AI responses formatted as JSON, tables, or other machine-readable formats rather than prose. Essential when AI output needs to feed into another system or workflow step without manual parsing.</div>
+      </div>
+
+      <div class="glossary-item">
+        <div class="glossary-term">System prompt</div>
+        <div class="glossary-def">Instructions set before a conversation begins that shape the AI's behavior, persona, or constraints throughout the session. Used in products to define tone and scope.</div>
+      </div>
+
+      <div class="glossary-item">
+        <div class="glossary-term">Temperature</div>
+        <div class="glossary-def">A parameter controlling output randomness. Low values produce focused, consistent responses. High values produce more varied or creative ones. Most tools set this automatically.</div>
+      </div>
+
+      <div class="glossary-item">
+        <div class="glossary-term">Token</div>
+        <div class="glossary-def">The basic unit an LLM processes—roughly ¾ of a word on average. Context limits, API costs, and processing speed are all measured in tokens.</div>
+      </div>
+
+      <div class="glossary-item">
+        <div class="glossary-term">Tool use</div>
+        <div class="glossary-def">The ability of an AI model to call external functions—web search, code execution, calendar access, APIs—during a conversation to retrieve live information or take action.</div>
+      </div>
+
+      <div class="glossary-item">
+        <div class="glossary-term">Transformer</div>
+        <div class="glossary-def">The neural network architecture that powers virtually all modern LLMs. Introduced in the 2017 "Attention Is All You Need" paper, it enables models to process text in parallel and capture long-range context.</div>
+      </div>
+
+      <div class="glossary-item">
+        <div class="glossary-term">Vector database</div>
+        <div class="glossary-def">A database optimized for storing and searching high-dimensional embedding vectors. The storage layer that makes RAG and semantic search fast at scale. Examples: Pinecone, Weaviate, pgvector.</div>
+      </div>
+
+      <div class="glossary-item">
+        <div class="glossary-term">Workflow automation</div>
+        <div class="glossary-def">Using AI to execute sequences of tasks — drafting, classifying, routing, summarizing — with minimal human input between steps. The practical goal of most enterprise AI adoption.</div>
+      </div>
+
+      <div class="glossary-item">
+        <div class="glossary-term">Zero-shot</div>
+        <div class="glossary-def">Asking an AI to perform a task without providing any examples, relying entirely on the instruction and its training. Works well for common tasks; few-shot helps for unusual formats.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">🧠</span>
+        <span class="footer-name">AI Native Learning</span>
+        <span class="footer-copy">© 2026 · Free to use · Share freely</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/animations.js"></script>
+<script src="js/nav.js"></script>
+
+</body>
+</html>
