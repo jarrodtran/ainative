@@ -23,6 +23,8 @@ function lesson(cfg, defaults) {
     title: cfg.title,
     subtitle: cfg.subtitle,
     objective: cfg.objective,
+    useWhen: cfg.useWhen || defaults.useWhen || cfg.subtitle,
+    estimatedMinutes: cfg.estimatedMinutes || defaults.estimatedMinutes || 6,
     whyItMatters: cfg.whyItMatters,
     coreConcepts: cfg.coreConcepts,
     workedExample: cfg.workedExample,
@@ -2588,6 +2590,182 @@ var COURSES = {
         doThisNow: { task: 'Write your one-page personal AI learning system.', timebox: '10 minutes', steps: ['List your sources.', 'Set the weekly rhythm.', 'Define the review cadence.'] },
         commonMistakes: ['Trying to know everything.', 'Building a complex system you will not maintain.', 'Separating learning from daily work.']
       }, { roleVariants: ROLE_SETS.enablement, toolSpecific: true })
+    ]
+  }
+};
+
+var COURSE_META = {
+  1: { outcomes: ['Build a durable AI mental model.', 'Learn how to review output instead of trusting fluency.'], nextModuleBridge: 'Next, turn that mental model into better tool choices so you stop forcing one product to do every job.' },
+  2: { outcomes: ['Choose tools by workflow fit.', 'Keep a smaller, more stable AI stack.'], nextModuleBridge: 'Next, use the right tool choices to write sharper prompts and reusable workflows.' },
+  3: { outcomes: ['Write clearer prompts for real work.', 'Turn successful prompts into reusable patterns.'], nextModuleBridge: 'Next, apply those prompting skills with stronger safety, privacy, and verification habits.' },
+  4: { outcomes: ['Use AI with better data judgment.', 'Add lightweight verification to daily work.'], nextModuleBridge: 'Next, move from foundations into daily productivity workflows where AI can save immediate time.' },
+  5: { outcomes: ['Draft and revise business writing faster.', 'Adapt messages for audience and tone.'], nextModuleBridge: 'Next, use the same discipline on research and synthesis, where source handling matters even more.' },
+  6: { outcomes: ['Summarize and synthesize source material better.', 'Turn research into action-oriented output.'], nextModuleBridge: 'Next, level up prompting for more complex and multi-step work.' },
+  7: { outcomes: ['Decompose larger problems into better prompt workflows.', 'Use examples, structure, and chaining more deliberately.'], nextModuleBridge: 'Next, bring those techniques into meetings, notes, and follow-up work.' },
+  8: { outcomes: ['Prepare for meetings faster.', 'Create clearer recaps and follow-through.'], nextModuleBridge: 'Next, apply the same workflow thinking to documentation and SOP creation.' },
+  9: { outcomes: ['Draft SOPs and FAQs from real inputs.', 'Use documentation to improve process clarity.'], nextModuleBridge: 'Next, carry those documentation habits into planning, coordination, and project work.' },
+  10: { outcomes: ['Use AI as a project planning and reporting co-pilot.', 'Surface assumptions, risks, and status faster.'], nextModuleBridge: 'Next, use AI for data interpretation and business analysis without losing rigor.' },
+  11: { outcomes: ['Frame data questions more clearly.', 'Turn analysis into decision-ready communication.'], nextModuleBridge: 'Next, use AI to support higher-level choices, tradeoffs, and strategic reasoning.' },
+  12: { outcomes: ['Structure options and tradeoffs better.', 'Use AI to challenge assumptions before decisions are made.'], nextModuleBridge: 'Next, apply that same structured thinking to vendors, contracts, and stakeholder work.' },
+  13: { outcomes: ['Prepare for vendor evaluation more systematically.', 'Tailor stakeholder messaging without changing the facts.'], nextModuleBridge: 'Next, step into advanced workflows where AI starts acting across multiple steps, tools, and contexts.' },
+  14: { outcomes: ['Understand what makes agentic workflows different.', 'Design safer oversight for more autonomous systems.'], nextModuleBridge: 'Next, look at the AI features already inside your existing tools so advanced workflows stay grounded in real work.' },
+  15: { outcomes: ['Choose when embedded AI beats a separate tool.', 'Build lower-friction daily AI patterns.'], nextModuleBridge: 'Next, package the workflows that work into reusable playbooks for yourself and your team.' },
+  16: { outcomes: ['Turn good prompts into reusable playbooks.', 'Capture inputs, review rules, and examples that others can follow.'], nextModuleBridge: 'Next, move from personal effectiveness into practical team adoption.' },
+  17: { outcomes: ['Teach AI through workflows, not hype.', 'Support adoption with examples, boundaries, and evidence.'], nextModuleBridge: 'Next, look for the best opportunities to apply AI more broadly across work.' },
+  18: { outcomes: ['Find high-value AI opportunities in real work.', 'Sort tasks into automate, augment, or avoid.'], nextModuleBridge: 'Next, support those opportunities with clear ownership, change habits, and governance.' },
+  19: { outcomes: ['Use lightweight governance that people can actually follow.', 'Support human workflow change, not just tool rollout.'], nextModuleBridge: 'Next, measure what changed so AI improvement becomes credible, not anecdotal.' },
+  20: { outcomes: ['Measure workflow impact more clearly.', 'Communicate AI value with stronger evidence.'], nextModuleBridge: 'Next, end the core program by building a sustainable system for staying current without drowning in noise.' },
+  21: { outcomes: ['Build a small, durable AI learning system.', 'Stay current through practice rather than hype consumption.'], nextModuleBridge: 'If you want to go further, the bonus section on OpenClaw and other agents explores more autonomous tools and how to evaluate them safely.' }
+};
+
+Object.keys(COURSE_META).forEach(function (key) {
+  COURSES[key].outcomes = COURSE_META[key].outcomes;
+  COURSES[key].nextModuleBridge = COURSE_META[key].nextModuleBridge;
+});
+
+var BONUS_SECTIONS = {
+  agents: {
+    title: 'Agents In Practice',
+    label: 'Bonus Section',
+    summary: 'A practical endcap on OpenClaw and other agents: what they do, where they help, where they add risk, and how to evaluate them without hype.',
+    outcomes: [
+      'Understand what agent-style tools change compared with a normal assistant.',
+      'Use OpenClaw as one concrete example inside a broader agent landscape.',
+      'Evaluate agents by oversight, tool reach, review burden, and reliability.'
+    ],
+    lessons: [
+      lesson({
+        title: 'What This Class Of Agent Tools Does',
+        subtitle: 'Agents orchestrate steps, tools, and follow-through instead of only answering one request.',
+        useWhen: 'Use this when you need to understand what changes when an AI tool moves from chat responses into multi-step execution.',
+        estimatedMinutes: 7,
+        objective: 'Distinguish a normal assistant interaction from a more agentic workflow that plans, uses tools, and keeps going.',
+        whyItMatters: 'The practical question is not whether agents are impressive. It is whether the added autonomy meaningfully improves a workflow you actually care about.',
+        coreConcepts: [
+          { title: 'Multi-Step Execution', text: 'Agent-style systems can continue through several steps, gather inputs, and update outputs without needing a fresh prompt every time.' },
+          { title: 'Tool Reach', text: 'The real shift comes from tool access: files, inboxes, calendars, task systems, browsers, terminals, or other connected systems.' },
+          { title: 'Oversight Still Matters', text: 'More autonomy increases the importance of checkpoints, review rules, and clear stop conditions.' }
+        ],
+        workedExample: {
+          scenario: 'A normal assistant can draft a meeting recap, while an agentic workflow could also send a draft message, update tasks, and create a reminder.',
+          approach: 'The difference is not magic. It is workflow orchestration plus tool access.',
+          result: 'You start evaluating agents based on sequence, review cost, and reliability rather than novelty.',
+          verification: 'For each step, ask what would happen if it ran with the wrong assumption and whether the workflow has a safe checkpoint.'
+        },
+        artifact: { label: 'Checklist', title: 'Agent workflow lens', items: ['What steps does it handle?', 'What tools can it access?', 'Where does a human still review?'] },
+        doThisNow: { task: 'Pick one recurring task and write the difference between a chat-only version and an agent-style version.', timebox: '7 minutes', steps: ['List the steps.', 'Mark where tool access matters.', 'Mark where you would require review.'] },
+        commonMistakes: ['Calling every automation an agent.', 'Focusing on model quality while ignoring tool access.', 'Skipping oversight design.']
+      }, { roleVariants: ROLE_SETS.enablement, sourceNotes: ['Reviewed against OpenClaw positioning as a personal AI assistant that can take actions through connected tools and chat interfaces.', 'Keep claims general and review product-specific capabilities regularly.'], lastReviewed: 'March 2026' }),
+      lesson({
+        title: 'OpenClaw In Context',
+        subtitle: 'Use OpenClaw as a concrete example of a more agent-style personal assistant without treating it as the whole category.',
+        useWhen: 'Use this when you want one concrete reference point for what a more action-oriented personal assistant can look like.',
+        estimatedMinutes: 8,
+        objective: 'Understand how OpenClaw fits into the broader landscape of agent-style tools and assistants.',
+        whyItMatters: 'OpenClaw is useful as a reference because it emphasizes doing things through connected tools and chat interfaces, but the right lesson is how to evaluate the pattern, not how to memorize one product.',
+        coreConcepts: [
+          { title: 'Personal Assistant Framing', text: 'OpenClaw presents itself as a personal AI assistant rather than only a chat bot, emphasizing actions, memory, and connected workflows.' },
+          { title: 'One Example, Not The Whole Market', text: 'Use it as one example of a system that blends memory, communication channels, and tool execution.' },
+          { title: 'Review Product Claims Carefully', text: 'Agent tools evolve fast. Treat feature lists as moving examples and focus on the underlying evaluation criteria.' }
+        ],
+        workedExample: {
+          scenario: 'A learner hears about OpenClaw and assumes all agents work the same way.',
+          approach: 'They instead ask what kind of workflows it supports, what tools it can reach, and what review burden it creates.',
+          result: 'The conversation moves from hype to evaluation.',
+          verification: 'Before adopting or recommending any agent tool, confirm the current capabilities, approval path, and risk controls for your environment.'
+        },
+        artifact: { label: 'Evaluation', title: 'Questions to ask about OpenClaw', items: ['What work would it actually improve?', 'What systems would it touch?', 'What would need human approval first?'] },
+        doThisNow: { task: 'Write a short evaluation note on OpenClaw as if you were deciding whether it is relevant to your work.', timebox: '8 minutes', steps: ['Name one use case.', 'Name the tool access required.', 'Name the review boundary.'] },
+        commonMistakes: ['Treating one product as the whole category.', 'Trusting social proof over workflow fit.', 'Adopting based on excitement rather than task relevance.']
+      }, { roleVariants: ROLE_SETS.enablement, sourceNotes: ['OpenClaw official site describes it as a personal AI assistant focused on doing things through chat and connected tools.', 'Do not hard-code fast-changing feature claims without a review date.'], lastReviewed: 'March 2026' }),
+      lesson({
+        title: 'How OpenClaw Compares With Other Agents',
+        subtitle: 'Compare agents by workflow shape, tool reach, and supervision model rather than by marketing language.',
+        useWhen: 'Use this when you are comparing OpenClaw with other agent tools, coding agents, or workflow automation systems.',
+        estimatedMinutes: 8,
+        objective: 'Build a practical comparison lens for OpenClaw and other agents.',
+        whyItMatters: 'Agent tools differ most in where they live, what they can touch, how much they remember, and how much supervision they require.',
+        coreConcepts: [
+          { title: 'Where The Agent Lives', text: 'Some agents live inside a chat interface, some in developer tools, and some inside workflow platforms or business apps.' },
+          { title: 'What The Agent Can Touch', text: 'Tool access determines both usefulness and risk. The more systems an agent can use, the more valuable and risky it becomes.' },
+          { title: 'How The Agent Is Supervised', text: 'The key comparison is not only raw capability. It is whether the workflow exposes enough checkpoints, traceability, and recovery options.' }
+        ],
+        workedExample: {
+          scenario: 'A team compares OpenClaw, a coding-focused agent, and a workflow automation bot.',
+          approach: 'They compare where each tool lives, what systems it touches, and how review happens.',
+          result: 'The team chooses based on workflow fit rather than brand excitement.',
+          verification: 'They test each option on one real workflow and compare review effort, not just output quality.'
+        },
+        artifact: { label: 'Matrix', title: 'Agent comparison criteria', items: ['Interface and home base', 'Tool access', 'Memory', 'Oversight model', 'Review burden'] },
+        doThisNow: { task: 'Compare two agent tools or agent patterns using the matrix.', timebox: '8 minutes', steps: ['Choose a real workflow.', 'Score tool reach and oversight.', 'Decide which option has the safer path to value.'] },
+        commonMistakes: ['Comparing by hype alone.', 'Ignoring where the agent lives.', 'Skipping the review burden in comparisons.']
+      }, { roleVariants: ROLE_SETS.enablement, sourceNotes: ['Use OpenClaw as one comparison point, not a canonical standard for all agent systems.', 'Keep the comparison framework durable so it still works when product details shift.'], lastReviewed: 'March 2026' }),
+      lesson({
+        title: 'When To Use An Agent Versus A Normal Assistant',
+        subtitle: 'Choose agentic tools when orchestration and follow-through matter more than one good answer.',
+        useWhen: 'Use this when you are deciding whether a task really needs an agent or just a better prompt and a better workflow.',
+        estimatedMinutes: 7,
+        objective: 'Decide when an agentic tool is appropriate and when a normal assistant is the better choice.',
+        whyItMatters: 'Many tasks do not need an agent. The wrong level of autonomy adds risk, setup cost, and complexity without improving the work.',
+        coreConcepts: [
+          { title: 'Use A Normal Assistant For Bounded Thinking', text: 'Drafting, summarizing, outlining, and one-step analysis often do not need tool orchestration.' },
+          { title: 'Use An Agent For Repeatable Multi-Step Work', text: 'Agentic workflows make more sense when several steps, tools, or follow-up actions happen together.' },
+          { title: 'Start With The Simplest Useful Mode', text: 'If a normal assistant plus a short checklist solves the problem, do not add more autonomy yet.' }
+        ],
+        workedExample: {
+          scenario: 'A manager considers using an agent for weekly status summaries.',
+          approach: 'They compare a normal assistant plus manual review against an agent that gathers inputs and prepares the draft automatically.',
+          result: 'The team chooses based on where the real friction lies.',
+          verification: 'They check whether the automated version truly reduces manual work without hiding errors until later.'
+        },
+        artifact: { label: 'Decision Rule', title: 'Agent or assistant?', items: ['Is the work multi-step?', 'Does tool access matter?', 'Would added autonomy reduce real friction?', 'Can I review it safely?'] },
+        doThisNow: { task: 'Evaluate one workflow and decide whether it deserves a normal assistant or an agent-style tool.', timebox: '7 minutes', steps: ['List the current steps.', 'Mark where tool access helps.', 'Choose the simplest useful mode.'] },
+        commonMistakes: ['Using agents for simple drafting work.', 'Assuming more autonomy equals more value.', 'Adding complexity before proving the need.']
+      }, { roleVariants: ROLE_SETS.enablement, lastReviewed: 'March 2026' }),
+      lesson({
+        title: 'Practical Evaluation Checklist',
+        subtitle: 'Judge agents by reliability, supervision, and operational fit.',
+        useWhen: 'Use this when you are piloting or recommending any agent tool, including OpenClaw.',
+        estimatedMinutes: 8,
+        objective: 'Use a practical checklist to decide whether an agent is safe and worthwhile for your environment.',
+        whyItMatters: 'The right evaluation questions prevent agent adoption from becoming a mix of hype, vague hope, and hidden risk.',
+        coreConcepts: [
+          { title: 'Reliability', text: 'Does the agent complete the workflow consistently enough to be useful?' },
+          { title: 'Oversight', text: 'Can you see what it did, stop it, and recover when it goes wrong?' },
+          { title: 'Operational Fit', text: 'Does it fit your approved tools, data boundaries, and the kind of work you actually do?' }
+        ],
+        workedExample: {
+          scenario: 'A team wants to try an agent that can manage inbox and calendar workflows.',
+          approach: 'They run the checklist on tool access, approval, review, traceability, and error recovery.',
+          result: 'The pilot scope becomes safer and more realistic.',
+          verification: 'They reject workflows where tool access and risk controls are mismatched, even if the demo looked impressive.'
+        },
+        artifact: { label: 'Checklist', title: 'Agent evaluation checklist', items: ['What can it access?', 'How does review happen?', 'What breaks if it is wrong?', 'How do I recover?', 'Is this approved for my environment?'] },
+        doThisNow: { task: 'Run the evaluation checklist on one agent you are considering.', timebox: '8 minutes', steps: ['List the systems it touches.', 'List the review points.', 'Write one reason to pilot and one reason to wait.'] },
+        commonMistakes: ['Ignoring recovery paths.', 'Testing with too much access too early.', 'Letting demos substitute for evaluation.']
+      }, { roleVariants: ROLE_SETS.enablement, lastReviewed: 'March 2026' }),
+      lesson({
+        title: 'Safe First Experiments',
+        subtitle: 'Start with bounded workflows, visible review, and low-consequence outputs.',
+        useWhen: 'Use this when you want to test OpenClaw or another agent safely for the first time.',
+        estimatedMinutes: 7,
+        objective: 'Design a safe first experiment with an agent-style tool.',
+        whyItMatters: 'The first experiment should produce evidence, not exposure. A narrow pilot teaches you more than a dramatic but risky rollout.',
+        coreConcepts: [
+          { title: 'Choose A Bounded Task', text: 'Good first tests include recurring summaries, internal follow-up drafts, or low-risk personal workflows.' },
+          { title: 'Limit Access', text: 'Start with the minimum systems and permissions needed to learn something useful.' },
+          { title: 'Review Every Output', text: 'Early experiments should make human review explicit and unavoidable.' }
+        ],
+        workedExample: {
+          scenario: 'A user wants to try OpenClaw for personal scheduling and lightweight internal follow-up.',
+          approach: 'They start with one bounded workflow, limited access, and manual approval before any outbound action.',
+          result: 'They learn where the tool helps without overcommitting or overexposing sensitive systems.',
+          verification: 'After a few runs, they review where the agent helped, where it drifted, and what access should still remain off-limits.'
+        },
+        artifact: { label: 'Pilot Plan', title: 'Safe first experiment', items: ['One bounded workflow', 'Minimum tool access', 'Required manual approval', 'Short review window'] },
+        doThisNow: { task: 'Write a one-page first experiment for an agent-style tool.', timebox: '7 minutes', steps: ['Choose the workflow.', 'Limit the access.', 'Define the review and stop rule.'] },
+        commonMistakes: ['Starting with a high-consequence workflow.', 'Granting broad access before learning.', 'Skipping review because the task feels small.']
+      }, { roleVariants: ROLE_SETS.enablement, lastReviewed: 'March 2026' })
     ]
   }
 };

@@ -1,13 +1,18 @@
 /* ═══════════════════════════════════════════════════════
    course.js — Course page logic
-   Renders lessons, handles completion, updates progress
-   Active lesson indicator, auto-scroll, lesson navigation
+   Structured lesson rendering, resume state, bookmarks,
+   module outline, and bonus section support
    ═══════════════════════════════════════════════════════ */
 
 (function () {
   var moduleNum = null;
+  var bonusId = null;
   var course = null;
-  var lessonCount = 5;
+  var lessonCount = 0;
+  var scopeKind = 'module';
+  var scopeId = null;
+  var currentLessonNumber = 1;
+  var HOME_PATH = '/';
 
   function escapeHTML(value) {
     return String(value)
@@ -18,10 +23,32 @@
       .replace(/'/g, '&#39;');
   }
 
-  function renderList(items) {
-    return '<ul>' + items.map(function (item) {
-      return '<li>' + escapeHTML(item) + '</li>';
-    }).join('') + '</ul>';
+  function getPagePath(lessonNumber) {
+    var base = bonusId ? 'agents-in-practice.html' : 'module-' + moduleNum + '.html';
+    var prefix = bonusId ? '' : '';
+    if (!lessonNumber) return base;
+    return base + '#lesson-' + lessonNumber;
+  }
+
+  function getLessonProgress() {
+    return bonusId ? Progress.getBonusLessons(bonusId) : Progress.getLessons(moduleNum);
+  }
+
+  function countDone() {
+    return bonusId ? Progress.countBonusDone(bonusId) : Progress.countDone(moduleNum);
+  }
+
+  function markDone(idx) {
+    if (bonusId) Progress.markBonusLessonDone(bonusId, idx);
+    else Progress.markLessonDone(moduleNum, idx);
+  }
+
+  function renderList(items, className) {
+    return '<ul' + (className ? ' class="' + className + '"' : '') + '>' +
+      items.map(function (item) {
+        return '<li>' + escapeHTML(item) + '</li>';
+      }).join('') +
+      '</ul>';
   }
 
   function renderConcepts(items) {
@@ -42,26 +69,88 @@
     ];
 
     return roles.map(function (role) {
-      return '<div class="role-card">' +
-        '<div class="role-card-label">' + role.label + '</div>' +
+      return '<details class="role-card">' +
+        '<summary class="role-card-label">' + role.label + '</summary>' +
         '<p>' + escapeHTML(variants[role.key]) + '</p>' +
-        '</div>';
+        '</details>';
     }).join('');
   }
 
-  function init() {
-    moduleNum = parseInt(document.body.getAttribute('data-module'), 10);
-    if (!moduleNum || !COURSES[moduleNum]) return;
+  function nextIncompleteLessonNumber() {
+    var progress = getLessonProgress();
+    for (var i = 0; i < lessonCount; i++) {
+      if (!progress[i]) return i + 1;
+    }
+    return lessonCount;
+  }
 
-    course = COURSES[moduleNum];
-    lessonCount = course.lessons.length;
-    renderNav();
-    renderHero();
-    renderLessons();
-    renderCompletion();
-    renderLessonIndicator();
-    updateButtons();
-    initLessonObserver();
+  function getNextModuleNum() {
+    if (bonusId) return null;
+    return moduleNum < 21 ? moduleNum + 1 : null;
+  }
+
+  function getNextModuleHref() {
+    var next = getNextModuleNum();
+    if (bonusId) return HOME_PATH;
+    return next ? 'module-' + next + '.html' : '../agents-in-practice.html';
+  }
+
+  function getNextModuleLabel() {
+    if (bonusId) return 'Dashboard';
+    var next = getNextModuleNum();
+    return next ? 'Module ' + next + ' · ' + COURSES[next].title : 'Bonus Section · Agents In Practice';
+  }
+
+  function renderHeroExtras() {
+    var heroInner = document.querySelector('.course-hero-inner');
+    if (!heroInner) return;
+
+    var progress = getLessonProgress();
+    var resumeLesson = nextIncompleteLessonNumber();
+    var extras = document.createElement('div');
+    extras.className = 'course-hero-extras';
+
+    var outcomesHTML = '';
+    if (course.outcomes && course.outcomes.length) {
+      outcomesHTML = '<div class="hero-panel" data-animate="fade-up" data-delay="150">' +
+        '<div class="hero-panel-label">Module Outcomes</div>' +
+        renderList(course.outcomes) +
+        '</div>';
+    }
+
+    var outlineHTML = '<div class="hero-panel" data-animate="fade-up" data-delay="200">' +
+      '<div class="hero-panel-label">Lesson Outline</div>' +
+      '<div class="lesson-outline-list">';
+
+    course.lessons.forEach(function (lesson, idx) {
+      var lessonNumber = idx + 1;
+      var flags = [];
+      if (progress[idx]) flags.push('done');
+      if (Progress.isBookmarked(scopeKind, scopeId, idx)) flags.push('bookmarked');
+      if (lessonNumber === resumeLesson) flags.push('next');
+      outlineHTML += '<a class="lesson-outline-item ' + flags.join(' ') + '" href="#lesson-' + lessonNumber + '">' +
+        '<span class="lesson-outline-index">L' + lessonNumber + '</span>' +
+        '<span class="lesson-outline-text">' + escapeHTML(lesson.title) + '</span>' +
+        '<span class="lesson-outline-state">' + (Progress.isBookmarked(scopeKind, scopeId, idx) ? 'Saved' : (progress[idx] ? 'Done' : (lessonNumber === resumeLesson ? 'Next' : ''))) + '</span>' +
+        '</a>';
+    });
+    outlineHTML += '</div></div>';
+
+    var nextHTML = '<div class="hero-panel hero-panel-accent" data-animate="fade-up" data-delay="250">' +
+      '<div class="hero-panel-label">Next Best Action</div>' +
+      '<div class="next-action-title" id="nextActionTitle">' + (countDone() === lessonCount ? (bonusId ? 'Return to Dashboard' : 'Move to ' + getNextModuleLabel()) : 'Resume Lesson ' + resumeLesson) + '</div>' +
+      '<p class="next-action-copy" id="nextActionCopy">' + (countDone() === lessonCount
+        ? escapeHTML(course.nextModuleBridge || 'You have finished this module. Continue into the next skill area.')
+        : escapeHTML(course.lessons[resumeLesson - 1].useWhen || course.lessons[resumeLesson - 1].subtitle)) + '</p>' +
+      '<div class="next-action-buttons" id="nextActionButtons">' +
+      '<a class="hero-action-btn" id="nextActionPrimary" href="' + (countDone() === lessonCount ? getNextModuleHref() : '#lesson-' + resumeLesson) + '">' +
+      (countDone() === lessonCount ? (bonusId ? 'Back To Dashboard' : 'Open Next Module') : 'Jump To Next Lesson') + '</a>' +
+      (bonusId ? '' : '<a class="hero-action-btn ghost" id="nextActionSecondary" href="' + HOME_PATH + '">Back To Dashboard</a>') +
+      '</div>' +
+      '</div>';
+
+    extras.innerHTML = outcomesHTML + outlineHTML + nextHTML;
+    heroInner.appendChild(extras);
   }
 
   function renderNav() {
@@ -69,8 +158,7 @@
     var progress = document.getElementById('navModProgress');
     if (title) title.textContent = course.title;
     if (progress) {
-      var done = Progress.countDone(moduleNum);
-      progress.textContent = done + '/' + lessonCount + ' lessons';
+      progress.textContent = countDone() + '/' + lessonCount + ' lessons';
     }
   }
 
@@ -80,15 +168,26 @@
     var descEl = document.getElementById('courseDesc');
     var fill = document.getElementById('courseProgFill');
     var label = document.getElementById('courseProgLabel');
+    var done = countDone();
+    var pct = Math.round((done / lessonCount) * 100);
 
-    if (numEl) numEl.textContent = 'Module ' + moduleNum;
+    if (numEl) numEl.textContent = bonusId ? course.label : 'Module ' + moduleNum;
     if (titleEl) titleEl.textContent = course.title;
     if (descEl) descEl.textContent = course.summary || '';
-
-    var done = Progress.countDone(moduleNum);
-    var pct = Math.round((done / lessonCount) * 100);
     if (fill) fill.style.width = pct + '%';
     if (label) label.textContent = done + ' of ' + lessonCount + ' complete';
+
+    renderHeroExtras();
+  }
+
+  function renderLessonAnchorNav(lessonNumber) {
+    return '<div class="lesson-anchor-nav">' +
+      '<a href="#lesson-' + lessonNumber + '-outcome">Outcome</a>' +
+      '<a href="#lesson-' + lessonNumber + '-concepts">Concepts</a>' +
+      '<a href="#lesson-' + lessonNumber + '-example">Example</a>' +
+      '<a href="#lesson-' + lessonNumber + '-action">Action</a>' +
+      '<a href="#lesson-' + lessonNumber + '-watch">Watch For</a>' +
+      '</div>';
   }
 
   function renderLessons() {
@@ -96,252 +195,289 @@
     if (!container) return;
 
     var lessons = course.lessons;
-    var prog = Progress.getLessons(moduleNum);
-    var total = lessons.length;
+    var progress = getLessonProgress();
 
-    lessons.forEach(function (l, i) {
-      var isDone = !!prog[i];
-      var isLast = i === total - 1;
-
+    lessons.forEach(function (lesson, idx) {
+      var lessonNumber = idx + 1;
+      var isDone = !!progress[idx];
+      var isLast = idx === lessons.length - 1;
       var section = document.createElement('section');
+      var bookmarkState = Progress.isBookmarked(scopeKind, scopeId, idx);
+      var artifactText = lesson.artifact ? [lesson.artifact.title].concat(lesson.artifact.items).join('\n') : '';
+
       section.className = 'lesson-section';
-      section.id = 'lesson-' + (i + 1);
+      section.id = 'lesson-' + lessonNumber;
 
-      var inner = document.createElement('div');
-      inner.className = 'lesson-inner';
-
-      // text column
-      var textCol = document.createElement('div');
-      textCol.className = 'lesson-text';
-      textCol.setAttribute('data-animate', 'fade-up');
-
-      var navHTML = '<div class="lesson-nav-between">';
-      if (i > 0) {
-        navHTML += '<button class="lesson-scroll-btn" onclick="CourseActions.scrollTo(' + i + ')">↑ Previous Lesson</button>';
-      }
-      if (!isLast) {
-        navHTML += '<button class="lesson-scroll-btn" onclick="CourseActions.scrollTo(' + (i + 2) + ')">Next Lesson ↓</button>';
-      } else {
-        navHTML += '<button class="lesson-scroll-btn" onclick="CourseActions.scrollTo(\'completion\')">View Progress ↓</button>';
-      }
-      navHTML += '</div>';
-
-      textCol.innerHTML =
-        '<div class="lesson-num">Lesson ' + (i + 1) + ' of ' + total + '</div>' +
-        '<h2 class="lesson-title">' + escapeHTML(l.title) + '</h2>' +
-        (l.subtitle ? '<p class="lesson-subtitle">' + escapeHTML(l.subtitle) + '</p>' : '') +
+      section.innerHTML =
+        '<div class="lesson-inner">' +
+        '<div class="lesson-text" data-animate="fade-up">' +
+        '<div class="lesson-num">Lesson ' + lessonNumber + ' of ' + lessonCount + '</div>' +
+        '<div class="lesson-title-row">' +
+        '<h2 class="lesson-title">' + escapeHTML(lesson.title) + '</h2>' +
+        '<button class="lesson-bookmark-btn' + (bookmarkState ? ' active' : '') + '" data-lesson-bookmark="' + idx + '" onclick="CourseActions.toggleBookmark(this, ' + idx + ')" aria-label="Save lesson for review later">' + (bookmarkState ? 'Saved' : 'Review Later') + '</button>' +
+        '</div>' +
+        (lesson.subtitle ? '<p class="lesson-subtitle">' + escapeHTML(lesson.subtitle) + '</p>' : '') +
+        renderLessonAnchorNav(lessonNumber) +
         '<div class="lesson-content">' +
-        '<div class="lesson-objective">Outcome: ' + escapeHTML(l.objective) + '</div>' +
+        '<div class="lesson-use-when" id="lesson-' + lessonNumber + '-outcome"><strong>Use this when:</strong> ' + escapeHTML(lesson.useWhen || lesson.subtitle) + '</div>' +
+        '<div class="lesson-objective">Outcome: ' + escapeHTML(lesson.objective) + '</div>' +
+        '<div class="lesson-estimate">Estimated lesson time: ' + escapeHTML(lesson.estimatedMinutes) + ' minutes</div>' +
         '<div class="lesson-block">' +
         '<h3>Why This Matters</h3>' +
-        '<p>' + escapeHTML(l.whyItMatters) + '</p>' +
+        '<p>' + escapeHTML(lesson.whyItMatters) + '</p>' +
         '</div>' +
-        '<div class="lesson-block">' +
+        '<div class="lesson-block" id="lesson-' + lessonNumber + '-concepts">' +
         '<h3>Core Concepts</h3>' +
-        renderConcepts(l.coreConcepts) +
+        renderConcepts(lesson.coreConcepts) +
         '</div>' +
-        '<div class="lesson-block">' +
+        '<div class="lesson-block" id="lesson-' + lessonNumber + '-example">' +
         '<h3>Worked Example</h3>' +
         '<div class="worked-example">' +
-        '<p><strong>Scenario:</strong> ' + escapeHTML(l.workedExample.scenario) + '</p>' +
-        '<p><strong>Approach:</strong> ' + escapeHTML(l.workedExample.approach) + '</p>' +
-        '<p><strong>Result:</strong> ' + escapeHTML(l.workedExample.result) + '</p>' +
-        '<p><strong>Verification:</strong> ' + escapeHTML(l.workedExample.verification) + '</p>' +
+        '<p><strong>Scenario:</strong> ' + escapeHTML(lesson.workedExample.scenario) + '</p>' +
+        '<p><strong>Approach:</strong> ' + escapeHTML(lesson.workedExample.approach) + '</p>' +
+        '<p><strong>Result:</strong> ' + escapeHTML(lesson.workedExample.result) + '</p>' +
+        '<p><strong>Verification:</strong> ' + escapeHTML(lesson.workedExample.verification) + '</p>' +
         '</div>' +
         '</div>' +
-        '<div class="lesson-block">' +
+        '<div class="lesson-block" id="lesson-' + lessonNumber + '-watch">' +
         '<h3>What To Watch For</h3>' +
-        renderList(l.commonMistakes) +
+        renderList(lesson.commonMistakes) +
         '</div>' +
         '</div>' +
-        '<button class="lesson-complete-btn' + (isDone ? ' done' : '') + '" ' +
-        'data-lesson="' + i + '" onclick="CourseActions.markComplete(this, ' + i + ')">' +
+        '<div class="lesson-nav-between">' +
+        (lessonNumber > 1 ? '<button class="lesson-scroll-btn" onclick="CourseActions.scrollTo(' + (lessonNumber - 1) + ')">↑ Previous Lesson</button>' : '') +
+        (!isLast ? '<button class="lesson-scroll-btn" onclick="CourseActions.scrollTo(' + (lessonNumber + 1) + ')">Next Lesson ↓</button>' : '<button class="lesson-scroll-btn" onclick="CourseActions.scrollTo(\'completion\')">View Progress ↓</button>') +
+        '</div>' +
+        '<button class="lesson-complete-btn' + (isDone ? ' done' : '') + '" data-lesson="' + idx + '" onclick="CourseActions.markComplete(this, ' + idx + ')">' +
         (isDone ? 'Completed' : 'Mark Complete') + '</button>' +
-        navHTML;
-
-      // visual column
-      var visCol = document.createElement('div');
-      visCol.className = 'lesson-visual';
-      visCol.setAttribute('data-animate', 'fade-up');
-      visCol.setAttribute('data-delay', '200');
-
-      var visHTML = '';
-      if (l.artifact) {
-        visHTML += '<div class="try-it-box">' +
-          '<div class="try-it-label">' + escapeHTML(l.artifact.label) + '</div>' +
-          '<div class="try-it-text"><strong>' + escapeHTML(l.artifact.title) + '</strong></div>' +
-          renderList(l.artifact.items) +
-          '</div>';
-      }
-      if (l.doThisNow) {
-        visHTML += '<div class="try-it-box">' +
-          '<div class="try-it-label">Do This Now · ' + escapeHTML(l.doThisNow.timebox) + '</div>' +
-          '<div class="try-it-text"><strong>' + escapeHTML(l.doThisNow.task) + '</strong></div>' +
-          renderList(l.doThisNow.steps) +
-          '</div>';
-      }
-      visHTML += '<div class="lesson-meta-card">' +
+        '</div>' +
+        '<div class="lesson-visual" data-animate="fade-up" data-delay="200">' +
+        (lesson.artifact ? '<div class="try-it-box artifact-box">' +
+          '<div class="try-it-head">' +
+          '<div><div class="try-it-label">' + escapeHTML(lesson.artifact.label) + '</div><div class="try-it-text"><strong>' + escapeHTML(lesson.artifact.title) + '</strong></div></div>' +
+          '<button class="copy-artifact-btn" onclick="CourseActions.copyArtifact(' + idx + ')" data-copy-text="' + escapeHTML(artifactText) + '">Copy</button>' +
+          '</div>' +
+          renderList(lesson.artifact.items, 'artifact-list') +
+          '</div>' : '') +
+        (lesson.doThisNow ? '<div class="try-it-box action-box" id="lesson-' + lessonNumber + '-action">' +
+          '<div class="try-it-label">Do This Now · ' + escapeHTML(lesson.doThisNow.timebox) + '</div>' +
+          '<div class="try-it-text"><strong>' + escapeHTML(lesson.doThisNow.task) + '</strong></div>' +
+          renderList(lesson.doThisNow.steps) +
+          '</div>' : '') +
+        '<div class="lesson-meta-card">' +
         '<div class="try-it-label">Role Variants</div>' +
-        '<div class="role-grid">' + renderRoleVariants(l.roleVariants) + '</div>' +
-        '</div>';
-      visHTML += '<div class="lesson-meta-card">' +
+        '<div class="role-grid">' + renderRoleVariants(lesson.roleVariants) + '</div>' +
+        '</div>' +
+        '<div class="lesson-meta-card">' +
         '<div class="try-it-label">Review Notes</div>' +
-        '<div class="lesson-meta-line"><strong>Last reviewed:</strong> ' + escapeHTML(l.lastReviewed) + '</div>' +
-        renderList(l.sourceNotes) +
+        '<div class="lesson-meta-line"><strong>Last reviewed:</strong> ' + escapeHTML(lesson.lastReviewed) + '</div>' +
+        renderList(lesson.sourceNotes) +
+        '</div>' +
+        '</div>' +
         '</div>';
-      visCol.innerHTML = visHTML;
 
-      inner.appendChild(textCol);
-      inner.appendChild(visCol);
-      section.appendChild(inner);
       container.appendChild(section);
     });
   }
 
   function renderCompletion() {
     var container = document.getElementById('lessonsContainer');
+    var done = countDone();
+    var allDone = done === lessonCount;
+    var nextHref = getNextModuleHref();
+    var nextLabel = getNextModuleLabel();
+    var bridge = course.nextModuleBridge || 'Review what you learned here, then continue into the next part of the program.';
+    var completion = document.createElement('section');
+
     if (!container) return;
 
-    var done = Progress.countDone(moduleNum);
-    var allDone = done === lessonCount;
-
-    var section = document.createElement('section');
-    section.className = 'completion-section';
-    section.id = 'completion';
-
-    section.innerHTML =
+    completion.className = 'completion-section';
+    completion.id = 'completion';
+    completion.innerHTML =
       '<div class="completion-inner" data-animate="fade-up">' +
       '<div class="completion-icon">' + (allDone ? '🎉' : '📚') + '</div>' +
-      '<h2 class="completion-title">' +
-      (allDone ? 'Module Complete!' : done + ' of ' + lessonCount + ' Lessons Complete') +
-      '</h2>' +
-      '<p class="completion-text">' +
-      (allDone
-        ? 'You\'ve finished all lessons in this module. Great work!'
-        : 'Complete all lessons to finish this module.') +
-      '</p>' +
-      '<a href="/" class="completion-btn">← Back to Dashboard</a>' +
+      '<h2 class="completion-title" id="completionTitle">' + (allDone ? 'Section Complete!' : done + ' of ' + lessonCount + ' Lessons Complete') + '</h2>' +
+      '<p class="completion-text" id="completionText">' + (allDone ? escapeHTML(bridge) : 'Complete all lessons to finish this section and unlock a cleaner handoff into what comes next.') + '</p>' +
+      '<div class="completion-actions" id="completionActions">' +
+      '<a href="' + HOME_PATH + '" class="completion-btn secondary">← Back to Dashboard</a>' +
+      (allDone ? '<a href="' + nextHref + '" class="completion-btn" id="completionPrimary">' + escapeHTML(bonusId ? 'Return To Dashboard' : 'Continue To ' + nextLabel) + '</a>' : '<a href="#lesson-' + nextIncompleteLessonNumber() + '" class="completion-btn" id="completionPrimary">Resume Lesson ' + nextIncompleteLessonNumber() + '</a>') +
+      '</div>' +
       '</div>';
-
-    container.appendChild(section);
+    container.appendChild(completion);
   }
 
-  /* ── Active Lesson Indicator (dot nav on right side) ── */
+  function updateNextActionPanel() {
+    var title = document.getElementById('nextActionTitle');
+    var copy = document.getElementById('nextActionCopy');
+    var primary = document.getElementById('nextActionPrimary');
+    var done = countDone();
+    var nextLesson = nextIncompleteLessonNumber();
+
+    if (!title || !copy || !primary) return;
+
+    if (done === lessonCount) {
+      title.textContent = bonusId ? 'Return to Dashboard' : 'Move to ' + getNextModuleLabel();
+      copy.textContent = course.nextModuleBridge || 'You have finished this module. Continue into the next skill area.';
+      primary.href = getNextModuleHref();
+      primary.textContent = bonusId ? 'Back To Dashboard' : 'Open Next Module';
+    } else {
+      title.textContent = 'Resume Lesson ' + nextLesson;
+      copy.textContent = course.lessons[nextLesson - 1].useWhen || course.lessons[nextLesson - 1].subtitle;
+      primary.href = '#lesson-' + nextLesson;
+      primary.textContent = 'Jump To Next Lesson';
+    }
+  }
+
+  function updateCompletionPanel() {
+    var done = countDone();
+    var allDone = done === lessonCount;
+    var title = document.getElementById('completionTitle');
+    var text = document.getElementById('completionText');
+    var primary = document.getElementById('completionPrimary');
+
+    if (!title || !text || !primary) return;
+
+    title.textContent = allDone ? 'Section Complete!' : done + ' of ' + lessonCount + ' Lessons Complete';
+    text.textContent = allDone
+      ? (course.nextModuleBridge || 'You have finished this section and are ready to continue.')
+      : 'Complete all lessons to finish this section and unlock a cleaner handoff into what comes next.';
+    primary.href = allDone ? getNextModuleHref() : '#lesson-' + nextIncompleteLessonNumber();
+    primary.textContent = allDone ? (bonusId ? 'Return To Dashboard' : 'Continue To ' + getNextModuleLabel()) : 'Resume Lesson ' + nextIncompleteLessonNumber();
+  }
+
   function renderLessonIndicator() {
     var indicator = document.getElementById('lessonIndicator');
     if (!indicator) return;
 
-    var prog = Progress.getLessons(moduleNum);
+    var progress = getLessonProgress();
     var html = '';
     for (var i = 0; i < lessonCount; i++) {
-      var isDone = !!prog[i];
-      html += '<div class="lesson-dot-nav' + (isDone ? ' done' : '') +
-        '" data-lesson-dot="' + i + '" onclick="CourseActions.scrollTo(' + (i + 1) +
-        ')" title="Lesson ' + (i + 1) + '"></div>';
+      html += '<div class="lesson-dot-nav' + (progress[i] ? ' done' : '') +
+        (Progress.isBookmarked(scopeKind, scopeId, i) ? ' bookmarked' : '') +
+        '" data-lesson-dot="' + i + '" onclick="CourseActions.scrollTo(' + (i + 1) + ')" title="Lesson ' + (i + 1) + '"></div>';
     }
     indicator.innerHTML = html;
   }
 
-  /* ── IntersectionObserver for active lesson detection ── */
-  function initLessonObserver() {
-    var sections = document.querySelectorAll('.lesson-section');
-    if (!sections.length) return;
-
-    var observer = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          var id = entry.target.id; // "lesson-1", "lesson-2", etc.
-          var num = parseInt(id.replace('lesson-', ''), 10) - 1;
-          updateActiveDot(num);
-        }
-      });
-    }, { threshold: 0.3 });
-
-    sections.forEach(function (s) { observer.observe(s); });
+  function updateHeroProgress() {
+    var fill = document.getElementById('courseProgFill');
+    var label = document.getElementById('courseProgLabel');
+    var nav = document.getElementById('navModProgress');
+    var done = countDone();
+    var pct = Math.round((done / lessonCount) * 100);
+    if (fill) fill.style.width = pct + '%';
+    if (label) label.textContent = done + ' of ' + lessonCount + ' complete';
+    if (nav) nav.textContent = done + '/' + lessonCount + ' lessons';
   }
 
   function updateActiveDot(activeIdx) {
     var dots = document.querySelectorAll('.lesson-dot-nav');
     dots.forEach(function (dot, i) {
-      if (i === activeIdx) dot.classList.add('active');
-      else dot.classList.remove('active');
+      dot.classList.toggle('active', i === activeIdx);
     });
+    currentLessonNumber = activeIdx + 1;
+    Progress.setLastVisited(scopeKind, scopeId, currentLessonNumber, getPagePath(currentLessonNumber));
   }
 
-  function updateButtons() {
-    var prog = Progress.getLessons(moduleNum);
-    var btns = document.querySelectorAll('.lesson-complete-btn');
-    btns.forEach(function (btn) {
-      var idx = parseInt(btn.getAttribute('data-lesson'), 10);
-      if (prog[idx]) {
-        btn.classList.add('done');
-        btn.textContent = 'Completed';
+  function updateOutlineState() {
+    var progress = getLessonProgress();
+    var nextLesson = nextIncompleteLessonNumber();
+    var items = document.querySelectorAll('.lesson-outline-item');
+    items.forEach(function (item, idx) {
+      item.classList.toggle('done', !!progress[idx]);
+      item.classList.toggle('bookmarked', Progress.isBookmarked(scopeKind, scopeId, idx));
+      item.classList.toggle('next', idx + 1 === nextLesson && !progress[idx]);
+      var state = item.querySelector('.lesson-outline-state');
+      if (state) {
+        state.textContent = Progress.isBookmarked(scopeKind, scopeId, idx) ? 'Saved' : (progress[idx] ? 'Done' : (idx + 1 === nextLesson ? 'Next' : ''));
       }
     });
   }
 
-  function updateIndicatorDot(idx) {
-    var dot = document.querySelector('[data-lesson-dot="' + idx + '"]');
-    if (dot) dot.classList.add('done');
+  function initLessonObserver() {
+    var sections = document.querySelectorAll('.lesson-section');
+    if (!sections.length) return;
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          var id = entry.target.id;
+          var num = parseInt(id.replace('lesson-', ''), 10) - 1;
+          updateActiveDot(num);
+        }
+      });
+    }, { threshold: 0.35 });
+    sections.forEach(function (section) { observer.observe(section); });
   }
 
-  // global actions for onclick handlers
+  function init() {
+    moduleNum = parseInt(document.body.getAttribute('data-module'), 10);
+    bonusId = document.body.getAttribute('data-bonus');
+    if (bonusId) {
+      course = BONUS_SECTIONS[bonusId];
+      scopeKind = 'bonus';
+      scopeId = bonusId;
+    } else if (moduleNum && COURSES[moduleNum]) {
+      course = COURSES[moduleNum];
+      scopeKind = 'module';
+      scopeId = moduleNum;
+    }
+    if (!course) return;
+
+    lessonCount = course.lessons.length;
+    renderNav();
+    renderHero();
+    renderLessons();
+    renderCompletion();
+    renderLessonIndicator();
+    initLessonObserver();
+    Progress.setLastVisited(scopeKind, scopeId, 1, getPagePath(1));
+  }
+
   window.CourseActions = {
     markComplete: function (btn, idx) {
       if (btn.classList.contains('done')) return;
-      Progress.markLessonDone(moduleNum, idx);
+      markDone(idx);
       btn.classList.add('done');
       btn.textContent = 'Completed';
+      updateHeroProgress();
+      renderLessonIndicator();
+      updateActiveDot(currentLessonNumber - 1);
+      updateOutlineState();
+      updateNextActionPanel();
+      updateCompletionPanel();
 
-      // update indicator dot
-      updateIndicatorDot(idx);
-
-      // update nav progress
-      var progress = document.getElementById('navModProgress');
-      var done = Progress.countDone(moduleNum);
-      if (progress) progress.textContent = done + '/' + lessonCount + ' lessons';
-
-      // update hero progress
-      var fill = document.getElementById('courseProgFill');
-      var label = document.getElementById('courseProgLabel');
-      var pct = Math.round((done / lessonCount) * 100);
-      if (fill) fill.style.width = pct + '%';
-      if (label) label.textContent = done + ' of ' + lessonCount + ' complete';
-
-      // auto-scroll to next lesson
       if (idx < lessonCount - 1) {
         setTimeout(function () {
-          var next = document.getElementById('lesson-' + (idx + 2));
-          if (next) next.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }, 400);
-      }
-
-      // check if module is now complete
-      if (done === lessonCount) {
-        Progress.completeModule(moduleNum);
-        var compTitle = document.querySelector('.completion-title');
-        var compText = document.querySelector('.completion-text');
-        var compIcon = document.querySelector('.completion-icon');
-        if (compTitle) compTitle.textContent = 'Module Complete!';
-        if (compText) compText.textContent = 'You\'ve finished all lessons in this module. Great work!';
-        if (compIcon) compIcon.textContent = '🎉';
-
-        // scroll to completion
+          CourseActions.scrollTo(idx + 2);
+        }, 300);
+      } else {
         setTimeout(function () {
-          var comp = document.getElementById('completion');
-          if (comp) comp.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }, 600);
+          CourseActions.scrollTo('completion');
+        }, 350);
       }
     },
 
     scrollTo: function (target) {
-      var el;
-      if (typeof target === 'string') {
-        el = document.getElementById(target);
-      } else {
-        el = document.getElementById('lesson-' + target);
-      }
+      var el = typeof target === 'string' ? document.getElementById(target) : document.getElementById('lesson-' + target);
       if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    },
+
+    toggleBookmark: function (btn, idx) {
+      var active = Progress.toggleBookmark(scopeKind, scopeId, idx);
+      btn.classList.toggle('active', active);
+      btn.textContent = active ? 'Saved' : 'Review Later';
+      renderLessonIndicator();
+      updateActiveDot(currentLessonNumber - 1);
+      updateOutlineState();
+    },
+
+    copyArtifact: function (idx) {
+      var lesson = course.lessons[idx];
+      if (!lesson || !lesson.artifact) return;
+      var text = [lesson.artifact.title].concat(lesson.artifact.items).join('\n');
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text);
+      }
     }
   };
 
