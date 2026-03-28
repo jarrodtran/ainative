@@ -1344,3 +1344,52 @@ body { animation: pageIn 0.4s ease; }
 @media (max-width: 640px) {
   .glossary-grid { grid-template-columns: 1fr; }
 }
+
+/* ═══════════════════════════════════════════════════════
+   DARK MODE
+   System-preference based. All color tokens override via
+   CSS custom properties; hardcoded values patched below.
+   ═══════════════════════════════════════════════════════ */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #171412;
+    --color-surface: #1e1b18;
+    --color-surface-2: #262219;
+    --color-surface-3: #2e291f;
+    --color-border: #332e26;
+    --color-border-light: #2a2620;
+    --color-text: #f5f0e8;
+    --color-text-muted: #a89b8c;
+    --color-text-light: #7a6e62;
+    --color-accent: #34d399;
+    --color-accent-light: #6ee7b7;
+    --color-accent-bg: rgba(52, 211, 153, 0.1);
+    --color-accent-border: rgba(52, 211, 153, 0.2);
+    --color-success: #34d399;
+    --color-success-bg: rgba(52, 211, 153, 0.1);
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.25), 0 1px 2px rgba(0,0,0,0.18);
+    --shadow-md: 0 4px 12px rgba(0,0,0,0.35), 0 2px 4px rgba(0,0,0,0.22);
+    --shadow-lg: 0 10px 30px rgba(0,0,0,0.45), 0 4px 8px rgba(0,0,0,0.25);
+  }
+
+  /* Nav glassmorphism — dark base */
+  .nav { background: rgba(23, 20, 18, 0.88); }
+  .nav.scrolled { border-bottom-color: rgba(52, 211, 153, 0.1); }
+
+  /* Hero + reference hero gradient */
+  .hero { background: linear-gradient(180deg, #1a1714 0%, var(--color-bg) 60%); }
+  .ref-hero { background: linear-gradient(180deg, #1a1714 0%, var(--color-bg) 80%); }
+
+  /* Recent updates card — white gradient base */
+  .recent-update-card {
+    background: linear-gradient(180deg, rgba(52, 211, 153, 0.04), rgba(23, 20, 18, 0.92));
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar-thumb { background: rgba(120, 110, 98, 0.5); }
+  ::-webkit-scrollbar-thumb:hover { background: rgba(120, 110, 98, 0.7); }
+  html { scrollbar-color: rgba(120, 110, 98, 0.5) transparent; }
+
+  /* Prompt code block — already dark, just fine-tune contrast */
+  .prompt-example-text { background: rgba(12, 9, 7, 0.96); color: #e8dfd0; }
+}
