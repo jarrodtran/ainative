@@ -556,8 +556,8 @@ ul { list-style: none; }
 
 /* lesson section */
 .lesson-section {
-  min-height: 100svh; padding: 80px 0;
-  display: flex; align-items: center;
+  padding: 96px 0;
+  display: flex; align-items: start;
   border-top: 1px solid var(--color-border-light);
 }
 .lesson-section:nth-child(even) { background: var(--color-surface); }
@@ -670,7 +670,7 @@ ul { list-style: none; }
 .worked-example p { margin-bottom: 14px; }
 
 .lesson-visual {
-  position: sticky; top: calc(var(--nav-height) + 40px);
+  position: sticky; top: calc(var(--nav-height) + 24px);
 }
 
 /* concept cards inside lessons */
@@ -1087,11 +1087,13 @@ body { animation: pageIn 0.4s ease; }
   border-radius: var(--radius-sm);
   background: rgba(15, 23, 42, 0.92);
   color: #f8fafc;
-  font-size: 0.9rem;
+  font-size: 0.82rem;
   line-height: 1.6;
   white-space: pre-wrap;
   word-break: break-word;
   overflow-x: auto;
+  max-height: 260px;
+  overflow-y: auto;
 }
 .prompt-example-note {
   margin-top: 10px;
@@ -1140,7 +1142,7 @@ body { animation: pageIn 0.4s ease; }
   .hero-stats { gap: 20px; }
   .module-grid { grid-template-columns: 1fr; gap: 16px; }
   .module-card { padding: 20px; }
-  .lesson-section { padding: 48px 0; min-height: auto; }
+  .lesson-section { padding: 48px 0; }
   .lesson-inner { padding: 0 16px; gap: 24px; }
   .phase-section { padding: 60px 0 48px; }
   .course-hero { min-height: 40svh; }
