@@ -33,8 +33,13 @@
     var done = Progress.totalModulesDone();
     var pct = Math.round((done / TOTAL_MODULES) * 100);
     var circumference = 2 * Math.PI * 87;
-    ring.style.strokeDasharray = circumference;
-    ring.style.strokeDashoffset = circumference - (pct / 100) * circumference;
+    if (pct === 0) {
+      ring.style.strokeDasharray = '0 ' + circumference;
+      ring.style.strokeDashoffset = 0;
+    } else {
+      ring.style.strokeDasharray = circumference;
+      ring.style.strokeDashoffset = circumference - (pct / 100) * circumference;
+    }
     text.textContent = pct + '%';
   }
 
