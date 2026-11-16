@@ -83,15 +83,15 @@
       "coreConcepts": [
         {
           "title": "Use Real Inputs",
-          "text": "Test on the emails, docs, chats, or tickets you actually work with."
+          "text": "Test on real work. Evaluate the feature on the emails, docs, chats, or tickets you actually handle, not on demo material chosen to flatter it."
         },
         {
           "title": "Measure Time To Final",
-          "text": "The best feature usually produces the shortest path to a reviewed final output."
+          "text": "Measure time to final. The best feature usually produces the shortest path to a reviewed final output, so count the cleanup burden, not just the drafting speed."
         },
         {
           "title": "Check Integration Quality",
-          "text": "See whether the feature actually respects the context and structure of the tool. "
+          "text": "Check the integration itself. See whether the feature actually respects the context and structure of the tool it lives in — a native integration does not make output automatically correct."
         }
       ],
       "workedExample": {
@@ -149,15 +149,15 @@
       "coreConcepts": [
         {
           "title": "Point To The Right Material",
-          "text": "Call out which email thread, notes, paragraph, or document section should drive the answer."
+          "text": "Point at the exact source. Call out which email thread, notes, paragraph, or document section should drive the answer, instead of letting the model choose its own context."
         },
         {
           "title": "State The Action",
-          "text": "Ask for the exact outcome: summary, reply, next-step list, rewrite, or agenda."
+          "text": "State the exact action. Ask for the specific outcome you need — summary, reply, next-step list, rewrite, or agenda — because embedded AI still needs clear intent."
         },
         {
           "title": "Limit The Output",
-          "text": "Embedded AI works better when the output is bounded and immediately usable."
+          "text": "Bound the output. Embedded AI works better when the output is bounded and immediately usable, with the same review constraints you would apply anywhere else."
         }
       ],
       "workedExample": {
@@ -214,15 +214,15 @@
       "coreConcepts": [
         {
           "title": "Capture The Trigger",
-          "text": "Know what event starts the workflow: weekly review, incoming request, meeting end, or document draft."
+          "text": "Name the trigger. Know what event starts the workflow — weekly review, incoming request, meeting end, or document draft — so the pattern runs on schedule instead of on memory."
         },
         {
           "title": "Capture The Prompt Pattern",
-          "text": "Save the instructions and source references that work repeatedly."
+          "text": "Save the working pattern. Store the instructions and source-context rules that work repeatedly, so the pattern survives outside the one chat where you discovered it."
         },
         {
           "title": "Capture The Final Review",
-          "text": "Every integration pattern should include the human checkpoint."
+          "text": "End with a human check. Every integration pattern should include the final review step, because a pattern without its checkpoint is only half documented."
         }
       ],
       "workedExample": {
@@ -280,15 +280,15 @@
       "coreConcepts": [
         {
           "title": "Use The Closest Useful Tool",
-          "text": "If the work lives in your workspace, start there. Switch tools only when the task genuinely demands it."
+          "text": "Start where the work lives. If the task lives in your workspace, start with the embedded tool and switch only when the work genuinely demands a general assistant or deeper research."
         },
         {
           "title": "Separate Creation From Verification",
-          "text": "Embedded AI may draft inside the workspace while source-forward tools or manual review handle verification."
+          "text": "Separate drafting from checking. Let embedded AI draft inside the workspace while source-first tools or manual review handle verification, so creation and checking stay distinct jobs."
         },
         {
           "title": "Keep The Stack Small",
-          "text": "A small set of reliable patterns beats a scattered set of partially adopted features."
+          "text": "Keep the stack small. A small set of reliable patterns beats a scattered set of partially adopted features, and growing the stack means redesigning the workflow, not just adding tools."
         }
       ],
       "workedExample": {

@@ -18,15 +18,15 @@
       "coreConcepts": [
         {
           "title": "No Clear Workflow",
-          "text": "People are asked to \"use AI more\" without a defined process or use case."
+          "text": "No workflow, no adoption. People are asked to use AI more without a defined process or use case, so the initiative stays a slogan instead of becoming daily work."
         },
         {
           "title": "No Review Design",
-          "text": "Outputs are generated, but nobody knows what must be checked or approved."
+          "text": "No review design. Outputs get generated, but nobody knows what must be checked or approved, so trust collapses the first time something wrong slips through."
         },
         {
           "title": "No Ownership",
-          "text": "Without clear ownership, the initiative becomes everybody’s idea and nobody’s responsibility."
+          "text": "No owner, no follow-through. Without clear ownership, the initiative becomes everybody’s idea and nobody’s responsibility, and the fixes a review would surface never get made."
         }
       ],
       "workedExample": {
@@ -84,15 +84,15 @@
       "coreConcepts": [
         {
           "title": "Discover",
-          "text": "Find the workflow and define the problem."
+          "text": "Discover first. Find the workflow worth changing and define the problem it has today, in concrete terms a pilot can actually test."
         },
         {
           "title": "Pilot",
-          "text": "Run a bounded test with a clear review path."
+          "text": "Pilot small. Run a bounded test on one workflow with a clear review path, and measure the result before anyone talks about rollout."
         },
         {
           "title": "Scale Carefully",
-          "text": "Expand only after the workflow shows evidence of value and manageable risk."
+          "text": "Scale on evidence. Expand only after the pilot shows evidence of value and manageable risk — scaling before learning just multiplies the unknowns."
         }
       ],
       "workedExample": {
@@ -135,7 +135,18 @@
         "Reviewed for business IC relevance and durable workflow guidance.",
         "Keep verification and organizational policy checks explicit in future revisions."
       ],
-      "lastReviewed": "March 2026"
+      "lastReviewed": "March 2026",
+      "visual": {
+        "type": "flow",
+        "title": "The Transformation Sequence",
+        "steps": [
+          "Discover — find the workflow and define the problem",
+          "Pilot — bounded test with a clear review path",
+          "Evaluate — measure the result before sharing broadly",
+          "Scale — expand only on evidence of value and manageable risk"
+        ],
+        "note": "Skipping the pilot is how teams leap from curiosity to broad rollout — the sequence is a risk-control tool, not bureaucracy."
+      }
     },
     {
       "id": "module-19-lesson-03",
@@ -150,15 +161,15 @@
       "coreConcepts": [
         {
           "title": "Clarify Approved Paths",
-          "text": "People need to know which tools, data classes, and workflows are allowed."
+          "text": "Clarify the approved paths. People need to know which tools, data classes, and workflows are allowed, in plain language they can apply without asking permission each time."
         },
         {
           "title": "Clarify Review And Escalation",
-          "text": "The governance needs a clear answer to \"who checks this?\" and \"who decides if this is okay?\""
+          "text": "Name the checker and decider. Governance needs a clear answer to who checks this and who decides when something is borderline, or people will avoid the workflow entirely."
         },
         {
           "title": "Clarify Ownership",
-          "text": "Someone should own the workflow, the training, and the evidence collection."
+          "text": "Name the owner. Someone should own the workflow, the training, and the evidence collection, so the rules stay connected to a real process instead of floating as policy."
         }
       ],
       "workedExample": {
@@ -217,15 +228,15 @@
       "coreConcepts": [
         {
           "title": "Change The Workflow, Not Just The Tool",
-          "text": "People need to know how their daily work should change."
+          "text": "Change the work, not just the tool. People need to know how their daily work should actually change — access to a tool is not the same thing as adoption of a new workflow."
         },
         {
           "title": "Provide Examples",
-          "text": "Examples lower cognitive load and increase trust."
+          "text": "Lead with examples. Worked examples lower the effort of starting and increase trust, because people can copy a shown workflow instead of imagining one."
         },
         {
           "title": "Normalize Review",
-          "text": "The team should see review and correction as part of the process, not as failure."
+          "text": "Normalize the review step. The team should see review and correction as a normal part of the process, not as failure — that framing is what makes people use the checklist."
         }
       ],
       "workedExample": {
@@ -283,15 +294,15 @@
       "coreConcepts": [
         {
           "title": "Pick One Priority Workflow",
-          "text": "Trying to transform everything at once creates noise."
+          "text": "Pick one workflow. Trying to transform everything at once creates noise, so choose the single priority workflow the next 90 days will actually move."
         },
         {
           "title": "Define Milestones",
-          "text": "Discovery, pilot, review, and next-step decisions should all be visible."
+          "text": "Make milestones visible. Discovery, pilot, evidence review, and the next-step decision should all appear as dated milestones, so the plan coordinates people instead of stalling."
         },
         {
           "title": "Assign Evidence",
-          "text": "Decide what examples or metrics will show progress. "
+          "text": "Decide the evidence upfront. Choose what examples or metrics will show progress before the pilot starts, and set the review date when that evidence gets judged."
         }
       ],
       "workedExample": {

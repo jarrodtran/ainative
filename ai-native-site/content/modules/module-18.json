@@ -18,15 +18,15 @@
       "coreConcepts": [
         {
           "title": "Look For Repetition",
-          "text": "Repeated drafting, summarizing, organizing, and comparison work are common signals."
+          "text": "Look for repetition. Repeated drafting, summarizing, organizing, and comparison work are common signals that a workflow is ready for AI help."
         },
         {
           "title": "Look For Delay",
-          "text": "Waiting for documentation, follow-up, or synthesis often points to high-value use cases."
+          "text": "Look for delay. Waiting on documentation, follow-up, or synthesis often points to high-value use cases, because the bottleneck is usually assembly rather than judgment."
         },
         {
           "title": "Look For Review Bottlenecks",
-          "text": "If experts spend time reformatting or clarifying work, AI may help reduce that burden."
+          "text": "Look for review bottlenecks. If experts spend their time reformatting or clarifying other people’s work, AI may reduce that burden and give the expertise back its hours."
         }
       ],
       "workedExample": {
@@ -84,15 +84,15 @@
       "coreConcepts": [
         {
           "title": "Automate Bounded Repetition",
-          "text": "Low-risk, repeatable sequences with clear review paths are the best automation candidates."
+          "text": "Automate the bounded work. Low-risk, repeatable sequences with clear review paths are the best automation candidates, because the machine can run them and a person can still check them."
         },
         {
           "title": "Augment Judgment-Heavy Work",
-          "text": "Many tasks benefit most from AI support rather than full handoff."
+          "text": "Augment the judgment work. Many tasks benefit most from AI support rather than full handoff — the model drafts and organizes while the decision stays with the person."
         },
         {
           "title": "Avoid High-Risk, Low-Clarity Tasks",
-          "text": "If the task is sensitive, ambiguous, or hard to review, AI may not be the right first move."
+          "text": "Avoid the murky, risky work. If a task is sensitive, ambiguous, or hard to review, AI is not the right first move — start somewhere the output can actually be checked."
         }
       ],
       "workedExample": {
@@ -202,15 +202,15 @@
       "coreConcepts": [
         {
           "title": "Estimate Frequency",
-          "text": "How often does the work happen?"
+          "text": "Start with frequency. How often the work happens sets the ceiling on value — a daily workflow repays setup effort that a quarterly one never will."
         },
         {
           "title": "Estimate Current Effort",
-          "text": "How much time, rework, or coordination does it currently require?"
+          "text": "Count the current effort. How much time, rework, or coordination the work currently requires tells you what an improvement is actually worth chasing."
         },
         {
           "title": "Estimate Adoption Cost",
-          "text": "Training, setup, risk controls, and change effort all count."
+          "text": "Count the adoption cost. Training, setup, risk controls, and change effort all count against the gain, so estimate them before the opportunity gets oversold."
         }
       ],
       "workedExample": {
@@ -268,15 +268,15 @@
       "coreConcepts": [
         {
           "title": "Pick Visible Value",
-          "text": "The improvement should be easy for others to notice and understand."
+          "text": "Pick visible value. The improvement should be easy for others to notice and understand, because a first win nobody sees builds no momentum for the next one."
         },
         {
           "title": "Keep The Workflow Narrow",
-          "text": "A clear boundary reduces implementation and review complexity."
+          "text": "Keep the boundary narrow. A clear boundary reduces implementation and review complexity, which is what makes a quick win quick instead of a small project."
         },
         {
           "title": "Choose Teachable Work",
-          "text": "The best first wins are easy to explain and repeat."
+          "text": "Choose teachable work. The best first wins are easy to explain and repeat, so other people can copy the pattern without you in the room."
         }
       ],
       "workedExample": {
@@ -334,15 +334,15 @@
       "coreConcepts": [
         {
           "title": "Describe The Current Pain",
-          "text": "State what the workflow looks like today and why it is worth improving."
+          "text": "Describe the pain first. State what the workflow looks like today and why it is worth improving, in terms a decision-maker can weigh without seeing the work themselves."
         },
         {
           "title": "Describe The Proposed Change",
-          "text": "Show exactly where AI would help and where people still review."
+          "text": "Show the proposed change. Show exactly where AI would help and where people still review, so the brief promises a workflow change rather than a tool purchase."
         },
         {
           "title": "Describe Success",
-          "text": "Define the outcome, not just the implementation. "
+          "text": "Define success as an outcome. Describe the outcome that would make the change worthwhile, not just the implementation steps that would deliver it."
         }
       ],
       "workedExample": {

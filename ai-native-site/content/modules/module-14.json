@@ -151,15 +151,15 @@
       "coreConcepts": [
         {
           "title": "Use Risk-Based Oversight",
-          "text": "Low-risk drafting can often be reviewed at the end. High-risk actions may need approval before execution."
+          "text": "Match oversight to risk. Low-risk drafting can often be reviewed at the end, while high-risk actions need approval before execution — the checkpoint moves with the consequence."
         },
         {
           "title": "Review The Right Checkpoints",
-          "text": "The important review moments are usually before external communication, data updates, or consequential recommendations."
+          "text": "Review before the point of no return. The moments that matter most are just before external communication, data updates, or consequential recommendations leave the workflow."
         },
         {
           "title": "Keep The Workflow Usable",
-          "text": "Oversight should reduce risk without rebuilding the full manual process. "
+          "text": "Keep oversight usable. Review should reduce risk without rebuilding the full manual process, or the approval burden gets so heavy that nobody uses the workflow."
         }
       ],
       "workedExample": {

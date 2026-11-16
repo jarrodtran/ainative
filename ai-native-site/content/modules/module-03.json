@@ -85,15 +85,15 @@
       "coreConcepts": [
         {
           "title": "Use Functional Roles",
-          "text": "Ask for the perspective that matters to the task: reviewer, planner, editor, or analyst."
+          "text": "Pick a working role. Ask for the perspective that matters to the task — reviewer, planner, editor, or analyst — because the role sets the standard the answer gets judged by."
         },
         {
           "title": "Tie The Role To Criteria",
-          "text": "Define what the role should optimize for, such as clarity, risk awareness, or audience fit."
+          "text": "Name the criteria. Define what the role should optimize for — clarity, risk awareness, or audience fit — or the role adds theater instead of judgment."
         },
         {
           "title": "Keep The Role Lightweight",
-          "text": "One clear line about perspective is usually enough."
+          "text": "Keep it to one line. One clear line about perspective is usually enough; long persona descriptions decorate the prompt without changing the work."
         }
       ],
       "workedExample": {
@@ -150,15 +150,15 @@
       "coreConcepts": [
         {
           "title": "Show, Do Not Only Tell",
-          "text": "A short example of the expected format usually improves output more than extra explanation."
+          "text": "Show the format. A short example of the expected format usually improves output more than extra explanation, because the model stops guessing the form of the answer."
         },
         {
           "title": "Separate Content From Shape",
-          "text": "Define the structure clearly so you can judge the substance independently."
+          "text": "Separate shape from facts. Define the structure clearly and say which parts are structure only, so you can judge the substance on its own and stale facts stay out."
         },
         {
           "title": "Consistency Helps Reuse",
-          "text": "Stable output formats are easier to turn into templates and team playbooks."
+          "text": "Consistency compounds. Stable output formats are easier to compare week to week and to turn into templates and team playbooks that others can reuse."
         }
       ],
       "workedExample": {

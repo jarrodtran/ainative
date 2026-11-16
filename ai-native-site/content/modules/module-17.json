@@ -84,15 +84,15 @@
       "coreConcepts": [
         {
           "title": "Choose A Useful Workflow",
-          "text": "Pick work that many people do and that already has a painful manual version."
+          "text": "Pick painful, common work. Choose work that many people do and that already has a painful manual version, because one visible win builds more credibility than broad evangelism."
         },
         {
           "title": "Use A Real Example",
-          "text": "Show the workflow on actual work, not a toy example."
+          "text": "Show real work, not a demo. Run the workflow on actual work with its real source material, because teammates adopt what they can imagine themselves doing."
         },
         {
           "title": "Include The Review Step",
-          "text": "People trust the workflow more when they see how quality is controlled. "
+          "text": "Show the quality control. People trust the workflow more when they see how quality is controlled, so include the review step in the play instead of hiding it."
         }
       ],
       "workedExample": {
@@ -151,15 +151,15 @@
       "coreConcepts": [
         {
           "title": "Demo Real Work",
-          "text": "Use a realistic task with realistic constraints."
+          "text": "Demo real work. Use a realistic task with realistic constraints and real source material, not a cleaned-up example nobody recognizes as their own job."
         },
         {
           "title": "Narrate The Decisions",
-          "text": "Explain why the prompt includes certain context and why certain review steps are required."
+          "text": "Narrate your decisions. Explain why the prompt includes certain context and why each review step is required, so the audience learns the judgment and not just the clicks."
         },
         {
           "title": "End With A Repeatable Pattern",
-          "text": "The audience should leave with something they can try immediately."
+          "text": "End with a next step. The audience should leave with a repeatable pattern they can try immediately, not with inspiration that evaporates by the next meeting."
         }
       ],
       "workedExample": {

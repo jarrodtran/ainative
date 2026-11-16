@@ -18,15 +18,15 @@
       "coreConcepts": [
         {
           "title": "Know The Decision",
-          "text": "Are you exploring, shortlisting, negotiating, or preparing a recommendation?"
+          "text": "Know which decision this is. Exploring, shortlisting, negotiating, and recommending each need different preparation, so name the stage before you draft a single question."
         },
         {
           "title": "Define The Criteria",
-          "text": "Implementation fit, cost, risk, change burden, and evidence quality are common evaluation lenses."
+          "text": "Set your own criteria. Implementation fit, cost, risk, change burden, and evidence quality are common lenses — define yours first so the vendor’s framing does not define the evaluation."
         },
         {
           "title": "Prepare Questions That Expose Reality",
-          "text": "Good vendor questions test integration effort, support quality, security, and operational readiness."
+          "text": "Test the reality, not the pitch. Good vendor questions probe integration effort, support quality, security, and operational readiness — the things a sales narrative tends to glide over."
         }
       ],
       "workedExample": {
@@ -84,15 +84,15 @@
       "coreConcepts": [
         {
           "title": "Normalize The Comparison",
-          "text": "Ask AI to place each vendor against the same criteria and evidence fields."
+          "text": "Normalize before comparing. Ask AI to place each vendor against the same criteria and evidence fields, because proposals structured differently cannot be compared fairly as they arrive."
         },
         {
           "title": "Separate Claims From Evidence",
-          "text": "A comparison is stronger when it shows what is claimed versus what is independently supported."
+          "text": "Split claims from evidence. A comparison is stronger when it shows what each vendor claims versus what is independently supported, instead of collapsing the two into one score."
         },
         {
           "title": "Capture Open Questions",
-          "text": "Useful evaluations preserve unresolved concerns instead of hiding them."
+          "text": "Keep the open questions visible. A useful evaluation preserves unresolved concerns as explicit open questions, so missing evidence stays on the table instead of being smoothed over."
         }
       ],
       "workedExample": {
@@ -136,7 +136,58 @@
         "Reviewed for business IC relevance and durable workflow guidance.",
         "Keep verification and organizational policy checks explicit in future revisions."
       ],
-      "lastReviewed": "March 2026"
+      "lastReviewed": "March 2026",
+      "visual": {
+        "type": "matrix",
+        "title": "Three Layers, Kept Separate",
+        "headers": [
+          "Layer",
+          "What it holds",
+          "The rule"
+        ],
+        "rows": [
+          {
+            "label": "Claims",
+            "cells": [
+              {
+                "main": "What the vendor says",
+                "sub": "their framing, their words"
+              },
+              {
+                "main": "Never score claims as facts",
+                "sub": "keep them visibly separate"
+              }
+            ]
+          },
+          {
+            "label": "Evidence",
+            "cells": [
+              {
+                "main": "What is independently supported",
+                "sub": "checked outside the pitch"
+              },
+              {
+                "main": "Same fields for every vendor",
+                "sub": "normalized before comparing"
+              }
+            ]
+          },
+          {
+            "label": "Open questions",
+            "cells": [
+              {
+                "main": "Unresolved concerns",
+                "sub": "missing evidence, flagged gaps"
+              },
+              {
+                "main": "Preserve them, do not hide them",
+                "sub": "they steer the next round"
+              }
+            ]
+          }
+        ],
+        "note": "Every vendor is placed against the same criteria and evidence fields first — normalization is what makes the comparison a comparison."
+      }
     },
     {
       "id": "module-13-lesson-03",
@@ -217,15 +268,15 @@
       "coreConcepts": [
         {
           "title": "Start From Shared Facts",
-          "text": "The core facts should remain stable even as the framing changes."
+          "text": "Start from shared facts. The core facts should remain stable even as the framing changes, so every audience version can be traced back to the same source brief."
         },
         {
           "title": "Match The Reader’s Lens",
-          "text": "Sponsors may care about outcomes and risk. Working teams may need tasks and dependencies."
+          "text": "Match the reader’s lens. Sponsors may care about outcomes and risk while working teams need tasks and dependencies, so set the detail level and framing per audience."
         },
         {
           "title": "Keep Political Reality In Mind",
-          "text": "AI can help you prepare, but you still need judgment about what is wise to say and when."
+          "text": "Keep judgment in the loop. AI can help you prepare versions, but you still need your own judgment about what is wise to say, to whom, and when — and never smooth over real risks."
         }
       ],
       "workedExample": {
@@ -283,15 +334,15 @@
       "coreConcepts": [
         {
           "title": "Store The Evaluation Brief",
-          "text": "Start every new vendor review from a consistent decision frame."
+          "text": "Store the evaluation brief. Start every new vendor review from a consistent decision frame, so evaluations stay comparable across quarters instead of depending on memory."
         },
         {
           "title": "Store The Comparison Matrix",
-          "text": "Comparisons are easier when the format is stable."
+          "text": "Store the comparison matrix. Comparisons are easier when the format is stable, so keep the matrix fields fixed and let only the vendor evidence change between reviews."
         },
         {
           "title": "Store The Review Boundaries",
-          "text": "Capture what AI can support and what must go to legal, finance, or leadership review."
+          "text": "Store the review boundaries. Capture what AI can support and what must go to legal, finance, or leadership review, so the toolkit keeps the work auditable as well as fast."
         }
       ],
       "workedExample": {

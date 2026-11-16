@@ -84,15 +84,15 @@
       "coreConcepts": [
         {
           "title": "Define The Measures",
-          "text": "State what each metric means and why it matters."
+          "text": "Define every measure. State what each metric means and why it matters, so the model interprets the number you intended instead of guessing from the label alone."
         },
         {
           "title": "Add Baselines",
-          "text": "Comparisons to prior periods, targets, or segments make interpretation more grounded."
+          "text": "Anchor with a baseline. Comparisons to prior periods, targets, or segments make interpretation more grounded, because a number without a comparison point invites vague commentary."
         },
         {
           "title": "Explain The Situation",
-          "text": "Recent events, campaign changes, staffing shifts, or product launches often explain the numbers better than the numbers alone."
+          "text": "Add the surrounding story. Recent events, campaign changes, staffing shifts, or product launches often explain the numbers better than the numbers alone, so include them in the prompt."
         }
       ],
       "workedExample": {
@@ -281,15 +281,15 @@
       "coreConcepts": [
         {
           "title": "Store The Data Brief",
-          "text": "Keep the input pattern that produced a good analysis session."
+          "text": "Save the data brief. Keep the input pattern that produced a good analysis session — definitions, baselines, and context included — not just the final prompt."
         },
         {
           "title": "Store The Hypothesis Prompt",
-          "text": "Save the prompts that lead to useful next questions."
+          "text": "Save the question prompts. Keep the prompts that lead to useful hypotheses and next questions, so each analysis cycle starts from proven questions instead of a blank page."
         },
         {
           "title": "Store The Readout Format",
-          "text": "A strong narrative structure is as reusable as a strong analysis prompt."
+          "text": "Save the readout shape. A strong narrative structure is as reusable as a strong analysis prompt, and the verification rules belong in the toolkit alongside both."
         }
       ],
       "workedExample": {

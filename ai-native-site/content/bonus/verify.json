@@ -1,0 +1,309 @@
+{
+  "id": "verify",
+  "label": "Bonus Section",
+  "lessons": [
+    {
+      "artifact": {
+        "items": [
+          "Confabulation — invented detail that fits the pattern",
+          "Stale knowledge — true at training time, wrong now",
+          "Borrowed confidence — polish that carries no evidence"
+        ],
+        "label": "Reference",
+        "title": "Three failure modes to keep in mind"
+      },
+      "commonMistakes": [
+        "Reading a confident tone as a reliability signal.",
+        "Assuming the model will say it does not know when it does not know.",
+        "Checking only the claims that already feel wrong, instead of the ones that matter most."
+      ],
+      "coreConcepts": [
+        {
+          "text": "A language model generates the most plausible next words given its training and your prompt. It has no built-in step where it checks a fact against the world, so a sentence can be perfectly formed, completely confident, and entirely invented. Fluency is what the system optimizes for; accuracy is a side effect you have to verify.",
+          "title": "It Predicts Text, It Does Not Look Things Up"
+        },
+        {
+          "text": "When the model does not know something, it rarely says so. Instead it fills the gap with material that fits the pattern — a statistic that sounds like statistics, a name that sounds like the right kind of name, a citation formatted exactly like a real one. Researchers call this confabulation; the practical name for it is a confident guess wearing a fact's clothes.",
+          "title": "Confabulation Fills The Gaps"
+        },
+        {
+          "text": "Training data has a cutoff, and the model cannot feel the edge of it. Prices, officeholders, product names, and policies may have changed after the cutoff, but the answer arrives in the same tone as the things it genuinely knows. Anything time-sensitive deserves a fresh source, not a model's memory.",
+          "title": "Knowledge Goes Stale Silently"
+        },
+        {
+          "text": "The model does not report how sure it is, and hedges in its wording are stylistic, not calibrated. A wrong answer and a right one can arrive with identical polish. Treat tone as zero evidence either way, and let the stakes of the task decide how hard you check.",
+          "title": "Confidence Is Not A Dial You Can Read"
+        }
+      ],
+      "doThisNow": {
+        "steps": [
+          "Pick a recent AI answer you acted on or shared.",
+          "Underline every specific claim: numbers, names, dates, quotes.",
+          "Mark which ones you could trace to a source right now — and which you simply believed."
+        ],
+        "task": "Take one AI answer you used recently and re-read it hunting for the three failure modes.",
+        "timebox": "6 minutes"
+      },
+      "estimatedMinutes": 7,
+      "id": "verify-lesson-01",
+      "lastReviewed": "November 2026",
+      "objective": "Explain the three main reasons AI output can be fluent, confident, and wrong at the same time.",
+      "roleVariants": {
+        "analyst": "Any number the model produces from memory is a hypothesis. The analysis starts when it is matched against the actual dataset.",
+        "manager": "Ask your team to mark AI-drafted claims as verified or unverified before they circulate; the label changes how readers treat them.",
+        "operator": "Build the check into the workflow step, not the person's memory: if a claim type always needs a source, make the template ask for one.",
+        "writer": "Treat every AI-supplied quote, statistic, and citation as a placeholder until you have opened the source yourself."
+      },
+      "sequenceRationale": "The section opens with the failure modes, because the workflow and the checklist that follow only make sense once you know what you are checking for.",
+      "slug": "why-confident-answers-can-be-wrong",
+      "sourceNotes": [
+        "Written for this program, November 2026. Describes well-documented model behavior — confabulation, training cutoffs, and uncalibrated confidence — at the level a non-engineer can act on."
+      ],
+      "subtitle": "The model is not lying to you. It is doing something stranger: predicting text that sounds right.",
+      "title": "Why Confident Answers Can Be Wrong",
+      "useWhen": "Use this when an AI answer feels suspiciously smooth, or when you catch yourself trusting a response because it sounded sure of itself.",
+      "visual": {
+        "headers": [
+          "Failure mode",
+          "What it looks like",
+          "The giveaway"
+        ],
+        "note": "All three arrive in the same confident voice — which is why the check has to run on the claims, not on how the answer feels.",
+        "rows": [
+          {
+            "cells": [
+              {
+                "main": "A fact-shaped invention",
+                "sub": "statistic, name, or quote from nowhere"
+              },
+              {
+                "main": "Suspiciously specific",
+                "sub": "exact numbers with no source attached"
+              }
+            ],
+            "label": "Confabulation"
+          },
+          {
+            "cells": [
+              {
+                "main": "True once, wrong now",
+                "sub": "an old price, name, or policy"
+              },
+              {
+                "main": "Involves anything that changes",
+                "sub": "dates, prices, people, versions"
+              }
+            ],
+            "label": "Stale knowledge"
+          },
+          {
+            "cells": [
+              {
+                "main": "Right tone, wrong content",
+                "sub": "polish with nothing behind it"
+              },
+              {
+                "main": "Nothing to trace",
+                "sub": "claims you cannot follow to a source"
+              }
+            ],
+            "label": "Borrowed confidence"
+          }
+        ],
+        "title": "Three Ways An Answer Goes Wrong",
+        "type": "matrix"
+      },
+      "whyItMatters": "Every other checking skill in this section depends on one fact: a model's confidence is a style, not a signal. Once that lands, verification stops feeling like paranoia and starts feeling like craft.",
+      "workedExample": {
+        "approach": "They treat the brief as unverified raw material: the date and price get checked against the company's own announcement, and the quote gets searched word for word. The date is right, the price belongs to an older model, and the quote exists nowhere.",
+        "result": "Ten minutes of checking turns a confident brief into a reliable one — and catches the two claims that would have been repeated in a leadership meeting.",
+        "scenario": "A manager asks for a summary of a competitor's product launch and gets a crisp brief with a launch date, a price, and a quote from the company's CEO.",
+        "verification": "Every load-bearing claim in the final brief traces to a primary source the manager opened themselves."
+      }
+    },
+    {
+      "artifact": {
+        "items": [
+          "Low — draft or brainstorm: skim for sanity",
+          "Medium — shared internally: check the specific claims",
+          "High — external, quoted, or decision-driving: verify against primary sources",
+          "Sensitive — regulated or high-liability: qualified human review"
+        ],
+        "label": "Workflow",
+        "title": "Stakes tiers at a glance"
+      },
+      "commonMistakes": [
+        "Checking everything at maximum depth until the habit collapses.",
+        "Skimming a high-stakes output because the draft looked polished.",
+        "Verifying the easy claims and skipping the load-bearing ones."
+      ],
+      "coreConcepts": [
+        {
+          "text": "The checking question is not whether the topic sounds important, but what happens if this is wrong. A wrong lunch recommendation costs an afternoon; a wrong figure in a board deck costs credibility and possibly money. Sort each output by the cost of an error, and let that — not how the answer feels — set the checking depth.",
+          "title": "Sort By Consequence, Not By Topic"
+        },
+        {
+          "text": "For drafts, brainstorms, and internal first passes, a fast skim is a legitimate check: does it read sensibly, use the right names, and match what you already know? You are screening for obvious breakage, not certifying truth, and the output stays clearly labeled as a draft until it earns more.",
+          "title": "Low Stakes: Skim For Sanity"
+        },
+        {
+          "text": "When output will be quoted, sent externally, or used to decide, check the load-bearing claims against primary sources: the original document, the official page, the actual dataset, the person who supposedly said it. Numbers, names, dates, and quotes are the four claim types to pull first — they are specific enough to be wrong in ways that matter, and fast to confirm.",
+          "title": "High Stakes: Verify Against The Source"
+        },
+        {
+          "text": "The highest tier is not a harder check by you — it is a check by someone else. Anything regulated, contractual, financial, or reputationally sensitive gets a qualified human reviewer, because the failure mode there is not embarrassment but liability. AI can prepare the material; it cannot carry the accountability.",
+          "title": "Some Outputs Need A Second Human"
+        }
+      ],
+      "doThisNow": {
+        "steps": [
+          "List the claims the output makes.",
+          "Mark each one low, high, or sensitive by the cost of it being wrong.",
+          "Verify the high-stakes claims against their primary sources now."
+        ],
+        "task": "Take one AI output from this week and sort its claims into the stakes tiers.",
+        "timebox": "8 minutes"
+      },
+      "estimatedMinutes": 8,
+      "id": "verify-lesson-02",
+      "lastReviewed": "November 2026",
+      "objective": "Apply a stakes-based workflow that routes AI output to the right depth of checking.",
+      "roleVariants": {
+        "analyst": "A figure that will be cited downstream is high-stakes by definition; verify it against the dataset, not against the model's restatement of it.",
+        "manager": "Make the tiers a team norm: whoever sends AI-assisted work out states which tier it was checked at.",
+        "operator": "Put the tier question in the workflow template, so the sorting happens even on the busiest day of the quarter.",
+        "writer": "Quotes, names, and numbers in anything you publish get source-checked, even when the surrounding prose only needed a skim."
+      },
+      "sequenceRationale": "With the failure modes named, this lesson turns them into a routing decision: the same output earns a skim, a source check, or a second reviewer depending on what rides on it.",
+      "slug": "match-the-check-to-the-stakes",
+      "sourceNotes": [
+        "Written for this program, November 2026. The stakes-tier workflow generalizes the verification habits taught in Modules 4 and 20 into a single routing rule."
+      ],
+      "subtitle": "You cannot verify everything. The skill is knowing what deserves a source, what deserves a skim, and what deserves a second pair of eyes.",
+      "title": "Match The Check To The Stakes",
+      "useWhen": "Use this whenever AI output is headed somewhere — a message, a document, a decision — and you need to decide how much checking is enough.",
+      "visual": {
+        "note": "Most output is low-stakes and earns a skim. The workflow exists so the minority that is expensive to get wrong never slips through on one.",
+        "steps": [
+          "Output arrives — treat it as unverified",
+          "Sort — what does an error cost?",
+          "Low stakes — skim for sanity",
+          "High stakes — verify against primary sources",
+          "Sensitive — hand to a qualified human"
+        ],
+        "title": "The Stakes Workflow",
+        "type": "flow"
+      },
+      "whyItMatters": "Verification fails in both directions: people either trust everything and get burned, or try to check everything and quietly stop checking at all. A stakes-based rule survives contact with a busy week because it spends effort only where being wrong is expensive.",
+      "workedExample": {
+        "approach": "They sort the claims by consequence: the narrative gets a skim, but the pricing figures, contract dates, and the vendor's stated commitments get checked line by line against the actual agreement and the vendor's proposal.",
+        "result": "The skim takes two minutes; the source check takes fifteen and finds one figure carried over from last year's pricing.",
+        "scenario": "An operations lead uses AI to draft a vendor summary that will go into a renewal recommendation.",
+        "verification": "Each number in the final summary matches a page in the signed agreement or the current proposal."
+      }
+    },
+    {
+      "artifact": {
+        "items": [
+          "What are the load-bearing claims here?",
+          "Numbers, names, dates, quotes — checked against which sources?",
+          "Does every citation open, match, and say what it is claimed to say?",
+          "What tier was this checked at — and is that recorded?"
+        ],
+        "label": "Checklist",
+        "title": "A starter verification checklist"
+      },
+      "commonMistakes": [
+        "Writing a fifteen-item checklist that gets skipped by Friday.",
+        "Treating a model's stated sources as checked sources.",
+        "Verifying that a citation exists but not that it supports the claim attached to it."
+      ],
+      "coreConcepts": [
+        {
+          "text": "A verification checklist is built in a calm moment and used in a rushed one. Keep it to the checks you will genuinely run: the claim types you meet most, the sources you trust, and the tier rule from the previous lesson. Five honest items beat fifteen aspirational ones, because a checklist that gets skipped checks nothing.",
+          "title": "Write The Checklist Before You Need It"
+        },
+        {
+          "text": "Asking for reasoning, steps, or sources does not guarantee truth — the explanation can be confabulated too — but it changes what you can check. A claim with a stated source, a shown calculation, or a quoted passage gives you a thread to pull. Pull it: the request's real value is making the output auditable, not making it right.",
+          "title": "Ask The Model To Show Its Work"
+        },
+        {
+          "text": "Fake citations are the signature confabulation: real-sounding authors, a plausible title, a journal that exists, a link that resolves nowhere. Test each one the same way — open the link, search the exact title, confirm the author and date match. If a citation cannot be found quickly, treat everything it supported as unverified.",
+          "title": "Test Every Citation Like It Is Guilty"
+        },
+        {
+          "text": "Note what you verified and what you did not, right on the document or message. A line like 'figures checked against the Q3 report; quotes unverified' takes ten seconds to write and tells the next reader exactly how far to trust the piece. Verification that leaves no trace has to be redone by everyone downstream.",
+          "title": "Record The Check, Not Just The Result"
+        }
+      ],
+      "doThisNow": {
+        "steps": [
+          "List the claim types in your most common AI task.",
+          "Write the source you would check each one against.",
+          "Add the citation test and the tier rule.",
+          "Save it next to your prompt library and use it on your next output."
+        ],
+        "task": "Write your personal verification checklist and save it where your prompts live.",
+        "timebox": "9 minutes"
+      },
+      "estimatedMinutes": 8,
+      "id": "verify-lesson-03",
+      "lastReviewed": "November 2026",
+      "objective": "Build a reusable personal verification checklist and learn how to test whether an AI citation is real.",
+      "roleVariants": {
+        "analyst": "Add one line to your checklist for figures: recompute one number by hand from the source data before trusting the set.",
+        "manager": "Share your checklist with the team and invite additions; a shared checklist becomes the team's quality standard.",
+        "operator": "Attach the checklist to the workflow template itself, so the check runs as a step in the process rather than a favor to yourself.",
+        "writer": "The citation test is non-negotiable for anything with your name on it — your byline carries the claim, not the model's."
+      },
+      "sequenceRationale": "The section closes by making the workflow personal: a checklist the learner writes once, plus the citation test that catches the most convincing failure mode of all.",
+      "slug": "build-your-verification-checklist",
+      "sourceNotes": [
+        "Written for this program, November 2026. The citation test reflects the standard practice of fact-checking organizations: a citation that cannot be located cannot support a claim."
+      ],
+      "subtitle": "A short personal checklist, plus the two model prompts that make checking faster: show your work, and cite sources you can open.",
+      "title": "Build Your Verification Checklist",
+      "useWhen": "Use this to turn verification from a good intention into a five-minute habit you can run on any AI output.",
+      "visual": {
+        "note": "A real citation survives all four steps in seconds. A confabulated one usually fails at the first.",
+        "steps": [
+          "Open the link — does it resolve?",
+          "Search the exact title",
+          "Confirm author, venue, and date",
+          "Still nothing — treat the claim as unverified"
+        ],
+        "title": "The One-Minute Citation Test",
+        "type": "flow"
+      },
+      "whyItMatters": "Habits beat intentions under time pressure. A written checklist — short enough to actually run — is what separates people who usually catch AI errors from people who catch them only after someone else does.",
+      "workedExample": {
+        "approach": "The writer runs the citation test: the journal exists, but searching the exact title finds nothing, and neither author's publication list contains it. The statistic is removed, and the paragraph is rewritten around what the writer could actually source.",
+        "result": "The report ships slightly shorter and entirely defensible — and the writer adds 'test every citation' to their checklist permanently.",
+        "scenario": "A draft report cites a study with a confident statistic about remote-work productivity, complete with authors, a journal, and a year.",
+        "verification": "Every citation left in the report was opened, matched on title, author, and date, and actually contains the claim it supports."
+      }
+    }
+  ],
+  "outcomes": [
+    "Explain why a model can sound completely certain while being wrong — and why confidence is not evidence.",
+    "Match the depth of checking to the stakes: skim the low-stakes, verify the high-stakes against primary sources.",
+    "Run a personal verification checklist on any AI output, including testing whether a citation actually exists."
+  ],
+  "resources": [
+    {
+      "note": "Nonpartisan, claim-by-claim fact-checking — a working model for how verification is done in public.",
+      "title": "FactCheck.org",
+      "type": "reference",
+      "url": "https://www.factcheck.org/"
+    },
+    {
+      "note": "Claim reviews from fact-checkers worldwide, searchable by topic.",
+      "title": "Google Fact Check Explorer",
+      "type": "reference",
+      "url": "https://toolbox.google.com/factcheck/explorer"
+    }
+  ],
+  "slug": "trust-but-verify",
+  "summary": "How to check AI work without becoming an expert: why models sound certain when they are wrong, a stakes-based workflow for deciding how hard to check, and a personal verification checklist — including how to spot a citation that does not exist.",
+  "title": "Trust But Verify: Checking AI Output"
+}

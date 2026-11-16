@@ -18,15 +18,15 @@
       "coreConcepts": [
         {
           "title": "Separate Public From Sensitive",
-          "text": "Not all work material carries the same risk. Customer data, employee data, contracts, and regulated information need stricter handling."
+          "text": "Risk varies by material. Customer data, employee data, contracts, and regulated information need stricter handling than public or internal material."
         },
         {
           "title": "Minimize Before You Paste",
-          "text": "If you can abstract, redact, or summarize the sensitive parts while preserving the task, do that first."
+          "text": "Shrink the exposure. If you can abstract, redact, or summarize the sensitive parts while preserving the task, do that before anything goes into the prompt."
         },
         {
           "title": "Use Approved Paths",
-          "text": "Company-approved tools, internal instances, and redaction workflows matter more than individual convenience."
+          "text": "Use approved paths. Company-approved tools, internal instances, and redaction workflows matter more than individual convenience — paid access alone is not approval."
         }
       ],
       "workedExample": {
@@ -280,15 +280,15 @@
       "coreConcepts": [
         {
           "title": "Check The Inputs",
-          "text": "Is this prompt safe for the selected tool?"
+          "text": "Check the inputs. Ask whether this material is safe for the selected tool before you paste it — the first safety question is what belongs in the prompt at all."
         },
         {
           "title": "Check The Output",
-          "text": "What claims or commitments need review before use?"
+          "text": "Check the output. Decide which claims, numbers, or commitments need review before use, even when the draft looks polished and ready to send."
         },
         {
           "title": "Check The Destination",
-          "text": "Who will read this and what happens if it is wrong?"
+          "text": "Check the destination. Consider who will read the output and what happens if it is wrong, and route it to the right reviewer before it goes out."
         }
       ],
       "workedExample": {

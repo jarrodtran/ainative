@@ -233,6 +233,70 @@
         "result": "The deciding factor is the data boundary, not the benchmark table.",
         "scenario": "A team wants AI summaries of internal incident reports that contain customer data.",
         "verification": "Write down which constraint decided it (policy, cost, capability, maintenance) so the decision can be revisited when that constraint changes."
+      },
+      "visual": {
+        "type": "matrix",
+        "title": "The Tradeoff, Dimension By Dimension",
+        "headers": [
+          "Dimension",
+          "Open-weight",
+          "Closed"
+        ],
+        "rows": [
+          {
+            "label": "Capability today",
+            "cells": [
+              {
+                "main": "Trails the top closed models",
+                "sub": "on independent capability indexes"
+              },
+              {
+                "main": "Leads today",
+                "sub": "GPT-6, Claude Fable, Gemini 4"
+              }
+            ]
+          },
+          {
+            "label": "Data control",
+            "cells": [
+              {
+                "main": "Stays in your boundary",
+                "sub": "you or a host run it"
+              },
+              {
+                "main": "Flows through the vendor",
+                "sub": "under their terms"
+              }
+            ]
+          },
+          {
+            "label": "Cost shape",
+            "cells": [
+              {
+                "main": "Predictable at scale",
+                "sub": "your infrastructure"
+              },
+              {
+                "main": "Pay per use",
+                "sub": "managed service, no infrastructure"
+              }
+            ]
+          },
+          {
+            "label": "Continuity",
+            "cells": [
+              {
+                "main": "Cannot be deprecated on you",
+                "sub": "needs a maintenance plan instead"
+              },
+              {
+                "main": "Retired on vendor schedules",
+                "sub": "needs a migration plan"
+              }
+            ]
+          }
+        ],
+        "note": "Gated models (GPT-6 Cyber, Claude Mythos) are a third bucket: closed, and restricted to vetted users."
       }
     },
     {

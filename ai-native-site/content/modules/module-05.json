@@ -18,15 +18,15 @@
       "coreConcepts": [
         {
           "title": "Brief First",
-          "text": "State the message, the audience, and the desired response before asking for prose."
+          "text": "Brief before prose. State the message, the audience, and the desired response before asking for a draft, so the writing starts from intent instead of memory."
         },
         {
           "title": "Source The Facts",
-          "text": "Provide approved facts and decisions so the draft does not invent context."
+          "text": "Feed it approved facts. Provide the facts and decisions the draft may use, so the model writes from your source material instead of inventing context."
         },
         {
           "title": "Draft In Layers",
-          "text": "Get the structure right first, then refine tone and polish."
+          "text": "Draft in layers. Get the structure and clarity right first, then refine tone and polish — polish cannot rescue a draft that says the wrong thing."
         }
       ],
       "workedExample": {
@@ -84,15 +84,15 @@
       "coreConcepts": [
         {
           "title": "Keep The Message Stable",
-          "text": "Change tone, framing, and detail level without changing the approved facts."
+          "text": "Hold the facts steady. Change tone, framing, and detail level for each audience without changing the approved facts underneath the message."
         },
         {
           "title": "Name The Reader’s Need",
-          "text": "Executives want direction and risk. Peers often want process detail. Customers want impact and next steps."
+          "text": "Readers want different things. Executives want direction and risk, peers often want process detail, and customers want impact and next steps — name the need before you rewrite."
         },
         {
           "title": "Review For Over-Editing",
-          "text": "AI can over-soften or over-formalize. Preserve the actual stakes and your own voice."
+          "text": "Watch the over-editing. AI can over-soften or over-formalize a message, so check the rewrite against the original stakes and keep your own voice in it."
         }
       ],
       "workedExample": {
@@ -216,15 +216,15 @@
       "coreConcepts": [
         {
           "title": "Structure The Fragments",
-          "text": "Tell the model what each bullet represents before asking for finished prose."
+          "text": "Label the fragments first. Tell the model what each bullet represents — fact, request, risk, or next step — before asking for finished prose."
         },
         {
           "title": "Ask For Missing Questions",
-          "text": "A good assistant can point out what information is absent before you finalize the draft."
+          "text": "Ask what is missing. A good assistant can point out what information is absent from your notes, so you can fill the gaps before you finalize the draft."
         },
         {
           "title": "Keep Humans On Commitments",
-          "text": "Never let AI decide ownership, dates, or promises from incomplete notes."
+          "text": "Commitments stay human. Never let AI decide ownership, dates, or promises from incomplete notes — review every commitment before the message goes out."
         }
       ],
       "workedExample": {
@@ -283,15 +283,15 @@
       "coreConcepts": [
         {
           "title": "Template The Repeated Jobs",
-          "text": "Status updates, customer recaps, meeting follow-ups, and executive notes are prime candidates."
+          "text": "Template what repeats. Status updates, customer recaps, meeting follow-ups, and executive notes are prime candidates; rare one-off tasks are not worth templating."
         },
         {
           "title": "Include Review Rules",
-          "text": "A template is not complete until it says what must be checked before sending."
+          "text": "Ship the review rules too. A template is not complete until it says what must be checked before sending — the review checklist is part of the template, not an extra."
         },
         {
           "title": "Refresh With Real Use",
-          "text": "Templates improve through reuse. Update them when your edits reveal a missing rule."
+          "text": "Let reuse improve it. Templates improve through reuse, so update yours when repeated edits reveal a missing rule, a stale section, or a check you keep adding by hand."
         }
       ],
       "workedExample": {

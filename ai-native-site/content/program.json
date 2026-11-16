@@ -61,6 +61,11 @@
   "recentUpdates": [
     {
       "date": "November 2026",
+      "title": "New bonus section: Trust But Verify",
+      "summary": "Added 'Trust But Verify: Checking AI Output' (3 lessons): why confident answers can be wrong (confabulation, stale knowledge, borrowed confidence), a stakes-based checking workflow that verifies high-stakes claims against primary sources, and a personal verification checklist with a one-minute citation test."
+    },
+    {
+      "date": "November 2026",
       "title": "New bonus sections: models, agents update, GitHub",
       "summary": "Added 'The 2026 Model Landscape' (model families and tiers, open-weight versus closed, reading a launch) and 'GitHub For Non-Engineers' (how GitHub works and how engineers use it). The Agents section grew to 8 lessons with the proactive agent wave (Muse, Grok Bot, Dots, Duet, Hermes) and a lesson on harnesses."
     },

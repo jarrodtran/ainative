@@ -85,15 +85,15 @@
       "coreConcepts": [
         {
           "title": "Name The Real Options",
-          "text": "A valid option set includes choices someone could actually approve and execute."
+          "text": "Name real options only. A valid option set includes choices someone could actually approve and execute — comparing against options nobody would choose wastes the whole exercise."
         },
         {
           "title": "Define The Criteria",
-          "text": "Cost, speed, risk, customer impact, and reversibility are common lenses."
+          "text": "Define the criteria early. Cost, speed, risk, customer impact, and reversibility are common lenses, and naming them before scoring keeps the criteria from staying implicit."
         },
         {
           "title": "Show Tradeoffs Clearly",
-          "text": "A useful comparison makes the downside of each option visible, not just the upside."
+          "text": "Show the downside too. A useful comparison makes the downside of each option visible, not just the upside, so stakeholders can see what each choice actually costs."
         }
       ],
       "workedExample": {
@@ -137,7 +137,17 @@
         "Reviewed for business IC relevance and durable workflow guidance.",
         "Keep verification and organizational policy checks explicit in future revisions."
       ],
-      "lastReviewed": "March 2026"
+      "lastReviewed": "March 2026",
+      "visual": {
+        "type": "flow",
+        "title": "Build The Comparison In Order",
+        "steps": [
+          "Name the real options — choices someone could approve and execute",
+          "Define the criteria — cost, speed, risk, impact, reversibility",
+          "Show the tradeoffs — the downside of each option, made visible"
+        ],
+        "note": "Presenting only benefits is the common failure: a comparison stakeholders can trust shows what each option costs."
+      }
     },
     {
       "id": "module-12-lesson-03",
@@ -152,15 +162,15 @@
       "coreConcepts": [
         {
           "title": "Ask For Failure Modes",
-          "text": "Prompt for why the proposal might fail operationally, financially, or politically."
+          "text": "Ask how it fails. Prompt for why the proposal might fail operationally, financially, or politically, so the weak assumptions surface while you can still fix them."
         },
         {
           "title": "Ask From Stakeholder Views",
-          "text": "Different stakeholders object for different reasons. Name those lenses explicitly."
+          "text": "Name the objectors. Different stakeholders object for different reasons — adoption, support, and executive visibility see different flaws — so name those lenses explicitly."
         },
         {
           "title": "Turn Critique Into Revision",
-          "text": "A devil’s advocate step is useful only if it produces changes or better questions."
+          "text": "Revise, do not just listen. A devil’s advocate pass is useful only if it produces changes or better questions, so revise the plan or the message before you present it."
         }
       ],
       "workedExample": {
@@ -217,15 +227,15 @@
       "coreConcepts": [
         {
           "title": "Frameworks Fit Recurring Choices",
-          "text": "Vendor selection, staffing tradeoffs, rollout timing, and priority calls often repeat."
+          "text": "Frameworks fit repeats. Vendor selection, staffing tradeoffs, rollout timing, and priority calls come back again and again, which is what makes them worth a reusable structure."
         },
         {
           "title": "Store Criteria And Questions",
-          "text": "The most reusable part of the framework is the evaluation logic."
+          "text": "Save the logic, not the answer. The most reusable part of a framework is its evaluation logic — the criteria, the questions, and the evidence each decision needs every time."
         },
         {
           "title": "Keep It Lightweight",
-          "text": "A framework should guide judgment, not replace it with bureaucracy."
+          "text": "Keep it lightweight. A framework should guide judgment, not replace it with bureaucracy, so use few criteria and revisit the framework after real decisions test it."
         }
       ],
       "workedExample": {
@@ -284,15 +294,15 @@
       "coreConcepts": [
         {
           "title": "Save The Decision Brief",
-          "text": "A clear framing format helps every later prompt perform better."
+          "text": "Save the framing format. A clear decision brief — the framing format — helps every later prompt perform better, because comparison and critique inherit the framing."
         },
         {
           "title": "Save The Comparison Template",
-          "text": "Matrices and summary formats make stakeholder discussions clearer."
+          "text": "Save the comparison format. Matrices and summary formats make stakeholder discussions clearer, so keep the comparison template next to the brief in the toolkit."
         },
         {
           "title": "Save The Critique Pass",
-          "text": "Every major decision should have a reusable challenge step."
+          "text": "Save the challenge step. Every major decision should have a reusable critique pass, so the challenge step gets saved and run instead of improvised or skipped."
         }
       ],
       "workedExample": {

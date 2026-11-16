@@ -18,15 +18,15 @@
       "coreConcepts": [
         {
           "title": "Use AI For Structure",
-          "text": "Planning outlines, risk lists, recap drafts, and status formats are all strong fits."
+          "text": "Use AI for structure. Planning outlines, risk lists, recap drafts, and status formats are strong fits, because project work rewards organized inputs and fast first drafts."
         },
         {
           "title": "Keep Humans On Tradeoffs",
-          "text": "Priority, scope, staffing, and escalation still require human authority."
+          "text": "Tradeoffs stay human. Priority, scope, staffing, and escalation decisions still require human authority — AI supports the planning, it does not own the calls."
         },
         {
           "title": "Anchor In Real Project Artifacts",
-          "text": "Briefs, timelines, issue logs, and meeting notes make AI output much more reliable."
+          "text": "Anchor in real artifacts. Briefs, timelines, issue logs, and meeting notes make AI output far more reliable than planning from memory or a blank prompt."
         }
       ],
       "workedExample": {
@@ -84,15 +84,15 @@
       "coreConcepts": [
         {
           "title": "Start With The Goal",
-          "text": "Define the outcome, deadline, and constraints before asking for tasks."
+          "text": "Start with the goal. Define the outcome, deadline, and constraints before asking for tasks, because a plan built without a real brief is just organized guessing."
         },
         {
           "title": "Surface Assumptions",
-          "text": "Plans are only as good as the assumptions behind them. Ask AI to identify what is unknown or unstated."
+          "text": "Surface the assumptions. Ask AI to name what is unknown or unstated in the brief, and treat those assumptions as open questions rather than facts in the plan."
         },
         {
           "title": "Use Reviewable Structure",
-          "text": "Ask for phases, milestones, dependencies, and risks instead of one long prose plan."
+          "text": "Ask for structure, not prose. Request phases, milestones, dependencies, and risks as separate pieces, so the plan can be reviewed and corrected section by section."
         }
       ],
       "workedExample": {
@@ -151,15 +151,15 @@
       "coreConcepts": [
         {
           "title": "Prompt From Different Lenses",
-          "text": "Schedule, resource, dependency, stakeholder, and adoption lenses reveal different categories of risk."
+          "text": "Rotate the lens. Schedule, resource, dependency, stakeholder, and adoption lenses each reveal different categories of risk that a single delivery view misses."
         },
         {
           "title": "Ask For Mitigation, Not Just Lists",
-          "text": "A useful risk review includes early warning signals and response options."
+          "text": "Ask for responses too. A useful risk review pairs each risk with early warning signals and response options, not just a longer list of things that could go wrong."
         },
         {
           "title": "Separate Probability From Impact",
-          "text": "A ranked list is more useful than a brainstormed pile."
+          "text": "Rank, do not just list. Separate probability from impact and rank the risks, because a prioritized short list drives decisions better than a brainstormed pile."
         }
       ],
       "workedExample": {
@@ -218,15 +218,15 @@
       "coreConcepts": [
         {
           "title": "Collect The Inputs",
-          "text": "Issue logs, milestone status, notes, and blockers should feed the draft."
+          "text": "Feed it the raw material. Issue logs, milestone status, notes, and blockers should feed the draft, so the update is built from the tracker rather than from memory."
         },
         {
           "title": "Lead With What Changed",
-          "text": "Good status updates highlight movement, risk, and decisions needed."
+          "text": "Lead with what changed. Good status updates highlight movement, current risk, and the decisions needed, instead of burying the news inside polished prose."
         },
         {
           "title": "Tailor For The Reader",
-          "text": "Leadership, peers, and working teams want different levels of detail."
+          "text": "Tune the detail level. Leadership, peers, and working teams want different levels of detail, so generate the version each audience actually needs from the same inputs."
         }
       ],
       "workedExample": {
@@ -284,15 +284,15 @@
       "coreConcepts": [
         {
           "title": "Save Prompt + Artifact",
-          "text": "Keep the prompt alongside the input pattern and output format."
+          "text": "Save the whole pattern. Keep the prompt alongside the input artifact pattern and the output format, because the wording alone does not explain why it worked."
         },
         {
           "title": "Document Review Rules",
-          "text": "Record what must be checked before sharing the draft."
+          "text": "Record the review standard. Write down what must be checked before the draft is shared, so the next user inherits the quality bar and not just the prompt."
         },
         {
           "title": "Version The Pattern",
-          "text": "Update the prompt when you learn a better way to frame the work."
+          "text": "Version what you learn. Update the saved prompt when a project teaches you a better framing, and retest it on the next project instead of assuming it still fits."
         }
       ],
       "workedExample": {

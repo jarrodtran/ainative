@@ -88,6 +88,11 @@ var PROGRAM_META = {
   "recentUpdates": [
     {
       "date": "November 2026",
+      "title": "New bonus section: Trust But Verify",
+      "summary": "Added 'Trust But Verify: Checking AI Output' (3 lessons): why confident answers can be wrong (confabulation, stale knowledge, borrowed confidence), a stakes-based checking workflow that verifies high-stakes claims against primary sources, and a personal verification checklist with a one-minute citation test."
+    },
+    {
+      "date": "November 2026",
       "title": "New bonus sections: models, agents update, GitHub",
       "summary": "Added 'The 2026 Model Landscape' (model families and tiers, open-weight versus closed, reading a launch) and 'GitHub For Non-Engineers' (how GitHub works and how engineers use it). The Agents section grew to 8 lessons with the proactive agent wave (Muse, Grok Bot, Dots, Duet, Hermes) and a lesson on harnesses."
     },
@@ -276,15 +281,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Variation Is Normal",
-            "text": "Small wording shifts, model updates, and conversation history can change results. That is expected behavior, not necessarily a failure."
+            "text": "Variation is expected. Small wording shifts, model updates, and conversation history can all change results, so a different answer is not necessarily a failure. Judge the run against your criteria, not against the previous run's wording."
           },
           {
             "title": "Threads Accumulate Baggage",
-            "text": "Long chats often mix old assumptions with new requests. Starting a clean thread is often faster than arguing with stale context."
+            "text": "Threads go stale. Long chats mix old assumptions with new requests, and starting a clean thread is often faster than arguing with stale context. Reset the conversation when the history starts steering the answers."
           },
           {
             "title": "Stability Comes From Structure",
-            "text": "Examples, explicit rubrics, and clear output formats make results more consistent than vague requests for the \"best answer.\""
+            "text": "Structure creates stability. Examples, explicit rubrics, and clear output formats make results more consistent than vague requests for the best answer. Fix the sections and success criteria, and repeated runs start to converge."
           }
         ],
         "workedExample": {
@@ -425,15 +430,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Frame",
-            "text": "Define the task, audience, and constraints before you prompt."
+            "text": "Frame first. Define the task, audience, and constraints before you prompt, and name the deliverable and the source of truth behind it."
           },
           {
             "title": "Generate",
-            "text": "Ask for a first pass with an explicit structure."
+            "text": "Generate second. Ask for a structured first pass instead of a finished answer, so the shape of the output is set before the details are filled in."
           },
           {
             "title": "Review",
-            "text": "Verify claims, adjust tone, and turn the output into a final work product."
+            "text": "Review last. Verify claims, adjust tone, and run your checks before sharing, so the draft becomes a final work product you can stand behind."
           }
         ],
         "workedExample": {
@@ -1022,15 +1027,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Use Functional Roles",
-            "text": "Ask for the perspective that matters to the task: reviewer, planner, editor, or analyst."
+            "text": "Pick a working role. Ask for the perspective that matters to the task — reviewer, planner, editor, or analyst — because the role sets the standard the answer gets judged by."
           },
           {
             "title": "Tie The Role To Criteria",
-            "text": "Define what the role should optimize for, such as clarity, risk awareness, or audience fit."
+            "text": "Name the criteria. Define what the role should optimize for — clarity, risk awareness, or audience fit — or the role adds theater instead of judgment."
           },
           {
             "title": "Keep The Role Lightweight",
-            "text": "One clear line about perspective is usually enough."
+            "text": "Keep it to one line. One clear line about perspective is usually enough; long persona descriptions decorate the prompt without changing the work."
           }
         ],
         "workedExample": {
@@ -1092,15 +1097,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Show, Do Not Only Tell",
-            "text": "A short example of the expected format usually improves output more than extra explanation."
+            "text": "Show the format. A short example of the expected format usually improves output more than extra explanation, because the model stops guessing the form of the answer."
           },
           {
             "title": "Separate Content From Shape",
-            "text": "Define the structure clearly so you can judge the substance independently."
+            "text": "Separate shape from facts. Define the structure clearly and say which parts are structure only, so you can judge the substance on its own and stale facts stay out."
           },
           {
             "title": "Consistency Helps Reuse",
-            "text": "Stable output formats are easier to turn into templates and team playbooks."
+            "text": "Consistency compounds. Stable output formats are easier to compare week to week and to turn into templates and team playbooks that others can reuse."
           }
         ],
         "workedExample": {
@@ -1320,15 +1325,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Separate Public From Sensitive",
-            "text": "Not all work material carries the same risk. Customer data, employee data, contracts, and regulated information need stricter handling."
+            "text": "Risk varies by material. Customer data, employee data, contracts, and regulated information need stricter handling than public or internal material."
           },
           {
             "title": "Minimize Before You Paste",
-            "text": "If you can abstract, redact, or summarize the sensitive parts while preserving the task, do that first."
+            "text": "Shrink the exposure. If you can abstract, redact, or summarize the sensitive parts while preserving the task, do that before anything goes into the prompt."
           },
           {
             "title": "Use Approved Paths",
-            "text": "Company-approved tools, internal instances, and redaction workflows matter more than individual convenience."
+            "text": "Use approved paths. Company-approved tools, internal instances, and redaction workflows matter more than individual convenience — paid access alone is not approval."
           }
         ],
         "workedExample": {
@@ -1602,15 +1607,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Check The Inputs",
-            "text": "Is this prompt safe for the selected tool?"
+            "text": "Check the inputs. Ask whether this material is safe for the selected tool before you paste it — the first safety question is what belongs in the prompt at all."
           },
           {
             "title": "Check The Output",
-            "text": "What claims or commitments need review before use?"
+            "text": "Check the output. Decide which claims, numbers, or commitments need review before use, even when the draft looks polished and ready to send."
           },
           {
             "title": "Check The Destination",
-            "text": "Who will read this and what happens if it is wrong?"
+            "text": "Check the destination. Consider who will read the output and what happens if it is wrong, and route it to the right reviewer before it goes out."
           }
         ],
         "workedExample": {
@@ -1689,15 +1694,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Brief First",
-            "text": "State the message, the audience, and the desired response before asking for prose."
+            "text": "Brief before prose. State the message, the audience, and the desired response before asking for a draft, so the writing starts from intent instead of memory."
           },
           {
             "title": "Source The Facts",
-            "text": "Provide approved facts and decisions so the draft does not invent context."
+            "text": "Feed it approved facts. Provide the facts and decisions the draft may use, so the model writes from your source material instead of inventing context."
           },
           {
             "title": "Draft In Layers",
-            "text": "Get the structure right first, then refine tone and polish."
+            "text": "Draft in layers. Get the structure and clarity right first, then refine tone and polish — polish cannot rescue a draft that says the wrong thing."
           }
         ],
         "workedExample": {
@@ -1760,15 +1765,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Keep The Message Stable",
-            "text": "Change tone, framing, and detail level without changing the approved facts."
+            "text": "Hold the facts steady. Change tone, framing, and detail level for each audience without changing the approved facts underneath the message."
           },
           {
             "title": "Name The Reader’s Need",
-            "text": "Executives want direction and risk. Peers often want process detail. Customers want impact and next steps."
+            "text": "Readers want different things. Executives want direction and risk, peers often want process detail, and customers want impact and next steps — name the need before you rewrite."
           },
           {
             "title": "Review For Over-Editing",
-            "text": "AI can over-soften or over-formalize. Preserve the actual stakes and your own voice."
+            "text": "Watch the over-editing. AI can over-soften or over-formalize a message, so check the rewrite against the original stakes and keep your own voice in it."
           }
         ],
         "workedExample": {
@@ -1902,15 +1907,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Structure The Fragments",
-            "text": "Tell the model what each bullet represents before asking for finished prose."
+            "text": "Label the fragments first. Tell the model what each bullet represents — fact, request, risk, or next step — before asking for finished prose."
           },
           {
             "title": "Ask For Missing Questions",
-            "text": "A good assistant can point out what information is absent before you finalize the draft."
+            "text": "Ask what is missing. A good assistant can point out what information is absent from your notes, so you can fill the gaps before you finalize the draft."
           },
           {
             "title": "Keep Humans On Commitments",
-            "text": "Never let AI decide ownership, dates, or promises from incomplete notes."
+            "text": "Commitments stay human. Never let AI decide ownership, dates, or promises from incomplete notes — review every commitment before the message goes out."
           }
         ],
         "workedExample": {
@@ -1974,15 +1979,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Template The Repeated Jobs",
-            "text": "Status updates, customer recaps, meeting follow-ups, and executive notes are prime candidates."
+            "text": "Template what repeats. Status updates, customer recaps, meeting follow-ups, and executive notes are prime candidates; rare one-off tasks are not worth templating."
           },
           {
             "title": "Include Review Rules",
-            "text": "A template is not complete until it says what must be checked before sending."
+            "text": "Ship the review rules too. A template is not complete until it says what must be checked before sending — the review checklist is part of the template, not an extra."
           },
           {
             "title": "Refresh With Real Use",
-            "text": "Templates improve through reuse. Update them when your edits reveal a missing rule."
+            "text": "Let reuse improve it. Templates improve through reuse, so update yours when repeated edits reveal a missing rule, a stale section, or a check you keep adding by hand."
           }
         ],
         "workedExample": {
@@ -2345,15 +2350,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Collect",
-            "text": "Gather and label the sources that matter."
+            "text": "Collect with labels. Gather the sources that matter and label them as you go, so later steps know what each source is and why it was included."
           },
           {
             "title": "Synthesize",
-            "text": "Ask for a structured comparison or action summary."
+            "text": "Synthesize to a decision. Ask for a structured comparison or action summary rather than a pile of summaries, so the research lands as something a reader can act on."
           },
           {
             "title": "Critique",
-            "text": "Challenge the weak spots and verify the critical claims."
+            "text": "Critique before publishing. Challenge the weak spots and verify the critical claims, because a workflow without the critique step just produces confident summaries."
           }
         ],
         "workedExample": {
@@ -2513,15 +2518,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Examples Set The Pattern",
-            "text": "A short example can teach the model how to classify, prioritize, or structure output."
+            "text": "Examples teach the pattern. A short example can teach the model how to classify, prioritize, or structure output more reliably than a paragraph of instructions."
           },
           {
             "title": "Match The Example To The Task",
-            "text": "Use representative examples, not idealized ones that ignore real ambiguity."
+            "text": "Use real, messy examples. Choose representative examples from the actual work, not idealized ones that ignore the ambiguity the model will really face."
           },
           {
             "title": "Explain The Lesson",
-            "text": "Tell the model what the example demonstrates so it copies the right thing."
+            "text": "Say what it demonstrates. Tell the model what the example demonstrates — the rule behind the answer — so it copies the reasoning and not just the surface."
           }
         ],
         "workedExample": {
@@ -2591,15 +2596,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Label The Sections",
-            "text": "Separate goal, context, sources, constraints, and output format so nothing important is buried."
+            "text": "Label every section. Separate goal, context, sources, constraints, and output format under clear headings, so nothing important is buried inside a long request."
           },
           {
             "title": "Keep Each Section Purposeful",
-            "text": "Every section should change the answer. If it does not, remove it."
+            "text": "Every section must earn its place. Keep only the sections that change the answer, and remove any heading that is just decoration — structure is not the same as length."
           },
           {
             "title": "Reuse The Shape",
-            "text": "Structured prompts are easier to turn into templates than free-form chat requests."
+            "text": "Reuse the shape. A structured prompt is easier to edit, rerun, and turn into a team template than a free-form chat request that lives in one thread."
           }
         ],
         "workedExample": {
@@ -2738,6 +2743,18 @@ var COURSES = {
             "note": "Useful for context design, examples, and prompt structure when a lesson discusses prompt quality."
           }
         ],
+        "visual": {
+          "type": "flow",
+          "title": "Anatomy Of A Chain",
+          "steps": [
+            "Stage — output useful on its own",
+            "Hand-off — the next stage can build on it",
+            "Review gate — a human validates or redirects",
+            "Capture — save the intermediate asset",
+            "Next stage — reuse what was saved"
+          ],
+          "note": "Save the intermediates — outlines, extracted themes, and ranked options are assets the next stage, or the next task, can reuse."
+        },
         "promptExample": {
           "title": "Starter prompt",
           "prompt": "Help me with this work task: Create a simple three-step prompt chain for a recurring task.\n\nGoal:\nLink multiple prompts into a workflow where each stage feeds the next.\n\nUse this when:\nMove from one answer to a managed sequence.\n\nImportant context:\n- Stage 1: extract\n- Stage 2: organize\n- Stage 3: recommend\n- Stage 4: draft\n\nPlease structure the response around:\n- Define The Hand-Off\n- Insert Review Gates\n- Capture Intermediate Assets\n\nWorkflow requirements:\n- Name each stage.\n- Define the output of each stage.\n- Add one review gate before the final draft.\n\nBefore you finish, include a verification checklist based on this rule:\nThey validate the extracted themes and ranking before generating the final memo.",
@@ -2929,15 +2946,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Label What You Heard",
-            "text": "Separate facts, decisions, risks, and next steps while notes are still fresh."
+            "text": "Label while it is fresh. Separate facts, decisions, risks, and next steps while the meeting is still fresh, before discussion and decision blur together."
           },
           {
             "title": "Ask AI To Organize, Not Guess",
-            "text": "The model should structure your notes, not invent details you missed."
+            "text": "Organize, do not invent. The model should structure the notes you captured, not invent details you missed or assign owners and deadlines you never heard."
           },
           {
             "title": "Review The Commitments",
-            "text": "Owner assignments and deadlines must be checked manually."
+            "text": "Check commitments manually. Owner assignments and deadlines must be confirmed by a person, because a recap that invents them creates work nobody agreed to."
           }
         ],
         "workedExample": {
@@ -3142,15 +3159,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Use The Same Sequence",
-            "text": "Prep, capture, recap, and follow-up are the core stages for most meetings."
+            "text": "Run the same sequence. Prep, capture, recap, and follow-up are the core stages for most meetings, and they work best as one system rather than four separate habits."
           },
           {
             "title": "Store The Inputs",
-            "text": "Agenda, notes, recap template, and follow-up prompts should live together."
+            "text": "Keep the kit together. Agenda, source notes, recap template, and follow-up prompts should live in one place, so the workflow can be reused and handed over."
           },
           {
             "title": "Review The High-Risk Fields",
-            "text": "Decisions, owners, dates, and commitments always need a human pass."
+            "text": "Review the risky fields. Decisions, owners, dates, and commitments always need a human pass, because those are the fields a recap can quietly get wrong."
           }
         ],
         "workedExample": {
@@ -3444,15 +3461,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Critique The Process, Not Just The Writing",
-            "text": "Ask where steps are vague, duplicated, or lacking a clear owner."
+            "text": "Critique the work itself. Ask where steps are vague, duplicated, or lacking a clear owner — the documentation is a lens on the process, not just a writing exercise."
           },
           {
             "title": "Find Decision Points",
-            "text": "Good process reviews reveal where human judgment is required and where better rules would help."
+            "text": "Find the decision points. A good process review reveals where human judgment is genuinely required and where a clearer rule would remove the handoff entirely."
           },
           {
             "title": "Separate Improvement From Approval",
-            "text": "AI can suggest changes, but process owners still decide what gets adopted."
+            "text": "Suggestions are not approvals. AI can surface candidate changes, but process owners still decide what gets adopted, and exception handling has to survive the redesign."
           }
         ],
         "workedExample": {
@@ -3514,15 +3531,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Store The Source Pattern",
-            "text": "Capture the kinds of raw inputs that produce strong drafts."
+            "text": "Save the input pattern. Capture the kinds of raw inputs that produce strong drafts, so the next person starts from the same raw material that worked last time."
           },
           {
             "title": "Save The Format",
-            "text": "A good SOP or FAQ structure can be reused across teams and topics."
+            "text": "Save the format too. A good SOP or FAQ structure can be reused across teams and topics, so store the format alongside the prompt instead of only the wording."
           },
           {
             "title": "Keep A Review Checklist",
-            "text": "Documentation needs a standard final pass for accuracy, usability, and ownership."
+            "text": "Keep a review checklist. Documentation needs a standard final pass for accuracy, usability, and ownership, with a named validator before anything is published."
           }
         ],
         "workedExample": {
@@ -3600,15 +3617,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Use AI For Structure",
-            "text": "Planning outlines, risk lists, recap drafts, and status formats are all strong fits."
+            "text": "Use AI for structure. Planning outlines, risk lists, recap drafts, and status formats are strong fits, because project work rewards organized inputs and fast first drafts."
           },
           {
             "title": "Keep Humans On Tradeoffs",
-            "text": "Priority, scope, staffing, and escalation still require human authority."
+            "text": "Tradeoffs stay human. Priority, scope, staffing, and escalation decisions still require human authority — AI supports the planning, it does not own the calls."
           },
           {
             "title": "Anchor In Real Project Artifacts",
-            "text": "Briefs, timelines, issue logs, and meeting notes make AI output much more reliable."
+            "text": "Anchor in real artifacts. Briefs, timelines, issue logs, and meeting notes make AI output far more reliable than planning from memory or a blank prompt."
           }
         ],
         "workedExample": {
@@ -3671,15 +3688,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Start With The Goal",
-            "text": "Define the outcome, deadline, and constraints before asking for tasks."
+            "text": "Start with the goal. Define the outcome, deadline, and constraints before asking for tasks, because a plan built without a real brief is just organized guessing."
           },
           {
             "title": "Surface Assumptions",
-            "text": "Plans are only as good as the assumptions behind them. Ask AI to identify what is unknown or unstated."
+            "text": "Surface the assumptions. Ask AI to name what is unknown or unstated in the brief, and treat those assumptions as open questions rather than facts in the plan."
           },
           {
             "title": "Use Reviewable Structure",
-            "text": "Ask for phases, milestones, dependencies, and risks instead of one long prose plan."
+            "text": "Ask for structure, not prose. Request phases, milestones, dependencies, and risks as separate pieces, so the plan can be reviewed and corrected section by section."
           }
         ],
         "workedExample": {
@@ -3743,15 +3760,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Prompt From Different Lenses",
-            "text": "Schedule, resource, dependency, stakeholder, and adoption lenses reveal different categories of risk."
+            "text": "Rotate the lens. Schedule, resource, dependency, stakeholder, and adoption lenses each reveal different categories of risk that a single delivery view misses."
           },
           {
             "title": "Ask For Mitigation, Not Just Lists",
-            "text": "A useful risk review includes early warning signals and response options."
+            "text": "Ask for responses too. A useful risk review pairs each risk with early warning signals and response options, not just a longer list of things that could go wrong."
           },
           {
             "title": "Separate Probability From Impact",
-            "text": "A ranked list is more useful than a brainstormed pile."
+            "text": "Rank, do not just list. Separate probability from impact and rank the risks, because a prioritized short list drives decisions better than a brainstormed pile."
           }
         ],
         "workedExample": {
@@ -3815,15 +3832,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Collect The Inputs",
-            "text": "Issue logs, milestone status, notes, and blockers should feed the draft."
+            "text": "Feed it the raw material. Issue logs, milestone status, notes, and blockers should feed the draft, so the update is built from the tracker rather than from memory."
           },
           {
             "title": "Lead With What Changed",
-            "text": "Good status updates highlight movement, risk, and decisions needed."
+            "text": "Lead with what changed. Good status updates highlight movement, current risk, and the decisions needed, instead of burying the news inside polished prose."
           },
           {
             "title": "Tailor For The Reader",
-            "text": "Leadership, peers, and working teams want different levels of detail."
+            "text": "Tune the detail level. Leadership, peers, and working teams want different levels of detail, so generate the version each audience actually needs from the same inputs."
           }
         ],
         "workedExample": {
@@ -3886,15 +3903,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Save Prompt + Artifact",
-            "text": "Keep the prompt alongside the input pattern and output format."
+            "text": "Save the whole pattern. Keep the prompt alongside the input artifact pattern and the output format, because the wording alone does not explain why it worked."
           },
           {
             "title": "Document Review Rules",
-            "text": "Record what must be checked before sharing the draft."
+            "text": "Record the review standard. Write down what must be checked before the draft is shared, so the next user inherits the quality bar and not just the prompt."
           },
           {
             "title": "Version The Pattern",
-            "text": "Update the prompt when you learn a better way to frame the work."
+            "text": "Version what you learn. Update the saved prompt when a project teaches you a better framing, and retest it on the next project instead of assuming it still fits."
           }
         ],
         "workedExample": {
@@ -4044,15 +4061,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Define The Measures",
-            "text": "State what each metric means and why it matters."
+            "text": "Define every measure. State what each metric means and why it matters, so the model interprets the number you intended instead of guessing from the label alone."
           },
           {
             "title": "Add Baselines",
-            "text": "Comparisons to prior periods, targets, or segments make interpretation more grounded."
+            "text": "Anchor with a baseline. Comparisons to prior periods, targets, or segments make interpretation more grounded, because a number without a comparison point invites vague commentary."
           },
           {
             "title": "Explain The Situation",
-            "text": "Recent events, campaign changes, staffing shifts, or product launches often explain the numbers better than the numbers alone."
+            "text": "Add the surrounding story. Recent events, campaign changes, staffing shifts, or product launches often explain the numbers better than the numbers alone, so include them in the prompt."
           }
         ],
         "workedExample": {
@@ -4256,15 +4273,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Store The Data Brief",
-            "text": "Keep the input pattern that produced a good analysis session."
+            "text": "Save the data brief. Keep the input pattern that produced a good analysis session — definitions, baselines, and context included — not just the final prompt."
           },
           {
             "title": "Store The Hypothesis Prompt",
-            "text": "Save the prompts that lead to useful next questions."
+            "text": "Save the question prompts. Keep the prompts that lead to useful hypotheses and next questions, so each analysis cycle starts from proven questions instead of a blank page."
           },
           {
             "title": "Store The Readout Format",
-            "text": "A strong narrative structure is as reusable as a strong analysis prompt."
+            "text": "Save the readout shape. A strong narrative structure is as reusable as a strong analysis prompt, and the verification rules belong in the toolkit alongside both."
           }
         ],
         "workedExample": {
@@ -4414,15 +4431,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Name The Real Options",
-            "text": "A valid option set includes choices someone could actually approve and execute."
+            "text": "Name real options only. A valid option set includes choices someone could actually approve and execute — comparing against options nobody would choose wastes the whole exercise."
           },
           {
             "title": "Define The Criteria",
-            "text": "Cost, speed, risk, customer impact, and reversibility are common lenses."
+            "text": "Define the criteria early. Cost, speed, risk, customer impact, and reversibility are common lenses, and naming them before scoring keeps the criteria from staying implicit."
           },
           {
             "title": "Show Tradeoffs Clearly",
-            "text": "A useful comparison makes the downside of each option visible, not just the upside."
+            "text": "Show the downside too. A useful comparison makes the downside of each option visible, not just the upside, so stakeholders can see what each choice actually costs."
           }
         ],
         "workedExample": {
@@ -4467,6 +4484,16 @@ var COURSES = {
           "Keep verification and organizational policy checks explicit in future revisions."
         ],
         "lastReviewed": "March 2026",
+        "visual": {
+          "type": "flow",
+          "title": "Build The Comparison In Order",
+          "steps": [
+            "Name the real options — choices someone could approve and execute",
+            "Define the criteria — cost, speed, risk, impact, reversibility",
+            "Show the tradeoffs — the downside of each option, made visible"
+          ],
+          "note": "Presenting only benefits is the common failure: a comparison stakeholders can trust shows what each option costs."
+        },
         "promptExample": {
           "title": "Starter prompt",
           "prompt": "Help me with this work task: Create a tradeoff matrix for one live choice.\n\nGoal:\nUse AI to build option comparisons that are easier to evaluate and explain.\n\nUse this when:\nGood decisions compare meaningful choices against explicit criteria.\n\nImportant context:\n- Option\n- Pros\n- Cons\n- Risk\n\nPlease structure the response around:\n- Name The Real Options\n- Define The Criteria\n- Show Tradeoffs Clearly\n\nWorkflow requirements:\n- List the real options.\n- Define three evaluation criteria.\n- Ask AI to surface tradeoffs.\n\nBefore you finish, include a verification checklist based on this rule:\nThe lead confirms that the criteria reflect what the decision-makers actually care about.",
@@ -4486,15 +4513,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Ask For Failure Modes",
-            "text": "Prompt for why the proposal might fail operationally, financially, or politically."
+            "text": "Ask how it fails. Prompt for why the proposal might fail operationally, financially, or politically, so the weak assumptions surface while you can still fix them."
           },
           {
             "title": "Ask From Stakeholder Views",
-            "text": "Different stakeholders object for different reasons. Name those lenses explicitly."
+            "text": "Name the objectors. Different stakeholders object for different reasons — adoption, support, and executive visibility see different flaws — so name those lenses explicitly."
           },
           {
             "title": "Turn Critique Into Revision",
-            "text": "A devil’s advocate step is useful only if it produces changes or better questions."
+            "text": "Revise, do not just listen. A devil’s advocate pass is useful only if it produces changes or better questions, so revise the plan or the message before you present it."
           }
         ],
         "workedExample": {
@@ -4556,15 +4583,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Frameworks Fit Recurring Choices",
-            "text": "Vendor selection, staffing tradeoffs, rollout timing, and priority calls often repeat."
+            "text": "Frameworks fit repeats. Vendor selection, staffing tradeoffs, rollout timing, and priority calls come back again and again, which is what makes them worth a reusable structure."
           },
           {
             "title": "Store Criteria And Questions",
-            "text": "The most reusable part of the framework is the evaluation logic."
+            "text": "Save the logic, not the answer. The most reusable part of a framework is its evaluation logic — the criteria, the questions, and the evidence each decision needs every time."
           },
           {
             "title": "Keep It Lightweight",
-            "text": "A framework should guide judgment, not replace it with bureaucracy."
+            "text": "Keep it lightweight. A framework should guide judgment, not replace it with bureaucracy, so use few criteria and revisit the framework after real decisions test it."
           }
         ],
         "workedExample": {
@@ -4628,15 +4655,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Save The Decision Brief",
-            "text": "A clear framing format helps every later prompt perform better."
+            "text": "Save the framing format. A clear decision brief — the framing format — helps every later prompt perform better, because comparison and critique inherit the framing."
           },
           {
             "title": "Save The Comparison Template",
-            "text": "Matrices and summary formats make stakeholder discussions clearer."
+            "text": "Save the comparison format. Matrices and summary formats make stakeholder discussions clearer, so keep the comparison template next to the brief in the toolkit."
           },
           {
             "title": "Save The Critique Pass",
-            "text": "Every major decision should have a reusable challenge step."
+            "text": "Save the challenge step. Every major decision should have a reusable critique pass, so the challenge step gets saved and run instead of improvised or skipped."
           }
         ],
         "workedExample": {
@@ -4714,15 +4741,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Know The Decision",
-            "text": "Are you exploring, shortlisting, negotiating, or preparing a recommendation?"
+            "text": "Know which decision this is. Exploring, shortlisting, negotiating, and recommending each need different preparation, so name the stage before you draft a single question."
           },
           {
             "title": "Define The Criteria",
-            "text": "Implementation fit, cost, risk, change burden, and evidence quality are common evaluation lenses."
+            "text": "Set your own criteria. Implementation fit, cost, risk, change burden, and evidence quality are common lenses — define yours first so the vendor’s framing does not define the evaluation."
           },
           {
             "title": "Prepare Questions That Expose Reality",
-            "text": "Good vendor questions test integration effort, support quality, security, and operational readiness."
+            "text": "Test the reality, not the pitch. Good vendor questions probe integration effort, support quality, security, and operational readiness — the things a sales narrative tends to glide over."
           }
         ],
         "workedExample": {
@@ -4785,15 +4812,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Normalize The Comparison",
-            "text": "Ask AI to place each vendor against the same criteria and evidence fields."
+            "text": "Normalize before comparing. Ask AI to place each vendor against the same criteria and evidence fields, because proposals structured differently cannot be compared fairly as they arrive."
           },
           {
             "title": "Separate Claims From Evidence",
-            "text": "A comparison is stronger when it shows what is claimed versus what is independently supported."
+            "text": "Split claims from evidence. A comparison is stronger when it shows what each vendor claims versus what is independently supported, instead of collapsing the two into one score."
           },
           {
             "title": "Capture Open Questions",
-            "text": "Useful evaluations preserve unresolved concerns instead of hiding them."
+            "text": "Keep the open questions visible. A useful evaluation preserves unresolved concerns as explicit open questions, so missing evidence stays on the table instead of being smoothed over."
           }
         ],
         "workedExample": {
@@ -4838,6 +4865,57 @@ var COURSES = {
           "Keep verification and organizational policy checks explicit in future revisions."
         ],
         "lastReviewed": "March 2026",
+        "visual": {
+          "type": "matrix",
+          "title": "Three Layers, Kept Separate",
+          "headers": [
+            "Layer",
+            "What it holds",
+            "The rule"
+          ],
+          "rows": [
+            {
+              "label": "Claims",
+              "cells": [
+                {
+                  "main": "What the vendor says",
+                  "sub": "their framing, their words"
+                },
+                {
+                  "main": "Never score claims as facts",
+                  "sub": "keep them visibly separate"
+                }
+              ]
+            },
+            {
+              "label": "Evidence",
+              "cells": [
+                {
+                  "main": "What is independently supported",
+                  "sub": "checked outside the pitch"
+                },
+                {
+                  "main": "Same fields for every vendor",
+                  "sub": "normalized before comparing"
+                }
+              ]
+            },
+            {
+              "label": "Open questions",
+              "cells": [
+                {
+                  "main": "Unresolved concerns",
+                  "sub": "missing evidence, flagged gaps"
+                },
+                {
+                  "main": "Preserve them, do not hide them",
+                  "sub": "they steer the next round"
+                }
+              ]
+            }
+          ],
+          "note": "Every vendor is placed against the same criteria and evidence fields first — normalization is what makes the comparison a comparison."
+        },
         "promptExample": {
           "title": "Starter prompt",
           "prompt": "Help me with this work task: Build a comparison matrix for one vendor review already in progress.\n\nGoal:\nCreate a repeatable framework for vendor comparison using AI as an organizing assistant.\n\nUse this when:\nA structured comparison reduces bias and sales-driven recency.\n\nImportant context:\n- Criteria\n- Vendor claim\n- Evidence\n- Risk\n\nPlease structure the response around:\n- Normalize The Comparison\n- Separate Claims From Evidence\n- Capture Open Questions\n\nWorkflow requirements:\n- Choose the criteria.\n- Normalize the source material.\n- Mark evidence gaps explicitly.\n\nBefore you finish, include a verification checklist based on this rule:\nThey review the matrix against the original proposals to ensure no nuance was lost.",
@@ -4928,15 +5006,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Start From Shared Facts",
-            "text": "The core facts should remain stable even as the framing changes."
+            "text": "Start from shared facts. The core facts should remain stable even as the framing changes, so every audience version can be traced back to the same source brief."
           },
           {
             "title": "Match The Reader’s Lens",
-            "text": "Sponsors may care about outcomes and risk. Working teams may need tasks and dependencies."
+            "text": "Match the reader’s lens. Sponsors may care about outcomes and risk while working teams need tasks and dependencies, so set the detail level and framing per audience."
           },
           {
             "title": "Keep Political Reality In Mind",
-            "text": "AI can help you prepare, but you still need judgment about what is wise to say and when."
+            "text": "Keep judgment in the loop. AI can help you prepare versions, but you still need your own judgment about what is wise to say, to whom, and when — and never smooth over real risks."
           }
         ],
         "workedExample": {
@@ -4999,15 +5077,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Store The Evaluation Brief",
-            "text": "Start every new vendor review from a consistent decision frame."
+            "text": "Store the evaluation brief. Start every new vendor review from a consistent decision frame, so evaluations stay comparable across quarters instead of depending on memory."
           },
           {
             "title": "Store The Comparison Matrix",
-            "text": "Comparisons are easier when the format is stable."
+            "text": "Store the comparison matrix. Comparisons are easier when the format is stable, so keep the matrix fields fixed and let only the vendor evidence change between reviews."
           },
           {
             "title": "Store The Review Boundaries",
-            "text": "Capture what AI can support and what must go to legal, finance, or leadership review."
+            "text": "Store the review boundaries. Capture what AI can support and what must go to legal, finance, or leadership review, so the toolkit keeps the work auditable as well as fast."
           }
         ],
         "workedExample": {
@@ -5228,15 +5306,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Use Risk-Based Oversight",
-            "text": "Low-risk drafting can often be reviewed at the end. High-risk actions may need approval before execution."
+            "text": "Match oversight to risk. Low-risk drafting can often be reviewed at the end, while high-risk actions need approval before execution — the checkpoint moves with the consequence."
           },
           {
             "title": "Review The Right Checkpoints",
-            "text": "The important review moments are usually before external communication, data updates, or consequential recommendations."
+            "text": "Review before the point of no return. The moments that matter most are just before external communication, data updates, or consequential recommendations leave the workflow."
           },
           {
             "title": "Keep The Workflow Usable",
-            "text": "Oversight should reduce risk without rebuilding the full manual process. "
+            "text": "Keep oversight usable. Review should reduce risk without rebuilding the full manual process, or the approval burden gets so heavy that nobody uses the workflow."
           }
         ],
         "workedExample": {
@@ -5554,15 +5632,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Use Real Inputs",
-            "text": "Test on the emails, docs, chats, or tickets you actually work with."
+            "text": "Test on real work. Evaluate the feature on the emails, docs, chats, or tickets you actually handle, not on demo material chosen to flatter it."
           },
           {
             "title": "Measure Time To Final",
-            "text": "The best feature usually produces the shortest path to a reviewed final output."
+            "text": "Measure time to final. The best feature usually produces the shortest path to a reviewed final output, so count the cleanup burden, not just the drafting speed."
           },
           {
             "title": "Check Integration Quality",
-            "text": "See whether the feature actually respects the context and structure of the tool. "
+            "text": "Check the integration itself. See whether the feature actually respects the context and structure of the tool it lives in — a native integration does not make output automatically correct."
           }
         ],
         "workedExample": {
@@ -5625,15 +5703,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Point To The Right Material",
-            "text": "Call out which email thread, notes, paragraph, or document section should drive the answer."
+            "text": "Point at the exact source. Call out which email thread, notes, paragraph, or document section should drive the answer, instead of letting the model choose its own context."
           },
           {
             "title": "State The Action",
-            "text": "Ask for the exact outcome: summary, reply, next-step list, rewrite, or agenda."
+            "text": "State the exact action. Ask for the specific outcome you need — summary, reply, next-step list, rewrite, or agenda — because embedded AI still needs clear intent."
           },
           {
             "title": "Limit The Output",
-            "text": "Embedded AI works better when the output is bounded and immediately usable."
+            "text": "Bound the output. Embedded AI works better when the output is bounded and immediately usable, with the same review constraints you would apply anywhere else."
           }
         ],
         "workedExample": {
@@ -5695,15 +5773,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Capture The Trigger",
-            "text": "Know what event starts the workflow: weekly review, incoming request, meeting end, or document draft."
+            "text": "Name the trigger. Know what event starts the workflow — weekly review, incoming request, meeting end, or document draft — so the pattern runs on schedule instead of on memory."
           },
           {
             "title": "Capture The Prompt Pattern",
-            "text": "Save the instructions and source references that work repeatedly."
+            "text": "Save the working pattern. Store the instructions and source-context rules that work repeatedly, so the pattern survives outside the one chat where you discovered it."
           },
           {
             "title": "Capture The Final Review",
-            "text": "Every integration pattern should include the human checkpoint."
+            "text": "End with a human check. Every integration pattern should include the final review step, because a pattern without its checkpoint is only half documented."
           }
         ],
         "workedExample": {
@@ -5766,15 +5844,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Use The Closest Useful Tool",
-            "text": "If the work lives in your workspace, start there. Switch tools only when the task genuinely demands it."
+            "text": "Start where the work lives. If the task lives in your workspace, start with the embedded tool and switch only when the work genuinely demands a general assistant or deeper research."
           },
           {
             "title": "Separate Creation From Verification",
-            "text": "Embedded AI may draft inside the workspace while source-forward tools or manual review handle verification."
+            "text": "Separate drafting from checking. Let embedded AI draft inside the workspace while source-first tools or manual review handle verification, so creation and checking stay distinct jobs."
           },
           {
             "title": "Keep The Stack Small",
-            "text": "A small set of reliable patterns beats a scattered set of partially adopted features."
+            "text": "Keep the stack small. A small set of reliable patterns beats a scattered set of partially adopted features, and growing the stack means redesigning the workflow, not just adding tools."
           }
         ],
         "workedExample": {
@@ -5851,15 +5929,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Playbooks Capture Workflow",
-            "text": "They include when to use the workflow, what inputs are needed, and what review is required."
+            "text": "A playbook is a workflow. It captures when to use the workflow, what inputs it needs, what the prompt does, and what review is required — not just the prompt wording."
           },
           {
             "title": "Playbooks Reduce Reinvention",
-            "text": "They turn trial-and-error into a reusable starting point."
+            "text": "Playbooks end reinvention. They turn one person’s trial-and-error into a reusable starting point, so the next person begins from a proven workflow instead of a blank chat."
           },
           {
             "title": "Playbooks Improve Team Consistency",
-            "text": "People can produce more consistent work when the structure and review rules are shared. "
+            "text": "Shared rules, steadier output. People produce more consistent work when the structure, examples, and review rules are shared instead of living in one person’s habits."
           }
         ],
         "workedExample": {
@@ -5923,15 +6001,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "List Required Inputs",
-            "text": "Templates, notes, examples, approved facts, and output destinations should be explicit."
+            "text": "List the inputs explicitly. Templates, notes, examples, approved facts, and output destinations should be written into the playbook, not carried in the creator’s head."
           },
           {
             "title": "Show What Good Looks Like",
-            "text": "An example output or completed case makes the playbook easier to use."
+            "text": "Show what good looks like. Include an example output or a completed run, because teammates reuse a playbook more successfully when they can see the target they are aiming at."
           },
           {
             "title": "Remove Hidden Assumptions",
-            "text": "If the playbook assumes internal jargon or unwritten policy, capture that openly."
+            "text": "Surface hidden assumptions. If the playbook quietly assumes internal jargon, a tone guide, or unwritten policy, capture that openly — hidden context is where reuse goes to fail."
           }
         ],
         "workedExample": {
@@ -5994,15 +6072,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Encode Standards",
-            "text": "Voice, structure, prohibited moves, and review rules are good candidates for persistent guidance."
+            "text": "Encode standards, not facts. Voice, structure, prohibited moves, and review rules are good candidates for persistent guidance, because they stay true across many tasks."
           },
           {
             "title": "Do Not Encode Unverified Assumptions",
-            "text": "Persistent instructions should not hard-code facts that change often."
+            "text": "Keep changing facts out. Persistent instructions should not hard-code facts that change often — project details belong in the task prompt, where they can be updated each run."
           },
           {
             "title": "Keep It Readable",
-            "text": "If nobody can understand or update the guidance, the playbook will decay quickly."
+            "text": "Keep guidance readable. If nobody can understand or update the instruction set, the playbook decays quickly, so keep it short enough to maintain and review."
           }
         ],
         "workedExample": {
@@ -6065,15 +6143,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Test On Multiple Cases",
-            "text": "A playbook should work on varied inputs from the same workflow."
+            "text": "Test beyond the happy path. A playbook should work on varied inputs from the same workflow, not just the one case it was built on — one success proves almost nothing."
           },
           {
             "title": "Track Failure Modes",
-            "text": "Most playbook improvement comes from seeing where it breaks, not where it shines."
+            "text": "Record what breaks. Most improvement comes from seeing where the playbook fails, so note the failure mode on each test case instead of only celebrating the runs that worked."
           },
           {
             "title": "Update The Smallest Useful Thing",
-            "text": "Revise the missing input, unclear constraint, or review step before rewriting the whole playbook."
+            "text": "Fix the smallest thing. Revise the missing input, unclear constraint, or weak review step before rewriting the whole playbook — small targeted fixes keep it simple."
           }
         ],
         "workedExample": {
@@ -6136,15 +6214,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Make Entries Scannable",
-            "text": "Use case, inputs, prompt pattern, review checklist, owner, and last review date should be visible."
+            "text": "Make entries scannable. Use case, inputs, prompt pattern, review checklist, owner, and last review date should be visible at a glance, so people can find and trust the right workflow fast."
           },
           {
             "title": "Assign Ownership",
-            "text": "Someone should be responsible for updating the playbook when the workflow changes."
+            "text": "Give every entry an owner. Someone should be responsible for updating each playbook when the workflow changes, or the library quietly fills with entries nobody maintains."
           },
           {
             "title": "Prune Aggressively",
-            "text": "Outdated or unused playbooks create noise and reduce trust."
+            "text": "Prune without mercy. Outdated or unused playbooks create noise and reduce trust in the whole library, so retire entries that no longer earn their place."
           }
         ],
         "workedExample": {
@@ -6295,15 +6373,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Choose A Useful Workflow",
-            "text": "Pick work that many people do and that already has a painful manual version."
+            "text": "Pick painful, common work. Choose work that many people do and that already has a painful manual version, because one visible win builds more credibility than broad evangelism."
           },
           {
             "title": "Use A Real Example",
-            "text": "Show the workflow on actual work, not a toy example."
+            "text": "Show real work, not a demo. Run the workflow on actual work with its real source material, because teammates adopt what they can imagine themselves doing."
           },
           {
             "title": "Include The Review Step",
-            "text": "People trust the workflow more when they see how quality is controlled. "
+            "text": "Show the quality control. People trust the workflow more when they see how quality is controlled, so include the review step in the play instead of hiding it."
           }
         ],
         "workedExample": {
@@ -6367,15 +6445,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Demo Real Work",
-            "text": "Use a realistic task with realistic constraints."
+            "text": "Demo real work. Use a realistic task with realistic constraints and real source material, not a cleaned-up example nobody recognizes as their own job."
           },
           {
             "title": "Narrate The Decisions",
-            "text": "Explain why the prompt includes certain context and why certain review steps are required."
+            "text": "Narrate your decisions. Explain why the prompt includes certain context and why each review step is required, so the audience learns the judgment and not just the clicks."
           },
           {
             "title": "End With A Repeatable Pattern",
-            "text": "The audience should leave with something they can try immediately."
+            "text": "End with a next step. The audience should leave with a repeatable pattern they can try immediately, not with inspiration that evaporates by the next meeting."
           }
         ],
         "workedExample": {
@@ -6597,15 +6675,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Look For Repetition",
-            "text": "Repeated drafting, summarizing, organizing, and comparison work are common signals."
+            "text": "Look for repetition. Repeated drafting, summarizing, organizing, and comparison work are common signals that a workflow is ready for AI help."
           },
           {
             "title": "Look For Delay",
-            "text": "Waiting for documentation, follow-up, or synthesis often points to high-value use cases."
+            "text": "Look for delay. Waiting on documentation, follow-up, or synthesis often points to high-value use cases, because the bottleneck is usually assembly rather than judgment."
           },
           {
             "title": "Look For Review Bottlenecks",
-            "text": "If experts spend time reformatting or clarifying work, AI may help reduce that burden."
+            "text": "Look for review bottlenecks. If experts spend their time reformatting or clarifying other people’s work, AI may reduce that burden and give the expertise back its hours."
           }
         ],
         "workedExample": {
@@ -6668,15 +6746,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Automate Bounded Repetition",
-            "text": "Low-risk, repeatable sequences with clear review paths are the best automation candidates."
+            "text": "Automate the bounded work. Low-risk, repeatable sequences with clear review paths are the best automation candidates, because the machine can run them and a person can still check them."
           },
           {
             "title": "Augment Judgment-Heavy Work",
-            "text": "Many tasks benefit most from AI support rather than full handoff."
+            "text": "Augment the judgment work. Many tasks benefit most from AI support rather than full handoff — the model drafts and organizes while the decision stays with the person."
           },
           {
             "title": "Avoid High-Risk, Low-Clarity Tasks",
-            "text": "If the task is sensitive, ambiguous, or hard to review, AI may not be the right first move."
+            "text": "Avoid the murky, risky work. If a task is sensitive, ambiguous, or hard to review, AI is not the right first move — start somewhere the output can actually be checked."
           }
         ],
         "workedExample": {
@@ -6791,15 +6869,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Estimate Frequency",
-            "text": "How often does the work happen?"
+            "text": "Start with frequency. How often the work happens sets the ceiling on value — a daily workflow repays setup effort that a quarterly one never will."
           },
           {
             "title": "Estimate Current Effort",
-            "text": "How much time, rework, or coordination does it currently require?"
+            "text": "Count the current effort. How much time, rework, or coordination the work currently requires tells you what an improvement is actually worth chasing."
           },
           {
             "title": "Estimate Adoption Cost",
-            "text": "Training, setup, risk controls, and change effort all count."
+            "text": "Count the adoption cost. Training, setup, risk controls, and change effort all count against the gain, so estimate them before the opportunity gets oversold."
           }
         ],
         "workedExample": {
@@ -6862,15 +6940,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Pick Visible Value",
-            "text": "The improvement should be easy for others to notice and understand."
+            "text": "Pick visible value. The improvement should be easy for others to notice and understand, because a first win nobody sees builds no momentum for the next one."
           },
           {
             "title": "Keep The Workflow Narrow",
-            "text": "A clear boundary reduces implementation and review complexity."
+            "text": "Keep the boundary narrow. A clear boundary reduces implementation and review complexity, which is what makes a quick win quick instead of a small project."
           },
           {
             "title": "Choose Teachable Work",
-            "text": "The best first wins are easy to explain and repeat."
+            "text": "Choose teachable work. The best first wins are easy to explain and repeat, so other people can copy the pattern without you in the room."
           }
         ],
         "workedExample": {
@@ -6933,15 +7011,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Describe The Current Pain",
-            "text": "State what the workflow looks like today and why it is worth improving."
+            "text": "Describe the pain first. State what the workflow looks like today and why it is worth improving, in terms a decision-maker can weigh without seeing the work themselves."
           },
           {
             "title": "Describe The Proposed Change",
-            "text": "Show exactly where AI would help and where people still review."
+            "text": "Show the proposed change. Show exactly where AI would help and where people still review, so the brief promises a workflow change rather than a tool purchase."
           },
           {
             "title": "Describe Success",
-            "text": "Define the outcome, not just the implementation. "
+            "text": "Define success as an outcome. Describe the outcome that would make the change worthwhile, not just the implementation steps that would deliver it."
           }
         ],
         "workedExample": {
@@ -7020,15 +7098,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "No Clear Workflow",
-            "text": "People are asked to \"use AI more\" without a defined process or use case."
+            "text": "No workflow, no adoption. People are asked to use AI more without a defined process or use case, so the initiative stays a slogan instead of becoming daily work."
           },
           {
             "title": "No Review Design",
-            "text": "Outputs are generated, but nobody knows what must be checked or approved."
+            "text": "No review design. Outputs get generated, but nobody knows what must be checked or approved, so trust collapses the first time something wrong slips through."
           },
           {
             "title": "No Ownership",
-            "text": "Without clear ownership, the initiative becomes everybody’s idea and nobody’s responsibility."
+            "text": "No owner, no follow-through. Without clear ownership, the initiative becomes everybody’s idea and nobody’s responsibility, and the fixes a review would surface never get made."
           }
         ],
         "workedExample": {
@@ -7091,15 +7169,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Discover",
-            "text": "Find the workflow and define the problem."
+            "text": "Discover first. Find the workflow worth changing and define the problem it has today, in concrete terms a pilot can actually test."
           },
           {
             "title": "Pilot",
-            "text": "Run a bounded test with a clear review path."
+            "text": "Pilot small. Run a bounded test on one workflow with a clear review path, and measure the result before anyone talks about rollout."
           },
           {
             "title": "Scale Carefully",
-            "text": "Expand only after the workflow shows evidence of value and manageable risk."
+            "text": "Scale on evidence. Expand only after the pilot shows evidence of value and manageable risk — scaling before learning just multiplies the unknowns."
           }
         ],
         "workedExample": {
@@ -7143,6 +7221,17 @@ var COURSES = {
           "Keep verification and organizational policy checks explicit in future revisions."
         ],
         "lastReviewed": "March 2026",
+        "visual": {
+          "type": "flow",
+          "title": "The Transformation Sequence",
+          "steps": [
+            "Discover — find the workflow and define the problem",
+            "Pilot — bounded test with a clear review path",
+            "Evaluate — measure the result before sharing broadly",
+            "Scale — expand only on evidence of value and manageable risk"
+          ],
+          "note": "Skipping the pilot is how teams leap from curiosity to broad rollout — the sequence is a risk-control tool, not bureaucracy."
+        },
         "promptExample": {
           "title": "Starter prompt",
           "prompt": "Help me with this work task: Map one AI opportunity onto the simple transformation sequence.\n\nGoal:\nApply a lightweight sequence for moving from idea to tested AI workflow.\n\nUse this when:\nDiscover, pilot, evaluate, and scale only what proves itself.\n\nImportant context:\n- Discover\n- Pilot\n- Evaluate\n- Scale\n\nPlease structure the response around:\n- Discover\n- Pilot\n- Scale Carefully\n\nWorkflow requirements:\n- Write the workflow.\n- Define the pilot boundary.\n- Define the evaluation step.\n\nBefore you finish, include a verification checklist based on this rule:\nThey use the pilot evidence, not enthusiasm, to decide whether to scale.",
@@ -7162,15 +7251,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Clarify Approved Paths",
-            "text": "People need to know which tools, data classes, and workflows are allowed."
+            "text": "Clarify the approved paths. People need to know which tools, data classes, and workflows are allowed, in plain language they can apply without asking permission each time."
           },
           {
             "title": "Clarify Review And Escalation",
-            "text": "The governance needs a clear answer to \"who checks this?\" and \"who decides if this is okay?\""
+            "text": "Name the checker and decider. Governance needs a clear answer to who checks this and who decides when something is borderline, or people will avoid the workflow entirely."
           },
           {
             "title": "Clarify Ownership",
-            "text": "Someone should own the workflow, the training, and the evidence collection."
+            "text": "Name the owner. Someone should own the workflow, the training, and the evidence collection, so the rules stay connected to a real process instead of floating as policy."
           }
         ],
         "workedExample": {
@@ -7234,15 +7323,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Change The Workflow, Not Just The Tool",
-            "text": "People need to know how their daily work should change."
+            "text": "Change the work, not just the tool. People need to know how their daily work should actually change — access to a tool is not the same thing as adoption of a new workflow."
           },
           {
             "title": "Provide Examples",
-            "text": "Examples lower cognitive load and increase trust."
+            "text": "Lead with examples. Worked examples lower the effort of starting and increase trust, because people can copy a shown workflow instead of imagining one."
           },
           {
             "title": "Normalize Review",
-            "text": "The team should see review and correction as part of the process, not as failure."
+            "text": "Normalize the review step. The team should see review and correction as a normal part of the process, not as failure — that framing is what makes people use the checklist."
           }
         ],
         "workedExample": {
@@ -7305,15 +7394,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Pick One Priority Workflow",
-            "text": "Trying to transform everything at once creates noise."
+            "text": "Pick one workflow. Trying to transform everything at once creates noise, so choose the single priority workflow the next 90 days will actually move."
           },
           {
             "title": "Define Milestones",
-            "text": "Discovery, pilot, review, and next-step decisions should all be visible."
+            "text": "Make milestones visible. Discovery, pilot, evidence review, and the next-step decision should all appear as dated milestones, so the plan coordinates people instead of stalling."
           },
           {
             "title": "Assign Evidence",
-            "text": "Decide what examples or metrics will show progress. "
+            "text": "Decide the evidence upfront. Choose what examples or metrics will show progress before the pilot starts, and set the review date when that evidence gets judged."
           }
         ],
         "workedExample": {
@@ -7392,15 +7481,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Focus On Workflow Outcomes",
-            "text": "Time to final output, reduced rework, better coverage, and clearer communication are common outcomes."
+            "text": "Measure workflow outcomes. Time to final output, reduced rework, better coverage, and clearer communication are the kinds of outcomes worth tracking — not AI usage itself."
           },
           {
             "title": "Keep It Close To The Work",
-            "text": "The most useful measures are attached to a specific workflow, not to AI use in general."
+            "text": "Keep measures close to the work. The most useful measures attach to a specific workflow and its outputs, not to AI use in general across the team."
           },
           {
             "title": "Pair Numbers With Examples",
-            "text": "Quantitative signals are stronger when paired with before-and-after outputs. "
+            "text": "Pair numbers with examples. Quantitative signals are stronger when paired with before-and-after outputs, because the examples show what the number actually means."
           }
         ],
         "workedExample": {
@@ -7463,15 +7552,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Estimate Time Gain",
-            "text": "How much time or rework could the workflow save per cycle?"
+            "text": "Estimate the time gain. How much time or rework the workflow could save per cycle is the first number to pin down, even if the estimate starts rough."
           },
           {
             "title": "Estimate Frequency",
-            "text": "How often does the workflow happen?"
+            "text": "Multiply by frequency. How often the workflow happens turns a small per-cycle saving into either a rounding error or a serious return."
           },
           {
             "title": "Estimate Implementation Cost",
-            "text": "Training, setup, review, and change management all affect the true payoff."
+            "text": "Subtract the real costs. Training, setup, review, and change management all affect the true payoff, so the honest estimate includes them from the start."
           }
         ],
         "workedExample": {
@@ -7534,15 +7623,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Use Comparable Work",
-            "text": "Compare similar cases or repeated cycles of the same workflow."
+            "text": "Compare like with like. Compare similar cases or repeated cycles of the same workflow, so the before-and-after difference reflects the change and not the case mix."
           },
           {
             "title": "Capture Both Speed And Quality",
-            "text": "A faster workflow is not a win if the review burden or error rate spikes."
+            "text": "Capture speed and quality. A faster workflow is not a win if the review burden or error rate spikes, so track quality signals alongside the time saving."
           },
           {
             "title": "Keep The Pilot Small",
-            "text": "A handful of cycles is often enough to learn whether the workflow has promise."
+            "text": "Keep the pilot small. A handful of cycles is often enough to learn whether the workflow has promise, which keeps the cost of finding out low."
           }
         ],
         "workedExample": {
@@ -7606,15 +7695,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Lead With Workflow Outcome",
-            "text": "Start with what improved and for whom."
+            "text": "Lead with the outcome. Start with what improved and for whom, because leaders act on outcomes tied to people and decisions, not on activity reports."
           },
           {
             "title": "Show The Evidence",
-            "text": "Use short metrics plus concrete before-and-after examples."
+            "text": "Show the evidence. Use short metrics plus concrete before-and-after examples, and make sure every claim in the readout maps to collected pilot evidence."
           },
           {
             "title": "State The Next Decision",
-            "text": "Should the workflow continue, expand, or stop? The communication should support that choice."
+            "text": "End with the decision. State whether the workflow should continue, expand, or stop, and shape the whole communication to support that choice."
           }
         ],
         "workedExample": {
@@ -7678,15 +7767,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Choose A Small Set Of Workflows",
-            "text": "Measure the workflows that matter most rather than everything."
+            "text": "Measure a few workflows well. Track the workflows that matter most rather than everything, because a small system people maintain beats a complete one they abandon."
           },
           {
             "title": "Use Simple Templates",
-            "text": "A recurring pilot sheet or evidence log keeps collection manageable."
+            "text": "Use simple templates. A recurring pilot sheet or evidence log keeps collection manageable, so gathering evidence becomes a habit instead of a project."
           },
           {
             "title": "Review On A Rhythm",
-            "text": "A monthly or quarterly review is often enough to make better decisions."
+            "text": "Review on a rhythm. A monthly or quarterly review is often enough to make better decisions about what to expand, fix, or stop."
           }
         ],
         "workedExample": {
@@ -7912,15 +8001,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Scan Briefly",
-            "text": "Spend a small amount of time noticing meaningful updates."
+            "text": "Scan briefly. Spend a small, fixed slice of the week noticing meaningful updates — enough to stay current, not enough to become a second job."
           },
           {
             "title": "Test One Thing",
-            "text": "Apply one workflow idea or prompt improvement to real work every week."
+            "text": "Test one thing. Apply one workflow idea or prompt improvement to real work every week, because reading without testing never turns into capability."
           },
           {
             "title": "Log What Changed",
-            "text": "A short note on what worked or failed builds a personal evidence base."
+            "text": "Log what changed. A short note on what worked or failed builds a personal evidence base, and testing without logging means relearning the same lessons."
           }
         ],
         "workedExample": {
@@ -7982,15 +8071,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Tie Every Evaluation To A Task",
-            "text": "If you cannot name the recurring task, you probably do not need the tool yet."
+            "text": "Start from a real task. If you cannot name the recurring task a tool would improve, you probably do not need it yet — curiosity alone is not an evaluation."
           },
           {
             "title": "Use A Time Box",
-            "text": "A short, structured evaluation prevents endless research and low-grade distraction."
+            "text": "Time-box the test. A short, structured evaluation on a real task prevents endless research and low-grade distraction, and makes the switching cost visible."
           },
           {
             "title": "Keep A Watch List",
-            "text": "Interesting tools can wait until they prove themselves or become relevant."
+            "text": "Keep a watch list. Interesting tools can wait on a list until they prove themselves or become relevant to a task you actually own — watching is a decision too."
           }
         ],
         "workedExample": {
@@ -8052,15 +8141,15 @@ var COURSES = {
         "coreConcepts": [
           {
             "title": "Keep The System Small",
-            "text": "A small set of sources, a weekly practice rhythm, and an experiment log are enough."
+            "text": "Keep the system small. A small radar of sources, a weekly practice rhythm, and an experiment log are enough — a complex system you will not maintain teaches nothing."
           },
           {
             "title": "Tie Learning To Work",
-            "text": "The best experiments improve tasks you already own."
+            "text": "Tie learning to real work. The best experiments improve tasks you already own, because applied practice on your own work beats memorizing the most updates."
           },
           {
             "title": "Review Periodically",
-            "text": "A monthly or quarterly review helps you keep what works and drop what does not."
+            "text": "Review on a cadence. A monthly or quarterly review of your stack and workflows helps you keep what works, drop what does not, and stay current without drowning."
           }
         ],
         "workedExample": {
@@ -8294,15 +8383,15 @@ var BONUS_SECTIONS = {
         "coreConcepts": [
           {
             "title": "Where The Agent Lives",
-            "text": "Some agents live inside a chat interface, some in developer tools, and some inside workflow platforms or business apps."
+            "text": "Start with where it lives. Some agents live inside a chat interface, some in developer tools, and some inside workflow platforms or business apps — the home base shapes everything else."
           },
           {
             "title": "What The Agent Can Touch",
-            "text": "Tool access determines both usefulness and risk. The more systems an agent can use, the more valuable and risky it becomes."
+            "text": "Count what it can touch. Tool access determines both usefulness and risk: the more systems an agent can reach, the more valuable and the more dangerous it becomes."
           },
           {
             "title": "How The Agent Is Supervised",
-            "text": "The key comparison is not only raw capability. It is whether the workflow exposes enough checkpoints, traceability, and recovery options."
+            "text": "Compare the supervision. The key comparison is not raw capability but whether the workflow exposes enough checkpoints, traceability, and recovery options to trust it."
           }
         ],
         "workedExample": {
@@ -8432,6 +8521,44 @@ var BONUS_SECTIONS = {
           "Keep verification and organizational policy checks explicit in future revisions."
         ],
         "lastReviewed": "March 2026",
+        "visual": {
+          "type": "matrix",
+          "title": "Assistant Or Agent?",
+          "headers": [
+            "Mode",
+            "Best for",
+            "Tell-tale sign"
+          ],
+          "rows": [
+            {
+              "label": "Normal assistant",
+              "cells": [
+                {
+                  "main": "Bounded thinking",
+                  "sub": "drafting, summarizing, outlining"
+                },
+                {
+                  "main": "One-step analysis",
+                  "sub": "no tool orchestration needed"
+                }
+              ]
+            },
+            {
+              "label": "Agent",
+              "cells": [
+                {
+                  "main": "Repeatable multi-step work",
+                  "sub": "steps, tools, follow-ups together"
+                },
+                {
+                  "main": "The work runs as a sequence",
+                  "sub": "not a single answer"
+                }
+              ]
+            }
+          ],
+          "note": "Start with the simplest useful mode: if a normal assistant plus a short checklist solves the problem, do not add more autonomy yet."
+        },
         "promptExample": {
           "title": "Starter prompt",
           "prompt": "Help me with this work task: Evaluate one workflow and decide whether it deserves a normal assistant or an agent-style tool.\n\nGoal:\nDecide when an agentic tool is appropriate and when a normal assistant is the better choice.\n\nUse this when:\nUse this when you are deciding whether a task really needs an agent or just a better prompt and a better workflow.\n\nImportant context:\n- Is the work multi-step?\n- Does tool access matter?\n- Would added autonomy reduce real friction?\n- Can I review it safely?\n\nPlease structure the response around:\n- Use A Normal Assistant For Bounded Thinking\n- Use An Agent For Repeatable Multi-Step Work\n- Start With The Simplest Useful Mode\n\nWorkflow requirements:\n- List the current steps.\n- Mark where tool access helps.\n- Choose the simplest useful mode.\n\nBefore you finish, include a verification checklist based on this rule:\nThey check whether the automated version truly reduces manual work without hiding errors until later.",
@@ -8537,15 +8664,15 @@ var BONUS_SECTIONS = {
         "coreConcepts": [
           {
             "title": "Choose A Bounded Task",
-            "text": "Good first tests include recurring summaries, internal follow-up drafts, or low-risk personal workflows."
+            "text": "Choose a bounded task. Good first tests include recurring summaries, internal follow-up drafts, or low-risk personal workflows — narrow scope is what makes the evidence clean."
           },
           {
             "title": "Limit Access",
-            "text": "Start with the minimum systems and permissions needed to learn something useful. That includes add-ons: in 2026, malicious third-party skills were found in OpenClaw's ClawHub registry, so treat every skill or plugin as untrusted code until it has been vetted."
+            "text": "Start with minimum access. Grant only the systems and permissions needed to learn something useful, and treat every third-party skill or plugin as untrusted code until it has been vetted. In 2026, malicious third-party skills were found in OpenClaw’s ClawHub registry, which is why add-ons get vetted before they get access."
           },
           {
             "title": "Review Every Output",
-            "text": "Early experiments should make human review explicit and unavoidable."
+            "text": "Review every output. Early experiments should make human review explicit and unavoidable, with a stop rule and an approval point before any outbound action."
           }
         ],
         "workedExample": {
@@ -9327,6 +9454,70 @@ var BONUS_SECTIONS = {
           "scenario": "A team wants AI summaries of internal incident reports that contain customer data.",
           "verification": "Write down which constraint decided it (policy, cost, capability, maintenance) so the decision can be revisited when that constraint changes."
         },
+        "visual": {
+          "type": "matrix",
+          "title": "The Tradeoff, Dimension By Dimension",
+          "headers": [
+            "Dimension",
+            "Open-weight",
+            "Closed"
+          ],
+          "rows": [
+            {
+              "label": "Capability today",
+              "cells": [
+                {
+                  "main": "Trails the top closed models",
+                  "sub": "on independent capability indexes"
+                },
+                {
+                  "main": "Leads today",
+                  "sub": "GPT-6, Claude Fable, Gemini 4"
+                }
+              ]
+            },
+            {
+              "label": "Data control",
+              "cells": [
+                {
+                  "main": "Stays in your boundary",
+                  "sub": "you or a host run it"
+                },
+                {
+                  "main": "Flows through the vendor",
+                  "sub": "under their terms"
+                }
+              ]
+            },
+            {
+              "label": "Cost shape",
+              "cells": [
+                {
+                  "main": "Predictable at scale",
+                  "sub": "your infrastructure"
+                },
+                {
+                  "main": "Pay per use",
+                  "sub": "managed service, no infrastructure"
+                }
+              ]
+            },
+            {
+              "label": "Continuity",
+              "cells": [
+                {
+                  "main": "Cannot be deprecated on you",
+                  "sub": "needs a maintenance plan instead"
+                },
+                {
+                  "main": "Retired on vendor schedules",
+                  "sub": "needs a migration plan"
+                }
+              ]
+            }
+          ],
+          "note": "Gated models (GPT-6 Cyber, Claude Mythos) are a third bucket: closed, and restricted to vetted users."
+        },
         "promptExample": {
           "title": "Starter prompt",
           "prompt": "Help me with this work task: Take one current AI workflow and write the open-versus-closed decision for it in three lines: constraint, choice, revisit trigger.\n\nGoal:\nDistinguish open-weight, closed, and gated models, and match each to the constraints of a real workflow.\n\nUse this when:\nUse this when data sensitivity, cost, or vendor policy raises the question of whether a task should run on an open-weight model.\n\nImportant context:\n- Must the data stay inside our boundary?\n- Is the capability gap on our tasks actually measured, or assumed?\n- Who maintains the model, the serving, and the updates?\n- What happens to this workflow when the model is deprecated or the license changes?\n\nPlease structure the response around:\n- What Open-Weight Means\n- What Closed Buys You\n- The Real Tradeoffs\n\nWorkflow requirements:\n- Name the data involved and its boundary.\n- State which model class runs it today.\n- Name the event that would make you re-decide.\n\nBefore you finish, include a verification checklist based on this rule:\nWrite down which constraint decided it (policy, cost, capability, maintenance) so the decision can be revisited when that constraint changes.",
@@ -9431,6 +9622,331 @@ var BONUS_SECTIONS = {
     "slug": "model-landscape",
     "summary": "A field guide to the current model map: the GPT-6, Claude, and Gemini families, the fast / workhorse / deep-thinking tier pattern every vendor now ships, open-weight versus closed models, and how to read a model release without the hype.",
     "title": "The 2026 Model Landscape",
+    "lastReviewed": "November 2026"
+  },
+  "verify": {
+    "id": "verify",
+    "label": "Bonus Section",
+    "lessons": [
+      {
+        "artifact": {
+          "items": [
+            "Confabulation — invented detail that fits the pattern",
+            "Stale knowledge — true at training time, wrong now",
+            "Borrowed confidence — polish that carries no evidence"
+          ],
+          "label": "Reference",
+          "title": "Three failure modes to keep in mind"
+        },
+        "commonMistakes": [
+          "Reading a confident tone as a reliability signal.",
+          "Assuming the model will say it does not know when it does not know.",
+          "Checking only the claims that already feel wrong, instead of the ones that matter most."
+        ],
+        "coreConcepts": [
+          {
+            "text": "A language model generates the most plausible next words given its training and your prompt. It has no built-in step where it checks a fact against the world, so a sentence can be perfectly formed, completely confident, and entirely invented. Fluency is what the system optimizes for; accuracy is a side effect you have to verify.",
+            "title": "It Predicts Text, It Does Not Look Things Up"
+          },
+          {
+            "text": "When the model does not know something, it rarely says so. Instead it fills the gap with material that fits the pattern — a statistic that sounds like statistics, a name that sounds like the right kind of name, a citation formatted exactly like a real one. Researchers call this confabulation; the practical name for it is a confident guess wearing a fact's clothes.",
+            "title": "Confabulation Fills The Gaps"
+          },
+          {
+            "text": "Training data has a cutoff, and the model cannot feel the edge of it. Prices, officeholders, product names, and policies may have changed after the cutoff, but the answer arrives in the same tone as the things it genuinely knows. Anything time-sensitive deserves a fresh source, not a model's memory.",
+            "title": "Knowledge Goes Stale Silently"
+          },
+          {
+            "text": "The model does not report how sure it is, and hedges in its wording are stylistic, not calibrated. A wrong answer and a right one can arrive with identical polish. Treat tone as zero evidence either way, and let the stakes of the task decide how hard you check.",
+            "title": "Confidence Is Not A Dial You Can Read"
+          }
+        ],
+        "doThisNow": {
+          "steps": [
+            "Pick a recent AI answer you acted on or shared.",
+            "Underline every specific claim: numbers, names, dates, quotes.",
+            "Mark which ones you could trace to a source right now — and which you simply believed."
+          ],
+          "task": "Take one AI answer you used recently and re-read it hunting for the three failure modes.",
+          "timebox": "6 minutes"
+        },
+        "estimatedMinutes": 7,
+        "id": "verify-lesson-01",
+        "lastReviewed": "November 2026",
+        "objective": "Explain the three main reasons AI output can be fluent, confident, and wrong at the same time.",
+        "roleVariants": {
+          "analyst": "Any number the model produces from memory is a hypothesis. The analysis starts when it is matched against the actual dataset.",
+          "manager": "Ask your team to mark AI-drafted claims as verified or unverified before they circulate; the label changes how readers treat them.",
+          "operator": "Build the check into the workflow step, not the person's memory: if a claim type always needs a source, make the template ask for one.",
+          "writer": "Treat every AI-supplied quote, statistic, and citation as a placeholder until you have opened the source yourself."
+        },
+        "sequenceRationale": "The section opens with the failure modes, because the workflow and the checklist that follow only make sense once you know what you are checking for.",
+        "slug": "why-confident-answers-can-be-wrong",
+        "sourceNotes": [
+          "Written for this program, November 2026. Describes well-documented model behavior — confabulation, training cutoffs, and uncalibrated confidence — at the level a non-engineer can act on."
+        ],
+        "subtitle": "The model is not lying to you. It is doing something stranger: predicting text that sounds right.",
+        "title": "Why Confident Answers Can Be Wrong",
+        "useWhen": "Use this when an AI answer feels suspiciously smooth, or when you catch yourself trusting a response because it sounded sure of itself.",
+        "visual": {
+          "headers": [
+            "Failure mode",
+            "What it looks like",
+            "The giveaway"
+          ],
+          "note": "All three arrive in the same confident voice — which is why the check has to run on the claims, not on how the answer feels.",
+          "rows": [
+            {
+              "cells": [
+                {
+                  "main": "A fact-shaped invention",
+                  "sub": "statistic, name, or quote from nowhere"
+                },
+                {
+                  "main": "Suspiciously specific",
+                  "sub": "exact numbers with no source attached"
+                }
+              ],
+              "label": "Confabulation"
+            },
+            {
+              "cells": [
+                {
+                  "main": "True once, wrong now",
+                  "sub": "an old price, name, or policy"
+                },
+                {
+                  "main": "Involves anything that changes",
+                  "sub": "dates, prices, people, versions"
+                }
+              ],
+              "label": "Stale knowledge"
+            },
+            {
+              "cells": [
+                {
+                  "main": "Right tone, wrong content",
+                  "sub": "polish with nothing behind it"
+                },
+                {
+                  "main": "Nothing to trace",
+                  "sub": "claims you cannot follow to a source"
+                }
+              ],
+              "label": "Borrowed confidence"
+            }
+          ],
+          "title": "Three Ways An Answer Goes Wrong",
+          "type": "matrix"
+        },
+        "whyItMatters": "Every other checking skill in this section depends on one fact: a model's confidence is a style, not a signal. Once that lands, verification stops feeling like paranoia and starts feeling like craft.",
+        "workedExample": {
+          "approach": "They treat the brief as unverified raw material: the date and price get checked against the company's own announcement, and the quote gets searched word for word. The date is right, the price belongs to an older model, and the quote exists nowhere.",
+          "result": "Ten minutes of checking turns a confident brief into a reliable one — and catches the two claims that would have been repeated in a leadership meeting.",
+          "scenario": "A manager asks for a summary of a competitor's product launch and gets a crisp brief with a launch date, a price, and a quote from the company's CEO.",
+          "verification": "Every load-bearing claim in the final brief traces to a primary source the manager opened themselves."
+        },
+        "promptExample": {
+          "title": "Starter prompt",
+          "prompt": "Help me with this work task: Take one AI answer you used recently and re-read it hunting for the three failure modes.\n\nGoal:\nExplain the three main reasons AI output can be fluent, confident, and wrong at the same time.\n\nUse this when:\nUse this when an AI answer feels suspiciously smooth, or when you catch yourself trusting a response because it sounded sure of itself.\n\nImportant context:\n- Confabulation — invented detail that fits the pattern\n- Stale knowledge — true at training time, wrong now\n- Borrowed confidence — polish that carries no evidence\n\nPlease structure the response around:\n- It Predicts Text, It Does Not Look Things Up\n- Confabulation Fills The Gaps\n- Knowledge Goes Stale Silently\n\nWorkflow requirements:\n- Pick a recent AI answer you acted on or shared.\n- Underline every specific claim: numbers, names, dates, quotes.\n- Mark which ones you could trace to a source right now — and which you simply believed.\n\nBefore you finish, include a verification checklist based on this rule:\nEvery load-bearing claim in the final brief traces to a primary source the manager opened themselves.",
+          "note": "Adapt the placeholders to your real document, workflow, and source material before you run it."
+        }
+      },
+      {
+        "artifact": {
+          "items": [
+            "Low — draft or brainstorm: skim for sanity",
+            "Medium — shared internally: check the specific claims",
+            "High — external, quoted, or decision-driving: verify against primary sources",
+            "Sensitive — regulated or high-liability: qualified human review"
+          ],
+          "label": "Workflow",
+          "title": "Stakes tiers at a glance"
+        },
+        "commonMistakes": [
+          "Checking everything at maximum depth until the habit collapses.",
+          "Skimming a high-stakes output because the draft looked polished.",
+          "Verifying the easy claims and skipping the load-bearing ones."
+        ],
+        "coreConcepts": [
+          {
+            "text": "The checking question is not whether the topic sounds important, but what happens if this is wrong. A wrong lunch recommendation costs an afternoon; a wrong figure in a board deck costs credibility and possibly money. Sort each output by the cost of an error, and let that — not how the answer feels — set the checking depth.",
+            "title": "Sort By Consequence, Not By Topic"
+          },
+          {
+            "text": "For drafts, brainstorms, and internal first passes, a fast skim is a legitimate check: does it read sensibly, use the right names, and match what you already know? You are screening for obvious breakage, not certifying truth, and the output stays clearly labeled as a draft until it earns more.",
+            "title": "Low Stakes: Skim For Sanity"
+          },
+          {
+            "text": "When output will be quoted, sent externally, or used to decide, check the load-bearing claims against primary sources: the original document, the official page, the actual dataset, the person who supposedly said it. Numbers, names, dates, and quotes are the four claim types to pull first — they are specific enough to be wrong in ways that matter, and fast to confirm.",
+            "title": "High Stakes: Verify Against The Source"
+          },
+          {
+            "text": "The highest tier is not a harder check by you — it is a check by someone else. Anything regulated, contractual, financial, or reputationally sensitive gets a qualified human reviewer, because the failure mode there is not embarrassment but liability. AI can prepare the material; it cannot carry the accountability.",
+            "title": "Some Outputs Need A Second Human"
+          }
+        ],
+        "doThisNow": {
+          "steps": [
+            "List the claims the output makes.",
+            "Mark each one low, high, or sensitive by the cost of it being wrong.",
+            "Verify the high-stakes claims against their primary sources now."
+          ],
+          "task": "Take one AI output from this week and sort its claims into the stakes tiers.",
+          "timebox": "8 minutes"
+        },
+        "estimatedMinutes": 8,
+        "id": "verify-lesson-02",
+        "lastReviewed": "November 2026",
+        "objective": "Apply a stakes-based workflow that routes AI output to the right depth of checking.",
+        "roleVariants": {
+          "analyst": "A figure that will be cited downstream is high-stakes by definition; verify it against the dataset, not against the model's restatement of it.",
+          "manager": "Make the tiers a team norm: whoever sends AI-assisted work out states which tier it was checked at.",
+          "operator": "Put the tier question in the workflow template, so the sorting happens even on the busiest day of the quarter.",
+          "writer": "Quotes, names, and numbers in anything you publish get source-checked, even when the surrounding prose only needed a skim."
+        },
+        "sequenceRationale": "With the failure modes named, this lesson turns them into a routing decision: the same output earns a skim, a source check, or a second reviewer depending on what rides on it.",
+        "slug": "match-the-check-to-the-stakes",
+        "sourceNotes": [
+          "Written for this program, November 2026. The stakes-tier workflow generalizes the verification habits taught in Modules 4 and 20 into a single routing rule."
+        ],
+        "subtitle": "You cannot verify everything. The skill is knowing what deserves a source, what deserves a skim, and what deserves a second pair of eyes.",
+        "title": "Match The Check To The Stakes",
+        "useWhen": "Use this whenever AI output is headed somewhere — a message, a document, a decision — and you need to decide how much checking is enough.",
+        "visual": {
+          "note": "Most output is low-stakes and earns a skim. The workflow exists so the minority that is expensive to get wrong never slips through on one.",
+          "steps": [
+            "Output arrives — treat it as unverified",
+            "Sort — what does an error cost?",
+            "Low stakes — skim for sanity",
+            "High stakes — verify against primary sources",
+            "Sensitive — hand to a qualified human"
+          ],
+          "title": "The Stakes Workflow",
+          "type": "flow"
+        },
+        "whyItMatters": "Verification fails in both directions: people either trust everything and get burned, or try to check everything and quietly stop checking at all. A stakes-based rule survives contact with a busy week because it spends effort only where being wrong is expensive.",
+        "workedExample": {
+          "approach": "They sort the claims by consequence: the narrative gets a skim, but the pricing figures, contract dates, and the vendor's stated commitments get checked line by line against the actual agreement and the vendor's proposal.",
+          "result": "The skim takes two minutes; the source check takes fifteen and finds one figure carried over from last year's pricing.",
+          "scenario": "An operations lead uses AI to draft a vendor summary that will go into a renewal recommendation.",
+          "verification": "Each number in the final summary matches a page in the signed agreement or the current proposal."
+        },
+        "promptExample": {
+          "title": "Starter prompt",
+          "prompt": "Help me with this work task: Take one AI output from this week and sort its claims into the stakes tiers.\n\nGoal:\nApply a stakes-based workflow that routes AI output to the right depth of checking.\n\nUse this when:\nUse this whenever AI output is headed somewhere — a message, a document, a decision — and you need to decide how much checking is enough.\n\nImportant context:\n- Low — draft or brainstorm: skim for sanity\n- Medium — shared internally: check the specific claims\n- High — external, quoted, or decision-driving: verify against primary sources\n- Sensitive — regulated or high-liability: qualified human review\n\nPlease structure the response around:\n- Sort By Consequence, Not By Topic\n- Low Stakes: Skim For Sanity\n- High Stakes: Verify Against The Source\n\nWorkflow requirements:\n- List the claims the output makes.\n- Mark each one low, high, or sensitive by the cost of it being wrong.\n- Verify the high-stakes claims against their primary sources now.\n\nBefore you finish, include a verification checklist based on this rule:\nEach number in the final summary matches a page in the signed agreement or the current proposal.",
+          "note": "Adapt the placeholders to your real document, workflow, and source material before you run it."
+        }
+      },
+      {
+        "artifact": {
+          "items": [
+            "What are the load-bearing claims here?",
+            "Numbers, names, dates, quotes — checked against which sources?",
+            "Does every citation open, match, and say what it is claimed to say?",
+            "What tier was this checked at — and is that recorded?"
+          ],
+          "label": "Checklist",
+          "title": "A starter verification checklist"
+        },
+        "commonMistakes": [
+          "Writing a fifteen-item checklist that gets skipped by Friday.",
+          "Treating a model's stated sources as checked sources.",
+          "Verifying that a citation exists but not that it supports the claim attached to it."
+        ],
+        "coreConcepts": [
+          {
+            "text": "A verification checklist is built in a calm moment and used in a rushed one. Keep it to the checks you will genuinely run: the claim types you meet most, the sources you trust, and the tier rule from the previous lesson. Five honest items beat fifteen aspirational ones, because a checklist that gets skipped checks nothing.",
+            "title": "Write The Checklist Before You Need It"
+          },
+          {
+            "text": "Asking for reasoning, steps, or sources does not guarantee truth — the explanation can be confabulated too — but it changes what you can check. A claim with a stated source, a shown calculation, or a quoted passage gives you a thread to pull. Pull it: the request's real value is making the output auditable, not making it right.",
+            "title": "Ask The Model To Show Its Work"
+          },
+          {
+            "text": "Fake citations are the signature confabulation: real-sounding authors, a plausible title, a journal that exists, a link that resolves nowhere. Test each one the same way — open the link, search the exact title, confirm the author and date match. If a citation cannot be found quickly, treat everything it supported as unverified.",
+            "title": "Test Every Citation Like It Is Guilty"
+          },
+          {
+            "text": "Note what you verified and what you did not, right on the document or message. A line like 'figures checked against the Q3 report; quotes unverified' takes ten seconds to write and tells the next reader exactly how far to trust the piece. Verification that leaves no trace has to be redone by everyone downstream.",
+            "title": "Record The Check, Not Just The Result"
+          }
+        ],
+        "doThisNow": {
+          "steps": [
+            "List the claim types in your most common AI task.",
+            "Write the source you would check each one against.",
+            "Add the citation test and the tier rule.",
+            "Save it next to your prompt library and use it on your next output."
+          ],
+          "task": "Write your personal verification checklist and save it where your prompts live.",
+          "timebox": "9 minutes"
+        },
+        "estimatedMinutes": 8,
+        "id": "verify-lesson-03",
+        "lastReviewed": "November 2026",
+        "objective": "Build a reusable personal verification checklist and learn how to test whether an AI citation is real.",
+        "roleVariants": {
+          "analyst": "Add one line to your checklist for figures: recompute one number by hand from the source data before trusting the set.",
+          "manager": "Share your checklist with the team and invite additions; a shared checklist becomes the team's quality standard.",
+          "operator": "Attach the checklist to the workflow template itself, so the check runs as a step in the process rather than a favor to yourself.",
+          "writer": "The citation test is non-negotiable for anything with your name on it — your byline carries the claim, not the model's."
+        },
+        "sequenceRationale": "The section closes by making the workflow personal: a checklist the learner writes once, plus the citation test that catches the most convincing failure mode of all.",
+        "slug": "build-your-verification-checklist",
+        "sourceNotes": [
+          "Written for this program, November 2026. The citation test reflects the standard practice of fact-checking organizations: a citation that cannot be located cannot support a claim."
+        ],
+        "subtitle": "A short personal checklist, plus the two model prompts that make checking faster: show your work, and cite sources you can open.",
+        "title": "Build Your Verification Checklist",
+        "useWhen": "Use this to turn verification from a good intention into a five-minute habit you can run on any AI output.",
+        "visual": {
+          "note": "A real citation survives all four steps in seconds. A confabulated one usually fails at the first.",
+          "steps": [
+            "Open the link — does it resolve?",
+            "Search the exact title",
+            "Confirm author, venue, and date",
+            "Still nothing — treat the claim as unverified"
+          ],
+          "title": "The One-Minute Citation Test",
+          "type": "flow"
+        },
+        "whyItMatters": "Habits beat intentions under time pressure. A written checklist — short enough to actually run — is what separates people who usually catch AI errors from people who catch them only after someone else does.",
+        "workedExample": {
+          "approach": "The writer runs the citation test: the journal exists, but searching the exact title finds nothing, and neither author's publication list contains it. The statistic is removed, and the paragraph is rewritten around what the writer could actually source.",
+          "result": "The report ships slightly shorter and entirely defensible — and the writer adds 'test every citation' to their checklist permanently.",
+          "scenario": "A draft report cites a study with a confident statistic about remote-work productivity, complete with authors, a journal, and a year.",
+          "verification": "Every citation left in the report was opened, matched on title, author, and date, and actually contains the claim it supports."
+        },
+        "promptExample": {
+          "title": "Starter prompt",
+          "prompt": "Help me with this work task: Write your personal verification checklist and save it where your prompts live.\n\nGoal:\nBuild a reusable personal verification checklist and learn how to test whether an AI citation is real.\n\nUse this when:\nUse this to turn verification from a good intention into a five-minute habit you can run on any AI output.\n\nImportant context:\n- What are the load-bearing claims here?\n- Numbers, names, dates, quotes — checked against which sources?\n- Does every citation open, match, and say what it is claimed to say?\n- What tier was this checked at — and is that recorded?\n\nPlease structure the response around:\n- Write The Checklist Before You Need It\n- Ask The Model To Show Its Work\n- Test Every Citation Like It Is Guilty\n\nWorkflow requirements:\n- List the claim types in your most common AI task.\n- Write the source you would check each one against.\n- Add the citation test and the tier rule.\n\nBefore you finish, include a verification checklist based on this rule:\nEvery citation left in the report was opened, matched on title, author, and date, and actually contains the claim it supports.",
+          "note": "Adapt the placeholders to your real document, workflow, and source material before you run it."
+        }
+      }
+    ],
+    "outcomes": [
+      "Explain why a model can sound completely certain while being wrong — and why confidence is not evidence.",
+      "Match the depth of checking to the stakes: skim the low-stakes, verify the high-stakes against primary sources.",
+      "Run a personal verification checklist on any AI output, including testing whether a citation actually exists."
+    ],
+    "resources": [
+      {
+        "note": "Nonpartisan, claim-by-claim fact-checking — a working model for how verification is done in public.",
+        "title": "FactCheck.org",
+        "type": "reference",
+        "url": "https://www.factcheck.org/"
+      },
+      {
+        "note": "Claim reviews from fact-checkers worldwide, searchable by topic.",
+        "title": "Google Fact Check Explorer",
+        "type": "reference",
+        "url": "https://toolbox.google.com/factcheck/explorer"
+      }
+    ],
+    "slug": "trust-but-verify",
+    "summary": "How to check AI work without becoming an expert: why models sound certain when they are wrong, a stakes-based workflow for deciding how hard to check, and a personal verification checklist — including how to spot a citation that does not exist.",
+    "title": "Trust But Verify: Checking AI Output",
     "lastReviewed": "November 2026"
   }
 };

@@ -18,15 +18,15 @@
       "coreConcepts": [
         {
           "title": "Focus On Workflow Outcomes",
-          "text": "Time to final output, reduced rework, better coverage, and clearer communication are common outcomes."
+          "text": "Measure workflow outcomes. Time to final output, reduced rework, better coverage, and clearer communication are the kinds of outcomes worth tracking — not AI usage itself."
         },
         {
           "title": "Keep It Close To The Work",
-          "text": "The most useful measures are attached to a specific workflow, not to AI use in general."
+          "text": "Keep measures close to the work. The most useful measures attach to a specific workflow and its outputs, not to AI use in general across the team."
         },
         {
           "title": "Pair Numbers With Examples",
-          "text": "Quantitative signals are stronger when paired with before-and-after outputs. "
+          "text": "Pair numbers with examples. Quantitative signals are stronger when paired with before-and-after outputs, because the examples show what the number actually means."
         }
       ],
       "workedExample": {
@@ -84,15 +84,15 @@
       "coreConcepts": [
         {
           "title": "Estimate Time Gain",
-          "text": "How much time or rework could the workflow save per cycle?"
+          "text": "Estimate the time gain. How much time or rework the workflow could save per cycle is the first number to pin down, even if the estimate starts rough."
         },
         {
           "title": "Estimate Frequency",
-          "text": "How often does the workflow happen?"
+          "text": "Multiply by frequency. How often the workflow happens turns a small per-cycle saving into either a rounding error or a serious return."
         },
         {
           "title": "Estimate Implementation Cost",
-          "text": "Training, setup, review, and change management all affect the true payoff."
+          "text": "Subtract the real costs. Training, setup, review, and change management all affect the true payoff, so the honest estimate includes them from the start."
         }
       ],
       "workedExample": {
@@ -150,15 +150,15 @@
       "coreConcepts": [
         {
           "title": "Use Comparable Work",
-          "text": "Compare similar cases or repeated cycles of the same workflow."
+          "text": "Compare like with like. Compare similar cases or repeated cycles of the same workflow, so the before-and-after difference reflects the change and not the case mix."
         },
         {
           "title": "Capture Both Speed And Quality",
-          "text": "A faster workflow is not a win if the review burden or error rate spikes."
+          "text": "Capture speed and quality. A faster workflow is not a win if the review burden or error rate spikes, so track quality signals alongside the time saving."
         },
         {
           "title": "Keep The Pilot Small",
-          "text": "A handful of cycles is often enough to learn whether the workflow has promise."
+          "text": "Keep the pilot small. A handful of cycles is often enough to learn whether the workflow has promise, which keeps the cost of finding out low."
         }
       ],
       "workedExample": {
@@ -217,15 +217,15 @@
       "coreConcepts": [
         {
           "title": "Lead With Workflow Outcome",
-          "text": "Start with what improved and for whom."
+          "text": "Lead with the outcome. Start with what improved and for whom, because leaders act on outcomes tied to people and decisions, not on activity reports."
         },
         {
           "title": "Show The Evidence",
-          "text": "Use short metrics plus concrete before-and-after examples."
+          "text": "Show the evidence. Use short metrics plus concrete before-and-after examples, and make sure every claim in the readout maps to collected pilot evidence."
         },
         {
           "title": "State The Next Decision",
-          "text": "Should the workflow continue, expand, or stop? The communication should support that choice."
+          "text": "End with the decision. State whether the workflow should continue, expand, or stop, and shape the whole communication to support that choice."
         }
       ],
       "workedExample": {
@@ -284,15 +284,15 @@
       "coreConcepts": [
         {
           "title": "Choose A Small Set Of Workflows",
-          "text": "Measure the workflows that matter most rather than everything."
+          "text": "Measure a few workflows well. Track the workflows that matter most rather than everything, because a small system people maintain beats a complete one they abandon."
         },
         {
           "title": "Use Simple Templates",
-          "text": "A recurring pilot sheet or evidence log keeps collection manageable."
+          "text": "Use simple templates. A recurring pilot sheet or evidence log keeps collection manageable, so gathering evidence becomes a habit instead of a project."
         },
         {
           "title": "Review On A Rhythm",
-          "text": "A monthly or quarterly review is often enough to make better decisions."
+          "text": "Review on a rhythm. A monthly or quarterly review is often enough to make better decisions about what to expand, fix, or stop."
         }
       ],
       "workedExample": {

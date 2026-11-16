@@ -162,15 +162,15 @@
       "coreConcepts": [
         {
           "title": "Where The Agent Lives",
-          "text": "Some agents live inside a chat interface, some in developer tools, and some inside workflow platforms or business apps."
+          "text": "Start with where it lives. Some agents live inside a chat interface, some in developer tools, and some inside workflow platforms or business apps — the home base shapes everything else."
         },
         {
           "title": "What The Agent Can Touch",
-          "text": "Tool access determines both usefulness and risk. The more systems an agent can use, the more valuable and risky it becomes."
+          "text": "Count what it can touch. Tool access determines both usefulness and risk: the more systems an agent can reach, the more valuable and the more dangerous it becomes."
         },
         {
           "title": "How The Agent Is Supervised",
-          "text": "The key comparison is not only raw capability. It is whether the workflow exposes enough checkpoints, traceability, and recovery options."
+          "text": "Compare the supervision. The key comparison is not raw capability but whether the workflow exposes enough checkpoints, traceability, and recovery options to trust it."
         }
       ],
       "workedExample": {
@@ -294,7 +294,45 @@
         "Reviewed for business IC relevance and durable workflow guidance.",
         "Keep verification and organizational policy checks explicit in future revisions."
       ],
-      "lastReviewed": "March 2026"
+      "lastReviewed": "March 2026",
+      "visual": {
+        "type": "matrix",
+        "title": "Assistant Or Agent?",
+        "headers": [
+          "Mode",
+          "Best for",
+          "Tell-tale sign"
+        ],
+        "rows": [
+          {
+            "label": "Normal assistant",
+            "cells": [
+              {
+                "main": "Bounded thinking",
+                "sub": "drafting, summarizing, outlining"
+              },
+              {
+                "main": "One-step analysis",
+                "sub": "no tool orchestration needed"
+              }
+            ]
+          },
+          {
+            "label": "Agent",
+            "cells": [
+              {
+                "main": "Repeatable multi-step work",
+                "sub": "steps, tools, follow-ups together"
+              },
+              {
+                "main": "The work runs as a sequence",
+                "sub": "not a single answer"
+              }
+            ]
+          }
+        ],
+        "note": "Start with the simplest useful mode: if a normal assistant plus a short checklist solves the problem, do not add more autonomy yet."
+      }
     },
     {
       "id": "agents-lesson-05",
@@ -390,15 +428,15 @@
       "coreConcepts": [
         {
           "title": "Choose A Bounded Task",
-          "text": "Good first tests include recurring summaries, internal follow-up drafts, or low-risk personal workflows."
+          "text": "Choose a bounded task. Good first tests include recurring summaries, internal follow-up drafts, or low-risk personal workflows — narrow scope is what makes the evidence clean."
         },
         {
           "title": "Limit Access",
-          "text": "Start with the minimum systems and permissions needed to learn something useful. That includes add-ons: in 2026, malicious third-party skills were found in OpenClaw's ClawHub registry, so treat every skill or plugin as untrusted code until it has been vetted."
+          "text": "Start with minimum access. Grant only the systems and permissions needed to learn something useful, and treat every third-party skill or plugin as untrusted code until it has been vetted. In 2026, malicious third-party skills were found in OpenClaw’s ClawHub registry, which is why add-ons get vetted before they get access."
         },
         {
           "title": "Review Every Output",
-          "text": "Early experiments should make human review explicit and unavoidable."
+          "text": "Review every output. Early experiments should make human review explicit and unavoidable, with a stop rule and an approval point before any outbound action."
         }
       ],
       "workedExample": {

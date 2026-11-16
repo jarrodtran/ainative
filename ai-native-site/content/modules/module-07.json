@@ -84,15 +84,15 @@
       "coreConcepts": [
         {
           "title": "Examples Set The Pattern",
-          "text": "A short example can teach the model how to classify, prioritize, or structure output."
+          "text": "Examples teach the pattern. A short example can teach the model how to classify, prioritize, or structure output more reliably than a paragraph of instructions."
         },
         {
           "title": "Match The Example To The Task",
-          "text": "Use representative examples, not idealized ones that ignore real ambiguity."
+          "text": "Use real, messy examples. Choose representative examples from the actual work, not idealized ones that ignore the ambiguity the model will really face."
         },
         {
           "title": "Explain The Lesson",
-          "text": "Tell the model what the example demonstrates so it copies the right thing."
+          "text": "Say what it demonstrates. Tell the model what the example demonstrates — the rule behind the answer — so it copies the reasoning and not just the surface."
         }
       ],
       "workedExample": {
@@ -157,15 +157,15 @@
       "coreConcepts": [
         {
           "title": "Label The Sections",
-          "text": "Separate goal, context, sources, constraints, and output format so nothing important is buried."
+          "text": "Label every section. Separate goal, context, sources, constraints, and output format under clear headings, so nothing important is buried inside a long request."
         },
         {
           "title": "Keep Each Section Purposeful",
-          "text": "Every section should change the answer. If it does not, remove it."
+          "text": "Every section must earn its place. Keep only the sections that change the answer, and remove any heading that is just decoration — structure is not the same as length."
         },
         {
           "title": "Reuse The Shape",
-          "text": "Structured prompts are easier to turn into templates than free-form chat requests."
+          "text": "Reuse the shape. A structured prompt is easier to edit, rerun, and turn into a team template than a free-form chat request that lives in one thread."
         }
       ],
       "workedExample": {
@@ -298,7 +298,19 @@
           "type": "official",
           "note": "Useful for context design, examples, and prompt structure when a lesson discusses prompt quality."
         }
-      ]
+      ],
+      "visual": {
+        "type": "flow",
+        "title": "Anatomy Of A Chain",
+        "steps": [
+          "Stage — output useful on its own",
+          "Hand-off — the next stage can build on it",
+          "Review gate — a human validates or redirects",
+          "Capture — save the intermediate asset",
+          "Next stage — reuse what was saved"
+        ],
+        "note": "Save the intermediates — outlines, extracted themes, and ranked options are assets the next stage, or the next task, can reuse."
+      }
     },
     {
       "id": "module-07-lesson-05",

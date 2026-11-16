@@ -282,15 +282,15 @@
       "coreConcepts": [
         {
           "title": "Collect",
-          "text": "Gather and label the sources that matter."
+          "text": "Collect with labels. Gather the sources that matter and label them as you go, so later steps know what each source is and why it was included."
         },
         {
           "title": "Synthesize",
-          "text": "Ask for a structured comparison or action summary."
+          "text": "Synthesize to a decision. Ask for a structured comparison or action summary rather than a pile of summaries, so the research lands as something a reader can act on."
         },
         {
           "title": "Critique",
-          "text": "Challenge the weak spots and verify the critical claims."
+          "text": "Critique before publishing. Challenge the weak spots and verify the critical claims, because a workflow without the critique step just produces confident summaries."
         }
       ],
       "workedExample": {

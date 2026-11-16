@@ -84,15 +84,15 @@
       "coreConcepts": [
         {
           "title": "Label What You Heard",
-          "text": "Separate facts, decisions, risks, and next steps while notes are still fresh."
+          "text": "Label while it is fresh. Separate facts, decisions, risks, and next steps while the meeting is still fresh, before discussion and decision blur together."
         },
         {
           "title": "Ask AI To Organize, Not Guess",
-          "text": "The model should structure your notes, not invent details you missed."
+          "text": "Organize, do not invent. The model should structure the notes you captured, not invent details you missed or assign owners and deadlines you never heard."
         },
         {
           "title": "Review The Commitments",
-          "text": "Owner assignments and deadlines must be checked manually."
+          "text": "Check commitments manually. Owner assignments and deadlines must be confirmed by a person, because a recap that invents them creates work nobody agreed to."
         }
       ],
       "workedExample": {
@@ -282,15 +282,15 @@
       "coreConcepts": [
         {
           "title": "Use The Same Sequence",
-          "text": "Prep, capture, recap, and follow-up are the core stages for most meetings."
+          "text": "Run the same sequence. Prep, capture, recap, and follow-up are the core stages for most meetings, and they work best as one system rather than four separate habits."
         },
         {
           "title": "Store The Inputs",
-          "text": "Agenda, notes, recap template, and follow-up prompts should live together."
+          "text": "Keep the kit together. Agenda, source notes, recap template, and follow-up prompts should live in one place, so the workflow can be reused and handed over."
         },
         {
           "title": "Review The High-Risk Fields",
-          "text": "Decisions, owners, dates, and commitments always need a human pass."
+          "text": "Review the risky fields. Decisions, owners, dates, and commitments always need a human pass, because those are the fields a recap can quietly get wrong."
         }
       ],
       "workedExample": {

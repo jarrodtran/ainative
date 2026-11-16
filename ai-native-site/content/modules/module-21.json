@@ -148,15 +148,15 @@
       "coreConcepts": [
         {
           "title": "Scan Briefly",
-          "text": "Spend a small amount of time noticing meaningful updates."
+          "text": "Scan briefly. Spend a small, fixed slice of the week noticing meaningful updates — enough to stay current, not enough to become a second job."
         },
         {
           "title": "Test One Thing",
-          "text": "Apply one workflow idea or prompt improvement to real work every week."
+          "text": "Test one thing. Apply one workflow idea or prompt improvement to real work every week, because reading without testing never turns into capability."
         },
         {
           "title": "Log What Changed",
-          "text": "A short note on what worked or failed builds a personal evidence base."
+          "text": "Log what changed. A short note on what worked or failed builds a personal evidence base, and testing without logging means relearning the same lessons."
         }
       ],
       "workedExample": {
@@ -213,15 +213,15 @@
       "coreConcepts": [
         {
           "title": "Tie Every Evaluation To A Task",
-          "text": "If you cannot name the recurring task, you probably do not need the tool yet."
+          "text": "Start from a real task. If you cannot name the recurring task a tool would improve, you probably do not need it yet — curiosity alone is not an evaluation."
         },
         {
           "title": "Use A Time Box",
-          "text": "A short, structured evaluation prevents endless research and low-grade distraction."
+          "text": "Time-box the test. A short, structured evaluation on a real task prevents endless research and low-grade distraction, and makes the switching cost visible."
         },
         {
           "title": "Keep A Watch List",
-          "text": "Interesting tools can wait until they prove themselves or become relevant."
+          "text": "Keep a watch list. Interesting tools can wait on a list until they prove themselves or become relevant to a task you actually own — watching is a decision too."
         }
       ],
       "workedExample": {
@@ -278,15 +278,15 @@
       "coreConcepts": [
         {
           "title": "Keep The System Small",
-          "text": "A small set of sources, a weekly practice rhythm, and an experiment log are enough."
+          "text": "Keep the system small. A small radar of sources, a weekly practice rhythm, and an experiment log are enough — a complex system you will not maintain teaches nothing."
         },
         {
           "title": "Tie Learning To Work",
-          "text": "The best experiments improve tasks you already own."
+          "text": "Tie learning to real work. The best experiments improve tasks you already own, because applied practice on your own work beats memorizing the most updates."
         },
         {
           "title": "Review Periodically",
-          "text": "A monthly or quarterly review helps you keep what works and drop what does not."
+          "text": "Review on a cadence. A monthly or quarterly review of your stack and workflows helps you keep what works, drop what does not, and stay current without drowning."
         }
       ],
       "workedExample": {

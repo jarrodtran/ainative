@@ -150,15 +150,15 @@
       "coreConcepts": [
         {
           "title": "Variation Is Normal",
-          "text": "Small wording shifts, model updates, and conversation history can change results. That is expected behavior, not necessarily a failure."
+          "text": "Variation is expected. Small wording shifts, model updates, and conversation history can all change results, so a different answer is not necessarily a failure. Judge the run against your criteria, not against the previous run's wording."
         },
         {
           "title": "Threads Accumulate Baggage",
-          "text": "Long chats often mix old assumptions with new requests. Starting a clean thread is often faster than arguing with stale context."
+          "text": "Threads go stale. Long chats mix old assumptions with new requests, and starting a clean thread is often faster than arguing with stale context. Reset the conversation when the history starts steering the answers."
         },
         {
           "title": "Stability Comes From Structure",
-          "text": "Examples, explicit rubrics, and clear output formats make results more consistent than vague requests for the \"best answer.\""
+          "text": "Structure creates stability. Examples, explicit rubrics, and clear output formats make results more consistent than vague requests for the best answer. Fix the sections and success criteria, and repeated runs start to converge."
         }
       ],
       "workedExample": {
@@ -289,15 +289,15 @@
       "coreConcepts": [
         {
           "title": "Frame",
-          "text": "Define the task, audience, and constraints before you prompt."
+          "text": "Frame first. Define the task, audience, and constraints before you prompt, and name the deliverable and the source of truth behind it."
         },
         {
           "title": "Generate",
-          "text": "Ask for a first pass with an explicit structure."
+          "text": "Generate second. Ask for a structured first pass instead of a finished answer, so the shape of the output is set before the details are filled in."
         },
         {
           "title": "Review",
-          "text": "Verify claims, adjust tone, and turn the output into a final work product."
+          "text": "Review last. Verify claims, adjust tone, and run your checks before sharing, so the draft becomes a final work product you can stand behind."
         }
       ],
       "workedExample": {

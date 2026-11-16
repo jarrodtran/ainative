@@ -218,15 +218,15 @@
       "coreConcepts": [
         {
           "title": "Critique The Process, Not Just The Writing",
-          "text": "Ask where steps are vague, duplicated, or lacking a clear owner."
+          "text": "Critique the work itself. Ask where steps are vague, duplicated, or lacking a clear owner — the documentation is a lens on the process, not just a writing exercise."
         },
         {
           "title": "Find Decision Points",
-          "text": "Good process reviews reveal where human judgment is required and where better rules would help."
+          "text": "Find the decision points. A good process review reveals where human judgment is genuinely required and where a clearer rule would remove the handoff entirely."
         },
         {
           "title": "Separate Improvement From Approval",
-          "text": "AI can suggest changes, but process owners still decide what gets adopted."
+          "text": "Suggestions are not approvals. AI can surface candidate changes, but process owners still decide what gets adopted, and exception handling has to survive the redesign."
         }
       ],
       "workedExample": {
@@ -283,15 +283,15 @@
       "coreConcepts": [
         {
           "title": "Store The Source Pattern",
-          "text": "Capture the kinds of raw inputs that produce strong drafts."
+          "text": "Save the input pattern. Capture the kinds of raw inputs that produce strong drafts, so the next person starts from the same raw material that worked last time."
         },
         {
           "title": "Save The Format",
-          "text": "A good SOP or FAQ structure can be reused across teams and topics."
+          "text": "Save the format too. A good SOP or FAQ structure can be reused across teams and topics, so store the format alongside the prompt instead of only the wording."
         },
         {
           "title": "Keep A Review Checklist",
-          "text": "Documentation needs a standard final pass for accuracy, usability, and ownership."
+          "text": "Keep a review checklist. Documentation needs a standard final pass for accuracy, usability, and ownership, with a named validator before anything is published."
         }
       ],
       "workedExample": {

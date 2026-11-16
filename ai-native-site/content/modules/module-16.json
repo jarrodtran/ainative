@@ -18,15 +18,15 @@
       "coreConcepts": [
         {
           "title": "Playbooks Capture Workflow",
-          "text": "They include when to use the workflow, what inputs are needed, and what review is required."
+          "text": "A playbook is a workflow. It captures when to use the workflow, what inputs it needs, what the prompt does, and what review is required — not just the prompt wording."
         },
         {
           "title": "Playbooks Reduce Reinvention",
-          "text": "They turn trial-and-error into a reusable starting point."
+          "text": "Playbooks end reinvention. They turn one person’s trial-and-error into a reusable starting point, so the next person begins from a proven workflow instead of a blank chat."
         },
         {
           "title": "Playbooks Improve Team Consistency",
-          "text": "People can produce more consistent work when the structure and review rules are shared. "
+          "text": "Shared rules, steadier output. People produce more consistent work when the structure, examples, and review rules are shared instead of living in one person’s habits."
         }
       ],
       "workedExample": {
@@ -85,15 +85,15 @@
       "coreConcepts": [
         {
           "title": "List Required Inputs",
-          "text": "Templates, notes, examples, approved facts, and output destinations should be explicit."
+          "text": "List the inputs explicitly. Templates, notes, examples, approved facts, and output destinations should be written into the playbook, not carried in the creator’s head."
         },
         {
           "title": "Show What Good Looks Like",
-          "text": "An example output or completed case makes the playbook easier to use."
+          "text": "Show what good looks like. Include an example output or a completed run, because teammates reuse a playbook more successfully when they can see the target they are aiming at."
         },
         {
           "title": "Remove Hidden Assumptions",
-          "text": "If the playbook assumes internal jargon or unwritten policy, capture that openly."
+          "text": "Surface hidden assumptions. If the playbook quietly assumes internal jargon, a tone guide, or unwritten policy, capture that openly — hidden context is where reuse goes to fail."
         }
       ],
       "workedExample": {
@@ -151,15 +151,15 @@
       "coreConcepts": [
         {
           "title": "Encode Standards",
-          "text": "Voice, structure, prohibited moves, and review rules are good candidates for persistent guidance."
+          "text": "Encode standards, not facts. Voice, structure, prohibited moves, and review rules are good candidates for persistent guidance, because they stay true across many tasks."
         },
         {
           "title": "Do Not Encode Unverified Assumptions",
-          "text": "Persistent instructions should not hard-code facts that change often."
+          "text": "Keep changing facts out. Persistent instructions should not hard-code facts that change often — project details belong in the task prompt, where they can be updated each run."
         },
         {
           "title": "Keep It Readable",
-          "text": "If nobody can understand or update the guidance, the playbook will decay quickly."
+          "text": "Keep guidance readable. If nobody can understand or update the instruction set, the playbook decays quickly, so keep it short enough to maintain and review."
         }
       ],
       "workedExample": {
@@ -217,15 +217,15 @@
       "coreConcepts": [
         {
           "title": "Test On Multiple Cases",
-          "text": "A playbook should work on varied inputs from the same workflow."
+          "text": "Test beyond the happy path. A playbook should work on varied inputs from the same workflow, not just the one case it was built on — one success proves almost nothing."
         },
         {
           "title": "Track Failure Modes",
-          "text": "Most playbook improvement comes from seeing where it breaks, not where it shines."
+          "text": "Record what breaks. Most improvement comes from seeing where the playbook fails, so note the failure mode on each test case instead of only celebrating the runs that worked."
         },
         {
           "title": "Update The Smallest Useful Thing",
-          "text": "Revise the missing input, unclear constraint, or review step before rewriting the whole playbook."
+          "text": "Fix the smallest thing. Revise the missing input, unclear constraint, or weak review step before rewriting the whole playbook — small targeted fixes keep it simple."
         }
       ],
       "workedExample": {
@@ -283,15 +283,15 @@
       "coreConcepts": [
         {
           "title": "Make Entries Scannable",
-          "text": "Use case, inputs, prompt pattern, review checklist, owner, and last review date should be visible."
+          "text": "Make entries scannable. Use case, inputs, prompt pattern, review checklist, owner, and last review date should be visible at a glance, so people can find and trust the right workflow fast."
         },
         {
           "title": "Assign Ownership",
-          "text": "Someone should be responsible for updating the playbook when the workflow changes."
+          "text": "Give every entry an owner. Someone should be responsible for updating each playbook when the workflow changes, or the library quietly fills with entries nobody maintains."
         },
         {
           "title": "Prune Aggressively",
-          "text": "Outdated or unused playbooks create noise and reduce trust."
+          "text": "Prune without mercy. Outdated or unused playbooks create noise and reduce trust in the whole library, so retire entries that no longer earn their place."
         }
       ],
       "workedExample": {
