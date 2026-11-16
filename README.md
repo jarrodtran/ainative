@@ -4,6 +4,19 @@ A practical, self-paced curriculum that teaches business individual contributors
 
 **Live site:** https://ai-native-site.vercel.app
 
+## Built as a product, not a course dump
+
+AI Native is a 122-lesson AI curriculum for non-engineers that I designed, built, and iterate like a product — because that is the job it does. It teaches business individual contributors how to work with AI: mental models, tool judgment, verification discipline, and agent workflows.
+
+**Product decisions worth noting:**
+
+- **Brief-first lesson layout** — every lesson opens with a "60-Second Version," then concepts, then application. Readers scan first and go deep only where it pays off.
+- **No quizzes or cases** — a deliberate call. The target reader is a working professional; applied checklists and worked examples beat test-taking for this audience.
+- **Locked core, extensible bonus** — the core program is fixed at 21 modules × 5 lessons (105). New material ships as bonus sections so the core stays coherent: The 2026 Model Landscape, GitHub For Non-Engineers, and Trust But Verify (a curriculum gap I identified — checking AI output — and filled).
+- **Data-driven fixes** — a scan found 63 of 119 auto-generated lesson briefs ran under 40 words; I expanded the underlying concepts in 64 lessons and re-scanned to zero thin briefs across all 122.
+
+**Iteration:** shipped and refined through pull requests #1–#5 (content modernization, lesson-layout rebuild, a full editorial redesign, and two improvement rounds), deployed on Vercel from `main`.
+
 ## What's inside
 
 - **21 modules in 5 phases** — AI Foundations, Productivity Acceleration, Business Operations, Advanced AI Workflows, and AI Strategy & Leadership.
